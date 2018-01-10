@@ -1,0 +1,3016 @@
+bitter.jnibridge.JNIBridge
+bitter.jnibridge.JNIBridge: JNIBridge()
+bitter.jnibridge.JNIBridge: java.lang.Object invoke(long,java.lang.Class,java.lang.reflect.Method,java.lang.Object[])
+bitter.jnibridge.JNIBridge: void delete(long)
+bitter.jnibridge.JNIBridge: java.lang.Object newInterfaceProxy(long,java.lang.Class[])
+bitter.jnibridge.JNIBridge: void disableInterfaceProxy(java.lang.Object)
+bitter.jnibridge.JNIBridge$a
+bitter.jnibridge.JNIBridge$a: java.lang.Object a
+bitter.jnibridge.JNIBridge$a: long b
+bitter.jnibridge.JNIBridge$a: JNIBridge$a(long)
+bitter.jnibridge.JNIBridge$a: java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])
+bitter.jnibridge.JNIBridge$a: void finalize()
+bitter.jnibridge.JNIBridge$a: void a()
+com.cutebabies.firstone.BuildConfig
+com.cutebabies.firstone.BuildConfig: boolean DEBUG
+com.cutebabies.firstone.BuildConfig: java.lang.String APPLICATION_ID
+com.cutebabies.firstone.BuildConfig: java.lang.String BUILD_TYPE
+com.cutebabies.firstone.BuildConfig: java.lang.String FLAVOR
+com.cutebabies.firstone.BuildConfig: int VERSION_CODE
+com.cutebabies.firstone.BuildConfig: java.lang.String VERSION_NAME
+com.cutebabies.firstone.BuildConfig: BuildConfig()
+com.cutebabies.firstone.R
+com.cutebabies.firstone.R: R()
+com.cutebabies.firstone.R$attr
+com.cutebabies.firstone.R$attr: R$attr()
+com.cutebabies.firstone.R$drawable
+com.cutebabies.firstone.R$drawable: int app_banner
+com.cutebabies.firstone.R$drawable: int app_icon
+com.cutebabies.firstone.R$drawable: R$drawable()
+com.cutebabies.firstone.R$string
+com.cutebabies.firstone.R$string: int app_name
+com.cutebabies.firstone.R$string: R$string()
+com.cutebabies.firstone.R$style
+com.cutebabies.firstone.R$style: int UnityThemeSelector
+com.cutebabies.firstone.R$style: R$style()
+com.cutebabies.firstone.UnityPlayerActivity
+com.cutebabies.firstone.UnityPlayerActivity: UnityPlayerActivity()
+com.cutebabies.firstone.UnityPlayerActivity: void onLowMemory()
+com.cutebabies.firstone.UnityPlayerActivity: void onTrimMemory(int)
+com.cutebabies.firstone.UnityPlayerActivity: void onConfigurationChanged(android.content.res.Configuration)
+com.cutebabies.firstone.UnityPlayerActivity: void onWindowFocusChanged(boolean)
+com.cutebabies.firstone.UnityPlayerActivity: boolean dispatchKeyEvent(android.view.KeyEvent)
+com.cutebabies.firstone.UnityPlayerActivity: boolean onKeyUp(int,android.view.KeyEvent)
+com.cutebabies.firstone.UnityPlayerActivity: boolean onKeyDown(int,android.view.KeyEvent)
+com.cutebabies.firstone.UnityPlayerActivity: boolean onTouchEvent(android.view.MotionEvent)
+com.cutebabies.firstone.UnityPlayerActivity: boolean onGenericMotionEvent(android.view.MotionEvent)
+com.cutebabies.firstone.UnityPlayerNativeActivity
+com.cutebabies.firstone.UnityPlayerNativeActivity: UnityPlayerNativeActivity()
+com.cutebabies.firstone.UnityPlayerProxyActivity
+com.cutebabies.firstone.UnityPlayerProxyActivity: UnityPlayerProxyActivity()
+com.unity3d.player.GoogleVrProxy
+com.unity3d.player.GoogleVrProxy: com.unity3d.player.k a
+com.unity3d.player.GoogleVrProxy: boolean b
+com.unity3d.player.GoogleVrProxy: boolean c
+com.unity3d.player.GoogleVrProxy: android.content.Context d
+com.unity3d.player.GoogleVrProxy: com.unity3d.player.c e
+com.unity3d.player.GoogleVrProxy: java.lang.String f
+com.unity3d.player.GoogleVrProxy: java.lang.Runnable g
+com.unity3d.player.GoogleVrProxy: com.unity3d.player.GoogleVrProxy$a h
+com.unity3d.player.GoogleVrProxy: GoogleVrProxy(com.unity3d.player.c)
+com.unity3d.player.GoogleVrProxy: void a(boolean)
+com.unity3d.player.GoogleVrProxy: boolean d()
+com.unity3d.player.GoogleVrProxy: boolean a()
+com.unity3d.player.GoogleVrProxy: void a(android.content.Intent)
+com.unity3d.player.GoogleVrProxy: void b()
+com.unity3d.player.GoogleVrProxy: void pauseGvrLayout()
+com.unity3d.player.GoogleVrProxy: void c()
+com.unity3d.player.GoogleVrProxy: void resumeGvrLayout()
+com.unity3d.player.GoogleVrProxy: void a(java.lang.Runnable)
+com.unity3d.player.GoogleVrProxy: boolean b(java.lang.Runnable)
+com.unity3d.player.GoogleVrProxy: boolean a(android.app.Activity,android.content.Context,android.view.SurfaceView,java.lang.Runnable)
+com.unity3d.player.GoogleVrProxy: long loadGoogleVr(boolean,boolean,boolean)
+com.unity3d.player.GoogleVrProxy: void setGoogleVrModeEnabled(boolean)
+com.unity3d.player.GoogleVrProxy: void unloadGoogleVr()
+com.unity3d.player.GoogleVrProxy: boolean a(java.lang.ClassLoader)
+com.unity3d.player.GoogleVrProxy: void a(java.lang.String)
+com.unity3d.player.GoogleVrProxy: boolean a(int)
+com.unity3d.player.GoogleVrProxy: void initVrJni()
+com.unity3d.player.GoogleVrProxy: void a(com.unity3d.player.GoogleVrProxy,java.lang.String)
+com.unity3d.player.GoogleVrProxy: java.lang.Runnable a(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy: com.unity3d.player.k b(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy: com.unity3d.player.GoogleVrProxy$a c(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy: boolean d(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy: com.unity3d.player.c e(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy: void a(com.unity3d.player.GoogleVrProxy,boolean)
+com.unity3d.player.GoogleVrProxy: com.unity3d.player.k f(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy$1
+com.unity3d.player.GoogleVrProxy$1: java.lang.Runnable a
+com.unity3d.player.GoogleVrProxy$1: java.util.concurrent.Semaphore b
+com.unity3d.player.GoogleVrProxy$1: com.unity3d.player.GoogleVrProxy c
+com.unity3d.player.GoogleVrProxy$1: GoogleVrProxy$1(com.unity3d.player.GoogleVrProxy,java.lang.Runnable,java.util.concurrent.Semaphore)
+com.unity3d.player.GoogleVrProxy$1: void run()
+com.unity3d.player.GoogleVrProxy$2
+com.unity3d.player.GoogleVrProxy$2: java.util.concurrent.atomic.AtomicLong a
+com.unity3d.player.GoogleVrProxy$2: boolean b
+com.unity3d.player.GoogleVrProxy$2: boolean c
+com.unity3d.player.GoogleVrProxy$2: boolean d
+com.unity3d.player.GoogleVrProxy$2: com.unity3d.player.GoogleVrProxy e
+com.unity3d.player.GoogleVrProxy$2: GoogleVrProxy$2(com.unity3d.player.GoogleVrProxy,java.util.concurrent.atomic.AtomicLong,boolean,boolean,boolean)
+com.unity3d.player.GoogleVrProxy$2: void run()
+com.unity3d.player.GoogleVrProxy$3
+com.unity3d.player.GoogleVrProxy$3: boolean a
+com.unity3d.player.GoogleVrProxy$3: com.unity3d.player.GoogleVrProxy b
+com.unity3d.player.GoogleVrProxy$3: GoogleVrProxy$3(com.unity3d.player.GoogleVrProxy,boolean)
+com.unity3d.player.GoogleVrProxy$3: void run()
+com.unity3d.player.GoogleVrProxy$4
+com.unity3d.player.GoogleVrProxy$4: com.unity3d.player.GoogleVrProxy a
+com.unity3d.player.GoogleVrProxy$4: GoogleVrProxy$4(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy$4: void run()
+com.unity3d.player.GoogleVrProxy$a
+com.unity3d.player.GoogleVrProxy$a: boolean a
+com.unity3d.player.GoogleVrProxy$a: boolean b
+com.unity3d.player.GoogleVrProxy$a: boolean c
+com.unity3d.player.GoogleVrProxy$a: boolean d
+com.unity3d.player.GoogleVrProxy$a: boolean e
+com.unity3d.player.GoogleVrProxy$a: boolean f
+com.unity3d.player.GoogleVrProxy$a: com.unity3d.player.GoogleVrProxy g
+com.unity3d.player.GoogleVrProxy$a: GoogleVrProxy$a(com.unity3d.player.GoogleVrProxy)
+com.unity3d.player.GoogleVrProxy$a: boolean a()
+com.unity3d.player.GoogleVrProxy$a: void b()
+com.unity3d.player.NativeLoader
+com.unity3d.player.NativeLoader: boolean load(java.lang.String)
+com.unity3d.player.NativeLoader: boolean unload()
+com.unity3d.player.ReflectionHelper
+com.unity3d.player.ReflectionHelper: boolean LOG
+com.unity3d.player.ReflectionHelper: boolean LOGV
+com.unity3d.player.ReflectionHelper: com.unity3d.player.ReflectionHelper$a[] a
+com.unity3d.player.ReflectionHelper: ReflectionHelper()
+com.unity3d.player.ReflectionHelper: boolean a(com.unity3d.player.ReflectionHelper$a)
+com.unity3d.player.ReflectionHelper: void a(com.unity3d.player.ReflectionHelper$a,java.lang.reflect.Member)
+com.unity3d.player.ReflectionHelper: java.lang.reflect.Constructor getConstructorID(java.lang.Class,java.lang.String)
+com.unity3d.player.ReflectionHelper: java.lang.reflect.Method getMethodID(java.lang.Class,java.lang.String,java.lang.String,boolean)
+com.unity3d.player.ReflectionHelper: java.lang.reflect.Field getFieldID(java.lang.Class,java.lang.String,java.lang.String,boolean)
+com.unity3d.player.ReflectionHelper: float a(java.lang.Class,java.lang.Class)
+com.unity3d.player.ReflectionHelper: float a(java.lang.Class,java.lang.Class[],java.lang.Class[])
+com.unity3d.player.ReflectionHelper: java.lang.Class[] a(java.lang.String)
+com.unity3d.player.ReflectionHelper: java.lang.Class a(java.lang.String,int[])
+com.unity3d.player.ReflectionHelper: java.lang.Object nativeProxyInvoke(int,java.lang.String,java.lang.Object[])
+com.unity3d.player.ReflectionHelper: void nativeProxyFinalize(int)
+com.unity3d.player.ReflectionHelper: java.lang.Object newProxyInstance(int,java.lang.Class)
+com.unity3d.player.ReflectionHelper: java.lang.Object newProxyInstance(int,java.lang.Class[])
+com.unity3d.player.ReflectionHelper: java.lang.Object a(int,java.lang.String,java.lang.Object[])
+com.unity3d.player.ReflectionHelper: void a(int)
+com.unity3d.player.ReflectionHelper: void <clinit>()
+com.unity3d.player.ReflectionHelper$1
+com.unity3d.player.ReflectionHelper$1: int a
+com.unity3d.player.ReflectionHelper$1: java.lang.Class[] b
+com.unity3d.player.ReflectionHelper$1: ReflectionHelper$1(int,java.lang.Class[])
+com.unity3d.player.ReflectionHelper$1: java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])
+com.unity3d.player.ReflectionHelper$1: void finalize()
+com.unity3d.player.ReflectionHelper$a
+com.unity3d.player.ReflectionHelper$a: java.lang.Class b
+com.unity3d.player.ReflectionHelper$a: java.lang.String c
+com.unity3d.player.ReflectionHelper$a: java.lang.String d
+com.unity3d.player.ReflectionHelper$a: int e
+com.unity3d.player.ReflectionHelper$a: java.lang.reflect.Member a
+com.unity3d.player.ReflectionHelper$a: ReflectionHelper$a(java.lang.Class,java.lang.String,java.lang.String)
+com.unity3d.player.ReflectionHelper$a: int hashCode()
+com.unity3d.player.ReflectionHelper$a: boolean equals(java.lang.Object)
+com.unity3d.player.UnityPlayer
+com.unity3d.player.UnityPlayer: android.app.Activity currentActivity
+com.unity3d.player.UnityPlayer: boolean c
+com.unity3d.player.UnityPlayer: boolean d
+com.unity3d.player.UnityPlayer: com.unity3d.player.j e
+com.unity3d.player.UnityPlayer: java.util.concurrent.ConcurrentLinkedQueue f
+com.unity3d.player.UnityPlayer: android.content.BroadcastReceiver g
+com.unity3d.player.UnityPlayer: com.unity3d.player.UnityPlayer$c a
+com.unity3d.player.UnityPlayer: boolean h
+com.unity3d.player.UnityPlayer: com.unity3d.player.UnityPlayer$a i
+com.unity3d.player.UnityPlayer: android.telephony.TelephonyManager j
+com.unity3d.player.UnityPlayer: com.unity3d.player.h k
+com.unity3d.player.UnityPlayer: android.content.Context l
+com.unity3d.player.UnityPlayer: android.view.SurfaceView m
+com.unity3d.player.UnityPlayer: boolean n
+com.unity3d.player.UnityPlayer: boolean o
+com.unity3d.player.UnityPlayer: com.unity3d.player.l p
+com.unity3d.player.UnityPlayer: boolean q
+com.unity3d.player.UnityPlayer: com.unity3d.player.g b
+com.unity3d.player.UnityPlayer: com.unity3d.player.GoogleVrProxy r
+com.unity3d.player.UnityPlayer: UnityPlayer(android.content.Context)
+com.unity3d.player.UnityPlayer: void a()
+com.unity3d.player.UnityPlayer: void a(android.app.Activity)
+com.unity3d.player.UnityPlayer: android.view.SurfaceView b()
+com.unity3d.player.UnityPlayer: void a(int,android.view.Surface)
+com.unity3d.player.UnityPlayer: boolean b(int,android.view.Surface)
+com.unity3d.player.UnityPlayer: boolean displayChanged(int,android.view.Surface)
+com.unity3d.player.UnityPlayer: void UnitySendMessage(java.lang.String,java.lang.String,java.lang.String)
+com.unity3d.player.UnityPlayer: void nativeUnitySendMessage(java.lang.String,java.lang.String,java.lang.String)
+com.unity3d.player.UnityPlayer: void c()
+com.unity3d.player.UnityPlayer: void a(java.lang.Runnable)
+com.unity3d.player.UnityPlayer: void init(int,boolean)
+com.unity3d.player.UnityPlayer: android.view.View getView()
+com.unity3d.player.UnityPlayer: android.os.Bundle getSettings()
+com.unity3d.player.UnityPlayer: void kill()
+com.unity3d.player.UnityPlayer: void quit()
+com.unity3d.player.UnityPlayer: void pause()
+com.unity3d.player.UnityPlayer: void d()
+com.unity3d.player.UnityPlayer: void resume()
+com.unity3d.player.UnityPlayer: void lowMemory()
+com.unity3d.player.UnityPlayer: void e()
+com.unity3d.player.UnityPlayer: void f()
+com.unity3d.player.UnityPlayer: void configurationChanged(android.content.res.Configuration)
+com.unity3d.player.UnityPlayer: void windowFocusChanged(boolean)
+com.unity3d.player.UnityPlayer: boolean loadLibraryStatic(java.lang.String)
+com.unity3d.player.UnityPlayer: boolean loadLibrary(java.lang.String)
+com.unity3d.player.UnityPlayer: void addPhoneCallListener()
+com.unity3d.player.UnityPlayer: void initJni(android.content.Context)
+com.unity3d.player.UnityPlayer: boolean nativeRender()
+com.unity3d.player.UnityPlayer: void nativeSetInputString(java.lang.String)
+com.unity3d.player.UnityPlayer: void nativeSetInputCanceled(boolean)
+com.unity3d.player.UnityPlayer: boolean nativePause()
+com.unity3d.player.UnityPlayer: void nativeResume()
+com.unity3d.player.UnityPlayer: void nativeLowMemory()
+com.unity3d.player.UnityPlayer: void nativeFocusChanged(boolean)
+com.unity3d.player.UnityPlayer: void nativeRecreateGfxState(int,android.view.Surface)
+com.unity3d.player.UnityPlayer: void nativeDone()
+com.unity3d.player.UnityPlayer: void nativeSoftInputClosed()
+com.unity3d.player.UnityPlayer: void nativeInitWWW(java.lang.Class)
+com.unity3d.player.UnityPlayer: void nativeInitWebRequest(java.lang.Class)
+com.unity3d.player.UnityPlayer: boolean nativeInjectEvent(android.view.InputEvent)
+com.unity3d.player.UnityPlayer: void nativeMuteMasterAudio(boolean)
+com.unity3d.player.UnityPlayer: void a(android.content.pm.ApplicationInfo)
+com.unity3d.player.UnityPlayer: void g()
+com.unity3d.player.UnityPlayer: void showSoftInput(java.lang.String,int,boolean,boolean,boolean,boolean,java.lang.String)
+com.unity3d.player.UnityPlayer: void hideSoftInput()
+com.unity3d.player.UnityPlayer: void setSoftInputStr(java.lang.String)
+com.unity3d.player.UnityPlayer: void reportSoftInputStr(java.lang.String,int,boolean)
+com.unity3d.player.UnityPlayer: boolean initializeGoogleVr()
+com.unity3d.player.UnityPlayer: boolean showVideoPlayer(java.lang.String,int,int,int,boolean,int,int)
+com.unity3d.player.UnityPlayer: android.content.pm.ApplicationInfo h()
+com.unity3d.player.UnityPlayer: boolean i()
+com.unity3d.player.UnityPlayer: int getSplashMode()
+com.unity3d.player.UnityPlayer: void executeGLThreadJobs()
+com.unity3d.player.UnityPlayer: void disableLogger()
+com.unity3d.player.UnityPlayer: void b(java.lang.Runnable)
+com.unity3d.player.UnityPlayer: void a(com.unity3d.player.UnityPlayer$d)
+com.unity3d.player.UnityPlayer: boolean isFinishing()
+com.unity3d.player.UnityPlayer: void j()
+com.unity3d.player.UnityPlayer: boolean injectEvent(android.view.InputEvent)
+com.unity3d.player.UnityPlayer: boolean onKeyUp(int,android.view.KeyEvent)
+com.unity3d.player.UnityPlayer: boolean onKeyDown(int,android.view.KeyEvent)
+com.unity3d.player.UnityPlayer: boolean onKeyMultiple(int,int,android.view.KeyEvent)
+com.unity3d.player.UnityPlayer: boolean onKeyLongPress(int,android.view.KeyEvent)
+com.unity3d.player.UnityPlayer: boolean onTouchEvent(android.view.MotionEvent)
+com.unity3d.player.UnityPlayer: boolean onGenericMotionEvent(android.view.MotionEvent)
+com.unity3d.player.UnityPlayer: void a(android.view.View,android.view.View)
+com.unity3d.player.UnityPlayer: boolean addViewToPlayer(android.view.View,boolean)
+com.unity3d.player.UnityPlayer: void removeViewFromPlayer(android.view.View)
+com.unity3d.player.UnityPlayer: void reportError(java.lang.String,java.lang.String)
+com.unity3d.player.UnityPlayer: boolean a(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void b(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: boolean c(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void d(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void a(com.unity3d.player.UnityPlayer,boolean)
+com.unity3d.player.UnityPlayer: com.unity3d.player.j e(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void f(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: com.unity3d.player.h g(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: com.unity3d.player.h h(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void a(com.unity3d.player.UnityPlayer,android.view.Surface)
+com.unity3d.player.UnityPlayer: boolean i(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: android.view.SurfaceView j(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void k(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: boolean l(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: boolean m(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void n(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void o(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void b(com.unity3d.player.UnityPlayer,boolean)
+com.unity3d.player.UnityPlayer: android.content.Context p(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void q(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void a(com.unity3d.player.UnityPlayer,java.lang.String)
+com.unity3d.player.UnityPlayer: void r(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: android.view.SurfaceView s(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: com.unity3d.player.GoogleVrProxy t(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: com.unity3d.player.l u(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: com.unity3d.player.l a(com.unity3d.player.UnityPlayer,com.unity3d.player.l)
+com.unity3d.player.UnityPlayer: void v(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer: void <clinit>()
+com.unity3d.player.UnityPlayer$1
+com.unity3d.player.UnityPlayer$1: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$1: UnityPlayer$1(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$1: void run()
+com.unity3d.player.UnityPlayer$1$1
+com.unity3d.player.UnityPlayer$1$1: com.unity3d.player.UnityPlayer$1 a
+com.unity3d.player.UnityPlayer$1$1: UnityPlayer$1$1(com.unity3d.player.UnityPlayer$1)
+com.unity3d.player.UnityPlayer$1$1: void run()
+com.unity3d.player.UnityPlayer$10
+com.unity3d.player.UnityPlayer$10: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$10: UnityPlayer$10(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$10: void run()
+com.unity3d.player.UnityPlayer$11
+com.unity3d.player.UnityPlayer$11: java.lang.Runnable a
+com.unity3d.player.UnityPlayer$11: java.util.concurrent.Semaphore b
+com.unity3d.player.UnityPlayer$11: com.unity3d.player.UnityPlayer c
+com.unity3d.player.UnityPlayer$11: UnityPlayer$11(com.unity3d.player.UnityPlayer,java.lang.Runnable,java.util.concurrent.Semaphore)
+com.unity3d.player.UnityPlayer$11: void run()
+com.unity3d.player.UnityPlayer$12
+com.unity3d.player.UnityPlayer$12: java.util.concurrent.atomic.AtomicInteger a
+com.unity3d.player.UnityPlayer$12: java.util.concurrent.Semaphore b
+com.unity3d.player.UnityPlayer$12: java.lang.String c
+com.unity3d.player.UnityPlayer$12: int d
+com.unity3d.player.UnityPlayer$12: int e
+com.unity3d.player.UnityPlayer$12: int f
+com.unity3d.player.UnityPlayer$12: boolean g
+com.unity3d.player.UnityPlayer$12: int h
+com.unity3d.player.UnityPlayer$12: int i
+com.unity3d.player.UnityPlayer$12: com.unity3d.player.UnityPlayer j
+com.unity3d.player.UnityPlayer$12: UnityPlayer$12(com.unity3d.player.UnityPlayer,java.util.concurrent.atomic.AtomicInteger,java.util.concurrent.Semaphore,java.lang.String,int,int,int,boolean,int,int)
+com.unity3d.player.UnityPlayer$12: void run()
+com.unity3d.player.UnityPlayer$12$1
+com.unity3d.player.UnityPlayer$12$1: com.unity3d.player.UnityPlayer$12 a
+com.unity3d.player.UnityPlayer$12$1: UnityPlayer$12$1(com.unity3d.player.UnityPlayer$12)
+com.unity3d.player.UnityPlayer$12$1: void a(int)
+com.unity3d.player.UnityPlayer$13
+com.unity3d.player.UnityPlayer$13: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$13: UnityPlayer$13(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$13: void onClick(android.content.DialogInterface,int)
+com.unity3d.player.UnityPlayer$14
+com.unity3d.player.UnityPlayer$14: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$14: UnityPlayer$14(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$14: void run()
+com.unity3d.player.UnityPlayer$15
+com.unity3d.player.UnityPlayer$15: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$15: UnityPlayer$15(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$15: void run()
+com.unity3d.player.UnityPlayer$16
+com.unity3d.player.UnityPlayer$16: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$16: UnityPlayer$16(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$16: void run()
+com.unity3d.player.UnityPlayer$17
+com.unity3d.player.UnityPlayer$17: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$17: UnityPlayer$17(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$17: void surfaceCreated(android.view.SurfaceHolder)
+com.unity3d.player.UnityPlayer$17: void surfaceChanged(android.view.SurfaceHolder,int,int,int)
+com.unity3d.player.UnityPlayer$17: void surfaceDestroyed(android.view.SurfaceHolder)
+com.unity3d.player.UnityPlayer$18
+com.unity3d.player.UnityPlayer$18: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$18: UnityPlayer$18(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$18: void run()
+com.unity3d.player.UnityPlayer$19
+com.unity3d.player.UnityPlayer$19: java.util.concurrent.Semaphore a
+com.unity3d.player.UnityPlayer$19: com.unity3d.player.UnityPlayer b
+com.unity3d.player.UnityPlayer$19: UnityPlayer$19(com.unity3d.player.UnityPlayer,java.util.concurrent.Semaphore)
+com.unity3d.player.UnityPlayer$19: void run()
+com.unity3d.player.UnityPlayer$2
+com.unity3d.player.UnityPlayer$2: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$2: UnityPlayer$2(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$2: void run()
+com.unity3d.player.UnityPlayer$20
+com.unity3d.player.UnityPlayer$20: java.util.concurrent.Semaphore a
+com.unity3d.player.UnityPlayer$20: com.unity3d.player.UnityPlayer b
+com.unity3d.player.UnityPlayer$20: UnityPlayer$20(com.unity3d.player.UnityPlayer,java.util.concurrent.Semaphore)
+com.unity3d.player.UnityPlayer$20: void run()
+com.unity3d.player.UnityPlayer$21
+com.unity3d.player.UnityPlayer$21: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$21: UnityPlayer$21(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$21: void run()
+com.unity3d.player.UnityPlayer$3
+com.unity3d.player.UnityPlayer$3: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$3: void onReceive(android.content.Context,android.content.Intent)
+com.unity3d.player.UnityPlayer$4
+com.unity3d.player.UnityPlayer$4: boolean a
+com.unity3d.player.UnityPlayer$4: com.unity3d.player.UnityPlayer b
+com.unity3d.player.UnityPlayer$4: UnityPlayer$4(com.unity3d.player.UnityPlayer,boolean)
+com.unity3d.player.UnityPlayer$4: void run()
+com.unity3d.player.UnityPlayer$5
+com.unity3d.player.UnityPlayer$5: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$5: java.lang.String b
+com.unity3d.player.UnityPlayer$5: int c
+com.unity3d.player.UnityPlayer$5: boolean d
+com.unity3d.player.UnityPlayer$5: boolean e
+com.unity3d.player.UnityPlayer$5: boolean f
+com.unity3d.player.UnityPlayer$5: boolean g
+com.unity3d.player.UnityPlayer$5: java.lang.String h
+com.unity3d.player.UnityPlayer$5: com.unity3d.player.UnityPlayer i
+com.unity3d.player.UnityPlayer$5: UnityPlayer$5(com.unity3d.player.UnityPlayer,com.unity3d.player.UnityPlayer,java.lang.String,int,boolean,boolean,boolean,boolean,java.lang.String)
+com.unity3d.player.UnityPlayer$5: void run()
+com.unity3d.player.UnityPlayer$6
+com.unity3d.player.UnityPlayer$6: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$6: UnityPlayer$6(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$6: void run()
+com.unity3d.player.UnityPlayer$7
+com.unity3d.player.UnityPlayer$7: java.lang.Runnable a
+com.unity3d.player.UnityPlayer$7: com.unity3d.player.UnityPlayer b
+com.unity3d.player.UnityPlayer$7: UnityPlayer$7(com.unity3d.player.UnityPlayer,java.lang.Runnable)
+com.unity3d.player.UnityPlayer$7: void a()
+com.unity3d.player.UnityPlayer$8
+com.unity3d.player.UnityPlayer$8: java.lang.String a
+com.unity3d.player.UnityPlayer$8: com.unity3d.player.UnityPlayer b
+com.unity3d.player.UnityPlayer$8: UnityPlayer$8(com.unity3d.player.UnityPlayer,java.lang.String)
+com.unity3d.player.UnityPlayer$8: void run()
+com.unity3d.player.UnityPlayer$9
+com.unity3d.player.UnityPlayer$9: boolean a
+com.unity3d.player.UnityPlayer$9: java.lang.String b
+com.unity3d.player.UnityPlayer$9: int c
+com.unity3d.player.UnityPlayer$9: com.unity3d.player.UnityPlayer d
+com.unity3d.player.UnityPlayer$9: UnityPlayer$9(com.unity3d.player.UnityPlayer,boolean,java.lang.String,int)
+com.unity3d.player.UnityPlayer$9: void a()
+com.unity3d.player.UnityPlayer$a
+com.unity3d.player.UnityPlayer$a: com.unity3d.player.UnityPlayer a
+com.unity3d.player.UnityPlayer$a: UnityPlayer$a(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$a: void onCallStateChanged(int,java.lang.String)
+com.unity3d.player.UnityPlayer$a: UnityPlayer$a(com.unity3d.player.UnityPlayer,byte)
+com.unity3d.player.UnityPlayer$b
+com.unity3d.player.UnityPlayer$b: com.unity3d.player.UnityPlayer$b a
+com.unity3d.player.UnityPlayer$b: com.unity3d.player.UnityPlayer$b b
+com.unity3d.player.UnityPlayer$b: com.unity3d.player.UnityPlayer$b c
+com.unity3d.player.UnityPlayer$b: com.unity3d.player.UnityPlayer$b d
+com.unity3d.player.UnityPlayer$b: com.unity3d.player.UnityPlayer$b e
+com.unity3d.player.UnityPlayer$b: com.unity3d.player.UnityPlayer$b f
+com.unity3d.player.UnityPlayer$b: com.unity3d.player.UnityPlayer$b[] g
+com.unity3d.player.UnityPlayer$b: UnityPlayer$b(java.lang.String,int)
+com.unity3d.player.UnityPlayer$b: void <clinit>()
+com.unity3d.player.UnityPlayer$c
+com.unity3d.player.UnityPlayer$c: android.os.Handler a
+com.unity3d.player.UnityPlayer$c: boolean b
+com.unity3d.player.UnityPlayer$c: int c
+com.unity3d.player.UnityPlayer$c: com.unity3d.player.UnityPlayer d
+com.unity3d.player.UnityPlayer$c: UnityPlayer$c(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$c: void run()
+com.unity3d.player.UnityPlayer$c: void a()
+com.unity3d.player.UnityPlayer$c: void b()
+com.unity3d.player.UnityPlayer$c: void c()
+com.unity3d.player.UnityPlayer$c: void a(boolean)
+com.unity3d.player.UnityPlayer$c: void a(com.unity3d.player.UnityPlayer$b)
+com.unity3d.player.UnityPlayer$c: UnityPlayer$c(com.unity3d.player.UnityPlayer,byte)
+com.unity3d.player.UnityPlayer$c$1
+com.unity3d.player.UnityPlayer$c$1: com.unity3d.player.UnityPlayer$c a
+com.unity3d.player.UnityPlayer$c$1: UnityPlayer$c$1(com.unity3d.player.UnityPlayer$c)
+com.unity3d.player.UnityPlayer$c$1: boolean handleMessage(android.os.Message)
+com.unity3d.player.UnityPlayer$d
+com.unity3d.player.UnityPlayer$d: com.unity3d.player.UnityPlayer e
+com.unity3d.player.UnityPlayer$d: UnityPlayer$d(com.unity3d.player.UnityPlayer)
+com.unity3d.player.UnityPlayer$d: void run()
+com.unity3d.player.UnityPlayer$d: void a()
+com.unity3d.player.UnityPlayer$d: UnityPlayer$d(com.unity3d.player.UnityPlayer,byte)
+com.unity3d.player.UnityPlayerActivity
+com.unity3d.player.UnityPlayerActivity: com.unity3d.player.UnityPlayer mUnityPlayer
+com.unity3d.player.UnityPlayerActivity: UnityPlayerActivity()
+com.unity3d.player.UnityPlayerActivity: void onCreate(android.os.Bundle)
+com.unity3d.player.UnityPlayerActivity: void onNewIntent(android.content.Intent)
+com.unity3d.player.UnityPlayerActivity: void onDestroy()
+com.unity3d.player.UnityPlayerActivity: void onPause()
+com.unity3d.player.UnityPlayerActivity: void onResume()
+com.unity3d.player.UnityPlayerActivity: void onLowMemory()
+com.unity3d.player.UnityPlayerActivity: void onTrimMemory(int)
+com.unity3d.player.UnityPlayerActivity: void onConfigurationChanged(android.content.res.Configuration)
+com.unity3d.player.UnityPlayerActivity: void onWindowFocusChanged(boolean)
+com.unity3d.player.UnityPlayerActivity: boolean dispatchKeyEvent(android.view.KeyEvent)
+com.unity3d.player.UnityPlayerActivity: boolean onKeyUp(int,android.view.KeyEvent)
+com.unity3d.player.UnityPlayerActivity: boolean onKeyDown(int,android.view.KeyEvent)
+com.unity3d.player.UnityPlayerActivity: boolean onTouchEvent(android.view.MotionEvent)
+com.unity3d.player.UnityPlayerActivity: boolean onGenericMotionEvent(android.view.MotionEvent)
+com.unity3d.player.UnityPlayerNativeActivity
+com.unity3d.player.UnityPlayerNativeActivity: UnityPlayerNativeActivity()
+com.unity3d.player.UnityPlayerNativeActivity: void onCreate(android.os.Bundle)
+com.unity3d.player.UnityPlayerProxyActivity
+com.unity3d.player.UnityPlayerProxyActivity: UnityPlayerProxyActivity()
+com.unity3d.player.UnityPlayerProxyActivity: void onCreate(android.os.Bundle)
+com.unity3d.player.UnityWebRequest
+com.unity3d.player.UnityWebRequest: long a
+com.unity3d.player.UnityWebRequest: java.lang.String b
+com.unity3d.player.UnityWebRequest: java.lang.String c
+com.unity3d.player.UnityWebRequest: java.util.Map d
+com.unity3d.player.UnityWebRequest: int e
+com.unity3d.player.UnityWebRequest: long f
+com.unity3d.player.UnityWebRequest: UnityWebRequest(long,java.lang.String,java.util.Map,java.lang.String,int)
+com.unity3d.player.UnityWebRequest: boolean hasTimedOut()
+com.unity3d.player.UnityWebRequest: void run()
+com.unity3d.player.UnityWebRequest: void headerCallback(long,java.lang.String,java.lang.String)
+com.unity3d.player.UnityWebRequest: void headerCallback(java.lang.String,java.lang.String)
+com.unity3d.player.UnityWebRequest: void headerCallback(java.util.Map)
+com.unity3d.player.UnityWebRequest: int uploadCallback(long,java.nio.ByteBuffer)
+com.unity3d.player.UnityWebRequest: int uploadCallback(java.nio.ByteBuffer)
+com.unity3d.player.UnityWebRequest: void contentLengthCallback(long,int)
+com.unity3d.player.UnityWebRequest: void contentLengthCallback(int)
+com.unity3d.player.UnityWebRequest: boolean downloadCallback(long,java.nio.ByteBuffer,int)
+com.unity3d.player.UnityWebRequest: boolean downloadCallback(java.nio.ByteBuffer,int)
+com.unity3d.player.UnityWebRequest: void responseCodeCallback(int)
+com.unity3d.player.UnityWebRequest: void responseCodeCallback(long,int)
+com.unity3d.player.UnityWebRequest: void unknownHostCallback(java.lang.String)
+com.unity3d.player.UnityWebRequest: void badProtocolCallback(java.lang.String)
+com.unity3d.player.UnityWebRequest: void malformattedUrlCallback(java.lang.String)
+com.unity3d.player.UnityWebRequest: void sslCannotConnectCallback(javax.net.ssl.SSLException)
+com.unity3d.player.UnityWebRequest: void errorCallback(java.lang.String)
+com.unity3d.player.UnityWebRequest: void errorCallback(long,int,java.lang.String)
+com.unity3d.player.WWW
+com.unity3d.player.WWW: int a
+com.unity3d.player.WWW: int b
+com.unity3d.player.WWW: java.lang.String c
+com.unity3d.player.WWW: byte[] d
+com.unity3d.player.WWW: java.util.Map e
+com.unity3d.player.WWW: WWW(int,java.lang.String,byte[],java.util.Map)
+com.unity3d.player.WWW: void run()
+com.unity3d.player.WWW: void runSafe()
+com.unity3d.player.WWW: boolean headerCallback(int,java.lang.String)
+com.unity3d.player.WWW: boolean headerCallback(java.util.Map)
+com.unity3d.player.WWW: boolean headerCallback(java.lang.String,java.lang.String)
+com.unity3d.player.WWW: boolean readCallback(int,byte[],int)
+com.unity3d.player.WWW: boolean readCallback(byte[],int)
+com.unity3d.player.WWW: void progressCallback(int,float,float,double,int)
+com.unity3d.player.WWW: void progressCallback(int,int,int,int,long,long)
+com.unity3d.player.WWW: void errorCallback(int,java.lang.String)
+com.unity3d.player.WWW: void doneCallback(int)
+com.unity3d.player.a
+com.unity3d.player.a: javax.net.ssl.SSLSocketFactory a
+com.unity3d.player.a: com.unity3d.player.a$a b
+com.unity3d.player.a: javax.net.ssl.SSLSocketFactory c
+com.unity3d.player.a: java.lang.Object[] d
+com.unity3d.player.a: boolean e
+com.unity3d.player.a: a()
+com.unity3d.player.a: javax.net.ssl.SSLSocketFactory a()
+com.unity3d.player.a: java.net.Socket createSocket(java.net.Socket,java.lang.String,int,boolean)
+com.unity3d.player.a: java.net.Socket createSocket(java.lang.String,int)
+com.unity3d.player.a: java.net.Socket createSocket(java.net.InetAddress,int)
+com.unity3d.player.a: java.net.Socket createSocket(java.net.InetAddress,int,java.net.InetAddress,int)
+com.unity3d.player.a: java.net.Socket createSocket(java.lang.String,int,java.net.InetAddress,int)
+com.unity3d.player.a: java.net.Socket createSocket()
+com.unity3d.player.a: java.net.Socket a(java.net.Socket)
+com.unity3d.player.a: java.lang.String[] getDefaultCipherSuites()
+com.unity3d.player.a: java.lang.String[] getSupportedCipherSuites()
+com.unity3d.player.a: void <clinit>()
+com.unity3d.player.a$a
+com.unity3d.player.a$a: com.unity3d.player.a a
+com.unity3d.player.a$a: a$a(com.unity3d.player.a)
+com.unity3d.player.a$a: void handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)
+com.unity3d.player.b
+com.unity3d.player.b: void a(android.app.Activity,java.lang.Runnable)
+com.unity3d.player.c
+com.unity3d.player.c: boolean addViewToPlayer(android.view.View,boolean)
+com.unity3d.player.c: void removeViewFromPlayer(android.view.View)
+com.unity3d.player.c: void reportError(java.lang.String,java.lang.String)
+com.unity3d.player.d
+com.unity3d.player.d: boolean a
+com.unity3d.player.d: void Log(int,java.lang.String)
+com.unity3d.player.d: void <clinit>()
+com.unity3d.player.e
+com.unity3d.player.e: e()
+com.unity3d.player.e: boolean a(android.content.pm.PackageItemInfo)
+com.unity3d.player.e: void a(android.app.Activity,java.lang.Runnable)
+com.unity3d.player.e$1
+com.unity3d.player.e$1: java.util.List a
+com.unity3d.player.e$1: android.app.FragmentManager b
+com.unity3d.player.e$1: java.lang.Runnable c
+com.unity3d.player.e$1: com.unity3d.player.e d
+com.unity3d.player.e$1: e$1(com.unity3d.player.e,java.util.List,android.app.FragmentManager,java.lang.Runnable)
+com.unity3d.player.e$1: void onCreate(android.os.Bundle)
+com.unity3d.player.e$1: void onRequestPermissionsResult(int,java.lang.String[],int[])
+com.unity3d.player.f
+com.unity3d.player.f: boolean a
+com.unity3d.player.f: boolean b
+com.unity3d.player.f: boolean c
+com.unity3d.player.f: com.unity3d.player.b d
+com.unity3d.player.f: void <clinit>()
+com.unity3d.player.g
+com.unity3d.player.g: android.content.Context a
+com.unity3d.player.g: com.unity3d.player.UnityPlayer b
+com.unity3d.player.g: int c
+com.unity3d.player.g: int d
+com.unity3d.player.g: int e
+com.unity3d.player.g: int f
+com.unity3d.player.g: g(android.content.Context,com.unity3d.player.UnityPlayer,java.lang.String,int,boolean,boolean,boolean,java.lang.String)
+com.unity3d.player.g: void a(android.widget.EditText,java.lang.String,int,boolean,boolean,boolean,java.lang.String)
+com.unity3d.player.g: void afterTextChanged(android.text.Editable)
+com.unity3d.player.g: void beforeTextChanged(java.lang.CharSequence,int,int,int)
+com.unity3d.player.g: void onTextChanged(java.lang.CharSequence,int,int,int)
+com.unity3d.player.g: int a(int,boolean,boolean,boolean)
+com.unity3d.player.g: void a(java.lang.String,boolean)
+com.unity3d.player.g: void onClick(android.view.View)
+com.unity3d.player.g: void onBackPressed()
+com.unity3d.player.g: android.view.View createSoftInputView()
+com.unity3d.player.g: java.lang.String a()
+com.unity3d.player.g: void a(java.lang.String)
+com.unity3d.player.g: java.lang.String a(com.unity3d.player.g)
+com.unity3d.player.g: void a(com.unity3d.player.g,java.lang.String,boolean)
+com.unity3d.player.g: android.content.Context b(com.unity3d.player.g)
+com.unity3d.player.g: void <clinit>()
+com.unity3d.player.g$1
+com.unity3d.player.g$1: com.unity3d.player.g a
+com.unity3d.player.g$1: g$1(com.unity3d.player.g)
+com.unity3d.player.g$1: void onFocusChange(android.view.View,boolean)
+com.unity3d.player.g$2
+com.unity3d.player.g$2: com.unity3d.player.g a
+com.unity3d.player.g$2: g$2(com.unity3d.player.g,android.content.Context)
+com.unity3d.player.g$2: boolean onKeyPreIme(int,android.view.KeyEvent)
+com.unity3d.player.g$2: void onWindowFocusChanged(boolean)
+com.unity3d.player.g$3
+com.unity3d.player.g$3: com.unity3d.player.g a
+com.unity3d.player.g$3: g$3(com.unity3d.player.g)
+com.unity3d.player.g$3: boolean onEditorAction(android.widget.TextView,int,android.view.KeyEvent)
+com.unity3d.player.h
+com.unity3d.player.h: int a
+com.unity3d.player.h: int b
+com.unity3d.player.h: android.graphics.Bitmap c
+com.unity3d.player.h: android.graphics.Bitmap d
+com.unity3d.player.h: h(android.content.Context,int)
+com.unity3d.player.h: void a()
+com.unity3d.player.h: void onLayout(boolean,int,int,int,int)
+com.unity3d.player.h$1
+com.unity3d.player.h$1: int[] a
+com.unity3d.player.h$1: void <clinit>()
+com.unity3d.player.h$a
+com.unity3d.player.h$a: int a
+com.unity3d.player.h$a: int b
+com.unity3d.player.h$a: int c
+com.unity3d.player.h$a: int[] d
+com.unity3d.player.h$a: int[] a()
+com.unity3d.player.h$a: void <clinit>()
+com.unity3d.player.i
+com.unity3d.player.i: java.lang.Thread$UncaughtExceptionHandler a
+com.unity3d.player.i: i()
+com.unity3d.player.i: boolean a()
+com.unity3d.player.i: void uncaughtException(java.lang.Thread,java.lang.Throwable)
+com.unity3d.player.j
+com.unity3d.player.j: boolean a
+com.unity3d.player.j: boolean b
+com.unity3d.player.j: boolean c
+com.unity3d.player.j: boolean d
+com.unity3d.player.j: boolean e
+com.unity3d.player.j: j()
+com.unity3d.player.j: void a()
+com.unity3d.player.j: void b()
+com.unity3d.player.j: boolean c()
+com.unity3d.player.j: void d()
+com.unity3d.player.j: void a(boolean)
+com.unity3d.player.j: void b(boolean)
+com.unity3d.player.j: boolean e()
+com.unity3d.player.j: void c(boolean)
+com.unity3d.player.j: boolean f()
+com.unity3d.player.j: boolean g()
+com.unity3d.player.j: java.lang.String toString()
+com.unity3d.player.j: void <clinit>()
+com.unity3d.player.k
+com.unity3d.player.k: java.util.HashMap a
+com.unity3d.player.k: java.lang.Class b
+com.unity3d.player.k: java.lang.Object c
+com.unity3d.player.k: k(java.lang.Class,java.lang.Object)
+com.unity3d.player.k: void a(java.lang.String,java.lang.Class[])
+com.unity3d.player.k: void a(java.lang.String,com.unity3d.player.k$a)
+com.unity3d.player.k: java.lang.Object a(java.lang.String,java.lang.Object[])
+com.unity3d.player.k$a
+com.unity3d.player.k$a: java.lang.Class[] a
+com.unity3d.player.k$a: java.lang.reflect.Method b
+com.unity3d.player.k$a: com.unity3d.player.k c
+com.unity3d.player.k$a: k$a(com.unity3d.player.k,java.lang.Class[])
+com.unity3d.player.l
+com.unity3d.player.l: boolean a
+com.unity3d.player.l: android.content.Context b
+com.unity3d.player.l: android.view.SurfaceView c
+com.unity3d.player.l: android.view.SurfaceHolder d
+com.unity3d.player.l: java.lang.String e
+com.unity3d.player.l: int f
+com.unity3d.player.l: int g
+com.unity3d.player.l: boolean h
+com.unity3d.player.l: long i
+com.unity3d.player.l: long j
+com.unity3d.player.l: android.widget.FrameLayout k
+com.unity3d.player.l: android.view.Display l
+com.unity3d.player.l: int m
+com.unity3d.player.l: int n
+com.unity3d.player.l: int o
+com.unity3d.player.l: int p
+com.unity3d.player.l: android.media.MediaPlayer q
+com.unity3d.player.l: android.widget.MediaController r
+com.unity3d.player.l: boolean s
+com.unity3d.player.l: boolean t
+com.unity3d.player.l: int u
+com.unity3d.player.l: boolean v
+com.unity3d.player.l: boolean w
+com.unity3d.player.l: com.unity3d.player.l$a x
+com.unity3d.player.l: com.unity3d.player.l$b y
+com.unity3d.player.l: int z
+com.unity3d.player.l: void b(java.lang.String)
+com.unity3d.player.l: l(android.content.Context,java.lang.String,int,int,int,boolean,long,long,com.unity3d.player.l$a)
+com.unity3d.player.l: boolean a()
+com.unity3d.player.l: void a(int)
+com.unity3d.player.l: void destroyPlayer()
+com.unity3d.player.l: void c()
+com.unity3d.player.l: void CancelOnPrepare()
+com.unity3d.player.l: boolean onKeyDown(int,android.view.KeyEvent)
+com.unity3d.player.l: boolean onTouchEvent(android.view.MotionEvent)
+com.unity3d.player.l: void onBufferingUpdate(android.media.MediaPlayer,int)
+com.unity3d.player.l: void onCompletion(android.media.MediaPlayer)
+com.unity3d.player.l: void onVideoSizeChanged(android.media.MediaPlayer,int,int)
+com.unity3d.player.l: void onPrepared(android.media.MediaPlayer)
+com.unity3d.player.l: void surfaceChanged(android.view.SurfaceHolder,int,int,int)
+com.unity3d.player.l: void surfaceDestroyed(android.view.SurfaceHolder)
+com.unity3d.player.l: void surfaceCreated(android.view.SurfaceHolder)
+com.unity3d.player.l: void doCleanUp()
+com.unity3d.player.l: void d()
+com.unity3d.player.l: void updateVideoLayout()
+com.unity3d.player.l: boolean canPause()
+com.unity3d.player.l: boolean canSeekBackward()
+com.unity3d.player.l: boolean canSeekForward()
+com.unity3d.player.l: int getBufferPercentage()
+com.unity3d.player.l: int getCurrentPosition()
+com.unity3d.player.l: int getDuration()
+com.unity3d.player.l: boolean isPlaying()
+com.unity3d.player.l: void pause()
+com.unity3d.player.l: void seekTo(int)
+com.unity3d.player.l: void start()
+com.unity3d.player.l: boolean b()
+com.unity3d.player.l: void a(java.lang.String)
+com.unity3d.player.l: void <clinit>()
+com.unity3d.player.l$a
+com.unity3d.player.l$a: void a(int)
+com.unity3d.player.l$b
+com.unity3d.player.l$b: com.unity3d.player.l b
+com.unity3d.player.l$b: boolean c
+com.unity3d.player.l$b: com.unity3d.player.l a
+com.unity3d.player.l$b: l$b(com.unity3d.player.l,com.unity3d.player.l)
+com.unity3d.player.l$b: void run()
+com.unity3d.player.l$b: void a()
+com.vuforia.Area
+com.vuforia.Area: long swigCPtr
+com.vuforia.Area: boolean equals(java.lang.Object)
+com.vuforia.Area: int getType()
+com.vuforia.Area$TYPE
+com.vuforia.Area$TYPE: int RECTANGLE
+com.vuforia.Area$TYPE: int RECTANGLE_INT
+com.vuforia.Area$TYPE: int INVALID
+com.vuforia.Area$TYPE: Area$TYPE()
+com.vuforia.Box3D
+com.vuforia.Box3D: long swigCPtr
+com.vuforia.Box3D: boolean equals(java.lang.Object)
+com.vuforia.Box3D: Box3D()
+com.vuforia.Box3D: Box3D(com.vuforia.Box3D)
+com.vuforia.Box3D: Box3D(com.vuforia.Vec3F,com.vuforia.Vec3F)
+com.vuforia.Box3D: com.vuforia.Vec3F getMinimumPosition()
+com.vuforia.Box3D: com.vuforia.Vec3F getMaximumPosition()
+com.vuforia.COORDINATE_SYSTEM_TYPE
+com.vuforia.COORDINATE_SYSTEM_TYPE: int COORDINATE_SYSTEM_UNKNOWN
+com.vuforia.COORDINATE_SYSTEM_TYPE: int COORDINATE_SYSTEM_CAMERA
+com.vuforia.COORDINATE_SYSTEM_TYPE: int COORDINATE_SYSTEM_WORLD
+com.vuforia.COORDINATE_SYSTEM_TYPE: COORDINATE_SYSTEM_TYPE()
+com.vuforia.CameraCalibration
+com.vuforia.CameraCalibration: long swigCPtr
+com.vuforia.CameraCalibration: boolean equals(java.lang.Object)
+com.vuforia.CameraCalibration: com.vuforia.Vec2F getSize()
+com.vuforia.CameraCalibration: com.vuforia.Vec2F getFocalLength()
+com.vuforia.CameraCalibration: com.vuforia.Vec2F getPrincipalPoint()
+com.vuforia.CameraCalibration: com.vuforia.Vec4F getDistortionParameters()
+com.vuforia.CameraCalibration: com.vuforia.Vec2F getFieldOfViewRads()
+com.vuforia.CameraDevice
+com.vuforia.CameraDevice: long swigCPtr
+com.vuforia.CameraDevice: boolean equals(java.lang.Object)
+com.vuforia.CameraDevice: com.vuforia.CameraDevice getInstance()
+com.vuforia.CameraDevice: boolean init(int)
+com.vuforia.CameraDevice: boolean init()
+com.vuforia.CameraDevice: boolean deinit()
+com.vuforia.CameraDevice: boolean start()
+com.vuforia.CameraDevice: boolean stop()
+com.vuforia.CameraDevice: int getNumVideoModes()
+com.vuforia.CameraDevice: com.vuforia.VideoMode getVideoMode(int)
+com.vuforia.CameraDevice: int getCameraDirection()
+com.vuforia.CameraDevice: boolean selectVideoMode(int)
+com.vuforia.CameraDevice: com.vuforia.CameraCalibration getCameraCalibration()
+com.vuforia.CameraDevice: boolean setFlashTorchMode(boolean)
+com.vuforia.CameraDevice: boolean setFocusMode(int)
+com.vuforia.CameraDevice: boolean setField(java.lang.String,java.lang.String)
+com.vuforia.CameraDevice: boolean setField(java.lang.String,long)
+com.vuforia.CameraDevice: boolean setField(java.lang.String,float)
+com.vuforia.CameraDevice: boolean setField(java.lang.String,boolean)
+com.vuforia.CameraDevice: boolean setField(java.lang.String,long[])
+com.vuforia.CameraDevice: int getNumFields()
+com.vuforia.CameraDevice: boolean getCameraField(int,com.vuforia.CameraField)
+com.vuforia.CameraDevice: boolean getFieldString(java.lang.String,java.lang.String,long)
+com.vuforia.CameraDevice: boolean getFieldInt64(java.lang.String,long[])
+com.vuforia.CameraDevice: boolean getFieldFloat(java.lang.String,float[])
+com.vuforia.CameraDevice: boolean getFieldBool(java.lang.String,boolean[])
+com.vuforia.CameraDevice: boolean getFieldInt64Range(java.lang.String,long[])
+com.vuforia.CameraDevice$CAMERA_DIRECTION
+com.vuforia.CameraDevice$CAMERA_DIRECTION: int CAMERA_DIRECTION_DEFAULT
+com.vuforia.CameraDevice$CAMERA_DIRECTION: int CAMERA_DIRECTION_BACK
+com.vuforia.CameraDevice$CAMERA_DIRECTION: int CAMERA_DIRECTION_FRONT
+com.vuforia.CameraDevice$CAMERA_DIRECTION: CameraDevice$CAMERA_DIRECTION()
+com.vuforia.CameraDevice$FOCUS_MODE
+com.vuforia.CameraDevice$FOCUS_MODE: int FOCUS_MODE_NORMAL
+com.vuforia.CameraDevice$FOCUS_MODE: int FOCUS_MODE_TRIGGERAUTO
+com.vuforia.CameraDevice$FOCUS_MODE: int FOCUS_MODE_CONTINUOUSAUTO
+com.vuforia.CameraDevice$FOCUS_MODE: int FOCUS_MODE_INFINITY
+com.vuforia.CameraDevice$FOCUS_MODE: int FOCUS_MODE_MACRO
+com.vuforia.CameraDevice$FOCUS_MODE: CameraDevice$FOCUS_MODE()
+com.vuforia.CameraDevice$MODE
+com.vuforia.CameraDevice$MODE: int MODE_DEFAULT
+com.vuforia.CameraDevice$MODE: int MODE_OPTIMIZE_SPEED
+com.vuforia.CameraDevice$MODE: int MODE_OPTIMIZE_QUALITY
+com.vuforia.CameraDevice$MODE: CameraDevice$MODE()
+com.vuforia.CameraField
+com.vuforia.CameraField: long swigCPtr
+com.vuforia.CameraField: boolean equals(java.lang.Object)
+com.vuforia.CameraField: CameraField()
+com.vuforia.CameraField: int getType()
+com.vuforia.CameraField: java.lang.String getKey()
+com.vuforia.CameraField$DataType
+com.vuforia.CameraField$DataType: int TypeString
+com.vuforia.CameraField$DataType: int TypeInt64
+com.vuforia.CameraField$DataType: int TypeFloat
+com.vuforia.CameraField$DataType: int TypeBool
+com.vuforia.CameraField$DataType: int TypeInt64Range
+com.vuforia.CameraField$DataType: int TypeUnknown
+com.vuforia.CameraField$DataType: CameraField$DataType()
+com.vuforia.CustomViewerParameters
+com.vuforia.CustomViewerParameters: long swigCPtr
+com.vuforia.CustomViewerParameters: boolean equals(java.lang.Object)
+com.vuforia.CustomViewerParameters: CustomViewerParameters(float,java.lang.String,java.lang.String)
+com.vuforia.CustomViewerParameters: CustomViewerParameters(com.vuforia.CustomViewerParameters)
+com.vuforia.CustomViewerParameters: void setButtonType(int)
+com.vuforia.CustomViewerParameters: void setScreenToLensDistance(float)
+com.vuforia.CustomViewerParameters: void setInterLensDistance(float)
+com.vuforia.CustomViewerParameters: void setTrayAlignment(int)
+com.vuforia.CustomViewerParameters: void setLensCentreToTrayDistance(float)
+com.vuforia.CustomViewerParameters: void clearDistortionCoefficients()
+com.vuforia.CustomViewerParameters: void addDistortionCoefficient(float)
+com.vuforia.CustomViewerParameters: void setFieldOfView(com.vuforia.Vec4F)
+com.vuforia.CustomViewerParameters: void setContainsMagnet(boolean)
+com.vuforia.CylinderTarget
+com.vuforia.CylinderTarget: long swigCPtr
+com.vuforia.CylinderTarget: boolean equals(java.lang.Object)
+com.vuforia.CylinderTarget: com.vuforia.Type getClassType()
+com.vuforia.CylinderTarget: float getSideLength()
+com.vuforia.CylinderTarget: boolean setSideLength(float)
+com.vuforia.CylinderTarget: float getTopDiameter()
+com.vuforia.CylinderTarget: boolean setTopDiameter(float)
+com.vuforia.CylinderTarget: float getBottomDiameter()
+com.vuforia.CylinderTarget: boolean setBottomDiameter(float)
+com.vuforia.CylinderTargetResult
+com.vuforia.CylinderTargetResult: long swigCPtr
+com.vuforia.CylinderTargetResult: boolean equals(java.lang.Object)
+com.vuforia.CylinderTargetResult: com.vuforia.Type getClassType()
+com.vuforia.CylinderTargetResult: com.vuforia.Trackable getTrackable()
+com.vuforia.DataSet
+com.vuforia.DataSet: long swigCPtr
+com.vuforia.DataSet: boolean equals(java.lang.Object)
+com.vuforia.DataSet: boolean exists(java.lang.String,int)
+com.vuforia.DataSet: boolean load(java.lang.String,int)
+com.vuforia.DataSet: int getNumTrackables()
+com.vuforia.DataSet: com.vuforia.Trackable getTrackable(int)
+com.vuforia.DataSet: com.vuforia.Trackable createTrackable(com.vuforia.TrackableSource)
+com.vuforia.DataSet: com.vuforia.MultiTarget createMultiTarget(java.lang.String)
+com.vuforia.DataSet: boolean destroy(com.vuforia.Trackable)
+com.vuforia.DataSet: boolean hasReachedTrackableLimit()
+com.vuforia.DataSet: boolean isActive()
+com.vuforia.Device
+com.vuforia.Device: long swigCPtr
+com.vuforia.Device: boolean equals(java.lang.Object)
+com.vuforia.Device: com.vuforia.Device getInstance()
+com.vuforia.Device: com.vuforia.Type getClassType()
+com.vuforia.Device: com.vuforia.Type getType()
+com.vuforia.Device: boolean isOfType(com.vuforia.Type)
+com.vuforia.Device: boolean setMode(int)
+com.vuforia.Device: int getMode()
+com.vuforia.Device: void setViewerActive(boolean)
+com.vuforia.Device: boolean isViewerActive()
+com.vuforia.Device: com.vuforia.ViewerParametersList getViewerList()
+com.vuforia.Device: boolean selectViewer(com.vuforia.ViewerParameters)
+com.vuforia.Device: com.vuforia.ViewerParameters getSelectedViewer()
+com.vuforia.Device: void setConfigurationChanged()
+com.vuforia.Device: com.vuforia.RenderingPrimitives getRenderingPrimitives()
+com.vuforia.Device$MODE
+com.vuforia.Device$MODE: int MODE_AR
+com.vuforia.Device$MODE: int MODE_VR
+com.vuforia.Device$MODE: Device$MODE()
+com.vuforia.DeviceTrackable
+com.vuforia.DeviceTrackable: long swigCPtr
+com.vuforia.DeviceTrackable: boolean equals(java.lang.Object)
+com.vuforia.DeviceTrackable: com.vuforia.Type getClassType()
+com.vuforia.DeviceTrackableResult
+com.vuforia.DeviceTrackableResult: long swigCPtr
+com.vuforia.DeviceTrackableResult: boolean equals(java.lang.Object)
+com.vuforia.DeviceTrackableResult: com.vuforia.Type getClassType()
+com.vuforia.DeviceTrackableResult: com.vuforia.Trackable getTrackable()
+com.vuforia.DeviceTracker
+com.vuforia.DeviceTracker: long swigCPtr
+com.vuforia.DeviceTracker: boolean equals(java.lang.Object)
+com.vuforia.DeviceTracker: com.vuforia.Type getClassType()
+com.vuforia.DeviceTracker: boolean setWorldToDeviceBaseTransform(com.vuforia.Matrix34F)
+com.vuforia.DeviceTracker: com.vuforia.Matrix34F getWorldToDeviceBaseTransform()
+com.vuforia.EYEID
+com.vuforia.EYEID: int EYEID_MONOCULAR
+com.vuforia.EYEID: int EYEID_LEFT
+com.vuforia.EYEID: int EYEID_RIGHT
+com.vuforia.EYEID: int EYEID_COUNT
+com.vuforia.EYEID: EYEID()
+com.vuforia.EyewearCalibrationProfileManager
+com.vuforia.EyewearCalibrationProfileManager: long swigCPtr
+com.vuforia.EyewearCalibrationProfileManager: boolean equals(java.lang.Object)
+com.vuforia.EyewearCalibrationProfileManager: long getMaxCount()
+com.vuforia.EyewearCalibrationProfileManager: long getUsedCount()
+com.vuforia.EyewearCalibrationProfileManager: boolean isProfileUsed(int)
+com.vuforia.EyewearCalibrationProfileManager: int getActiveProfile()
+com.vuforia.EyewearCalibrationProfileManager: boolean setActiveProfile(int)
+com.vuforia.EyewearCalibrationProfileManager: com.vuforia.Matrix34F getCameraToEyePose(int,int)
+com.vuforia.EyewearCalibrationProfileManager: com.vuforia.Matrix34F getEyeProjection(int,int)
+com.vuforia.EyewearCalibrationProfileManager: boolean setCameraToEyePose(int,int,com.vuforia.Matrix34F)
+com.vuforia.EyewearCalibrationProfileManager: boolean setEyeProjection(int,int,com.vuforia.Matrix34F)
+com.vuforia.EyewearCalibrationProfileManager: java.lang.String getProfileName(int)
+com.vuforia.EyewearCalibrationProfileManager: boolean setProfileName(int,java.lang.String)
+com.vuforia.EyewearCalibrationProfileManager: boolean clearProfile(int)
+com.vuforia.EyewearCalibrationReading
+com.vuforia.EyewearCalibrationReading: long swigCPtr
+com.vuforia.EyewearCalibrationReading: void setPose(com.vuforia.Matrix34F)
+com.vuforia.EyewearCalibrationReading: com.vuforia.Matrix34F getPose()
+com.vuforia.EyewearCalibrationReading: void setScale(float)
+com.vuforia.EyewearCalibrationReading: float getScale()
+com.vuforia.EyewearCalibrationReading: void setCenterX(float)
+com.vuforia.EyewearCalibrationReading: float getCenterX()
+com.vuforia.EyewearCalibrationReading: void setCenterY(float)
+com.vuforia.EyewearCalibrationReading: float getCenterY()
+com.vuforia.EyewearCalibrationReading: EyewearCalibrationReading()
+com.vuforia.EyewearDevice
+com.vuforia.EyewearDevice: long swigCPtr
+com.vuforia.EyewearDevice: boolean equals(java.lang.Object)
+com.vuforia.EyewearDevice: com.vuforia.Type getClassType()
+com.vuforia.EyewearDevice: boolean isSeeThru()
+com.vuforia.EyewearDevice: boolean isDualDisplay()
+com.vuforia.EyewearDevice: boolean setDisplayExtended(boolean)
+com.vuforia.EyewearDevice: boolean isDisplayExtended()
+com.vuforia.EyewearDevice: boolean isDisplayExtendedGLOnly()
+com.vuforia.EyewearDevice: int getScreenOrientation()
+com.vuforia.EyewearDevice: boolean setPredictiveTracking(boolean)
+com.vuforia.EyewearDevice: boolean isPredictiveTrackingEnabled()
+com.vuforia.EyewearDevice: com.vuforia.EyewearCalibrationProfileManager getCalibrationProfileManager()
+com.vuforia.EyewearDevice: com.vuforia.EyewearUserCalibrator getUserCalibrator()
+com.vuforia.EyewearDevice$ORIENTATION
+com.vuforia.EyewearDevice$ORIENTATION: int ORIENTATION_UNDEFINED
+com.vuforia.EyewearDevice$ORIENTATION: int ORIENTATION_PORTRAIT
+com.vuforia.EyewearDevice$ORIENTATION: int ORIENTATION_LANDSCAPE_LEFT
+com.vuforia.EyewearDevice$ORIENTATION: int ORIENTATION_LANDSCAPE_RIGHT
+com.vuforia.EyewearDevice$ORIENTATION: EyewearDevice$ORIENTATION()
+com.vuforia.EyewearUserCalibrator
+com.vuforia.EyewearUserCalibrator: long swigCPtr
+com.vuforia.EyewearUserCalibrator: boolean getProjectionMatrix(com.vuforia.EyewearCalibrationReading[],com.vuforia.Matrix34F,com.vuforia.Matrix34F)
+com.vuforia.EyewearUserCalibrator: int getProjectionMatrices(com.vuforia.EyewearCalibrationReading[],com.vuforia.EyewearCalibrationReading[],com.vuforia.Matrix34F,com.vuforia.Matrix34F,com.vuforia.Matrix34F,com.vuforia.Matrix34F)
+com.vuforia.EyewearUserCalibrator: boolean init(long,long,float,float)
+com.vuforia.EyewearUserCalibrator: float getMinScaleHint()
+com.vuforia.EyewearUserCalibrator: float getMaxScaleHint()
+com.vuforia.EyewearUserCalibrator: float getDrawingAspectRatio(long,long)
+com.vuforia.EyewearUserCalibrator: boolean isStereoStretched()
+com.vuforia.EyewearUserCalibrator: boolean getProjectionMatrix(com.vuforia.EyewearCalibrationReading[],int,com.vuforia.Matrix34F,com.vuforia.Matrix34F)
+com.vuforia.EyewearUserCalibrator: int getProjectionMatrices(com.vuforia.EyewearCalibrationReading[],int,com.vuforia.EyewearCalibrationReading[],int,com.vuforia.Matrix34F,com.vuforia.Matrix34F,com.vuforia.Matrix34F,com.vuforia.Matrix34F)
+com.vuforia.EyewearUserCalibrator$CONSISTENCY
+com.vuforia.EyewearUserCalibrator$CONSISTENCY: int NONE
+com.vuforia.EyewearUserCalibrator$CONSISTENCY: int VERY_BAD
+com.vuforia.EyewearUserCalibrator$CONSISTENCY: int BAD
+com.vuforia.EyewearUserCalibrator$CONSISTENCY: int OK
+com.vuforia.EyewearUserCalibrator$CONSISTENCY: int GOOD
+com.vuforia.EyewearUserCalibrator$CONSISTENCY: int CONSISTENCY_LEN
+com.vuforia.EyewearUserCalibrator$CONSISTENCY: EyewearUserCalibrator$CONSISTENCY()
+com.vuforia.Frame
+com.vuforia.Frame: long swigCPtr
+com.vuforia.Frame: com.vuforia.Frame clone()
+com.vuforia.Frame: boolean equals(java.lang.Object)
+com.vuforia.Frame: Frame()
+com.vuforia.Frame: Frame(com.vuforia.Frame)
+com.vuforia.Frame: double getTimeStamp()
+com.vuforia.Frame: int getIndex()
+com.vuforia.Frame: long getNumImages()
+com.vuforia.Frame: com.vuforia.Image getImage(int)
+com.vuforia.Frame: java.lang.Object clone()
+com.vuforia.GLTextureData
+com.vuforia.GLTextureData: long swigCPtr
+com.vuforia.GLTextureData: boolean equals(java.lang.Object)
+com.vuforia.GLTextureData: GLTextureData(int)
+com.vuforia.GLTextureData: GLTextureData()
+com.vuforia.GLTextureData: void setVideoBackgroundTextureID(int)
+com.vuforia.GLTextureData: int getVideoBackgroundTextureID()
+com.vuforia.GLTextureUnit
+com.vuforia.GLTextureUnit: long swigCPtr
+com.vuforia.GLTextureUnit: boolean equals(java.lang.Object)
+com.vuforia.GLTextureUnit: GLTextureUnit(int)
+com.vuforia.GLTextureUnit: GLTextureUnit()
+com.vuforia.GLTextureUnit: void setTextureUnit(int)
+com.vuforia.GLTextureUnit: int getTextureUnit()
+com.vuforia.HINT
+com.vuforia.HINT: int HINT_MAX_SIMULTANEOUS_IMAGE_TARGETS
+com.vuforia.HINT: int HINT_MAX_SIMULTANEOUS_OBJECT_TARGETS
+com.vuforia.HINT: int HINT_DELAYED_LOADING_OBJECT_DATASETS
+com.vuforia.HINT: HINT()
+com.vuforia.HandheldTransformModel
+com.vuforia.HandheldTransformModel: long swigCPtr
+com.vuforia.HandheldTransformModel: boolean equals(java.lang.Object)
+com.vuforia.HandheldTransformModel: int getType()
+com.vuforia.HandheldTransformModel: HandheldTransformModel()
+com.vuforia.HandheldTransformModel: HandheldTransformModel(com.vuforia.HandheldTransformModel)
+com.vuforia.HandheldTransformModel: HandheldTransformModel(com.vuforia.Vec3F)
+com.vuforia.HandheldTransformModel: boolean setPivotPoint(com.vuforia.Vec3F)
+com.vuforia.HandheldTransformModel: com.vuforia.Vec3F getPivotPoint()
+com.vuforia.HeadTransformModel
+com.vuforia.HeadTransformModel: long swigCPtr
+com.vuforia.HeadTransformModel: boolean equals(java.lang.Object)
+com.vuforia.HeadTransformModel: int getType()
+com.vuforia.HeadTransformModel: HeadTransformModel()
+com.vuforia.HeadTransformModel: HeadTransformModel(com.vuforia.HeadTransformModel)
+com.vuforia.HeadTransformModel: HeadTransformModel(com.vuforia.Vec3F)
+com.vuforia.HeadTransformModel: boolean setPivotPoint(com.vuforia.Vec3F)
+com.vuforia.HeadTransformModel: com.vuforia.Vec3F getPivotPoint()
+com.vuforia.INIT_ERRORCODE
+com.vuforia.INIT_ERRORCODE: int INIT_ERROR
+com.vuforia.INIT_ERRORCODE: int INIT_DEVICE_NOT_SUPPORTED
+com.vuforia.INIT_ERRORCODE: int INIT_NO_CAMERA_ACCESS
+com.vuforia.INIT_ERRORCODE: int INIT_LICENSE_ERROR_MISSING_KEY
+com.vuforia.INIT_ERRORCODE: int INIT_LICENSE_ERROR_INVALID_KEY
+com.vuforia.INIT_ERRORCODE: int INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT
+com.vuforia.INIT_ERRORCODE: int INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT
+com.vuforia.INIT_ERRORCODE: int INIT_LICENSE_ERROR_CANCELED_KEY
+com.vuforia.INIT_ERRORCODE: int INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH
+com.vuforia.INIT_ERRORCODE: int INIT_EXTERNAL_DEVICE_NOT_DETECTED
+com.vuforia.INIT_ERRORCODE: INIT_ERRORCODE()
+com.vuforia.INIT_FLAGS
+com.vuforia.INIT_FLAGS: int GL_20
+com.vuforia.INIT_FLAGS: int METAL
+com.vuforia.INIT_FLAGS: int DX_11
+com.vuforia.INIT_FLAGS: int GL_30
+com.vuforia.INIT_FLAGS: INIT_FLAGS()
+com.vuforia.Image
+com.vuforia.Image: long swigCPtr
+com.vuforia.Image: boolean equals(java.lang.Object)
+com.vuforia.Image: int getWidth()
+com.vuforia.Image: int getHeight()
+com.vuforia.Image: int getStride()
+com.vuforia.Image: int getBufferWidth()
+com.vuforia.Image: int getBufferHeight()
+com.vuforia.Image: int getFormat()
+com.vuforia.Image: java.nio.ByteBuffer getPixels()
+com.vuforia.ImageTarget
+com.vuforia.ImageTarget: long swigCPtr
+com.vuforia.ImageTarget: boolean equals(java.lang.Object)
+com.vuforia.ImageTarget: com.vuforia.Type getClassType()
+com.vuforia.ImageTarget: int getNumVirtualButtons()
+com.vuforia.ImageTarget: com.vuforia.VirtualButton getVirtualButton(int)
+com.vuforia.ImageTarget: com.vuforia.VirtualButton getVirtualButton(java.lang.String)
+com.vuforia.ImageTarget: com.vuforia.VirtualButton createVirtualButton(java.lang.String,com.vuforia.Area)
+com.vuforia.ImageTarget: boolean destroyVirtualButton(com.vuforia.VirtualButton)
+com.vuforia.ImageTarget: java.lang.String getMetaData()
+com.vuforia.ImageTargetBuilder
+com.vuforia.ImageTargetBuilder: long swigCPtr
+com.vuforia.ImageTargetBuilder: boolean equals(java.lang.Object)
+com.vuforia.ImageTargetBuilder: boolean build(java.lang.String,float)
+com.vuforia.ImageTargetBuilder: void startScan()
+com.vuforia.ImageTargetBuilder: void stopScan()
+com.vuforia.ImageTargetBuilder: int getFrameQuality()
+com.vuforia.ImageTargetBuilder: com.vuforia.TrackableSource getTrackableSource()
+com.vuforia.ImageTargetBuilder$FRAME_QUALITY
+com.vuforia.ImageTargetBuilder$FRAME_QUALITY: int FRAME_QUALITY_NONE
+com.vuforia.ImageTargetBuilder$FRAME_QUALITY: int FRAME_QUALITY_LOW
+com.vuforia.ImageTargetBuilder$FRAME_QUALITY: int FRAME_QUALITY_MEDIUM
+com.vuforia.ImageTargetBuilder$FRAME_QUALITY: int FRAME_QUALITY_HIGH
+com.vuforia.ImageTargetBuilder$FRAME_QUALITY: ImageTargetBuilder$FRAME_QUALITY()
+com.vuforia.ImageTargetResult
+com.vuforia.ImageTargetResult: long swigCPtr
+com.vuforia.ImageTargetResult: boolean equals(java.lang.Object)
+com.vuforia.ImageTargetResult: com.vuforia.Type getClassType()
+com.vuforia.ImageTargetResult: com.vuforia.Trackable getTrackable()
+com.vuforia.ImageTargetResult: int getNumVirtualButtons()
+com.vuforia.ImageTargetResult: com.vuforia.VirtualButtonResult getVirtualButtonResult(int)
+com.vuforia.ImageTargetResult: com.vuforia.VirtualButtonResult getVirtualButtonResult(java.lang.String)
+com.vuforia.InstanceId
+com.vuforia.InstanceId: long swigCPtr
+com.vuforia.InstanceId: boolean equals(java.lang.Object)
+com.vuforia.InstanceId: java.nio.ByteBuffer getBuffer()
+com.vuforia.InstanceId: long getLength()
+com.vuforia.InstanceId: java.math.BigInteger getNumericValue()
+com.vuforia.InstanceId: int getDataType()
+com.vuforia.InstanceId$ID_DATA_TYPE
+com.vuforia.InstanceId$ID_DATA_TYPE: int BYTES
+com.vuforia.InstanceId$ID_DATA_TYPE: int STRING
+com.vuforia.InstanceId$ID_DATA_TYPE: int NUMERIC
+com.vuforia.InstanceId$ID_DATA_TYPE: InstanceId$ID_DATA_TYPE()
+com.vuforia.Matrix34F
+com.vuforia.Matrix34F: long swigCPtr
+com.vuforia.Matrix34F: boolean equals(java.lang.Object)
+com.vuforia.Matrix34F: void setData(float[])
+com.vuforia.Matrix34F: float[] getData()
+com.vuforia.Matrix34F: Matrix34F()
+com.vuforia.Matrix34F: Matrix34F(com.vuforia.Matrix34F)
+com.vuforia.Matrix44F
+com.vuforia.Matrix44F: long swigCPtr
+com.vuforia.Matrix44F: boolean equals(java.lang.Object)
+com.vuforia.Matrix44F: void setData(float[])
+com.vuforia.Matrix44F: float[] getData()
+com.vuforia.Matrix44F: Matrix44F()
+com.vuforia.Matrix44F: Matrix44F(com.vuforia.Matrix44F)
+com.vuforia.Mesh
+com.vuforia.Mesh: long swigCPtr
+com.vuforia.Mesh: boolean equals(java.lang.Object)
+com.vuforia.Mesh: int getNumVertices()
+com.vuforia.Mesh: boolean hasPositions()
+com.vuforia.Mesh: java.nio.ByteBuffer getPositions()
+com.vuforia.Mesh: boolean hasNormals()
+com.vuforia.Mesh: java.nio.ByteBuffer getNormals()
+com.vuforia.Mesh: boolean hasUVs()
+com.vuforia.Mesh: java.nio.ByteBuffer getUVs()
+com.vuforia.Mesh: int getNumTriangles()
+com.vuforia.Mesh: java.nio.ByteBuffer getTriangles()
+com.vuforia.MultiTarget
+com.vuforia.MultiTarget: long swigCPtr
+com.vuforia.MultiTarget: boolean equals(java.lang.Object)
+com.vuforia.MultiTarget: com.vuforia.Type getClassType()
+com.vuforia.MultiTarget: int getNumParts()
+com.vuforia.MultiTarget: com.vuforia.Trackable getPart(int)
+com.vuforia.MultiTarget: com.vuforia.Trackable getPart(java.lang.String)
+com.vuforia.MultiTarget: int addPart(com.vuforia.Trackable)
+com.vuforia.MultiTarget: boolean removePart(int)
+com.vuforia.MultiTarget: boolean setPartOffset(int,com.vuforia.Matrix34F)
+com.vuforia.MultiTarget: boolean getPartOffset(int,com.vuforia.Matrix34F)
+com.vuforia.MultiTargetResult
+com.vuforia.MultiTargetResult: long swigCPtr
+com.vuforia.MultiTargetResult: boolean equals(java.lang.Object)
+com.vuforia.MultiTargetResult: com.vuforia.Type getClassType()
+com.vuforia.MultiTargetResult: com.vuforia.Trackable getTrackable()
+com.vuforia.MultiTargetResult: int getNumPartResults()
+com.vuforia.MultiTargetResult: com.vuforia.TrackableResult getPartResult(int)
+com.vuforia.MultiTargetResult: com.vuforia.TrackableResult getPartResult(java.lang.String)
+com.vuforia.NonCopyable
+com.vuforia.NonCopyable: long swigCPtr
+com.vuforia.NonCopyable: boolean equals(java.lang.Object)
+com.vuforia.Obb2D
+com.vuforia.Obb2D: long swigCPtr
+com.vuforia.Obb2D: boolean equals(java.lang.Object)
+com.vuforia.Obb2D: Obb2D()
+com.vuforia.Obb2D: Obb2D(com.vuforia.Obb2D)
+com.vuforia.Obb2D: Obb2D(com.vuforia.Vec2F,com.vuforia.Vec2F,float)
+com.vuforia.Obb2D: com.vuforia.Vec2F getCenter()
+com.vuforia.Obb2D: com.vuforia.Vec2F getHalfExtents()
+com.vuforia.Obb2D: float getRotation()
+com.vuforia.Obb3D
+com.vuforia.Obb3D: long swigCPtr
+com.vuforia.Obb3D: boolean equals(java.lang.Object)
+com.vuforia.Obb3D: Obb3D()
+com.vuforia.Obb3D: Obb3D(com.vuforia.Obb3D)
+com.vuforia.Obb3D: Obb3D(com.vuforia.Vec3F,com.vuforia.Vec3F,float)
+com.vuforia.Obb3D: com.vuforia.Vec3F getCenter()
+com.vuforia.Obb3D: com.vuforia.Vec3F getHalfExtents()
+com.vuforia.Obb3D: float getRotationZ()
+com.vuforia.ObjectTarget
+com.vuforia.ObjectTarget: long swigCPtr
+com.vuforia.ObjectTarget: boolean equals(java.lang.Object)
+com.vuforia.ObjectTarget: com.vuforia.Type getClassType()
+com.vuforia.ObjectTarget: java.lang.String getUniqueTargetId()
+com.vuforia.ObjectTarget: com.vuforia.Vec3F getSize()
+com.vuforia.ObjectTarget: boolean setSize(com.vuforia.Vec3F)
+com.vuforia.ObjectTargetResult
+com.vuforia.ObjectTargetResult: long swigCPtr
+com.vuforia.ObjectTargetResult: boolean equals(java.lang.Object)
+com.vuforia.ObjectTargetResult: com.vuforia.Type getClassType()
+com.vuforia.ObjectTargetResult: com.vuforia.Trackable getTrackable()
+com.vuforia.ObjectTracker
+com.vuforia.ObjectTracker: long swigCPtr
+com.vuforia.ObjectTracker: boolean equals(java.lang.Object)
+com.vuforia.ObjectTracker: com.vuforia.Type getClassType()
+com.vuforia.ObjectTracker: com.vuforia.DataSet createDataSet()
+com.vuforia.ObjectTracker: boolean destroyDataSet(com.vuforia.DataSet)
+com.vuforia.ObjectTracker: boolean activateDataSet(com.vuforia.DataSet)
+com.vuforia.ObjectTracker: boolean deactivateDataSet(com.vuforia.DataSet)
+com.vuforia.ObjectTracker: com.vuforia.DataSet getActiveDataSet(int)
+com.vuforia.ObjectTracker: int getActiveDataSetCount()
+com.vuforia.ObjectTracker: com.vuforia.ImageTargetBuilder getImageTargetBuilder()
+com.vuforia.ObjectTracker: com.vuforia.TargetFinder getTargetFinder()
+com.vuforia.ObjectTracker: boolean persistExtendedTracking(boolean)
+com.vuforia.ObjectTracker: boolean resetExtendedTracking()
+com.vuforia.PIXEL_FORMAT
+com.vuforia.PIXEL_FORMAT: int UNKNOWN_FORMAT
+com.vuforia.PIXEL_FORMAT: int RGB565
+com.vuforia.PIXEL_FORMAT: int RGB888
+com.vuforia.PIXEL_FORMAT: int GRAYSCALE
+com.vuforia.PIXEL_FORMAT: int YUV
+com.vuforia.PIXEL_FORMAT: int RGBA8888
+com.vuforia.PIXEL_FORMAT: int INDEXED
+com.vuforia.PIXEL_FORMAT: PIXEL_FORMAT()
+com.vuforia.Prop
+com.vuforia.Prop: long swigCPtr
+com.vuforia.Prop: boolean equals(java.lang.Object)
+com.vuforia.Prop: com.vuforia.Type getClassType()
+com.vuforia.Prop: com.vuforia.Obb3D getBoundingBox()
+com.vuforia.Prop: com.vuforia.Vec2F getLocalPosition()
+com.vuforia.PropResult
+com.vuforia.PropResult: long swigCPtr
+com.vuforia.PropResult: boolean equals(java.lang.Object)
+com.vuforia.PropResult: com.vuforia.Type getClassType()
+com.vuforia.PropResult: com.vuforia.Trackable getTrackable()
+com.vuforia.Reconstruction
+com.vuforia.Reconstruction: long swigCPtr
+com.vuforia.Reconstruction: boolean equals(java.lang.Object)
+com.vuforia.Reconstruction: com.vuforia.Type getClassType()
+com.vuforia.Reconstruction: com.vuforia.Type getType()
+com.vuforia.Reconstruction: boolean setMaximumArea(com.vuforia.Rectangle)
+com.vuforia.Reconstruction: boolean getMaximumArea(com.vuforia.Rectangle)
+com.vuforia.Reconstruction: void setNavMeshPadding(float)
+com.vuforia.Reconstruction: boolean start()
+com.vuforia.Reconstruction: boolean stop()
+com.vuforia.Reconstruction: boolean reset()
+com.vuforia.Reconstruction: boolean isReconstructing()
+com.vuforia.ReconstructionFromTarget
+com.vuforia.ReconstructionFromTarget: long swigCPtr
+com.vuforia.ReconstructionFromTarget: boolean equals(java.lang.Object)
+com.vuforia.ReconstructionFromTarget: com.vuforia.Type getClassType()
+com.vuforia.ReconstructionFromTarget: boolean setInitializationTarget(com.vuforia.Trackable,com.vuforia.Box3D)
+com.vuforia.ReconstructionFromTarget: boolean setInitializationTarget(com.vuforia.Trackable,com.vuforia.Box3D,com.vuforia.Matrix34F)
+com.vuforia.ReconstructionFromTarget: com.vuforia.Trackable getInitializationTarget()
+com.vuforia.Rectangle
+com.vuforia.Rectangle: long swigCPtr
+com.vuforia.Rectangle: boolean equals(java.lang.Object)
+com.vuforia.Rectangle: Rectangle()
+com.vuforia.Rectangle: Rectangle(com.vuforia.Rectangle)
+com.vuforia.Rectangle: Rectangle(float,float,float,float)
+com.vuforia.Rectangle: float getLeftTopX()
+com.vuforia.Rectangle: float getLeftTopY()
+com.vuforia.Rectangle: float getRightBottomX()
+com.vuforia.Rectangle: float getRightBottomY()
+com.vuforia.Rectangle: float getWidth()
+com.vuforia.Rectangle: float getHeight()
+com.vuforia.Rectangle: float getAreaSize()
+com.vuforia.Rectangle: int getType()
+com.vuforia.RectangleInt
+com.vuforia.RectangleInt: long swigCPtr
+com.vuforia.RectangleInt: boolean equals(java.lang.Object)
+com.vuforia.RectangleInt: RectangleInt()
+com.vuforia.RectangleInt: RectangleInt(com.vuforia.RectangleInt)
+com.vuforia.RectangleInt: RectangleInt(int,int,int,int)
+com.vuforia.RectangleInt: int getLeftTopX()
+com.vuforia.RectangleInt: int getLeftTopY()
+com.vuforia.RectangleInt: int getRightBottomX()
+com.vuforia.RectangleInt: int getRightBottomY()
+com.vuforia.RectangleInt: int getWidth()
+com.vuforia.RectangleInt: int getHeight()
+com.vuforia.RectangleInt: int getAreaSize()
+com.vuforia.RectangleInt: int getType()
+com.vuforia.Renderer
+com.vuforia.Renderer: long swigCPtr
+com.vuforia.Renderer: com.vuforia.State sState
+com.vuforia.Renderer: java.lang.Object sStateMutex
+com.vuforia.Renderer: int TARGET_FPS_CONTINUOUS
+com.vuforia.Renderer: boolean equals(java.lang.Object)
+com.vuforia.Renderer: com.vuforia.Renderer getInstance()
+com.vuforia.Renderer: com.vuforia.State begin()
+com.vuforia.Renderer: void begin(com.vuforia.State)
+com.vuforia.Renderer: boolean drawVideoBackground()
+com.vuforia.Renderer: void end()
+com.vuforia.Renderer: boolean updateVideoBackgroundTexture(com.vuforia.TextureUnit)
+com.vuforia.Renderer: boolean updateVideoBackgroundTexture()
+com.vuforia.Renderer: void setVideoBackgroundConfig(com.vuforia.VideoBackgroundConfig)
+com.vuforia.Renderer: com.vuforia.VideoBackgroundConfig getVideoBackgroundConfig()
+com.vuforia.Renderer: com.vuforia.VideoBackgroundTextureInfo getVideoBackgroundTextureInfo()
+com.vuforia.Renderer: boolean setVideoBackgroundTexture(com.vuforia.TextureData)
+com.vuforia.Renderer: void setARProjection(float,float)
+com.vuforia.Renderer: boolean setTargetFps(int)
+com.vuforia.Renderer: int getRecommendedFps(int)
+com.vuforia.Renderer: int getRecommendedFps()
+com.vuforia.Renderer$FPSHINT_FLAGS
+com.vuforia.Renderer$FPSHINT_FLAGS: int FPSHINT_NONE
+com.vuforia.Renderer$FPSHINT_FLAGS: int FPSHINT_NO_VIDEOBACKGROUND
+com.vuforia.Renderer$FPSHINT_FLAGS: int FPSHINT_POWER_EFFICIENCY
+com.vuforia.Renderer$FPSHINT_FLAGS: int FPSHINT_FAST
+com.vuforia.Renderer$FPSHINT_FLAGS: int FPSHINT_DEFAULT_FLAGS
+com.vuforia.Renderer$FPSHINT_FLAGS: Renderer$FPSHINT_FLAGS()
+com.vuforia.RenderingPrimitives
+com.vuforia.RenderingPrimitives: long swigCPtr
+com.vuforia.RenderingPrimitives: boolean equals(java.lang.Object)
+com.vuforia.RenderingPrimitives: RenderingPrimitives(com.vuforia.RenderingPrimitives)
+com.vuforia.RenderingPrimitives: com.vuforia.ViewList getRenderingViews()
+com.vuforia.RenderingPrimitives: com.vuforia.Vec4I getViewport(int)
+com.vuforia.RenderingPrimitives: com.vuforia.Vec4F getNormalizedViewport(int)
+com.vuforia.RenderingPrimitives: com.vuforia.Matrix34F getProjectionMatrix(int,int,boolean)
+com.vuforia.RenderingPrimitives: com.vuforia.Matrix34F getProjectionMatrix(int,int)
+com.vuforia.RenderingPrimitives: com.vuforia.Vec4F getEffectiveFov(int)
+com.vuforia.RenderingPrimitives: com.vuforia.Vec2F getViewportCentreToEyeAxis(int,int)
+com.vuforia.RenderingPrimitives: com.vuforia.Matrix34F getEyeDisplayAdjustmentMatrix(int)
+com.vuforia.RenderingPrimitives: com.vuforia.Vec2I getVideoBackgroundTextureSize()
+com.vuforia.RenderingPrimitives: com.vuforia.Matrix34F getVideoBackgroundProjectionMatrix(int,int,boolean)
+com.vuforia.RenderingPrimitives: com.vuforia.Matrix34F getVideoBackgroundProjectionMatrix(int,int)
+com.vuforia.RenderingPrimitives: com.vuforia.Mesh getVideoBackgroundMesh(int)
+com.vuforia.RenderingPrimitives: com.vuforia.Vec2I getDistortionTextureSize(int)
+com.vuforia.RenderingPrimitives: com.vuforia.Vec4I getDistortionTextureViewport(int)
+com.vuforia.RenderingPrimitives: com.vuforia.Mesh getDistortionTextureMesh(int)
+com.vuforia.RotationalDeviceTracker
+com.vuforia.RotationalDeviceTracker: long swigCPtr
+com.vuforia.RotationalDeviceTracker: boolean equals(java.lang.Object)
+com.vuforia.RotationalDeviceTracker: com.vuforia.Type getClassType()
+com.vuforia.RotationalDeviceTracker: boolean recenter()
+com.vuforia.RotationalDeviceTracker: boolean setPosePrediction(boolean)
+com.vuforia.RotationalDeviceTracker: boolean getPosePrediction()
+com.vuforia.RotationalDeviceTracker: boolean setModelCorrection(com.vuforia.TransformModel)
+com.vuforia.RotationalDeviceTracker: com.vuforia.TransformModel getModelCorrection()
+com.vuforia.RotationalDeviceTracker: com.vuforia.HeadTransformModel getDefaultHeadModel()
+com.vuforia.RotationalDeviceTracker: com.vuforia.HandheldTransformModel getDefaultHandheldModel()
+com.vuforia.STORAGE_TYPE
+com.vuforia.STORAGE_TYPE: int STORAGE_APP
+com.vuforia.STORAGE_TYPE: int STORAGE_APPRESOURCE
+com.vuforia.STORAGE_TYPE: int STORAGE_ABSOLUTE
+com.vuforia.STORAGE_TYPE: STORAGE_TYPE()
+com.vuforia.SmartTerrainBuilder
+com.vuforia.SmartTerrainBuilder: long swigCPtr
+com.vuforia.SmartTerrainBuilder: boolean equals(java.lang.Object)
+com.vuforia.SmartTerrainBuilder: com.vuforia.Type getClassType()
+com.vuforia.SmartTerrainBuilder: com.vuforia.Type getType()
+com.vuforia.SmartTerrainBuilder: boolean isOfType(com.vuforia.Type)
+com.vuforia.SmartTerrainBuilder: com.vuforia.Reconstruction createReconstruction(com.vuforia.Type)
+com.vuforia.SmartTerrainBuilder: boolean destroyReconstruction(com.vuforia.Reconstruction)
+com.vuforia.SmartTerrainBuilder: long getNumReconstructions()
+com.vuforia.SmartTerrainBuilder: boolean addReconstruction(com.vuforia.Reconstruction)
+com.vuforia.SmartTerrainBuilder: boolean removeReconstruction(long)
+com.vuforia.SmartTerrainBuilder: com.vuforia.Reconstruction getReconstruction(long)
+com.vuforia.SmartTerrainBuilder: boolean init()
+com.vuforia.SmartTerrainBuilder: boolean deinit()
+com.vuforia.SmartTerrainTrackable
+com.vuforia.SmartTerrainTrackable: long swigCPtr
+com.vuforia.SmartTerrainTrackable: boolean equals(java.lang.Object)
+com.vuforia.SmartTerrainTrackable: com.vuforia.Type getClassType()
+com.vuforia.SmartTerrainTrackable: com.vuforia.Mesh getMesh()
+com.vuforia.SmartTerrainTrackable: int getRevision()
+com.vuforia.SmartTerrainTrackable: com.vuforia.Matrix34F getLocalPose()
+com.vuforia.SmartTerrainTrackable: com.vuforia.SmartTerrainTrackable getParent()
+com.vuforia.SmartTerrainTrackable: long getChildrenCount()
+com.vuforia.SmartTerrainTrackable: com.vuforia.SmartTerrainTrackable getChild(long)
+com.vuforia.SmartTerrainTracker
+com.vuforia.SmartTerrainTracker: long swigCPtr
+com.vuforia.SmartTerrainTracker: boolean equals(java.lang.Object)
+com.vuforia.SmartTerrainTracker: com.vuforia.Type getClassType()
+com.vuforia.SmartTerrainTracker: boolean setScaleToMillimeter(float)
+com.vuforia.SmartTerrainTracker: float getScaleToMillimeter()
+com.vuforia.SmartTerrainTracker: com.vuforia.SmartTerrainBuilder getSmartTerrainBuilder()
+com.vuforia.State
+com.vuforia.State: long swigCPtr
+com.vuforia.State: com.vuforia.Frame mFrame
+com.vuforia.State: java.lang.Object mFrameMutex
+com.vuforia.State: com.vuforia.State clone()
+com.vuforia.State: boolean equals(java.lang.Object)
+com.vuforia.State: State()
+com.vuforia.State: State(com.vuforia.State)
+com.vuforia.State: com.vuforia.Frame getFrame()
+com.vuforia.State: int getNumTrackables()
+com.vuforia.State: com.vuforia.Trackable getTrackable(int)
+com.vuforia.State: int getNumTrackableResults()
+com.vuforia.State: com.vuforia.TrackableResult getTrackableResult(int)
+com.vuforia.State: java.lang.Object clone()
+com.vuforia.StateUpdater
+com.vuforia.StateUpdater: long swigCPtr
+com.vuforia.StateUpdater: com.vuforia.State sState
+com.vuforia.StateUpdater: java.lang.Object sStateMutex
+com.vuforia.StateUpdater: boolean equals(java.lang.Object)
+com.vuforia.StateUpdater: com.vuforia.State updateState()
+com.vuforia.StateUpdater: com.vuforia.State getLatestState()
+com.vuforia.StateUpdater: double getCurrentTimeStamp()
+com.vuforia.Surface
+com.vuforia.Surface: long swigCPtr
+com.vuforia.Surface: boolean equals(java.lang.Object)
+com.vuforia.Surface: com.vuforia.Type getClassType()
+com.vuforia.Surface: com.vuforia.Mesh getNavMesh()
+com.vuforia.Surface: com.vuforia.Rectangle getBoundingBox()
+com.vuforia.Surface: int getNumMeshBoundaries()
+com.vuforia.Surface: java.nio.ByteBuffer getMeshBoundaries()
+com.vuforia.SurfaceResult
+com.vuforia.SurfaceResult: long swigCPtr
+com.vuforia.SurfaceResult: boolean equals(java.lang.Object)
+com.vuforia.SurfaceResult: com.vuforia.Type getClassType()
+com.vuforia.SurfaceResult: com.vuforia.Trackable getTrackable()
+com.vuforia.TargetFinder
+com.vuforia.TargetFinder: long swigCPtr
+com.vuforia.TargetFinder: int INIT_DEFAULT
+com.vuforia.TargetFinder: int INIT_RUNNING
+com.vuforia.TargetFinder: int INIT_SUCCESS
+com.vuforia.TargetFinder: int INIT_ERROR_NO_NETWORK_CONNECTION
+com.vuforia.TargetFinder: int INIT_ERROR_SERVICE_NOT_AVAILABLE
+com.vuforia.TargetFinder: int UPDATE_NO_MATCH
+com.vuforia.TargetFinder: int UPDATE_NO_REQUEST
+com.vuforia.TargetFinder: int UPDATE_RESULTS_AVAILABLE
+com.vuforia.TargetFinder: int UPDATE_ERROR_AUTHORIZATION_FAILED
+com.vuforia.TargetFinder: int UPDATE_ERROR_PROJECT_SUSPENDED
+com.vuforia.TargetFinder: int UPDATE_ERROR_NO_NETWORK_CONNECTION
+com.vuforia.TargetFinder: int UPDATE_ERROR_SERVICE_NOT_AVAILABLE
+com.vuforia.TargetFinder: int UPDATE_ERROR_BAD_FRAME_QUALITY
+com.vuforia.TargetFinder: int UPDATE_ERROR_UPDATE_SDK
+com.vuforia.TargetFinder: int UPDATE_ERROR_TIMESTAMP_OUT_OF_RANGE
+com.vuforia.TargetFinder: int UPDATE_ERROR_REQUEST_TIMEOUT
+com.vuforia.TargetFinder: int FILTER_NONE
+com.vuforia.TargetFinder: int FILTER_CURRENTLY_TRACKED
+com.vuforia.TargetFinder: boolean equals(java.lang.Object)
+com.vuforia.TargetFinder: boolean startInit(java.lang.String,java.lang.String)
+com.vuforia.TargetFinder: int getInitState()
+com.vuforia.TargetFinder: void waitUntilInitFinished()
+com.vuforia.TargetFinder: boolean deinit()
+com.vuforia.TargetFinder: boolean startRecognition()
+com.vuforia.TargetFinder: boolean stop()
+com.vuforia.TargetFinder: boolean isRequesting()
+com.vuforia.TargetFinder: int updateSearchResults(int)
+com.vuforia.TargetFinder: int updateSearchResults()
+com.vuforia.TargetFinder: int getResultCount()
+com.vuforia.TargetFinder: com.vuforia.TargetSearchResult getResult(int)
+com.vuforia.TargetFinder: com.vuforia.ImageTarget enableTracking(com.vuforia.TargetSearchResult)
+com.vuforia.TargetFinder: void clearTrackables()
+com.vuforia.TargetFinder: int getNumImageTargets()
+com.vuforia.TargetFinder: com.vuforia.ImageTarget getImageTarget(int)
+com.vuforia.TargetSearchResult
+com.vuforia.TargetSearchResult: long swigCPtr
+com.vuforia.TargetSearchResult: boolean equals(java.lang.Object)
+com.vuforia.TargetSearchResult: java.lang.String getTargetName()
+com.vuforia.TargetSearchResult: java.lang.String getUniqueTargetId()
+com.vuforia.TargetSearchResult: float getTargetSize()
+com.vuforia.TargetSearchResult: java.lang.String getMetaData()
+com.vuforia.TargetSearchResult: short getTrackingRating()
+com.vuforia.TextTracker
+com.vuforia.TextTracker: long swigCPtr
+com.vuforia.TextTracker: boolean equals(java.lang.Object)
+com.vuforia.TextTracker: com.vuforia.Type getClassType()
+com.vuforia.TextTracker: boolean setRegionOfInterest(com.vuforia.RectangleInt,com.vuforia.RectangleInt,int)
+com.vuforia.TextTracker: void getRegionOfInterest(com.vuforia.RectangleInt,com.vuforia.RectangleInt,int[])
+com.vuforia.TextTracker: com.vuforia.WordList getWordList()
+com.vuforia.TextTracker$UP_DIRECTION
+com.vuforia.TextTracker$UP_DIRECTION: int REGIONOFINTEREST_UP_IS_0_HRS
+com.vuforia.TextTracker$UP_DIRECTION: int REGIONOFINTEREST_UP_IS_3_HRS
+com.vuforia.TextTracker$UP_DIRECTION: int REGIONOFINTEREST_UP_IS_6_HRS
+com.vuforia.TextTracker$UP_DIRECTION: int REGIONOFINTEREST_UP_IS_9_HRS
+com.vuforia.TextTracker$UP_DIRECTION: TextTracker$UP_DIRECTION()
+com.vuforia.TextureData
+com.vuforia.TextureData: long swigCPtr
+com.vuforia.TextureData: boolean equals(java.lang.Object)
+com.vuforia.TextureData: int type()
+com.vuforia.TextureUnit
+com.vuforia.TextureUnit: long swigCPtr
+com.vuforia.TextureUnit: boolean equals(java.lang.Object)
+com.vuforia.TextureUnit: int type()
+com.vuforia.Tool
+com.vuforia.Tool: long swigCPtr
+com.vuforia.Tool: boolean equals(java.lang.Object)
+com.vuforia.Tool: com.vuforia.Matrix44F convertPose2GLMatrix(com.vuforia.Matrix34F)
+com.vuforia.Tool: com.vuforia.Matrix44F convert2GLMatrix(com.vuforia.Matrix34F)
+com.vuforia.Tool: com.vuforia.Matrix44F convertPerspectiveProjection2GLMatrix(com.vuforia.Matrix34F,float,float)
+com.vuforia.Tool: com.vuforia.Matrix44F getProjectionGL(com.vuforia.CameraCalibration,float,float)
+com.vuforia.Tool: com.vuforia.Vec2F projectPoint(com.vuforia.CameraCalibration,com.vuforia.Matrix34F,com.vuforia.Vec3F)
+com.vuforia.Tool: com.vuforia.Matrix34F multiply(com.vuforia.Matrix34F,com.vuforia.Matrix34F)
+com.vuforia.Tool: com.vuforia.Matrix44F multiply(com.vuforia.Matrix44F,com.vuforia.Matrix44F)
+com.vuforia.Tool: com.vuforia.Vec4F multiply(com.vuforia.Vec4F,com.vuforia.Matrix44F)
+com.vuforia.Tool: com.vuforia.Matrix44F multiplyGL(com.vuforia.Matrix44F,com.vuforia.Matrix44F)
+com.vuforia.Tool: void setTranslation(com.vuforia.Matrix34F,com.vuforia.Vec3F)
+com.vuforia.Tool: void setRotation(com.vuforia.Matrix34F,com.vuforia.Vec3F,float)
+com.vuforia.Tool: Tool()
+com.vuforia.Trackable
+com.vuforia.Trackable: long swigCPtr
+com.vuforia.Trackable: java.lang.Object getUserData()
+com.vuforia.Trackable: boolean setUserData(java.lang.Object)
+com.vuforia.Trackable: boolean equals(java.lang.Object)
+com.vuforia.Trackable: com.vuforia.Type getClassType()
+com.vuforia.Trackable: com.vuforia.Type getType()
+com.vuforia.Trackable: boolean isOfType(com.vuforia.Type)
+com.vuforia.Trackable: int getId()
+com.vuforia.Trackable: java.lang.String getName()
+com.vuforia.Trackable: boolean startExtendedTracking()
+com.vuforia.Trackable: boolean stopExtendedTracking()
+com.vuforia.Trackable: boolean isExtendedTrackingStarted()
+com.vuforia.TrackableResult
+com.vuforia.TrackableResult: long swigCPtr
+com.vuforia.TrackableResult: boolean equals(java.lang.Object)
+com.vuforia.TrackableResult: com.vuforia.Type getClassType()
+com.vuforia.TrackableResult: com.vuforia.Type getType()
+com.vuforia.TrackableResult: boolean isOfType(com.vuforia.Type)
+com.vuforia.TrackableResult: double getTimeStamp()
+com.vuforia.TrackableResult: int getStatus()
+com.vuforia.TrackableResult: com.vuforia.Trackable getTrackable()
+com.vuforia.TrackableResult: com.vuforia.Matrix34F getPose()
+com.vuforia.TrackableResult: int getCoordinateSystem()
+com.vuforia.TrackableResult$STATUS
+com.vuforia.TrackableResult$STATUS: int UNKNOWN
+com.vuforia.TrackableResult$STATUS: int UNDEFINED
+com.vuforia.TrackableResult$STATUS: int DETECTED
+com.vuforia.TrackableResult$STATUS: int TRACKED
+com.vuforia.TrackableResult$STATUS: int EXTENDED_TRACKED
+com.vuforia.TrackableResult$STATUS: TrackableResult$STATUS()
+com.vuforia.TrackableSource
+com.vuforia.TrackableSource: long swigCPtr
+com.vuforia.TrackableSource: boolean equals(java.lang.Object)
+com.vuforia.TrackableSource: TrackableSource()
+com.vuforia.Tracker
+com.vuforia.Tracker: long swigCPtr
+com.vuforia.Tracker: boolean equals(java.lang.Object)
+com.vuforia.Tracker: com.vuforia.Type getClassType()
+com.vuforia.Tracker: com.vuforia.Type getType()
+com.vuforia.Tracker: boolean isOfType(com.vuforia.Type)
+com.vuforia.Tracker: boolean start()
+com.vuforia.Tracker: void stop()
+com.vuforia.TrackerManager
+com.vuforia.TrackerManager: long swigCPtr
+com.vuforia.TrackerManager: boolean equals(java.lang.Object)
+com.vuforia.TrackerManager: com.vuforia.TrackerManager getInstance()
+com.vuforia.TrackerManager: com.vuforia.Tracker initTracker(com.vuforia.Type)
+com.vuforia.TrackerManager: com.vuforia.Tracker getTracker(com.vuforia.Type)
+com.vuforia.TrackerManager: boolean deinitTracker(com.vuforia.Type)
+com.vuforia.TrackerManager: com.vuforia.StateUpdater getStateUpdater()
+com.vuforia.TransformModel
+com.vuforia.TransformModel: long swigCPtr
+com.vuforia.TransformModel: boolean equals(java.lang.Object)
+com.vuforia.TransformModel: int getType()
+com.vuforia.TransformModel$TYPE
+com.vuforia.TransformModel$TYPE: int TRANSFORM_MODEL_HEAD
+com.vuforia.TransformModel$TYPE: int TRANSFORM_MODEL_HANDHELD
+com.vuforia.TransformModel$TYPE: TransformModel$TYPE()
+com.vuforia.Type
+com.vuforia.Type: long swigCPtr
+com.vuforia.Type: boolean equals(java.lang.Object)
+com.vuforia.Type: Type()
+com.vuforia.Type: Type(short)
+com.vuforia.Type: boolean isOfType(com.vuforia.Type)
+com.vuforia.UpdateCallback
+com.vuforia.UpdateCallback: long swigCPtr
+com.vuforia.UpdateCallback: void swigReleaseOwnership()
+com.vuforia.UpdateCallback: void swigTakeOwnership()
+com.vuforia.UpdateCallback: boolean equals(java.lang.Object)
+com.vuforia.UpdateCallback: void Vuforia_onUpdate(com.vuforia.State)
+com.vuforia.UpdateCallback: UpdateCallback()
+com.vuforia.VIDEO_BACKGROUND_REFLECTION
+com.vuforia.VIDEO_BACKGROUND_REFLECTION: int VIDEO_BACKGROUND_REFLECTION_DEFAULT
+com.vuforia.VIDEO_BACKGROUND_REFLECTION: int VIDEO_BACKGROUND_REFLECTION_ON
+com.vuforia.VIDEO_BACKGROUND_REFLECTION: int VIDEO_BACKGROUND_REFLECTION_OFF
+com.vuforia.VIDEO_BACKGROUND_REFLECTION: VIDEO_BACKGROUND_REFLECTION()
+com.vuforia.VIEW
+com.vuforia.VIEW: int VIEW_SINGULAR
+com.vuforia.VIEW: int VIEW_LEFTEYE
+com.vuforia.VIEW: int VIEW_RIGHTEYE
+com.vuforia.VIEW: int VIEW_POSTPROCESS
+com.vuforia.VIEW: int VIEW_COUNT
+com.vuforia.VIEW: VIEW()
+com.vuforia.Vec2F
+com.vuforia.Vec2F: long swigCPtr
+com.vuforia.Vec2F: boolean equals(java.lang.Object)
+com.vuforia.Vec2F: Vec2F()
+com.vuforia.Vec2F: Vec2F(float[])
+com.vuforia.Vec2F: Vec2F(float,float)
+com.vuforia.Vec2F: void setData(float[])
+com.vuforia.Vec2F: float[] getData()
+com.vuforia.Vec2F: Vec2F(com.vuforia.Vec2F)
+com.vuforia.Vec2I
+com.vuforia.Vec2I: long swigCPtr
+com.vuforia.Vec2I: boolean equals(java.lang.Object)
+com.vuforia.Vec2I: Vec2I()
+com.vuforia.Vec2I: Vec2I(int[])
+com.vuforia.Vec2I: Vec2I(int,int)
+com.vuforia.Vec2I: void setData(int[])
+com.vuforia.Vec2I: int[] getData()
+com.vuforia.Vec2I: Vec2I(com.vuforia.Vec2I)
+com.vuforia.Vec3F
+com.vuforia.Vec3F: long swigCPtr
+com.vuforia.Vec3F: boolean equals(java.lang.Object)
+com.vuforia.Vec3F: Vec3F()
+com.vuforia.Vec3F: Vec3F(float[])
+com.vuforia.Vec3F: Vec3F(float,float,float)
+com.vuforia.Vec3F: void setData(float[])
+com.vuforia.Vec3F: float[] getData()
+com.vuforia.Vec3F: Vec3F(com.vuforia.Vec3F)
+com.vuforia.Vec3I
+com.vuforia.Vec3I: long swigCPtr
+com.vuforia.Vec3I: boolean equals(java.lang.Object)
+com.vuforia.Vec3I: Vec3I()
+com.vuforia.Vec3I: Vec3I(int[])
+com.vuforia.Vec3I: void setData(int[])
+com.vuforia.Vec3I: int[] getData()
+com.vuforia.Vec4F
+com.vuforia.Vec4F: long swigCPtr
+com.vuforia.Vec4F: boolean equals(java.lang.Object)
+com.vuforia.Vec4F: Vec4F()
+com.vuforia.Vec4F: Vec4F(float[])
+com.vuforia.Vec4F: Vec4F(float,float,float,float)
+com.vuforia.Vec4F: void setData(float[])
+com.vuforia.Vec4F: float[] getData()
+com.vuforia.Vec4F: Vec4F(com.vuforia.Vec4F)
+com.vuforia.Vec4I
+com.vuforia.Vec4I: long swigCPtr
+com.vuforia.Vec4I: boolean equals(java.lang.Object)
+com.vuforia.Vec4I: Vec4I()
+com.vuforia.Vec4I: Vec4I(int[])
+com.vuforia.Vec4I: void setData(int[])
+com.vuforia.Vec4I: int[] getData()
+com.vuforia.VideoBackgroundConfig
+com.vuforia.VideoBackgroundConfig: long swigCPtr
+com.vuforia.VideoBackgroundConfig: boolean equals(java.lang.Object)
+com.vuforia.VideoBackgroundConfig: VideoBackgroundConfig()
+com.vuforia.VideoBackgroundConfig: void setEnabled(boolean)
+com.vuforia.VideoBackgroundConfig: boolean getEnabled()
+com.vuforia.VideoBackgroundConfig: void setPosition(com.vuforia.Vec2I)
+com.vuforia.VideoBackgroundConfig: com.vuforia.Vec2I getPosition()
+com.vuforia.VideoBackgroundConfig: void setSize(com.vuforia.Vec2I)
+com.vuforia.VideoBackgroundConfig: com.vuforia.Vec2I getSize()
+com.vuforia.VideoBackgroundConfig: void setReflection(int)
+com.vuforia.VideoBackgroundConfig: int getReflection()
+com.vuforia.VideoBackgroundTextureInfo
+com.vuforia.VideoBackgroundTextureInfo: long swigCPtr
+com.vuforia.VideoBackgroundTextureInfo: boolean equals(java.lang.Object)
+com.vuforia.VideoBackgroundTextureInfo: com.vuforia.Vec2I getTextureSize()
+com.vuforia.VideoBackgroundTextureInfo: com.vuforia.Vec2I getImageSize()
+com.vuforia.VideoBackgroundTextureInfo: int getPixelFormat()
+com.vuforia.VideoBackgroundTextureInfo: VideoBackgroundTextureInfo()
+com.vuforia.VideoMode
+com.vuforia.VideoMode: long swigCPtr
+com.vuforia.VideoMode: boolean equals(java.lang.Object)
+com.vuforia.VideoMode: VideoMode()
+com.vuforia.VideoMode: int getWidth()
+com.vuforia.VideoMode: int getHeight()
+com.vuforia.VideoMode: float getFramerate()
+com.vuforia.VideoMode: VideoMode(com.vuforia.VideoMode)
+com.vuforia.ViewList
+com.vuforia.ViewList: long swigCPtr
+com.vuforia.ViewList: boolean equals(java.lang.Object)
+com.vuforia.ViewList: long getNumViews()
+com.vuforia.ViewList: int getView(int)
+com.vuforia.ViewList: boolean contains(int)
+com.vuforia.ViewerParameters
+com.vuforia.ViewerParameters: long swigCPtr
+com.vuforia.ViewerParameters: boolean equals(java.lang.Object)
+com.vuforia.ViewerParameters: ViewerParameters(com.vuforia.ViewerParameters)
+com.vuforia.ViewerParameters: float getVersion()
+com.vuforia.ViewerParameters: java.lang.String getName()
+com.vuforia.ViewerParameters: java.lang.String getManufacturer()
+com.vuforia.ViewerParameters: int getButtonType()
+com.vuforia.ViewerParameters: float getScreenToLensDistance()
+com.vuforia.ViewerParameters: float getInterLensDistance()
+com.vuforia.ViewerParameters: int getTrayAlignment()
+com.vuforia.ViewerParameters: float getLensCentreToTrayDistance()
+com.vuforia.ViewerParameters: long getNumDistortionCoefficients()
+com.vuforia.ViewerParameters: float getDistortionCoefficient(int)
+com.vuforia.ViewerParameters: com.vuforia.Vec4F getFieldOfView()
+com.vuforia.ViewerParameters: boolean containsMagnet()
+com.vuforia.ViewerParameters$BUTTON_TYPE
+com.vuforia.ViewerParameters$BUTTON_TYPE: int BUTTON_TYPE_NONE
+com.vuforia.ViewerParameters$BUTTON_TYPE: int BUTTON_TYPE_MAGNET
+com.vuforia.ViewerParameters$BUTTON_TYPE: int BUTTON_TYPE_FINGER_TOUCH
+com.vuforia.ViewerParameters$BUTTON_TYPE: int BUTTON_TYPE_BUTTON_TOUCH
+com.vuforia.ViewerParameters$BUTTON_TYPE: ViewerParameters$BUTTON_TYPE()
+com.vuforia.ViewerParameters$TRAY_ALIGNMENT
+com.vuforia.ViewerParameters$TRAY_ALIGNMENT: int TRAY_ALIGN_BOTTOM
+com.vuforia.ViewerParameters$TRAY_ALIGNMENT: int TRAY_ALIGN_CENTRE
+com.vuforia.ViewerParameters$TRAY_ALIGNMENT: int TRAY_ALIGN_TOP
+com.vuforia.ViewerParameters$TRAY_ALIGNMENT: ViewerParameters$TRAY_ALIGNMENT()
+com.vuforia.ViewerParametersList
+com.vuforia.ViewerParametersList: long swigCPtr
+com.vuforia.ViewerParametersList: java.util.Iterator iterator()
+com.vuforia.ViewerParametersList: com.vuforia.ViewerParametersList getListForAuthoringTools()
+com.vuforia.ViewerParametersList: void setSDKFilter(java.lang.String)
+com.vuforia.ViewerParametersList: long size()
+com.vuforia.ViewerParametersList: com.vuforia.ViewerParameters get(long)
+com.vuforia.ViewerParametersList: com.vuforia.ViewerParameters get(java.lang.String,java.lang.String)
+com.vuforia.ViewerParametersList: com.vuforia.ViewerParameters begin()
+com.vuforia.ViewerParametersList: com.vuforia.ViewerParameters end()
+com.vuforia.ViewerParametersList: com.vuforia.ViewerParameters next(com.vuforia.ViewerParameters)
+com.vuforia.ViewerParametersList$VPIterator
+com.vuforia.ViewerParametersList$VPIterator: com.vuforia.ViewerParameters next
+com.vuforia.ViewerParametersList$VPIterator: boolean hasNext()
+com.vuforia.ViewerParametersList$VPIterator: com.vuforia.ViewerParameters next()
+com.vuforia.ViewerParametersList$VPIterator: void remove()
+com.vuforia.ViewerParametersList$VPIterator: java.lang.Object next()
+com.vuforia.VirtualButton
+com.vuforia.VirtualButton: long swigCPtr
+com.vuforia.VirtualButton: boolean equals(java.lang.Object)
+com.vuforia.VirtualButton: boolean setArea(com.vuforia.Area)
+com.vuforia.VirtualButton: com.vuforia.Area getArea()
+com.vuforia.VirtualButton: boolean setSensitivity(int)
+com.vuforia.VirtualButton: boolean setEnabled(boolean)
+com.vuforia.VirtualButton: boolean isEnabled()
+com.vuforia.VirtualButton: java.lang.String getName()
+com.vuforia.VirtualButton: int getID()
+com.vuforia.VirtualButton$SENSITIVITY
+com.vuforia.VirtualButton$SENSITIVITY: int HIGH
+com.vuforia.VirtualButton$SENSITIVITY: int MEDIUM
+com.vuforia.VirtualButton$SENSITIVITY: int LOW
+com.vuforia.VirtualButton$SENSITIVITY: VirtualButton$SENSITIVITY()
+com.vuforia.VirtualButtonResult
+com.vuforia.VirtualButtonResult: long swigCPtr
+com.vuforia.VirtualButtonResult: boolean equals(java.lang.Object)
+com.vuforia.VirtualButtonResult: com.vuforia.VirtualButton getVirtualButton()
+com.vuforia.VirtualButtonResult: boolean isPressed()
+com.vuforia.VuMarkTarget
+com.vuforia.VuMarkTarget: long swigCPtr
+com.vuforia.VuMarkTarget: boolean equals(java.lang.Object)
+com.vuforia.VuMarkTarget: com.vuforia.Type getClassType()
+com.vuforia.VuMarkTarget: com.vuforia.VuMarkTemplate getTemplate()
+com.vuforia.VuMarkTarget: com.vuforia.InstanceId getInstanceId()
+com.vuforia.VuMarkTarget: com.vuforia.Image getInstanceImage()
+com.vuforia.VuMarkTargetResult
+com.vuforia.VuMarkTargetResult: long swigCPtr
+com.vuforia.VuMarkTargetResult: boolean equals(java.lang.Object)
+com.vuforia.VuMarkTargetResult: com.vuforia.Type getClassType()
+com.vuforia.VuMarkTargetResult: com.vuforia.Trackable getTrackable()
+com.vuforia.VuMarkTargetResult: int getId()
+com.vuforia.VuMarkTemplate
+com.vuforia.VuMarkTemplate: long swigCPtr
+com.vuforia.VuMarkTemplate: boolean equals(java.lang.Object)
+com.vuforia.VuMarkTemplate: com.vuforia.Type getClassType()
+com.vuforia.VuMarkTemplate: java.lang.String getVuMarkUserData()
+com.vuforia.VuMarkTemplate: void setTrackingFromRuntimeAppearance(boolean)
+com.vuforia.VuMarkTemplate: boolean isTrackingFromRuntimeAppearanceEnabled()
+com.vuforia.VuMarkTemplate: com.vuforia.Vec2F getOrigin()
+com.vuforia.Vuforia
+com.vuforia.Vuforia: int GL_20
+com.vuforia.Vuforia: int GL_30
+com.vuforia.Vuforia: int INIT_ERROR
+com.vuforia.Vuforia: int INIT_DEVICE_NOT_SUPPORTED
+com.vuforia.Vuforia: int INIT_NO_CAMERA_ACCESS
+com.vuforia.Vuforia: int INIT_LICENSE_ERROR_MISSING_KEY
+com.vuforia.Vuforia: int INIT_LICENSE_ERROR_INVALID_KEY
+com.vuforia.Vuforia: int INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT
+com.vuforia.Vuforia: int INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT
+com.vuforia.Vuforia: int INIT_LICENSE_ERROR_CANCELED_KEY
+com.vuforia.Vuforia: int INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH
+com.vuforia.Vuforia: int INIT_EXTERNAL_DEVICE_NOT_DETECTED
+com.vuforia.Vuforia: boolean initializedJava
+com.vuforia.Vuforia: com.vuforia.UpdateCallback sUpdateCallback
+com.vuforia.Vuforia: com.vuforia.Vuforia$UpdateCallbackInterface sUpdateCallbackInterface
+com.vuforia.Vuforia: Vuforia()
+com.vuforia.Vuforia: void privateSetInitParameters(android.app.Activity,int,java.lang.String)
+com.vuforia.Vuforia: void setInitParameters(android.app.Activity,int,java.lang.String)
+com.vuforia.Vuforia: boolean loadLibrary(java.lang.String)
+com.vuforia.Vuforia: int init()
+com.vuforia.Vuforia: boolean isInitialized()
+com.vuforia.Vuforia: void deinit()
+com.vuforia.Vuforia: boolean setHint(long,int)
+com.vuforia.Vuforia: void registerCallback(com.vuforia.Vuforia$UpdateCallbackInterface)
+com.vuforia.Vuforia: boolean setFrameFormat(int,boolean)
+com.vuforia.Vuforia: int getBitsPerPixel(int)
+com.vuforia.Vuforia: boolean requiresAlpha()
+com.vuforia.Vuforia: int getBufferSize(int,int,int)
+com.vuforia.Vuforia: void onResume()
+com.vuforia.Vuforia: void onPause()
+com.vuforia.Vuforia: void onSurfaceCreated()
+com.vuforia.Vuforia: void onSurfaceChanged(int,int)
+com.vuforia.Vuforia: java.lang.String getLibraryVersion()
+com.vuforia.Vuforia$1
+com.vuforia.Vuforia$1: void Vuforia_onUpdate(com.vuforia.State)
+com.vuforia.Vuforia$UpdateCallbackInterface
+com.vuforia.Vuforia$UpdateCallbackInterface: void Vuforia_onUpdate(com.vuforia.State)
+com.vuforia.VuforiaJNI
+com.vuforia.VuforiaJNI: int init()
+com.vuforia.VuforiaJNI: boolean isInitialized()
+com.vuforia.VuforiaJNI: void deinit()
+com.vuforia.VuforiaJNI: boolean setHint(long,int)
+com.vuforia.VuforiaJNI: void registerCallback(long,com.vuforia.UpdateCallback)
+com.vuforia.VuforiaJNI: boolean setFrameFormat(int,boolean)
+com.vuforia.VuforiaJNI: int getBitsPerPixel(int)
+com.vuforia.VuforiaJNI: boolean requiresAlpha()
+com.vuforia.VuforiaJNI: int getBufferSize(int,int,int)
+com.vuforia.VuforiaJNI: void onResume()
+com.vuforia.VuforiaJNI: void onPause()
+com.vuforia.VuforiaJNI: void onSurfaceCreated()
+com.vuforia.VuforiaJNI: void onSurfaceChanged(int,int)
+com.vuforia.VuforiaJNI: java.lang.String getLibraryVersion()
+com.vuforia.VuforiaJNI: long new_Type__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Type__SWIG_1(short)
+com.vuforia.VuforiaJNI: boolean Type_isOfType(long,com.vuforia.Type,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: void delete_Type(long)
+com.vuforia.VuforiaJNI: void Matrix34F_data_set(long,com.vuforia.Matrix34F,float[])
+com.vuforia.VuforiaJNI: float[] Matrix34F_data_get(long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: long new_Matrix34F__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Matrix34F__SWIG_1(long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: void delete_Matrix34F(long)
+com.vuforia.VuforiaJNI: void Matrix44F_data_set(long,com.vuforia.Matrix44F,float[])
+com.vuforia.VuforiaJNI: float[] Matrix44F_data_get(long,com.vuforia.Matrix44F)
+com.vuforia.VuforiaJNI: long new_Matrix44F__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Matrix44F__SWIG_1(long,com.vuforia.Matrix44F)
+com.vuforia.VuforiaJNI: void delete_Matrix44F(long)
+com.vuforia.VuforiaJNI: long new_Vec2F__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Vec2F__SWIG_1(float[])
+com.vuforia.VuforiaJNI: long new_Vec2F__SWIG_2(float,float)
+com.vuforia.VuforiaJNI: void Vec2F_data_set(long,com.vuforia.Vec2F,float[])
+com.vuforia.VuforiaJNI: float[] Vec2F_data_get(long,com.vuforia.Vec2F)
+com.vuforia.VuforiaJNI: long new_Vec2F__SWIG_3(long,com.vuforia.Vec2F)
+com.vuforia.VuforiaJNI: void delete_Vec2F(long)
+com.vuforia.VuforiaJNI: long new_Vec3F__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Vec3F__SWIG_1(float[])
+com.vuforia.VuforiaJNI: long new_Vec3F__SWIG_2(float,float,float)
+com.vuforia.VuforiaJNI: void Vec3F_data_set(long,com.vuforia.Vec3F,float[])
+com.vuforia.VuforiaJNI: float[] Vec3F_data_get(long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: long new_Vec3F__SWIG_3(long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: void delete_Vec3F(long)
+com.vuforia.VuforiaJNI: long new_Vec4F__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Vec4F__SWIG_1(float[])
+com.vuforia.VuforiaJNI: long new_Vec4F__SWIG_2(float,float,float,float)
+com.vuforia.VuforiaJNI: void Vec4F_data_set(long,com.vuforia.Vec4F,float[])
+com.vuforia.VuforiaJNI: float[] Vec4F_data_get(long,com.vuforia.Vec4F)
+com.vuforia.VuforiaJNI: long new_Vec4F__SWIG_3(long,com.vuforia.Vec4F)
+com.vuforia.VuforiaJNI: void delete_Vec4F(long)
+com.vuforia.VuforiaJNI: long new_Vec2I__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Vec2I__SWIG_1(int[])
+com.vuforia.VuforiaJNI: long new_Vec2I__SWIG_2(int,int)
+com.vuforia.VuforiaJNI: void Vec2I_data_set(long,com.vuforia.Vec2I,int[])
+com.vuforia.VuforiaJNI: int[] Vec2I_data_get(long,com.vuforia.Vec2I)
+com.vuforia.VuforiaJNI: long new_Vec2I__SWIG_3(long,com.vuforia.Vec2I)
+com.vuforia.VuforiaJNI: void delete_Vec2I(long)
+com.vuforia.VuforiaJNI: long new_Vec3I__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Vec3I__SWIG_1(int[])
+com.vuforia.VuforiaJNI: void Vec3I_data_set(long,com.vuforia.Vec3I,int[])
+com.vuforia.VuforiaJNI: int[] Vec3I_data_get(long,com.vuforia.Vec3I)
+com.vuforia.VuforiaJNI: void delete_Vec3I(long)
+com.vuforia.VuforiaJNI: long new_Vec4I__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Vec4I__SWIG_1(int[])
+com.vuforia.VuforiaJNI: void Vec4I_data_set(long,com.vuforia.Vec4I,int[])
+com.vuforia.VuforiaJNI: int[] Vec4I_data_get(long,com.vuforia.Vec4I)
+com.vuforia.VuforiaJNI: void delete_Vec4I(long)
+com.vuforia.VuforiaJNI: long new_VideoMode__SWIG_0()
+com.vuforia.VuforiaJNI: int VideoMode_Width_get(long,com.vuforia.VideoMode)
+com.vuforia.VuforiaJNI: int VideoMode_Height_get(long,com.vuforia.VideoMode)
+com.vuforia.VuforiaJNI: float VideoMode_Framerate_get(long,com.vuforia.VideoMode)
+com.vuforia.VuforiaJNI: long new_VideoMode__SWIG_1(long,com.vuforia.VideoMode)
+com.vuforia.VuforiaJNI: void delete_VideoMode(long)
+com.vuforia.VuforiaJNI: long Trackable_getClassType()
+com.vuforia.VuforiaJNI: long Trackable_getType(long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: boolean Trackable_isOfType(long,com.vuforia.Trackable,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: int Trackable_getId(long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: java.lang.String Trackable_getName(long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: boolean Trackable_startExtendedTracking(long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: boolean Trackable_stopExtendedTracking(long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: boolean Trackable_isExtendedTrackingStarted(long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: void delete_Trackable(long)
+com.vuforia.VuforiaJNI: long TrackableResult_getClassType()
+com.vuforia.VuforiaJNI: long TrackableResult_getType(long,com.vuforia.TrackableResult)
+com.vuforia.VuforiaJNI: boolean TrackableResult_isOfType(long,com.vuforia.TrackableResult,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: double TrackableResult_getTimeStamp(long,com.vuforia.TrackableResult)
+com.vuforia.VuforiaJNI: int TrackableResult_getStatus(long,com.vuforia.TrackableResult)
+com.vuforia.VuforiaJNI: long TrackableResult_getTrackable(long,com.vuforia.TrackableResult)
+com.vuforia.VuforiaJNI: long TrackableResult_getPose(long,com.vuforia.TrackableResult)
+com.vuforia.VuforiaJNI: int TrackableResult_getCoordinateSystem(long,com.vuforia.TrackableResult)
+com.vuforia.VuforiaJNI: void delete_TrackableResult(long)
+com.vuforia.VuforiaJNI: long Tracker_getClassType()
+com.vuforia.VuforiaJNI: long Tracker_getType(long,com.vuforia.Tracker)
+com.vuforia.VuforiaJNI: boolean Tracker_isOfType(long,com.vuforia.Tracker,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: boolean Tracker_start(long,com.vuforia.Tracker)
+com.vuforia.VuforiaJNI: void Tracker_stop(long,com.vuforia.Tracker)
+com.vuforia.VuforiaJNI: void delete_Tracker(long)
+com.vuforia.VuforiaJNI: int Mesh_getNumVertices(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: boolean Mesh_hasPositions(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: java.nio.ByteBuffer Mesh_getPositions(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: boolean Mesh_hasNormals(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: java.nio.ByteBuffer Mesh_getNormals(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: boolean Mesh_hasUVs(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: java.nio.ByteBuffer Mesh_getUVs(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: int Mesh_getNumTriangles(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: java.nio.ByteBuffer Mesh_getTriangles(long,com.vuforia.Mesh)
+com.vuforia.VuforiaJNI: void delete_Mesh(long)
+com.vuforia.VuforiaJNI: long SmartTerrainTrackable_getClassType()
+com.vuforia.VuforiaJNI: long SmartTerrainTrackable_getMesh(long,com.vuforia.SmartTerrainTrackable)
+com.vuforia.VuforiaJNI: int SmartTerrainTrackable_getRevision(long,com.vuforia.SmartTerrainTrackable)
+com.vuforia.VuforiaJNI: long SmartTerrainTrackable_getLocalPose(long,com.vuforia.SmartTerrainTrackable)
+com.vuforia.VuforiaJNI: long SmartTerrainTrackable_getParent(long,com.vuforia.SmartTerrainTrackable)
+com.vuforia.VuforiaJNI: long SmartTerrainTrackable_getChildrenCount(long,com.vuforia.SmartTerrainTrackable)
+com.vuforia.VuforiaJNI: long SmartTerrainTrackable_getChild(long,com.vuforia.SmartTerrainTrackable,long)
+com.vuforia.VuforiaJNI: void delete_SmartTerrainTrackable(long)
+com.vuforia.VuforiaJNI: long Reconstruction_getClassType()
+com.vuforia.VuforiaJNI: long Reconstruction_getType(long,com.vuforia.Reconstruction)
+com.vuforia.VuforiaJNI: boolean Reconstruction_setMaximumArea(long,com.vuforia.Reconstruction,long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: boolean Reconstruction_getMaximumArea(long,com.vuforia.Reconstruction,long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: void Reconstruction_setNavMeshPadding(long,com.vuforia.Reconstruction,float)
+com.vuforia.VuforiaJNI: boolean Reconstruction_start(long,com.vuforia.Reconstruction)
+com.vuforia.VuforiaJNI: boolean Reconstruction_stop(long,com.vuforia.Reconstruction)
+com.vuforia.VuforiaJNI: boolean Reconstruction_reset(long,com.vuforia.Reconstruction)
+com.vuforia.VuforiaJNI: boolean Reconstruction_isReconstructing(long,com.vuforia.Reconstruction)
+com.vuforia.VuforiaJNI: long new_Obb2D__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Obb2D__SWIG_1(long,com.vuforia.Obb2D)
+com.vuforia.VuforiaJNI: long new_Obb2D__SWIG_2(long,com.vuforia.Vec2F,long,com.vuforia.Vec2F,float)
+com.vuforia.VuforiaJNI: long Obb2D_getCenter(long,com.vuforia.Obb2D)
+com.vuforia.VuforiaJNI: long Obb2D_getHalfExtents(long,com.vuforia.Obb2D)
+com.vuforia.VuforiaJNI: float Obb2D_getRotation(long,com.vuforia.Obb2D)
+com.vuforia.VuforiaJNI: void delete_Obb2D(long)
+com.vuforia.VuforiaJNI: long new_Obb3D__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Obb3D__SWIG_1(long,com.vuforia.Obb3D)
+com.vuforia.VuforiaJNI: long new_Obb3D__SWIG_2(long,com.vuforia.Vec3F,long,com.vuforia.Vec3F,float)
+com.vuforia.VuforiaJNI: long Obb3D_getCenter(long,com.vuforia.Obb3D)
+com.vuforia.VuforiaJNI: long Obb3D_getHalfExtents(long,com.vuforia.Obb3D)
+com.vuforia.VuforiaJNI: float Obb3D_getRotationZ(long,com.vuforia.Obb3D)
+com.vuforia.VuforiaJNI: void delete_Obb3D(long)
+com.vuforia.VuforiaJNI: int Area_getType(long,com.vuforia.Area)
+com.vuforia.VuforiaJNI: void delete_Area(long)
+com.vuforia.VuforiaJNI: long new_Box3D__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Box3D__SWIG_1(long,com.vuforia.Box3D)
+com.vuforia.VuforiaJNI: long new_Box3D__SWIG_2(long,com.vuforia.Vec3F,long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: long Box3D_getMinimumPosition(long,com.vuforia.Box3D)
+com.vuforia.VuforiaJNI: long Box3D_getMaximumPosition(long,com.vuforia.Box3D)
+com.vuforia.VuforiaJNI: void delete_Box3D(long)
+com.vuforia.VuforiaJNI: long CameraCalibration_getSize(long,com.vuforia.CameraCalibration)
+com.vuforia.VuforiaJNI: long CameraCalibration_getFocalLength(long,com.vuforia.CameraCalibration)
+com.vuforia.VuforiaJNI: long CameraCalibration_getPrincipalPoint(long,com.vuforia.CameraCalibration)
+com.vuforia.VuforiaJNI: long CameraCalibration_getDistortionParameters(long,com.vuforia.CameraCalibration)
+com.vuforia.VuforiaJNI: long CameraCalibration_getFieldOfViewRads(long,com.vuforia.CameraCalibration)
+com.vuforia.VuforiaJNI: long new_CameraField()
+com.vuforia.VuforiaJNI: int CameraField_Type_get(long,com.vuforia.CameraField)
+com.vuforia.VuforiaJNI: java.lang.String CameraField_Key_get(long,com.vuforia.CameraField)
+com.vuforia.VuforiaJNI: void delete_CameraField(long)
+com.vuforia.VuforiaJNI: long CameraDevice_getInstance()
+com.vuforia.VuforiaJNI: boolean CameraDevice_init__SWIG_0(long,com.vuforia.CameraDevice,int)
+com.vuforia.VuforiaJNI: boolean CameraDevice_init__SWIG_1(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: boolean CameraDevice_deinit(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: boolean CameraDevice_start(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: boolean CameraDevice_stop(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: int CameraDevice_getNumVideoModes(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: long CameraDevice_getVideoMode(long,com.vuforia.CameraDevice,int)
+com.vuforia.VuforiaJNI: int CameraDevice_getCameraDirection(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: boolean CameraDevice_selectVideoMode(long,com.vuforia.CameraDevice,int)
+com.vuforia.VuforiaJNI: long CameraDevice_getCameraCalibration(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: boolean CameraDevice_setFlashTorchMode(long,com.vuforia.CameraDevice,boolean)
+com.vuforia.VuforiaJNI: boolean CameraDevice_setFocusMode(long,com.vuforia.CameraDevice,int)
+com.vuforia.VuforiaJNI: boolean CameraDevice_setField__SWIG_0(long,com.vuforia.CameraDevice,java.lang.String,java.lang.String)
+com.vuforia.VuforiaJNI: boolean CameraDevice_setField__SWIG_1(long,com.vuforia.CameraDevice,java.lang.String,long)
+com.vuforia.VuforiaJNI: boolean CameraDevice_setField__SWIG_2(long,com.vuforia.CameraDevice,java.lang.String,float)
+com.vuforia.VuforiaJNI: boolean CameraDevice_setField__SWIG_3(long,com.vuforia.CameraDevice,java.lang.String,boolean)
+com.vuforia.VuforiaJNI: boolean CameraDevice_setField__SWIG_4(long,com.vuforia.CameraDevice,java.lang.String,long[])
+com.vuforia.VuforiaJNI: int CameraDevice_getNumFields(long,com.vuforia.CameraDevice)
+com.vuforia.VuforiaJNI: boolean CameraDevice_getCameraField(long,com.vuforia.CameraDevice,int,long,com.vuforia.CameraField)
+com.vuforia.VuforiaJNI: boolean CameraDevice_getFieldString(long,com.vuforia.CameraDevice,java.lang.String,java.lang.String,long)
+com.vuforia.VuforiaJNI: boolean CameraDevice_getFieldInt64(long,com.vuforia.CameraDevice,java.lang.String,long[])
+com.vuforia.VuforiaJNI: boolean CameraDevice_getFieldFloat(long,com.vuforia.CameraDevice,java.lang.String,float[])
+com.vuforia.VuforiaJNI: boolean CameraDevice_getFieldBool(long,com.vuforia.CameraDevice,java.lang.String,boolean[])
+com.vuforia.VuforiaJNI: boolean CameraDevice_getFieldInt64Range(long,com.vuforia.CameraDevice,java.lang.String,long[])
+com.vuforia.VuforiaJNI: void delete_CameraDevice(long)
+com.vuforia.VuforiaJNI: long ObjectTarget_getClassType()
+com.vuforia.VuforiaJNI: java.lang.String ObjectTarget_getUniqueTargetId(long,com.vuforia.ObjectTarget)
+com.vuforia.VuforiaJNI: long ObjectTarget_getSize(long,com.vuforia.ObjectTarget)
+com.vuforia.VuforiaJNI: boolean ObjectTarget_setSize(long,com.vuforia.ObjectTarget,long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: void delete_ObjectTarget(long)
+com.vuforia.VuforiaJNI: long ObjectTargetResult_getClassType()
+com.vuforia.VuforiaJNI: long ObjectTargetResult_getTrackable(long,com.vuforia.ObjectTargetResult)
+com.vuforia.VuforiaJNI: void delete_ObjectTargetResult(long)
+com.vuforia.VuforiaJNI: long CylinderTarget_getClassType()
+com.vuforia.VuforiaJNI: float CylinderTarget_getSideLength(long,com.vuforia.CylinderTarget)
+com.vuforia.VuforiaJNI: boolean CylinderTarget_setSideLength(long,com.vuforia.CylinderTarget,float)
+com.vuforia.VuforiaJNI: float CylinderTarget_getTopDiameter(long,com.vuforia.CylinderTarget)
+com.vuforia.VuforiaJNI: boolean CylinderTarget_setTopDiameter(long,com.vuforia.CylinderTarget,float)
+com.vuforia.VuforiaJNI: float CylinderTarget_getBottomDiameter(long,com.vuforia.CylinderTarget)
+com.vuforia.VuforiaJNI: boolean CylinderTarget_setBottomDiameter(long,com.vuforia.CylinderTarget,float)
+com.vuforia.VuforiaJNI: void delete_CylinderTarget(long)
+com.vuforia.VuforiaJNI: long CylinderTargetResult_getClassType()
+com.vuforia.VuforiaJNI: long CylinderTargetResult_getTrackable(long,com.vuforia.CylinderTargetResult)
+com.vuforia.VuforiaJNI: void delete_CylinderTargetResult(long)
+com.vuforia.VuforiaJNI: boolean DataSet_exists(java.lang.String,int)
+com.vuforia.VuforiaJNI: boolean DataSet_load(long,com.vuforia.DataSet,java.lang.String,int)
+com.vuforia.VuforiaJNI: int DataSet_getNumTrackables(long,com.vuforia.DataSet)
+com.vuforia.VuforiaJNI: long DataSet_getTrackable(long,com.vuforia.DataSet,int)
+com.vuforia.VuforiaJNI: long DataSet_createTrackable(long,com.vuforia.DataSet,long,com.vuforia.TrackableSource)
+com.vuforia.VuforiaJNI: long DataSet_createMultiTarget(long,com.vuforia.DataSet,java.lang.String)
+com.vuforia.VuforiaJNI: boolean DataSet_destroy(long,com.vuforia.DataSet,long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: boolean DataSet_hasReachedTrackableLimit(long,com.vuforia.DataSet)
+com.vuforia.VuforiaJNI: boolean DataSet_isActive(long,com.vuforia.DataSet)
+com.vuforia.VuforiaJNI: void delete_DataSet(long)
+com.vuforia.VuforiaJNI: long EyewearCalibrationProfileManager_getMaxCount(long,com.vuforia.EyewearCalibrationProfileManager)
+com.vuforia.VuforiaJNI: long EyewearCalibrationProfileManager_getUsedCount(long,com.vuforia.EyewearCalibrationProfileManager)
+com.vuforia.VuforiaJNI: boolean EyewearCalibrationProfileManager_isProfileUsed(long,com.vuforia.EyewearCalibrationProfileManager,int)
+com.vuforia.VuforiaJNI: int EyewearCalibrationProfileManager_getActiveProfile(long,com.vuforia.EyewearCalibrationProfileManager)
+com.vuforia.VuforiaJNI: boolean EyewearCalibrationProfileManager_setActiveProfile(long,com.vuforia.EyewearCalibrationProfileManager,int)
+com.vuforia.VuforiaJNI: long EyewearCalibrationProfileManager_getCameraToEyePose(long,com.vuforia.EyewearCalibrationProfileManager,int,int)
+com.vuforia.VuforiaJNI: long EyewearCalibrationProfileManager_getEyeProjection(long,com.vuforia.EyewearCalibrationProfileManager,int,int)
+com.vuforia.VuforiaJNI: boolean EyewearCalibrationProfileManager_setCameraToEyePose(long,com.vuforia.EyewearCalibrationProfileManager,int,int,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: boolean EyewearCalibrationProfileManager_setEyeProjection(long,com.vuforia.EyewearCalibrationProfileManager,int,int,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: short[] EyewearCalibrationProfileManager_getProfileName(long,com.vuforia.EyewearCalibrationProfileManager,int)
+com.vuforia.VuforiaJNI: boolean EyewearCalibrationProfileManager_setProfileName(long,com.vuforia.EyewearCalibrationProfileManager,int,short[])
+com.vuforia.VuforiaJNI: boolean EyewearCalibrationProfileManager_clearProfile(long,com.vuforia.EyewearCalibrationProfileManager,int)
+com.vuforia.VuforiaJNI: void delete_EyewearCalibrationProfileManager(long)
+com.vuforia.VuforiaJNI: void EyewearCalibrationReading_Pose_set(long,com.vuforia.EyewearCalibrationReading,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: long EyewearCalibrationReading_Pose_get(long,com.vuforia.EyewearCalibrationReading)
+com.vuforia.VuforiaJNI: void EyewearCalibrationReading_Scale_set(long,com.vuforia.EyewearCalibrationReading,float)
+com.vuforia.VuforiaJNI: float EyewearCalibrationReading_Scale_get(long,com.vuforia.EyewearCalibrationReading)
+com.vuforia.VuforiaJNI: void EyewearCalibrationReading_CenterX_set(long,com.vuforia.EyewearCalibrationReading,float)
+com.vuforia.VuforiaJNI: float EyewearCalibrationReading_CenterX_get(long,com.vuforia.EyewearCalibrationReading)
+com.vuforia.VuforiaJNI: void EyewearCalibrationReading_CenterY_set(long,com.vuforia.EyewearCalibrationReading,float)
+com.vuforia.VuforiaJNI: float EyewearCalibrationReading_CenterY_get(long,com.vuforia.EyewearCalibrationReading)
+com.vuforia.VuforiaJNI: long new_EyewearCalibrationReading()
+com.vuforia.VuforiaJNI: void delete_EyewearCalibrationReading(long)
+com.vuforia.VuforiaJNI: boolean EyewearUserCalibrator_init(long,com.vuforia.EyewearUserCalibrator,long,long,float,float)
+com.vuforia.VuforiaJNI: float EyewearUserCalibrator_getMinScaleHint(long,com.vuforia.EyewearUserCalibrator)
+com.vuforia.VuforiaJNI: float EyewearUserCalibrator_getMaxScaleHint(long,com.vuforia.EyewearUserCalibrator)
+com.vuforia.VuforiaJNI: float EyewearUserCalibrator_getDrawingAspectRatio(long,com.vuforia.EyewearUserCalibrator,long,long)
+com.vuforia.VuforiaJNI: boolean EyewearUserCalibrator_isStereoStretched(long,com.vuforia.EyewearUserCalibrator)
+com.vuforia.VuforiaJNI: boolean EyewearUserCalibrator_getProjectionMatrix(long,com.vuforia.EyewearUserCalibrator,long[],int,long,com.vuforia.Matrix34F,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: int EyewearUserCalibrator_getProjectionMatrices(long,com.vuforia.EyewearUserCalibrator,long[],int,long[],int,long,com.vuforia.Matrix34F,long,com.vuforia.Matrix34F,long,com.vuforia.Matrix34F,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: void delete_EyewearUserCalibrator(long)
+com.vuforia.VuforiaJNI: void delete_ViewerParameters(long)
+com.vuforia.VuforiaJNI: long new_ViewerParameters(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: float ViewerParameters_getVersion(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: java.lang.String ViewerParameters_getName(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: java.lang.String ViewerParameters_getManufacturer(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: int ViewerParameters_getButtonType(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: float ViewerParameters_getScreenToLensDistance(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: float ViewerParameters_getInterLensDistance(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: int ViewerParameters_getTrayAlignment(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: float ViewerParameters_getLensCentreToTrayDistance(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: long ViewerParameters_getNumDistortionCoefficients(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: float ViewerParameters_getDistortionCoefficient(long,com.vuforia.ViewerParameters,int)
+com.vuforia.VuforiaJNI: long ViewerParameters_getFieldOfView(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: boolean ViewerParameters_containsMagnet(long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: long ViewerParametersList_getListForAuthoringTools()
+com.vuforia.VuforiaJNI: void ViewerParametersList_setSDKFilter(long,com.vuforia.ViewerParametersList,java.lang.String)
+com.vuforia.VuforiaJNI: long ViewerParametersList_size(long,com.vuforia.ViewerParametersList)
+com.vuforia.VuforiaJNI: long ViewerParametersList_get__SWIG_0(long,com.vuforia.ViewerParametersList,long)
+com.vuforia.VuforiaJNI: long ViewerParametersList_get__SWIG_1(long,com.vuforia.ViewerParametersList,java.lang.String,java.lang.String)
+com.vuforia.VuforiaJNI: long ViewerParametersList_begin(long,com.vuforia.ViewerParametersList)
+com.vuforia.VuforiaJNI: long ViewerParametersList_end(long,com.vuforia.ViewerParametersList)
+com.vuforia.VuforiaJNI: long ViewerParametersList_next(long,com.vuforia.ViewerParametersList,long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: void delete_ViewerParametersList(long)
+com.vuforia.VuforiaJNI: long new_CustomViewerParameters__SWIG_0(float,java.lang.String,java.lang.String)
+com.vuforia.VuforiaJNI: long new_CustomViewerParameters__SWIG_1(long,com.vuforia.CustomViewerParameters)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_setButtonType(long,com.vuforia.CustomViewerParameters,int)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_setScreenToLensDistance(long,com.vuforia.CustomViewerParameters,float)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_setInterLensDistance(long,com.vuforia.CustomViewerParameters,float)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_setTrayAlignment(long,com.vuforia.CustomViewerParameters,int)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_setLensCentreToTrayDistance(long,com.vuforia.CustomViewerParameters,float)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_clearDistortionCoefficients(long,com.vuforia.CustomViewerParameters)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_addDistortionCoefficient(long,com.vuforia.CustomViewerParameters,float)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_setFieldOfView(long,com.vuforia.CustomViewerParameters,long,com.vuforia.Vec4F)
+com.vuforia.VuforiaJNI: void CustomViewerParameters_setContainsMagnet(long,com.vuforia.CustomViewerParameters,boolean)
+com.vuforia.VuforiaJNI: void delete_CustomViewerParameters(long)
+com.vuforia.VuforiaJNI: long ViewList_getNumViews(long,com.vuforia.ViewList)
+com.vuforia.VuforiaJNI: int ViewList_getView(long,com.vuforia.ViewList,int)
+com.vuforia.VuforiaJNI: boolean ViewList_contains(long,com.vuforia.ViewList,int)
+com.vuforia.VuforiaJNI: void delete_ViewList(long)
+com.vuforia.VuforiaJNI: void delete_RenderingPrimitives(long)
+com.vuforia.VuforiaJNI: long new_RenderingPrimitives(long,com.vuforia.RenderingPrimitives)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getRenderingViews(long,com.vuforia.RenderingPrimitives)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getViewport(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getNormalizedViewport(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getProjectionMatrix__SWIG_0(long,com.vuforia.RenderingPrimitives,int,int,boolean)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getProjectionMatrix__SWIG_1(long,com.vuforia.RenderingPrimitives,int,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getEffectiveFov(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getViewportCentreToEyeAxis(long,com.vuforia.RenderingPrimitives,int,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getEyeDisplayAdjustmentMatrix(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getVideoBackgroundTextureSize(long,com.vuforia.RenderingPrimitives)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getVideoBackgroundProjectionMatrix__SWIG_0(long,com.vuforia.RenderingPrimitives,int,int,boolean)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getVideoBackgroundProjectionMatrix__SWIG_1(long,com.vuforia.RenderingPrimitives,int,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getVideoBackgroundMesh(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getDistortionTextureSize(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getDistortionTextureViewport(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long RenderingPrimitives_getDistortionTextureMesh(long,com.vuforia.RenderingPrimitives,int)
+com.vuforia.VuforiaJNI: long Device_getInstance()
+com.vuforia.VuforiaJNI: long Device_getClassType()
+com.vuforia.VuforiaJNI: long Device_getType(long,com.vuforia.Device)
+com.vuforia.VuforiaJNI: boolean Device_isOfType(long,com.vuforia.Device,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: boolean Device_setMode(long,com.vuforia.Device,int)
+com.vuforia.VuforiaJNI: int Device_getMode(long,com.vuforia.Device)
+com.vuforia.VuforiaJNI: void Device_setViewerActive(long,com.vuforia.Device,boolean)
+com.vuforia.VuforiaJNI: boolean Device_isViewerActive(long,com.vuforia.Device)
+com.vuforia.VuforiaJNI: long Device_getViewerList(long,com.vuforia.Device)
+com.vuforia.VuforiaJNI: boolean Device_selectViewer(long,com.vuforia.Device,long,com.vuforia.ViewerParameters)
+com.vuforia.VuforiaJNI: long Device_getSelectedViewer(long,com.vuforia.Device)
+com.vuforia.VuforiaJNI: void Device_setConfigurationChanged(long,com.vuforia.Device)
+com.vuforia.VuforiaJNI: long Device_getRenderingPrimitives(long,com.vuforia.Device)
+com.vuforia.VuforiaJNI: void delete_Device(long)
+com.vuforia.VuforiaJNI: long EyewearDevice_getClassType()
+com.vuforia.VuforiaJNI: boolean EyewearDevice_isSeeThru(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: boolean EyewearDevice_isDualDisplay(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: boolean EyewearDevice_setDisplayExtended(long,com.vuforia.EyewearDevice,boolean)
+com.vuforia.VuforiaJNI: boolean EyewearDevice_isDisplayExtended(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: boolean EyewearDevice_isDisplayExtendedGLOnly(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: int EyewearDevice_getScreenOrientation(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: boolean EyewearDevice_setPredictiveTracking(long,com.vuforia.EyewearDevice,boolean)
+com.vuforia.VuforiaJNI: boolean EyewearDevice_isPredictiveTrackingEnabled(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: long EyewearDevice_getCalibrationProfileManager(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: long EyewearDevice_getUserCalibrator(long,com.vuforia.EyewearDevice)
+com.vuforia.VuforiaJNI: void delete_EyewearDevice(long)
+com.vuforia.VuforiaJNI: long new_Frame__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Frame__SWIG_1(long,com.vuforia.Frame)
+com.vuforia.VuforiaJNI: void delete_Frame(long)
+com.vuforia.VuforiaJNI: double Frame_getTimeStamp(long,com.vuforia.Frame)
+com.vuforia.VuforiaJNI: int Frame_getIndex(long,com.vuforia.Frame)
+com.vuforia.VuforiaJNI: long Frame_getNumImages(long,com.vuforia.Frame)
+com.vuforia.VuforiaJNI: long Frame_getImage(long,com.vuforia.Frame,int)
+com.vuforia.VuforiaJNI: int Image_getWidth(long,com.vuforia.Image)
+com.vuforia.VuforiaJNI: int Image_getHeight(long,com.vuforia.Image)
+com.vuforia.VuforiaJNI: int Image_getStride(long,com.vuforia.Image)
+com.vuforia.VuforiaJNI: int Image_getBufferWidth(long,com.vuforia.Image)
+com.vuforia.VuforiaJNI: int Image_getBufferHeight(long,com.vuforia.Image)
+com.vuforia.VuforiaJNI: int Image_getFormat(long,com.vuforia.Image)
+com.vuforia.VuforiaJNI: java.nio.ByteBuffer Image_getPixels(long,com.vuforia.Image)
+com.vuforia.VuforiaJNI: long ImageTarget_getClassType()
+com.vuforia.VuforiaJNI: int ImageTarget_getNumVirtualButtons(long,com.vuforia.ImageTarget)
+com.vuforia.VuforiaJNI: long ImageTarget_getVirtualButton__SWIG_0(long,com.vuforia.ImageTarget,int)
+com.vuforia.VuforiaJNI: long ImageTarget_getVirtualButton__SWIG_1(long,com.vuforia.ImageTarget,java.lang.String)
+com.vuforia.VuforiaJNI: long ImageTarget_createVirtualButton(long,com.vuforia.ImageTarget,java.lang.String,long,com.vuforia.Area)
+com.vuforia.VuforiaJNI: boolean ImageTarget_destroyVirtualButton(long,com.vuforia.ImageTarget,long,com.vuforia.VirtualButton)
+com.vuforia.VuforiaJNI: java.lang.String ImageTarget_getMetaData(long,com.vuforia.ImageTarget)
+com.vuforia.VuforiaJNI: void delete_ImageTarget(long)
+com.vuforia.VuforiaJNI: boolean ImageTargetBuilder_build(long,com.vuforia.ImageTargetBuilder,java.lang.String,float)
+com.vuforia.VuforiaJNI: void ImageTargetBuilder_startScan(long,com.vuforia.ImageTargetBuilder)
+com.vuforia.VuforiaJNI: void ImageTargetBuilder_stopScan(long,com.vuforia.ImageTargetBuilder)
+com.vuforia.VuforiaJNI: int ImageTargetBuilder_getFrameQuality(long,com.vuforia.ImageTargetBuilder)
+com.vuforia.VuforiaJNI: long ImageTargetBuilder_getTrackableSource(long,com.vuforia.ImageTargetBuilder)
+com.vuforia.VuforiaJNI: long ImageTargetResult_getClassType()
+com.vuforia.VuforiaJNI: long ImageTargetResult_getTrackable(long,com.vuforia.ImageTargetResult)
+com.vuforia.VuforiaJNI: int ImageTargetResult_getNumVirtualButtons(long,com.vuforia.ImageTargetResult)
+com.vuforia.VuforiaJNI: long ImageTargetResult_getVirtualButtonResult__SWIG_0(long,com.vuforia.ImageTargetResult,int)
+com.vuforia.VuforiaJNI: long ImageTargetResult_getVirtualButtonResult__SWIG_1(long,com.vuforia.ImageTargetResult,java.lang.String)
+com.vuforia.VuforiaJNI: void delete_ImageTargetResult(long)
+com.vuforia.VuforiaJNI: long ObjectTracker_getClassType()
+com.vuforia.VuforiaJNI: long ObjectTracker_createDataSet(long,com.vuforia.ObjectTracker)
+com.vuforia.VuforiaJNI: boolean ObjectTracker_destroyDataSet(long,com.vuforia.ObjectTracker,long,com.vuforia.DataSet)
+com.vuforia.VuforiaJNI: boolean ObjectTracker_activateDataSet(long,com.vuforia.ObjectTracker,long,com.vuforia.DataSet)
+com.vuforia.VuforiaJNI: boolean ObjectTracker_deactivateDataSet(long,com.vuforia.ObjectTracker,long,com.vuforia.DataSet)
+com.vuforia.VuforiaJNI: long ObjectTracker_getActiveDataSet(long,com.vuforia.ObjectTracker,int)
+com.vuforia.VuforiaJNI: int ObjectTracker_getActiveDataSetCount(long,com.vuforia.ObjectTracker)
+com.vuforia.VuforiaJNI: long ObjectTracker_getImageTargetBuilder(long,com.vuforia.ObjectTracker)
+com.vuforia.VuforiaJNI: long ObjectTracker_getTargetFinder(long,com.vuforia.ObjectTracker)
+com.vuforia.VuforiaJNI: boolean ObjectTracker_persistExtendedTracking(long,com.vuforia.ObjectTracker,boolean)
+com.vuforia.VuforiaJNI: boolean ObjectTracker_resetExtendedTracking(long,com.vuforia.ObjectTracker)
+com.vuforia.VuforiaJNI: void delete_ObjectTracker(long)
+com.vuforia.VuforiaJNI: long MultiTarget_getClassType()
+com.vuforia.VuforiaJNI: int MultiTarget_getNumParts(long,com.vuforia.MultiTarget)
+com.vuforia.VuforiaJNI: long MultiTarget_getPart__SWIG_0(long,com.vuforia.MultiTarget,int)
+com.vuforia.VuforiaJNI: long MultiTarget_getPart__SWIG_1(long,com.vuforia.MultiTarget,java.lang.String)
+com.vuforia.VuforiaJNI: int MultiTarget_addPart(long,com.vuforia.MultiTarget,long,com.vuforia.Trackable)
+com.vuforia.VuforiaJNI: boolean MultiTarget_removePart(long,com.vuforia.MultiTarget,int)
+com.vuforia.VuforiaJNI: boolean MultiTarget_setPartOffset(long,com.vuforia.MultiTarget,int,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: boolean MultiTarget_getPartOffset(long,com.vuforia.MultiTarget,int,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: void delete_MultiTarget(long)
+com.vuforia.VuforiaJNI: long MultiTargetResult_getClassType()
+com.vuforia.VuforiaJNI: long MultiTargetResult_getTrackable(long,com.vuforia.MultiTargetResult)
+com.vuforia.VuforiaJNI: int MultiTargetResult_getNumPartResults(long,com.vuforia.MultiTargetResult)
+com.vuforia.VuforiaJNI: long MultiTargetResult_getPartResult__SWIG_0(long,com.vuforia.MultiTargetResult,int)
+com.vuforia.VuforiaJNI: long MultiTargetResult_getPartResult__SWIG_1(long,com.vuforia.MultiTargetResult,java.lang.String)
+com.vuforia.VuforiaJNI: void delete_MultiTargetResult(long)
+com.vuforia.VuforiaJNI: long new_Rectangle__SWIG_0()
+com.vuforia.VuforiaJNI: long new_Rectangle__SWIG_1(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: long new_Rectangle__SWIG_2(float,float,float,float)
+com.vuforia.VuforiaJNI: void delete_Rectangle(long)
+com.vuforia.VuforiaJNI: float Rectangle_getLeftTopX(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: float Rectangle_getLeftTopY(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: float Rectangle_getRightBottomX(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: float Rectangle_getRightBottomY(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: float Rectangle_getWidth(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: float Rectangle_getHeight(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: float Rectangle_getAreaSize(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: int Rectangle_getType(long,com.vuforia.Rectangle)
+com.vuforia.VuforiaJNI: long new_RectangleInt__SWIG_0()
+com.vuforia.VuforiaJNI: long new_RectangleInt__SWIG_1(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: long new_RectangleInt__SWIG_2(int,int,int,int)
+com.vuforia.VuforiaJNI: void delete_RectangleInt(long)
+com.vuforia.VuforiaJNI: int RectangleInt_getLeftTopX(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: int RectangleInt_getLeftTopY(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: int RectangleInt_getRightBottomX(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: int RectangleInt_getRightBottomY(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: int RectangleInt_getWidth(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: int RectangleInt_getHeight(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: int RectangleInt_getAreaSize(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: int RectangleInt_getType(long,com.vuforia.RectangleInt)
+com.vuforia.VuforiaJNI: long Renderer_getInstance()
+com.vuforia.VuforiaJNI: long Renderer_begin__SWIG_0(long,com.vuforia.Renderer)
+com.vuforia.VuforiaJNI: void Renderer_begin__SWIG_1(long,com.vuforia.Renderer,long,com.vuforia.State)
+com.vuforia.VuforiaJNI: boolean Renderer_drawVideoBackground(long,com.vuforia.Renderer)
+com.vuforia.VuforiaJNI: void Renderer_end(long,com.vuforia.Renderer)
+com.vuforia.VuforiaJNI: boolean Renderer_updateVideoBackgroundTexture__SWIG_0(long,com.vuforia.Renderer,long,com.vuforia.TextureUnit)
+com.vuforia.VuforiaJNI: boolean Renderer_updateVideoBackgroundTexture__SWIG_1(long,com.vuforia.Renderer)
+com.vuforia.VuforiaJNI: void Renderer_setVideoBackgroundConfig(long,com.vuforia.Renderer,long,com.vuforia.VideoBackgroundConfig)
+com.vuforia.VuforiaJNI: long Renderer_getVideoBackgroundConfig(long,com.vuforia.Renderer)
+com.vuforia.VuforiaJNI: long Renderer_getVideoBackgroundTextureInfo(long,com.vuforia.Renderer)
+com.vuforia.VuforiaJNI: boolean Renderer_setVideoBackgroundTexture(long,com.vuforia.Renderer,long,com.vuforia.TextureData)
+com.vuforia.VuforiaJNI: void Renderer_setARProjection(long,com.vuforia.Renderer,float,float)
+com.vuforia.VuforiaJNI: boolean Renderer_setTargetFps(long,com.vuforia.Renderer,int)
+com.vuforia.VuforiaJNI: int Renderer_getRecommendedFps__SWIG_0(long,com.vuforia.Renderer,int)
+com.vuforia.VuforiaJNI: int Renderer_getRecommendedFps__SWIG_1(long,com.vuforia.Renderer)
+com.vuforia.VuforiaJNI: void delete_Renderer(long)
+com.vuforia.VuforiaJNI: int TextureData_type(long,com.vuforia.TextureData)
+com.vuforia.VuforiaJNI: int TextureUnit_type(long,com.vuforia.TextureUnit)
+com.vuforia.VuforiaJNI: long new_GLTextureData__SWIG_0(int)
+com.vuforia.VuforiaJNI: long new_GLTextureData__SWIG_1()
+com.vuforia.VuforiaJNI: void delete_GLTextureData(long)
+com.vuforia.VuforiaJNI: void GLTextureData_VideoBackgroundTextureID_set(long,com.vuforia.GLTextureData,int)
+com.vuforia.VuforiaJNI: int GLTextureData_VideoBackgroundTextureID_get(long,com.vuforia.GLTextureData)
+com.vuforia.VuforiaJNI: long new_GLTextureUnit__SWIG_0(int)
+com.vuforia.VuforiaJNI: long new_GLTextureUnit__SWIG_1()
+com.vuforia.VuforiaJNI: void delete_GLTextureUnit(long)
+com.vuforia.VuforiaJNI: void GLTextureUnit_TextureUnit_set(long,com.vuforia.GLTextureUnit,int)
+com.vuforia.VuforiaJNI: int GLTextureUnit_TextureUnit_get(long,com.vuforia.GLTextureUnit)
+com.vuforia.VuforiaJNI: long new_State__SWIG_0()
+com.vuforia.VuforiaJNI: long new_State__SWIG_1(long,com.vuforia.State)
+com.vuforia.VuforiaJNI: void delete_State(long)
+com.vuforia.VuforiaJNI: long State_getFrame(long,com.vuforia.State)
+com.vuforia.VuforiaJNI: int State_getNumTrackables(long,com.vuforia.State)
+com.vuforia.VuforiaJNI: long State_getTrackable(long,com.vuforia.State,int)
+com.vuforia.VuforiaJNI: int State_getNumTrackableResults(long,com.vuforia.State)
+com.vuforia.VuforiaJNI: long State_getTrackableResult(long,com.vuforia.State,int)
+com.vuforia.VuforiaJNI: long StateUpdater_updateState(long,com.vuforia.StateUpdater)
+com.vuforia.VuforiaJNI: long StateUpdater_getLatestState(long,com.vuforia.StateUpdater)
+com.vuforia.VuforiaJNI: double StateUpdater_getCurrentTimeStamp(long,com.vuforia.StateUpdater)
+com.vuforia.VuforiaJNI: void delete_StateUpdater(long)
+com.vuforia.VuforiaJNI: long Surface_getClassType()
+com.vuforia.VuforiaJNI: long Surface_getNavMesh(long,com.vuforia.Surface)
+com.vuforia.VuforiaJNI: long Surface_getBoundingBox(long,com.vuforia.Surface)
+com.vuforia.VuforiaJNI: int Surface_getNumMeshBoundaries(long,com.vuforia.Surface)
+com.vuforia.VuforiaJNI: java.nio.ByteBuffer Surface_getMeshBoundaries(long,com.vuforia.Surface)
+com.vuforia.VuforiaJNI: void delete_Surface(long)
+com.vuforia.VuforiaJNI: long ReconstructionFromTarget_getClassType()
+com.vuforia.VuforiaJNI: boolean ReconstructionFromTarget_setInitializationTarget__SWIG_0(long,com.vuforia.ReconstructionFromTarget,long,com.vuforia.Trackable,long,com.vuforia.Box3D)
+com.vuforia.VuforiaJNI: boolean ReconstructionFromTarget_setInitializationTarget__SWIG_1(long,com.vuforia.ReconstructionFromTarget,long,com.vuforia.Trackable,long,com.vuforia.Box3D,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: long ReconstructionFromTarget_getInitializationTarget(long,com.vuforia.ReconstructionFromTarget)
+com.vuforia.VuforiaJNI: long Prop_getClassType()
+com.vuforia.VuforiaJNI: long Prop_getBoundingBox(long,com.vuforia.Prop)
+com.vuforia.VuforiaJNI: long Prop_getLocalPosition(long,com.vuforia.Prop)
+com.vuforia.VuforiaJNI: void delete_Prop(long)
+com.vuforia.VuforiaJNI: long PropResult_getClassType()
+com.vuforia.VuforiaJNI: long PropResult_getTrackable(long,com.vuforia.PropResult)
+com.vuforia.VuforiaJNI: void delete_PropResult(long)
+com.vuforia.VuforiaJNI: long SurfaceResult_getClassType()
+com.vuforia.VuforiaJNI: long SurfaceResult_getTrackable(long,com.vuforia.SurfaceResult)
+com.vuforia.VuforiaJNI: void delete_SurfaceResult(long)
+com.vuforia.VuforiaJNI: int TransformModel_getType(long,com.vuforia.TransformModel)
+com.vuforia.VuforiaJNI: void delete_TransformModel(long)
+com.vuforia.VuforiaJNI: int HandheldTransformModel_getType(long,com.vuforia.HandheldTransformModel)
+com.vuforia.VuforiaJNI: long new_HandheldTransformModel__SWIG_0()
+com.vuforia.VuforiaJNI: long new_HandheldTransformModel__SWIG_1(long,com.vuforia.HandheldTransformModel)
+com.vuforia.VuforiaJNI: long new_HandheldTransformModel__SWIG_2(long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: boolean HandheldTransformModel_setPivotPoint(long,com.vuforia.HandheldTransformModel,long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: long HandheldTransformModel_getPivotPoint(long,com.vuforia.HandheldTransformModel)
+com.vuforia.VuforiaJNI: void delete_HandheldTransformModel(long)
+com.vuforia.VuforiaJNI: int HeadTransformModel_getType(long,com.vuforia.HeadTransformModel)
+com.vuforia.VuforiaJNI: long new_HeadTransformModel__SWIG_0()
+com.vuforia.VuforiaJNI: long new_HeadTransformModel__SWIG_1(long,com.vuforia.HeadTransformModel)
+com.vuforia.VuforiaJNI: long new_HeadTransformModel__SWIG_2(long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: boolean HeadTransformModel_setPivotPoint(long,com.vuforia.HeadTransformModel,long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: long HeadTransformModel_getPivotPoint(long,com.vuforia.HeadTransformModel)
+com.vuforia.VuforiaJNI: void delete_HeadTransformModel(long)
+com.vuforia.VuforiaJNI: long DeviceTrackable_getClassType()
+com.vuforia.VuforiaJNI: void delete_DeviceTrackable(long)
+com.vuforia.VuforiaJNI: long DeviceTrackableResult_getClassType()
+com.vuforia.VuforiaJNI: long DeviceTrackableResult_getTrackable(long,com.vuforia.DeviceTrackableResult)
+com.vuforia.VuforiaJNI: void delete_DeviceTrackableResult(long)
+com.vuforia.VuforiaJNI: long DeviceTracker_getClassType()
+com.vuforia.VuforiaJNI: boolean DeviceTracker_setWorldToDeviceBaseTransform(long,com.vuforia.DeviceTracker,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: long DeviceTracker_getWorldToDeviceBaseTransform(long,com.vuforia.DeviceTracker)
+com.vuforia.VuforiaJNI: void delete_DeviceTracker(long)
+com.vuforia.VuforiaJNI: long RotationalDeviceTracker_getClassType()
+com.vuforia.VuforiaJNI: boolean RotationalDeviceTracker_recenter(long,com.vuforia.RotationalDeviceTracker)
+com.vuforia.VuforiaJNI: boolean RotationalDeviceTracker_setPosePrediction(long,com.vuforia.RotationalDeviceTracker,boolean)
+com.vuforia.VuforiaJNI: boolean RotationalDeviceTracker_getPosePrediction(long,com.vuforia.RotationalDeviceTracker)
+com.vuforia.VuforiaJNI: boolean RotationalDeviceTracker_setModelCorrection(long,com.vuforia.RotationalDeviceTracker,long,com.vuforia.TransformModel)
+com.vuforia.VuforiaJNI: long RotationalDeviceTracker_getModelCorrection(long,com.vuforia.RotationalDeviceTracker)
+com.vuforia.VuforiaJNI: long RotationalDeviceTracker_getDefaultHeadModel(long,com.vuforia.RotationalDeviceTracker)
+com.vuforia.VuforiaJNI: long RotationalDeviceTracker_getDefaultHandheldModel(long,com.vuforia.RotationalDeviceTracker)
+com.vuforia.VuforiaJNI: void delete_RotationalDeviceTracker(long)
+com.vuforia.VuforiaJNI: long SmartTerrainBuilder_getClassType()
+com.vuforia.VuforiaJNI: long SmartTerrainBuilder_getType(long,com.vuforia.SmartTerrainBuilder)
+com.vuforia.VuforiaJNI: boolean SmartTerrainBuilder_isOfType(long,com.vuforia.SmartTerrainBuilder,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: long SmartTerrainBuilder_createReconstruction(long,com.vuforia.SmartTerrainBuilder,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: boolean SmartTerrainBuilder_destroyReconstruction(long,com.vuforia.SmartTerrainBuilder,long,com.vuforia.Reconstruction)
+com.vuforia.VuforiaJNI: long SmartTerrainBuilder_getNumReconstructions(long,com.vuforia.SmartTerrainBuilder)
+com.vuforia.VuforiaJNI: boolean SmartTerrainBuilder_addReconstruction(long,com.vuforia.SmartTerrainBuilder,long,com.vuforia.Reconstruction)
+com.vuforia.VuforiaJNI: boolean SmartTerrainBuilder_removeReconstruction(long,com.vuforia.SmartTerrainBuilder,long)
+com.vuforia.VuforiaJNI: long SmartTerrainBuilder_getReconstruction(long,com.vuforia.SmartTerrainBuilder,long)
+com.vuforia.VuforiaJNI: boolean SmartTerrainBuilder_init(long,com.vuforia.SmartTerrainBuilder)
+com.vuforia.VuforiaJNI: boolean SmartTerrainBuilder_deinit(long,com.vuforia.SmartTerrainBuilder)
+com.vuforia.VuforiaJNI: void delete_SmartTerrainBuilder(long)
+com.vuforia.VuforiaJNI: long SmartTerrainTracker_getClassType()
+com.vuforia.VuforiaJNI: boolean SmartTerrainTracker_setScaleToMillimeter(long,com.vuforia.SmartTerrainTracker,float)
+com.vuforia.VuforiaJNI: float SmartTerrainTracker_getScaleToMillimeter(long,com.vuforia.SmartTerrainTracker)
+com.vuforia.VuforiaJNI: long SmartTerrainTracker_getSmartTerrainBuilder(long,com.vuforia.SmartTerrainTracker)
+com.vuforia.VuforiaJNI: void delete_SmartTerrainTracker(long)
+com.vuforia.VuforiaJNI: java.lang.String TargetSearchResult_getTargetName(long,com.vuforia.TargetSearchResult)
+com.vuforia.VuforiaJNI: java.lang.String TargetSearchResult_getUniqueTargetId(long,com.vuforia.TargetSearchResult)
+com.vuforia.VuforiaJNI: float TargetSearchResult_getTargetSize(long,com.vuforia.TargetSearchResult)
+com.vuforia.VuforiaJNI: java.lang.String TargetSearchResult_getMetaData(long,com.vuforia.TargetSearchResult)
+com.vuforia.VuforiaJNI: short TargetSearchResult_getTrackingRating(long,com.vuforia.TargetSearchResult)
+com.vuforia.VuforiaJNI: void delete_TargetSearchResult(long)
+com.vuforia.VuforiaJNI: boolean TargetFinder_startInit(long,com.vuforia.TargetFinder,java.lang.String,java.lang.String)
+com.vuforia.VuforiaJNI: int TargetFinder_getInitState(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: void TargetFinder_waitUntilInitFinished(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: boolean TargetFinder_deinit(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: boolean TargetFinder_startRecognition(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: boolean TargetFinder_stop(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: boolean TargetFinder_isRequesting(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: int TargetFinder_updateSearchResults__SWIG_0(long,com.vuforia.TargetFinder,int)
+com.vuforia.VuforiaJNI: int TargetFinder_updateSearchResults__SWIG_1(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: int TargetFinder_getResultCount(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: long TargetFinder_getResult(long,com.vuforia.TargetFinder,int)
+com.vuforia.VuforiaJNI: long TargetFinder_enableTracking(long,com.vuforia.TargetFinder,long,com.vuforia.TargetSearchResult)
+com.vuforia.VuforiaJNI: void TargetFinder_clearTrackables(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: int TargetFinder_getNumImageTargets(long,com.vuforia.TargetFinder)
+com.vuforia.VuforiaJNI: long TargetFinder_getImageTarget(long,com.vuforia.TargetFinder,int)
+com.vuforia.VuforiaJNI: void delete_TargetFinder(long)
+com.vuforia.VuforiaJNI: boolean WordList_loadWordList(long,com.vuforia.WordList,java.lang.String,int)
+com.vuforia.VuforiaJNI: int WordList_addWordsFromFile(long,com.vuforia.WordList,java.lang.String,int)
+com.vuforia.VuforiaJNI: boolean WordList_addWordU(long,com.vuforia.WordList,short[])
+com.vuforia.VuforiaJNI: boolean WordList_removeWordU(long,com.vuforia.WordList,short[])
+com.vuforia.VuforiaJNI: boolean WordList_containsWordU(long,com.vuforia.WordList,short[])
+com.vuforia.VuforiaJNI: boolean WordList_unloadAllLists(long,com.vuforia.WordList)
+com.vuforia.VuforiaJNI: boolean WordList_setFilterMode(long,com.vuforia.WordList,int)
+com.vuforia.VuforiaJNI: int WordList_getFilterMode(long,com.vuforia.WordList)
+com.vuforia.VuforiaJNI: boolean WordList_addWordToFilterListU(long,com.vuforia.WordList,short[])
+com.vuforia.VuforiaJNI: boolean WordList_removeWordFromFilterListU(long,com.vuforia.WordList,short[])
+com.vuforia.VuforiaJNI: boolean WordList_clearFilterList(long,com.vuforia.WordList)
+com.vuforia.VuforiaJNI: boolean WordList_loadFilterList(long,com.vuforia.WordList,java.lang.String,int)
+com.vuforia.VuforiaJNI: int WordList_getFilterListWordCount(long,com.vuforia.WordList)
+com.vuforia.VuforiaJNI: short[] WordList_getFilterListWordU(long,com.vuforia.WordList,int)
+com.vuforia.VuforiaJNI: void delete_WordList(long)
+com.vuforia.VuforiaJNI: long TextTracker_getClassType()
+com.vuforia.VuforiaJNI: boolean TextTracker_setRegionOfInterest(long,com.vuforia.TextTracker,long,com.vuforia.RectangleInt,long,com.vuforia.RectangleInt,int)
+com.vuforia.VuforiaJNI: void TextTracker_getRegionOfInterest(long,com.vuforia.TextTracker,long,com.vuforia.RectangleInt,long,com.vuforia.RectangleInt,int[])
+com.vuforia.VuforiaJNI: long TextTracker_getWordList(long,com.vuforia.TextTracker)
+com.vuforia.VuforiaJNI: void delete_TextTracker(long)
+com.vuforia.VuforiaJNI: long new_TrackableSource()
+com.vuforia.VuforiaJNI: void delete_TrackableSource(long)
+com.vuforia.VuforiaJNI: long TrackerManager_getInstance()
+com.vuforia.VuforiaJNI: long TrackerManager_initTracker(long,com.vuforia.TrackerManager,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: long TrackerManager_getTracker(long,com.vuforia.TrackerManager,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: boolean TrackerManager_deinitTracker(long,com.vuforia.TrackerManager,long,com.vuforia.Type)
+com.vuforia.VuforiaJNI: long TrackerManager_getStateUpdater(long,com.vuforia.TrackerManager)
+com.vuforia.VuforiaJNI: void delete_TrackerManager(long)
+com.vuforia.VuforiaJNI: void UpdateCallback_Vuforia_onUpdate(long,com.vuforia.UpdateCallback,long,com.vuforia.State)
+com.vuforia.VuforiaJNI: long new_UpdateCallback()
+com.vuforia.VuforiaJNI: void delete_UpdateCallback(long)
+com.vuforia.VuforiaJNI: void UpdateCallback_director_connect(com.vuforia.UpdateCallback,long,boolean,boolean)
+com.vuforia.VuforiaJNI: void UpdateCallback_change_ownership(com.vuforia.UpdateCallback,long,boolean)
+com.vuforia.VuforiaJNI: long new_VideoBackgroundConfig()
+com.vuforia.VuforiaJNI: void VideoBackgroundConfig_Enabled_set(long,com.vuforia.VideoBackgroundConfig,boolean)
+com.vuforia.VuforiaJNI: boolean VideoBackgroundConfig_Enabled_get(long,com.vuforia.VideoBackgroundConfig)
+com.vuforia.VuforiaJNI: void VideoBackgroundConfig_Position_set(long,com.vuforia.VideoBackgroundConfig,long,com.vuforia.Vec2I)
+com.vuforia.VuforiaJNI: long VideoBackgroundConfig_Position_get(long,com.vuforia.VideoBackgroundConfig)
+com.vuforia.VuforiaJNI: void VideoBackgroundConfig_Size_set(long,com.vuforia.VideoBackgroundConfig,long,com.vuforia.Vec2I)
+com.vuforia.VuforiaJNI: long VideoBackgroundConfig_Size_get(long,com.vuforia.VideoBackgroundConfig)
+com.vuforia.VuforiaJNI: void VideoBackgroundConfig_Reflection_set(long,com.vuforia.VideoBackgroundConfig,int)
+com.vuforia.VuforiaJNI: int VideoBackgroundConfig_Reflection_get(long,com.vuforia.VideoBackgroundConfig)
+com.vuforia.VuforiaJNI: void delete_VideoBackgroundConfig(long)
+com.vuforia.VuforiaJNI: long VideoBackgroundTextureInfo_TextureSize_get(long,com.vuforia.VideoBackgroundTextureInfo)
+com.vuforia.VuforiaJNI: long VideoBackgroundTextureInfo_ImageSize_get(long,com.vuforia.VideoBackgroundTextureInfo)
+com.vuforia.VuforiaJNI: int VideoBackgroundTextureInfo_PixelFormat_get(long,com.vuforia.VideoBackgroundTextureInfo)
+com.vuforia.VuforiaJNI: long new_VideoBackgroundTextureInfo()
+com.vuforia.VuforiaJNI: void delete_VideoBackgroundTextureInfo(long)
+com.vuforia.VuforiaJNI: boolean VirtualButton_setArea(long,com.vuforia.VirtualButton,long,com.vuforia.Area)
+com.vuforia.VuforiaJNI: long VirtualButton_getArea(long,com.vuforia.VirtualButton)
+com.vuforia.VuforiaJNI: boolean VirtualButton_setSensitivity(long,com.vuforia.VirtualButton,int)
+com.vuforia.VuforiaJNI: boolean VirtualButton_setEnabled(long,com.vuforia.VirtualButton,boolean)
+com.vuforia.VuforiaJNI: boolean VirtualButton_isEnabled(long,com.vuforia.VirtualButton)
+com.vuforia.VuforiaJNI: java.lang.String VirtualButton_getName(long,com.vuforia.VirtualButton)
+com.vuforia.VuforiaJNI: int VirtualButton_getID(long,com.vuforia.VirtualButton)
+com.vuforia.VuforiaJNI: long VirtualButtonResult_getVirtualButton(long,com.vuforia.VirtualButtonResult)
+com.vuforia.VuforiaJNI: boolean VirtualButtonResult_isPressed(long,com.vuforia.VirtualButtonResult)
+com.vuforia.VuforiaJNI: long Word_getClassType()
+com.vuforia.VuforiaJNI: short[] Word_getStringU(long,com.vuforia.Word)
+com.vuforia.VuforiaJNI: int Word_getLength(long,com.vuforia.Word)
+com.vuforia.VuforiaJNI: int Word_getNumCodeUnits(long,com.vuforia.Word)
+com.vuforia.VuforiaJNI: long Word_getSize(long,com.vuforia.Word)
+com.vuforia.VuforiaJNI: long Word_getMask(long,com.vuforia.Word)
+com.vuforia.VuforiaJNI: long Word_getLetterBoundingBox(long,com.vuforia.Word,int)
+com.vuforia.VuforiaJNI: void delete_Word(long)
+com.vuforia.VuforiaJNI: long WordResult_getClassType()
+com.vuforia.VuforiaJNI: long WordResult_getTrackable(long,com.vuforia.WordResult)
+com.vuforia.VuforiaJNI: long WordResult_getObb(long,com.vuforia.WordResult)
+com.vuforia.VuforiaJNI: void delete_WordResult(long)
+com.vuforia.VuforiaJNI: long VuMarkTemplate_getClassType()
+com.vuforia.VuforiaJNI: java.lang.String VuMarkTemplate_getVuMarkUserData(long,com.vuforia.VuMarkTemplate)
+com.vuforia.VuforiaJNI: void VuMarkTemplate_setTrackingFromRuntimeAppearance(long,com.vuforia.VuMarkTemplate,boolean)
+com.vuforia.VuforiaJNI: boolean VuMarkTemplate_isTrackingFromRuntimeAppearanceEnabled(long,com.vuforia.VuMarkTemplate)
+com.vuforia.VuforiaJNI: long VuMarkTemplate_getOrigin(long,com.vuforia.VuMarkTemplate)
+com.vuforia.VuforiaJNI: void delete_VuMarkTemplate(long)
+com.vuforia.VuforiaJNI: java.nio.ByteBuffer InstanceId_getBuffer(long,com.vuforia.InstanceId)
+com.vuforia.VuforiaJNI: long InstanceId_getLength(long,com.vuforia.InstanceId)
+com.vuforia.VuforiaJNI: java.math.BigInteger InstanceId_getNumericValue(long,com.vuforia.InstanceId)
+com.vuforia.VuforiaJNI: int InstanceId_getDataType(long,com.vuforia.InstanceId)
+com.vuforia.VuforiaJNI: void delete_InstanceId(long)
+com.vuforia.VuforiaJNI: long VuMarkTarget_getClassType()
+com.vuforia.VuforiaJNI: long VuMarkTarget_getTemplate(long,com.vuforia.VuMarkTarget)
+com.vuforia.VuforiaJNI: long VuMarkTarget_getInstanceId(long,com.vuforia.VuMarkTarget)
+com.vuforia.VuforiaJNI: long VuMarkTarget_getInstanceImage(long,com.vuforia.VuMarkTarget)
+com.vuforia.VuforiaJNI: void delete_VuMarkTarget(long)
+com.vuforia.VuforiaJNI: long VuMarkTargetResult_getClassType()
+com.vuforia.VuforiaJNI: long VuMarkTargetResult_getTrackable(long,com.vuforia.VuMarkTargetResult)
+com.vuforia.VuforiaJNI: int VuMarkTargetResult_getId(long,com.vuforia.VuMarkTargetResult)
+com.vuforia.VuforiaJNI: void delete_VuMarkTargetResult(long)
+com.vuforia.VuforiaJNI: long Tool_convertPose2GLMatrix(long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: long Tool_convert2GLMatrix(long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: long Tool_convertPerspectiveProjection2GLMatrix(long,com.vuforia.Matrix34F,float,float)
+com.vuforia.VuforiaJNI: long Tool_getProjectionGL(long,com.vuforia.CameraCalibration,float,float)
+com.vuforia.VuforiaJNI: long Tool_projectPoint(long,com.vuforia.CameraCalibration,long,com.vuforia.Matrix34F,long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: long Tool_multiply__SWIG_0(long,com.vuforia.Matrix34F,long,com.vuforia.Matrix34F)
+com.vuforia.VuforiaJNI: long Tool_multiply__SWIG_1(long,com.vuforia.Matrix44F,long,com.vuforia.Matrix44F)
+com.vuforia.VuforiaJNI: long Tool_multiply__SWIG_2(long,com.vuforia.Vec4F,long,com.vuforia.Matrix44F)
+com.vuforia.VuforiaJNI: long Tool_multiplyGL(long,com.vuforia.Matrix44F,long,com.vuforia.Matrix44F)
+com.vuforia.VuforiaJNI: void Tool_setTranslation(long,com.vuforia.Matrix34F,long,com.vuforia.Vec3F)
+com.vuforia.VuforiaJNI: void Tool_setRotation(long,com.vuforia.Matrix34F,long,com.vuforia.Vec3F,float)
+com.vuforia.VuforiaJNI: long new_Tool()
+com.vuforia.VuforiaJNI: void delete_Tool(long)
+com.vuforia.VuforiaJNI: long SmartTerrainTrackable_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long ObjectTarget_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long ObjectTargetResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long CylinderTarget_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long CylinderTargetResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long CustomViewerParameters_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long EyewearDevice_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long ImageTarget_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long ImageTargetResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long ObjectTracker_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long MultiTarget_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long MultiTargetResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long Rectangle_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long RectangleInt_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long GLTextureData_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long GLTextureUnit_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long Surface_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long ReconstructionFromTarget_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long Prop_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long PropResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long SurfaceResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long HandheldTransformModel_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long HeadTransformModel_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long DeviceTrackable_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long DeviceTrackableResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long DeviceTracker_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long RotationalDeviceTracker_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long SmartTerrainTracker_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long WordList_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long TextTracker_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long Word_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long WordResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long VuMarkTemplate_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long VuMarkTarget_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: long VuMarkTargetResult_SWIGUpcast(long)
+com.vuforia.VuforiaJNI: void SwigDirector_UpdateCallback_Vuforia_onUpdate(com.vuforia.UpdateCallback,long)
+com.vuforia.VuforiaJNI: void swig_module_init()
+com.vuforia.VuforiaUnityPlayer.DebugLog
+com.vuforia.VuforiaUnityPlayer.DebugLog: java.lang.String LOGTAG
+com.vuforia.VuforiaUnityPlayer.DebugLog: DebugLog()
+com.vuforia.VuforiaUnityPlayer.DebugLog: void LOGE(java.lang.String)
+com.vuforia.VuforiaUnityPlayer.DebugLog: void LOGW(java.lang.String)
+com.vuforia.VuforiaUnityPlayer.DebugLog: void LOGD(java.lang.String)
+com.vuforia.VuforiaUnityPlayer.DebugLog: void LOGI(java.lang.String)
+com.vuforia.VuforiaUnityPlayer.OrientationUtility
+com.vuforia.VuforiaUnityPlayer.OrientationUtility: OrientationUtility()
+com.vuforia.VuforiaUnityPlayer.OrientationUtility: int getSurfaceOrientation(android.app.Activity)
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: java.lang.String NATIVE_LIB_UNITYPLAYER
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: java.lang.String NATIVE_LIB_VUFORIAWRAPPER
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: java.lang.String NATIVE_LIB_VUFORIA
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: VuforiaInitializer()
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: void initPlatformNative()
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: void loadNativeLibraries()
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: void initPlatform()
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: int initVuforia(android.app.Activity,int,java.lang.String)
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer: boolean loadLibrary(java.lang.String)
+com.vuforia.Word
+com.vuforia.Word: long swigCPtr
+com.vuforia.Word: boolean equals(java.lang.Object)
+com.vuforia.Word: com.vuforia.Type getClassType()
+com.vuforia.Word: java.lang.String getStringU()
+com.vuforia.Word: int getLength()
+com.vuforia.Word: int getNumCodeUnits()
+com.vuforia.Word: com.vuforia.Vec2F getSize()
+com.vuforia.Word: com.vuforia.Image getMask()
+com.vuforia.Word: com.vuforia.Rectangle getLetterBoundingBox(int)
+com.vuforia.WordList
+com.vuforia.WordList: long swigCPtr
+com.vuforia.WordList: boolean equals(java.lang.Object)
+com.vuforia.WordList: boolean loadWordList(java.lang.String,int)
+com.vuforia.WordList: int addWordsFromFile(java.lang.String,int)
+com.vuforia.WordList: boolean addWordU(java.lang.String)
+com.vuforia.WordList: boolean removeWordU(java.lang.String)
+com.vuforia.WordList: boolean containsWordU(java.lang.String)
+com.vuforia.WordList: boolean unloadAllLists()
+com.vuforia.WordList: boolean setFilterMode(int)
+com.vuforia.WordList: int getFilterMode()
+com.vuforia.WordList: boolean addWordToFilterListU(java.lang.String)
+com.vuforia.WordList: boolean removeWordFromFilterListU(java.lang.String)
+com.vuforia.WordList: boolean clearFilterList()
+com.vuforia.WordList: boolean loadFilterList(java.lang.String,int)
+com.vuforia.WordList: int getFilterListWordCount()
+com.vuforia.WordList: java.lang.String getFilterListWordU(int)
+com.vuforia.WordList$FILTER_MODE
+com.vuforia.WordList$FILTER_MODE: int FILTER_MODE_NONE
+com.vuforia.WordList$FILTER_MODE: int FILTER_MODE_BLACK_LIST
+com.vuforia.WordList$FILTER_MODE: int FILTER_MODE_WHITE_LIST
+com.vuforia.WordList$FILTER_MODE: WordList$FILTER_MODE()
+com.vuforia.WordResult
+com.vuforia.WordResult: long swigCPtr
+com.vuforia.WordResult: boolean equals(java.lang.Object)
+com.vuforia.WordResult: com.vuforia.Type getClassType()
+com.vuforia.WordResult: com.vuforia.Trackable getTrackable()
+com.vuforia.WordResult: com.vuforia.Obb2D getObb()
+com.vuforia.ar.pl.BuildConfig
+com.vuforia.ar.pl.BuildConfig: boolean DEBUG
+com.vuforia.ar.pl.BuildConfig: java.lang.String APPLICATION_ID
+com.vuforia.ar.pl.BuildConfig: java.lang.String BUILD_TYPE
+com.vuforia.ar.pl.BuildConfig: java.lang.String FLAVOR
+com.vuforia.ar.pl.BuildConfig: int VERSION_CODE
+com.vuforia.ar.pl.BuildConfig: java.lang.String VERSION_NAME
+com.vuforia.ar.pl.BuildConfig: BuildConfig()
+com.vuforia.ar.pl.Camera1_Preview
+com.vuforia.ar.pl.Camera1_Preview: com.vuforia.ar.pl.SurfaceManager surfaceManager
+com.vuforia.ar.pl.Camera1_Preview: java.util.Vector cameraCacheInfo
+com.vuforia.ar.pl.Camera1_Preview: java.util.HashMap cameraCacheInfoIndexCache
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPTUREINFO_VALUE_WIDTH
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPTUREINFO_VALUE_HEIGHT
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPTUREINFO_VALUE_FORMAT
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPTUREINFO_VALUE_FRAMERATE
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPTUREINFO_VALUE_PREVIEWSURFACEENABLED
+com.vuforia.ar.pl.Camera1_Preview: int _NUM_CAMERA_CAPTUREINFO_VALUE_
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPSINFO_VALUE_SUPPORTED_QUERYABLE_PARAMS
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPSINFO_VALUE_SUPPORTED_SETTABLE_PARAMS
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPSINFO_VALUE_SUPPORTED_PARAMVALUES
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPSINFO_VALUE_NUM_SUPPORTED_IMAGESIZES
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPSINFO_VALUE_NUM_SUPPORTED_FRAMERATES
+com.vuforia.ar.pl.Camera1_Preview: int CAMERA_CAPSINFO_VALUE_NUM_SUPPORTED_IMAGEFORMATS
+com.vuforia.ar.pl.Camera1_Preview: int _NUM_CAMERA_CAPSINFO_VALUE_
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_BASE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_TORCHMODE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_FOCUSMODE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_FOCUSVALUE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_FOCUSRANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_FOCUSREGION
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_EXPOSUREMODE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_ISO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_ISORANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_EXPOSURETIME
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_EXPOSURETIMERANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_EXPOSUREVALUE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_EXPOSUREVALUERANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_WHITEBALANCEMODE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_WHITEBALANCEVALUE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_WHITEBALANCERANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_ZOOMVALUE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_ZOOMRANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_BRIGHTNESSVALUE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_BRIGHTNESSRANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_CONTRASTVALUE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_CONTRASTRANGE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_ROTATION
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_RECORDING_HINT
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_LENS_IS_ADJUSTING
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMTYPE_VIDEO_STABILIZATION
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_PARAMVALUE_BASE
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_TORCHMODE_OFF
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_TORCHMODE_ON
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_TORCHMODE_AUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_TORCHMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_FOCUSMODE_NORMAL
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_FOCUSMODE_AUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_FOCUSMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_FOCUSMODE_MACRO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_FOCUSMODE_INFINITY
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_FOCUSMODE_FIXED
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_EXPOSUREMODE_LOCKED
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_EXPOSUREMODE_AUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_EXPOSUREMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_WHITEBALANCEMODE_LOCKED
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_WHITEBALANCEMODE_AUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_WHITEBALANCEMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_TYPE_UNKNOWN
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_TYPE_MONO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_TYPE_STEREO
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_DIRECTION_UNKNOWN
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_DIRECTION_BACK
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_DIRECTION_FRONT
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_STATUS_UNKNOWN
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_STATUS_UNINITIALIZED
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_STATUS_OPENED
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_STATUS_CAPTURE_RUNNING
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_UNKNOWN
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_LUM
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_RGB565
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_RGB888
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_RGB24
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA8888
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA32
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_ARGB8888
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_ARGB32
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_BGRA8888
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_BGRA32
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_NV12
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_NV16
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_NV21
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_YV12
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_YV16
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA5551
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA4444
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_BGR888
+com.vuforia.ar.pl.Camera1_Preview: int AR_CAMERA_IMAGE_FORMAT_BGR24
+com.vuforia.ar.pl.Camera1_Preview: int[] CAMERA_IMAGE_FORMAT_CONVERSIONTABLE
+com.vuforia.ar.pl.Camera1_Preview: boolean CONVERT_FORMAT_TO_PL
+com.vuforia.ar.pl.Camera1_Preview: boolean CONVERT_FORMAT_TO_ANDROID
+com.vuforia.ar.pl.Camera1_Preview: int NUM_CAPTURE_BUFFERS
+com.vuforia.ar.pl.Camera1_Preview: int NUM_CAPTURE_BUFFERS_TO_ADD
+com.vuforia.ar.pl.Camera1_Preview: int NUM_MAX_CAMERAOPEN_RETRY
+com.vuforia.ar.pl.Camera1_Preview: int TIME_CAMERAOPEN_RETRY_DELAY_MS
+com.vuforia.ar.pl.Camera1_Preview: java.lang.String MODULENAME
+com.vuforia.ar.pl.Camera1_Preview: java.lang.String FOCUS_MODE_NORMAL
+com.vuforia.ar.pl.Camera1_Preview: java.lang.String SAMSUNG_PARAM_VRMODE_SUPPORTED
+com.vuforia.ar.pl.Camera1_Preview: java.lang.String SAMSUNG_PARAM_VRMODE
+com.vuforia.ar.pl.Camera1_Preview: java.lang.String SAMSUNG_PARAM_FAST_FPS_MODE
+com.vuforia.ar.pl.Camera1_Preview: Camera1_Preview()
+com.vuforia.ar.pl.Camera1_Preview: boolean checkPermission()
+com.vuforia.ar.pl.Camera1_Preview: int getCameraDeviceIndex(int,int,int)
+com.vuforia.ar.pl.Camera1_Preview: android.hardware.Camera$Parameters getCameraParameters(android.hardware.Camera)
+com.vuforia.ar.pl.Camera1_Preview: com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo getCameraCacheInfo(int)
+com.vuforia.ar.pl.Camera1_Preview: boolean setCustomCameraParams(android.hardware.Camera$Parameters,java.lang.String)
+com.vuforia.ar.pl.Camera1_Preview: boolean setCameraPreviewFps(int,android.hardware.Camera$Parameters)
+com.vuforia.ar.pl.Camera1_Preview: boolean setCameraCaptureParams(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo,android.hardware.Camera$Parameters,int[],int[])
+com.vuforia.ar.pl.Camera1_Preview: boolean checkSamsungHighFPS(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo)
+com.vuforia.ar.pl.Camera1_Preview: boolean setupPreviewBuffer(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo)
+com.vuforia.ar.pl.Camera1_Preview: void setCameraCapsBit(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo,int,int,boolean)
+com.vuforia.ar.pl.Camera1_Preview: int translateImageFormat(int,boolean)
+com.vuforia.ar.pl.Camera1_Preview: void onPreviewFrame(byte[],android.hardware.Camera)
+com.vuforia.ar.pl.Camera1_Preview: void newFrameAvailable(long,int,int,int,int,byte[],long)
+com.vuforia.ar.pl.Camera1_Preview: boolean init()
+com.vuforia.ar.pl.Camera1_Preview: void setSurfaceManager(com.vuforia.ar.pl.SurfaceManager)
+com.vuforia.ar.pl.Camera1_Preview: int getNumberOfCameras()
+com.vuforia.ar.pl.Camera1_Preview: int getOrientation(int)
+com.vuforia.ar.pl.Camera1_Preview: int getDirection(int)
+com.vuforia.ar.pl.Camera1_Preview: int getDeviceID(int)
+com.vuforia.ar.pl.Camera1_Preview: int open(long,int,int,int,java.lang.String,int[],int[])
+com.vuforia.ar.pl.Camera1_Preview: int registerHalCamera(int,int,int,java.lang.String,int[],int[])
+com.vuforia.ar.pl.Camera1_Preview: boolean close(int)
+com.vuforia.ar.pl.Camera1_Preview: int[] getCameraCapabilities(int)
+com.vuforia.ar.pl.Camera1_Preview: boolean setCaptureInfo(int,int[],int[])
+com.vuforia.ar.pl.Camera1_Preview: int[] getCaptureInfo(int)
+com.vuforia.ar.pl.Camera1_Preview: boolean start(int)
+com.vuforia.ar.pl.Camera1_Preview: boolean stop(int)
+com.vuforia.ar.pl.Camera1_Preview: boolean setBatchParameters(int,java.lang.String)
+com.vuforia.ar.pl.Camera1_Preview$1
+com.vuforia.ar.pl.Camera1_Preview$1: void onAutoFocus(boolean,android.hardware.Camera)
+com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo
+com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo: Camera1_Preview$CameraCacheInfo(com.vuforia.ar.pl.Camera1_Preview)
+com.vuforia.ar.pl.Camera2_Preview
+com.vuforia.ar.pl.Camera2_Preview: java.util.Vector mCameraCacheInfos
+com.vuforia.ar.pl.Camera2_Preview: java.util.Vector mCameraCacheInfosInProgress
+com.vuforia.ar.pl.Camera2_Preview: java.util.HashMap mCameraCacheInfoIndexCache
+com.vuforia.ar.pl.Camera2_Preview: android.content.Context mContext
+com.vuforia.ar.pl.Camera2_Preview: android.hardware.camera2.CameraManager mCameraManager
+com.vuforia.ar.pl.Camera2_Preview: java.util.concurrent.Semaphore mOpenCloseSemaphore
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPTUREINFO_VALUE_WIDTH
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPTUREINFO_VALUE_HEIGHT
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPTUREINFO_VALUE_FORMAT
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPTUREINFO_VALUE_FRAMERATE
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPTUREINFO_VALUE_PREVIEWSURFACEENABLED
+com.vuforia.ar.pl.Camera2_Preview: int _NUM_CAMERA_CAPTUREINFO_VALUE_
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPSINFO_VALUE_SUPPORTED_QUERYABLE_PARAMS
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPSINFO_VALUE_SUPPORTED_SETTABLE_PARAMS
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPSINFO_VALUE_SUPPORTED_PARAMVALUES
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPSINFO_VALUE_NUM_SUPPORTED_IMAGESIZES
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPSINFO_VALUE_NUM_SUPPORTED_FRAMERATES
+com.vuforia.ar.pl.Camera2_Preview: int CAMERA_CAPSINFO_VALUE_NUM_SUPPORTED_IMAGEFORMATS
+com.vuforia.ar.pl.Camera2_Preview: int _NUM_CAMERA_CAPSINFO_VALUE_
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_BASE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_TORCHMODE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_FOCUSMODE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_FOCUSVALUE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_FOCUSRANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_FOCUSREGION
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_EXPOSUREMODE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_ISO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_ISORANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_EXPOSURETIME
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_EXPOSURETIMERANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_EXPOSUREVALUE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_EXPOSUREVALUERANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_WHITEBALANCEMODE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_WHITEBALANCEVALUE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_WHITEBALANCERANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_ZOOMVALUE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_ZOOMRANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_BRIGHTNESSVALUE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_BRIGHTNESSRANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_CONTRASTVALUE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_CONTRASTRANGE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_ROTATION
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_RECORDING_HINT
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_LENS_IS_ADJUSTING
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMTYPE_VIDEO_STABILIZATION
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_PARAMVALUE_BASE
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_TORCHMODE_OFF
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_TORCHMODE_ON
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_TORCHMODE_AUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_TORCHMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_FOCUSMODE_NORMAL
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_FOCUSMODE_AUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_FOCUSMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_FOCUSMODE_MACRO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_FOCUSMODE_INFINITY
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_FOCUSMODE_FIXED
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_EXPOSUREMODE_LOCKED
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_EXPOSUREMODE_AUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_EXPOSUREMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_EXPOSUREMODE_MANUAL
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_EXPOSUREMODE_SHUTTER_PRIORITY
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_WHITEBALANCEMODE_LOCKED
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_WHITEBALANCEMODE_AUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_WHITEBALANCEMODE_CONTINUOUSAUTO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_TYPE_UNKNOWN
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_TYPE_MONO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_TYPE_STEREO
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_DIRECTION_UNKNOWN
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_DIRECTION_BACK
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_DIRECTION_FRONT
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_STATUS_UNKNOWN
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_STATUS_UNINITIALIZED
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_STATUS_OPENED
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_STATUS_CAPTURE_RUNNING
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_UNKNOWN
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_LUM
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_RGB565
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_RGB888
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_RGB24
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA8888
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA32
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_ARGB8888
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_ARGB32
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_BGRA8888
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_BGRA32
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_NV12
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_NV16
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_NV21
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_YV12
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_YV16
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA5551
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_RGBA4444
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_BGR888
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_BGR24
+com.vuforia.ar.pl.Camera2_Preview: int AR_CAMERA_IMAGE_FORMAT_YUV420P
+com.vuforia.ar.pl.Camera2_Preview: int[] CAMERA_IMAGE_FORMAT_CONVERSIONTABLE
+com.vuforia.ar.pl.Camera2_Preview: boolean CONVERT_FORMAT_TO_PL
+com.vuforia.ar.pl.Camera2_Preview: boolean CONVERT_FORMAT_TO_ANDROID
+com.vuforia.ar.pl.Camera2_Preview: int NUM_CAPTURE_BUFFERS
+com.vuforia.ar.pl.Camera2_Preview: int NUM_MAX_CAMERAOPEN_RETRY
+com.vuforia.ar.pl.Camera2_Preview: int TIME_CAMERAOPEN_RETRY_DELAY_MS
+com.vuforia.ar.pl.Camera2_Preview: java.lang.String MODULENAME
+com.vuforia.ar.pl.Camera2_Preview: int MAX_LOWEST_FPS_ALLOWED
+com.vuforia.ar.pl.Camera2_Preview: int MAX_HIGHEST_FPS_ALLOWED
+com.vuforia.ar.pl.Camera2_Preview: android.util.Range EMPTY_RANGE
+com.vuforia.ar.pl.Camera2_Preview: java.lang.String FOCUS_MODE_NORMAL
+com.vuforia.ar.pl.Camera2_Preview: int mIsPermissionGranted
+com.vuforia.ar.pl.Camera2_Preview: Camera2_Preview()
+com.vuforia.ar.pl.Camera2_Preview: boolean checkPermission()
+com.vuforia.ar.pl.Camera2_Preview: int getCameraDeviceIndex(int,int,int)
+com.vuforia.ar.pl.Camera2_Preview: com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo getCameraCacheInfo(int)
+com.vuforia.ar.pl.Camera2_Preview: boolean setCustomCameraParams(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo,java.lang.String)
+com.vuforia.ar.pl.Camera2_Preview: android.hardware.camera2.CaptureRequest$Key mapStringToKey(java.lang.String,android.hardware.camera2.CameraCharacteristics,java.lang.Object)
+com.vuforia.ar.pl.Camera2_Preview: boolean setCameraCaptureParams(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo,int[],int[])
+com.vuforia.ar.pl.Camera2_Preview: boolean setupPreviewBuffer(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo)
+com.vuforia.ar.pl.Camera2_Preview: void setCameraCapsBit(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo,int,int,boolean)
+com.vuforia.ar.pl.Camera2_Preview: int translateImageFormat(int,boolean)
+com.vuforia.ar.pl.Camera2_Preview: java.util.List getSupportedPreviewFrameRates(android.hardware.camera2.CameraCharacteristics)
+com.vuforia.ar.pl.Camera2_Preview: boolean checkCameraManager()
+com.vuforia.ar.pl.Camera2_Preview: void newFrameAvailable(long,int,int,int,int[],int,java.nio.ByteBuffer,java.lang.Object)
+com.vuforia.ar.pl.Camera2_Preview: long getBufferAddress(java.nio.ByteBuffer)
+com.vuforia.ar.pl.Camera2_Preview: boolean init()
+com.vuforia.ar.pl.Camera2_Preview: int getNumberOfCameras()
+com.vuforia.ar.pl.Camera2_Preview: int getOrientation(int)
+com.vuforia.ar.pl.Camera2_Preview: int getDirection(int)
+com.vuforia.ar.pl.Camera2_Preview: int getDeviceID(int)
+com.vuforia.ar.pl.Camera2_Preview: int open(long,int,int,int,java.lang.String,int[],int[])
+com.vuforia.ar.pl.Camera2_Preview: boolean close(int)
+com.vuforia.ar.pl.Camera2_Preview: int[] getCameraCapabilities(int)
+com.vuforia.ar.pl.Camera2_Preview: boolean setCaptureInfo(int,int[],int[])
+com.vuforia.ar.pl.Camera2_Preview: int[] getCaptureInfo(int)
+com.vuforia.ar.pl.Camera2_Preview: boolean start(int)
+com.vuforia.ar.pl.Camera2_Preview: boolean stop(int)
+com.vuforia.ar.pl.Camera2_Preview: boolean setBatchParameters(int,java.lang.String)
+com.vuforia.ar.pl.Camera2_Preview$1
+com.vuforia.ar.pl.Camera2_Preview$1: void onOpened(android.hardware.camera2.CameraDevice)
+com.vuforia.ar.pl.Camera2_Preview$1: void onError(android.hardware.camera2.CameraDevice,int)
+com.vuforia.ar.pl.Camera2_Preview$1: void onDisconnected(android.hardware.camera2.CameraDevice)
+com.vuforia.ar.pl.Camera2_Preview$2
+com.vuforia.ar.pl.Camera2_Preview$2: void onConfigured(android.hardware.camera2.CameraCaptureSession)
+com.vuforia.ar.pl.Camera2_Preview$2: void onConfigureFailed(android.hardware.camera2.CameraCaptureSession)
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner: com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo mCCI
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner: android.hardware.camera2.CaptureRequest mCancelRequest
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner: android.hardware.camera2.CaptureRequest mFocusRequest
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner: Camera2_Preview$AutofocusRunner(com.vuforia.ar.pl.Camera2_Preview,com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo)
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner: boolean triggerAutofocus()
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner: void onCaptureCompleted(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.hardware.camera2.TotalCaptureResult)
+com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo
+com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo: Camera2_Preview$CameraCacheInfo(com.vuforia.ar.pl.Camera2_Preview)
+com.vuforia.ar.pl.Camera2_Preview$FrameInfo
+com.vuforia.ar.pl.Camera2_Preview$FrameInfo: Camera2_Preview$FrameInfo(com.vuforia.ar.pl.Camera2_Preview)
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: int actualCaptureFormat
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: int[] actualBufferSize
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: int DEBUG_FORMAT
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: java.nio.ByteBuffer[] testYUVBuffers
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: int currentTestBufferIndex
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: Camera2_Preview$OnCameraDataAvailable(com.vuforia.ar.pl.Camera2_Preview)
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: void onImageAvailable(android.media.ImageReader)
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: java.nio.ByteBuffer convertNV21toYUV420Contigious(android.media.Image,java.nio.ByteBuffer)
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: java.nio.ByteBuffer convertNV21toYV12Contigious(android.media.Image,java.nio.ByteBuffer)
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: java.nio.ByteBuffer convertNV21toPaddedYUV(java.nio.ByteBuffer,android.media.Image$Plane,android.media.Image$Plane,android.media.Image$Plane,int,int,int,int,int,int,int)
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable: int getImageFormat(android.media.Image)
+com.vuforia.ar.pl.Camera2_Preview$OnFrameCapturedCallback
+com.vuforia.ar.pl.Camera2_Preview$OnFrameCapturedCallback: Camera2_Preview$OnFrameCapturedCallback(com.vuforia.ar.pl.Camera2_Preview,com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo)
+com.vuforia.ar.pl.Camera2_Preview$OnFrameCapturedCallback: void onCaptureCompleted(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.hardware.camera2.TotalCaptureResult)
+com.vuforia.ar.pl.CameraSurface
+com.vuforia.ar.pl.CameraSurface: java.lang.String MODULENAME
+com.vuforia.ar.pl.CameraSurface: CameraSurface(android.content.Context)
+com.vuforia.ar.pl.CameraSurface: void setCamera(android.hardware.Camera)
+com.vuforia.ar.pl.CameraSurface: void surfaceCreated(android.view.SurfaceHolder)
+com.vuforia.ar.pl.CameraSurface: void surfaceChanged(android.view.SurfaceHolder,int,int,int)
+com.vuforia.ar.pl.CameraSurface: void surfaceDestroyed(android.view.SurfaceHolder)
+com.vuforia.ar.pl.DebugLog
+com.vuforia.ar.pl.DebugLog: java.lang.String LOGTAG
+com.vuforia.ar.pl.DebugLog: DebugLog()
+com.vuforia.ar.pl.DebugLog: void LOGE(java.lang.String,java.lang.String)
+com.vuforia.ar.pl.DebugLog: void LOGW(java.lang.String,java.lang.String)
+com.vuforia.ar.pl.DebugLog: void LOGD(java.lang.String,java.lang.String)
+com.vuforia.ar.pl.DebugLog: void LOGI(java.lang.String,java.lang.String)
+com.vuforia.ar.pl.DrawOverlayView
+com.vuforia.ar.pl.DrawOverlayView: double mLeft
+com.vuforia.ar.pl.DrawOverlayView: double mTop
+com.vuforia.ar.pl.DrawOverlayView: float[] mScale
+com.vuforia.ar.pl.DrawOverlayView: int[] mSize
+com.vuforia.ar.pl.DrawOverlayView: android.util.DisplayMetrics metrics
+com.vuforia.ar.pl.DrawOverlayView: android.graphics.Bitmap overlayBitmap
+com.vuforia.ar.pl.DrawOverlayView: android.graphics.drawable.Drawable drawable
+com.vuforia.ar.pl.DrawOverlayView: java.lang.String MODULENAME
+com.vuforia.ar.pl.DrawOverlayView: DrawOverlayView(android.content.Context)
+com.vuforia.ar.pl.DrawOverlayView: DrawOverlayView(android.content.Context,byte[],int,int,float[],int[])
+com.vuforia.ar.pl.DrawOverlayView: void addOverlay(android.app.Activity)
+com.vuforia.ar.pl.DrawOverlayView: void removeOverlay(android.app.Activity,android.view.View)
+com.vuforia.ar.pl.EpsonBT200Controller
+com.vuforia.ar.pl.EpsonBT200Controller: java.lang.String MODULENAME
+com.vuforia.ar.pl.EpsonBT200Controller: boolean stereoEnabled
+com.vuforia.ar.pl.EpsonBT200Controller: EpsonBT200Controller()
+com.vuforia.ar.pl.EpsonBT200Controller: boolean setStereo(boolean)
+com.vuforia.ar.pl.EpsonBT200Controller: boolean getStereo()
+com.vuforia.ar.pl.EpsonBT200Controller$1
+com.vuforia.ar.pl.EpsonBT200Controller$1: void run()
+com.vuforia.ar.pl.FileTools
+com.vuforia.ar.pl.FileTools: int FILE_PATHTYPEINDEX_ABSOLUTE
+com.vuforia.ar.pl.FileTools: int FILE_PATHTYPEINDEX_ANDROID_ASSETS
+com.vuforia.ar.pl.FileTools: int FILE_PATHTYPEINDEX_ANDROID_PRIVATEAPPSTORAGE
+com.vuforia.ar.pl.FileTools: int FILE_PATHTYPEINDEX_ANDROID_PRIVATEAPPCACHE
+com.vuforia.ar.pl.FileTools: int FILE_PATHTYPEINDEX_ANDROID_MEDIASTORAGE
+com.vuforia.ar.pl.FileTools: int FILE_PATHTYPEINDEX_ANDROID_DATALOCAL
+com.vuforia.ar.pl.FileTools: java.lang.String MODULENAME
+com.vuforia.ar.pl.FileTools: FileTools()
+com.vuforia.ar.pl.FileTools: java.lang.String getAbsolutePath(int,java.lang.String)
+com.vuforia.ar.pl.FileTools: boolean mediastorage_isAvailable()
+com.vuforia.ar.pl.FileTools: android.content.res.AssetManager get_assetmanager()
+com.vuforia.ar.pl.ImageTools
+com.vuforia.ar.pl.ImageTools: java.lang.String MODULENAME
+com.vuforia.ar.pl.ImageTools: int CAMERA_IMAGE_FORMAT_RGB565
+com.vuforia.ar.pl.ImageTools: int CAMERA_IMAGE_FORMAT_NV12
+com.vuforia.ar.pl.ImageTools: int CAMERA_IMAGE_FORMAT_NV21
+com.vuforia.ar.pl.ImageTools: int CAMERA_IMAGE_FORMAT_LUM
+com.vuforia.ar.pl.ImageTools: ImageTools()
+com.vuforia.ar.pl.ImageTools: byte[] encodeImage(byte[],int,int,int,int,int)
+com.vuforia.ar.pl.ODGR7Controller
+com.vuforia.ar.pl.ODGR7Controller: java.lang.String MODULENAME
+com.vuforia.ar.pl.ODGR7Controller: boolean stereoEnabled
+com.vuforia.ar.pl.ODGR7Controller: ODGR7Controller()
+com.vuforia.ar.pl.ODGR7Controller: void logMetrics(java.lang.String,android.app.Activity,android.view.Window)
+com.vuforia.ar.pl.ODGR7Controller: boolean setStereo(boolean)
+com.vuforia.ar.pl.ODGR7Controller: void doSetStereo(android.app.Activity,boolean)
+com.vuforia.ar.pl.ODGR7Controller: boolean getStereo()
+com.vuforia.ar.pl.ODGR7Controller: void setStereoSurfaces(android.view.Window,boolean)
+com.vuforia.ar.pl.ODGR7Controller: void configureSurfaceViews(android.view.ViewGroup,boolean)
+com.vuforia.ar.pl.ODGR7Controller$1
+com.vuforia.ar.pl.ODGR7Controller$1: void run()
+com.vuforia.ar.pl.RenderManager
+com.vuforia.ar.pl.RenderManager: int AR_RENDERING_MODE_UNKNOWN
+com.vuforia.ar.pl.RenderManager: int AR_RENDERING_MODE_DISABLED
+com.vuforia.ar.pl.RenderManager: int AR_RENDERING_MODE_CONTINUOUS
+com.vuforia.ar.pl.RenderManager: int AR_RENDERING_MODE_WHENDIRTY
+com.vuforia.ar.pl.RenderManager: int viewId
+com.vuforia.ar.pl.RenderManager: java.lang.String MODULENAME
+com.vuforia.ar.pl.RenderManager: RenderManager(com.vuforia.ar.pl.SurfaceManager)
+com.vuforia.ar.pl.RenderManager: boolean canSetRenderMode()
+com.vuforia.ar.pl.RenderManager: int getRenderMode()
+com.vuforia.ar.pl.RenderManager: boolean setRenderMode(int)
+com.vuforia.ar.pl.RenderManager: boolean setRenderFpsLimits(boolean,int,int)
+com.vuforia.ar.pl.RenderManager: boolean requestRender()
+com.vuforia.ar.pl.RenderManager: android.view.View addOverlay(byte[],int,int,float[],int[])
+com.vuforia.ar.pl.RenderManager: boolean removeOverlay(android.view.View)
+com.vuforia.ar.pl.RenderManager$1
+com.vuforia.ar.pl.RenderManager$1: void run()
+com.vuforia.ar.pl.RenderManager$2
+com.vuforia.ar.pl.RenderManager$2: void run()
+com.vuforia.ar.pl.RenderManager$FixedFrameRateRunner
+com.vuforia.ar.pl.RenderManager$FixedFrameRateRunner: RenderManager$FixedFrameRateRunner(com.vuforia.ar.pl.RenderManager)
+com.vuforia.ar.pl.RenderManager$FixedFrameRateRunner: void run()
+com.vuforia.ar.pl.RenderManager$RenderRequestWatcher
+com.vuforia.ar.pl.RenderManager$RenderRequestWatcher: RenderManager$RenderRequestWatcher(com.vuforia.ar.pl.RenderManager)
+com.vuforia.ar.pl.RenderManager$RenderRequestWatcher: void run()
+com.vuforia.ar.pl.SensorController
+com.vuforia.ar.pl.SensorController: android.hardware.SensorManager sensorManager
+com.vuforia.ar.pl.SensorController: java.util.Vector sensorCacheInfo
+com.vuforia.ar.pl.SensorController: java.util.HashMap sensorIndexMap
+com.vuforia.ar.pl.SensorController: android.os.Handler sensorEventHandler
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_UNKNOWN
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_GYROSCOPE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_ACCELEROMETER
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_MAGNETOMETER
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_PROXIMITY
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_AMBIENT_LIGHT
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_STEP_DETECTOR
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_TYPE_DEVICE_ROTATION
+com.vuforia.ar.pl.SensorController: int[] SENSOR_TYPE_CONVERSIONTABLE
+com.vuforia.ar.pl.SensorController: boolean CONVERT_FORMAT_TO_PL
+com.vuforia.ar.pl.SensorController: boolean CONVERT_FORMAT_TO_ANDROID
+com.vuforia.ar.pl.SensorController: int SENSORINFO_VALUE_PLSENSORTYPE
+com.vuforia.ar.pl.SensorController: int SENSORINFO_VALUE_ANDROIDSENSORTYPE
+com.vuforia.ar.pl.SensorController: int SENSORINFO_VALUE_ISDEFAULT
+com.vuforia.ar.pl.SensorController: int _NUM_SENSORINFO_VALUE_
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_INDEX_DONTCARE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_STATUS_UNKNOWN
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_STATUS_UNINITIALIZED
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_STATUS_IDLE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_STATUS_RUNNING
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_BASE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_DATARANGE_MIN
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_DATARANGE_MAX
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_RESOLUTION
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_ACCURACY
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_SENSITIVITY
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_UPDATEINTERVAL
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_UPDATEINTERVAL_ABSTRACT
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_UPDATEINTERVAL_MIN
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_PARAMTYPE_UPDATERATE_MIN
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_CONFIDENCE_UNKNOWN
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_CONFIDENCE_UNRELIABLE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_CONFIDENCE_LOW
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_CONFIDENCE_MEDIUM
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_CONFIDENCE_HIGH
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_UPDATEINTERVAL_UNKNOWN
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_UPDATEINTERVAL_LOWRATE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_UPDATEINTERVAL_MEDIUMRATE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_UPDATEINTERVAL_HIGHRATE
+com.vuforia.ar.pl.SensorController: int AR_SENSOR_UPDATEINTERVAL_HIGHESTRATE
+com.vuforia.ar.pl.SensorController: java.lang.String MODULENAME
+com.vuforia.ar.pl.SensorController: SensorController()
+com.vuforia.ar.pl.SensorController: com.vuforia.ar.pl.SensorController$SensorCacheInfo getSensorCacheInfo(int)
+com.vuforia.ar.pl.SensorController: int translateSensorType(int,boolean)
+com.vuforia.ar.pl.SensorController: int translateSensorUpdateIntervalToAndroid(int)
+com.vuforia.ar.pl.SensorController: void onAccuracyChanged(android.hardware.Sensor,int)
+com.vuforia.ar.pl.SensorController: void onSensorChanged(android.hardware.SensorEvent)
+com.vuforia.ar.pl.SensorController: void newDataAvailable(int,long,int,float[])
+com.vuforia.ar.pl.SensorController: boolean init()
+com.vuforia.ar.pl.SensorController: int getAllSupportedSensors()
+com.vuforia.ar.pl.SensorController$SensorCacheInfo
+com.vuforia.ar.pl.SensorController$SensorCacheInfo: SensorController$SensorCacheInfo(com.vuforia.ar.pl.SensorController)
+com.vuforia.ar.pl.SurfaceManager
+com.vuforia.ar.pl.SurfaceManager: java.lang.String MODULENAME
+com.vuforia.ar.pl.SurfaceManager: SurfaceManager()
+com.vuforia.ar.pl.SurfaceManager: android.opengl.GLSurfaceView searchForGLSurfaceView(android.view.View)
+com.vuforia.ar.pl.SurfaceManager: boolean applyRenderWhenDirty()
+com.vuforia.ar.pl.SurfaceManager: void setupCameraSurface(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo)
+com.vuforia.ar.pl.SurfaceManager: boolean retrieveGLSurfaceView()
+com.vuforia.ar.pl.SurfaceManager: boolean setEnableRenderWhenDirty(boolean)
+com.vuforia.ar.pl.SurfaceManager: void requestRender()
+com.vuforia.ar.pl.SurfaceManager: boolean addCameraSurface(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo)
+com.vuforia.ar.pl.SurfaceManager$1
+com.vuforia.ar.pl.SurfaceManager$1: void run()
+com.vuforia.ar.pl.SystemTools
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_NONE
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_UNKNOWN
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_INVALID_VALUE
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_INVALID_ENUM
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_INVALID_HANDLE
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_INVALID_OPERATION
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_OPERATION_FAILED
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_OPERATION_CANCELED
+com.vuforia.ar.pl.SystemTools: int AR_ERROR_OPERATION_TIMEOUT
+com.vuforia.ar.pl.SystemTools: int AR_DEVICE_ORIENTATION_UNKNOWN
+com.vuforia.ar.pl.SystemTools: int AR_DEVICE_ORIENTATION_0
+com.vuforia.ar.pl.SystemTools: int AR_DEVICE_ORIENTATION_180
+com.vuforia.ar.pl.SystemTools: int AR_DEVICE_ORIENTATION_90
+com.vuforia.ar.pl.SystemTools: int AR_DEVICE_ORIENTATION_270
+com.vuforia.ar.pl.SystemTools: int AR_VIDEOTEXTURE_ROTATION_UNKNOWN
+com.vuforia.ar.pl.SystemTools: int AR_RENDERING_TEXTURE_ROTATION_AUTO
+com.vuforia.ar.pl.SystemTools: int AR_RENDERING_TEXTURE_ROTATION_PORTRAIT
+com.vuforia.ar.pl.SystemTools: int AR_RENDERING_TEXTURE_ROTATION_PORTRAIT_UPSIDEDOWN
+com.vuforia.ar.pl.SystemTools: int AR_RENDERING_TEXTURE_ROTATION_LANDSCAPE_LEFT
+com.vuforia.ar.pl.SystemTools: int AR_RENDERING_TEXTURE_ROTATION_LANDSCAPE_RIGHT
+com.vuforia.ar.pl.SystemTools: java.lang.String MODULENAME
+com.vuforia.ar.pl.SystemTools: SystemTools()
+com.vuforia.ar.pl.SystemTools: void setSystemErrorCode(int)
+com.vuforia.ar.pl.SystemTools: void logSystemError(java.lang.String)
+com.vuforia.ar.pl.SystemTools: android.app.Activity getActivityFromNative()
+com.vuforia.ar.pl.SystemTools: boolean checkMinimumApiLevel(int)
+com.vuforia.ar.pl.SystemTools: void sendKillSignal()
+com.vuforia.ar.pl.SystemTools: void sendKillSignal(int)
+com.vuforia.ar.pl.SystemTools: void sendKillSignal(boolean)
+com.vuforia.ar.pl.SystemTools: void sendKillSignal(int,boolean)
+com.vuforia.ar.pl.SystemTools: java.lang.reflect.Method retrieveClassMethod(java.lang.Class,java.lang.String,java.lang.Class[])
+com.vuforia.ar.pl.SystemTools: int getDeviceOrientation(android.app.Activity)
+com.vuforia.ar.pl.SystemTools: int getActivityOrientation(android.app.Activity)
+com.vuforia.ar.pl.SystemTools: java.lang.String getNativeLibraryPath(android.app.Activity)
+com.vuforia.ar.pl.SystemTools: int[] getActivitySize(android.app.Activity)
+com.vuforia.ar.pl.SystemTools: float[] getDisplayDpi(android.app.Activity)
+com.vuforia.ar.pl.SystemTools: int[] getDisplaySize(android.app.Activity)
+com.vuforia.ar.pl.SystemTools$1
+com.vuforia.ar.pl.SystemTools$1: void run()
+org.fmod.FMODAudioDevice
+org.fmod.FMODAudioDevice: java.lang.Thread a
+org.fmod.FMODAudioDevice: boolean b
+org.fmod.FMODAudioDevice: android.media.AudioTrack c
+org.fmod.FMODAudioDevice: boolean d
+org.fmod.FMODAudioDevice: java.nio.ByteBuffer e
+org.fmod.FMODAudioDevice: byte[] f
+org.fmod.FMODAudioDevice: org.fmod.a g
+org.fmod.FMODAudioDevice: int h
+org.fmod.FMODAudioDevice: int i
+org.fmod.FMODAudioDevice: int j
+org.fmod.FMODAudioDevice: int k
+org.fmod.FMODAudioDevice: FMODAudioDevice()
+org.fmod.FMODAudioDevice: void start()
+org.fmod.FMODAudioDevice: void stop()
+org.fmod.FMODAudioDevice: void close()
+org.fmod.FMODAudioDevice: boolean isRunning()
+org.fmod.FMODAudioDevice: void run()
+org.fmod.FMODAudioDevice: void releaseAudioTrack()
+org.fmod.FMODAudioDevice: int fmodGetInfo(int)
+org.fmod.FMODAudioDevice: int fmodProcess(java.nio.ByteBuffer)
+org.fmod.FMODAudioDevice: int fmodProcessMicData(java.nio.ByteBuffer,int)
+org.fmod.FMODAudioDevice: int startAudioRecord(int,int,int)
+org.fmod.FMODAudioDevice: void stopAudioRecord()
+org.fmod.FMODAudioDevice: void <clinit>()
+org.fmod.a
+org.fmod.a: org.fmod.FMODAudioDevice a
+org.fmod.a: java.nio.ByteBuffer b
+org.fmod.a: int c
+org.fmod.a: int d
+org.fmod.a: int e
+org.fmod.a: java.lang.Thread f
+org.fmod.a: boolean g
+org.fmod.a: android.media.AudioRecord h
+org.fmod.a: boolean i
+org.fmod.a: a(org.fmod.FMODAudioDevice,int,int)
+org.fmod.a: int a()
+org.fmod.a: void b()
+org.fmod.a: void c()
+org.fmod.a: void run()
+org.fmod.a: void d()

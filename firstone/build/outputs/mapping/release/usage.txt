@@ -1,0 +1,156 @@
+com.vuforia.CameraCalibration:
+    25:34:protected synchronized void delete()
+com.vuforia.CameraDevice:
+    21:21:protected static long getCPtr(com.vuforia.CameraDevice)
+com.vuforia.CylinderTarget:
+    20:20:protected static long getCPtr(com.vuforia.CylinderTarget)
+com.vuforia.CylinderTargetResult:
+    20:20:protected static long getCPtr(com.vuforia.CylinderTargetResult)
+com.vuforia.Device:
+    21:21:protected static long getCPtr(com.vuforia.Device)
+com.vuforia.DeviceTrackable:
+    20:20:protected static long getCPtr(com.vuforia.DeviceTrackable)
+com.vuforia.DeviceTrackableResult:
+    20:20:protected static long getCPtr(com.vuforia.DeviceTrackableResult)
+com.vuforia.DeviceTracker:
+    20:20:protected static long getCPtr(com.vuforia.DeviceTracker)
+com.vuforia.EyewearCalibrationProfileManager:
+    21:21:protected static long getCPtr(com.vuforia.EyewearCalibrationProfileManager)
+com.vuforia.EyewearCalibrationReading:
+    48:51:protected static com.vuforia.EyewearCalibrationReading[] cArrayWrap(long[],boolean)
+com.vuforia.EyewearDevice:
+    20:20:protected static long getCPtr(com.vuforia.EyewearDevice)
+com.vuforia.EyewearUserCalibrator:
+    21:21:protected static long getCPtr(com.vuforia.EyewearUserCalibrator)
+com.vuforia.GLTextureData:
+    20:20:protected static long getCPtr(com.vuforia.GLTextureData)
+com.vuforia.GLTextureUnit:
+    20:20:protected static long getCPtr(com.vuforia.GLTextureUnit)
+com.vuforia.Image:
+    21:21:protected static long getCPtr(com.vuforia.Image)
+    25:34:protected synchronized void delete()
+com.vuforia.ImageTarget:
+    20:20:protected static long getCPtr(com.vuforia.ImageTarget)
+com.vuforia.ImageTargetBuilder:
+    21:21:protected static long getCPtr(com.vuforia.ImageTargetBuilder)
+    25:34:protected synchronized void delete()
+com.vuforia.ImageTargetResult:
+    20:20:protected static long getCPtr(com.vuforia.ImageTargetResult)
+com.vuforia.InstanceId:
+    21:21:protected static long getCPtr(com.vuforia.InstanceId)
+com.vuforia.Mesh:
+    21:21:protected static long getCPtr(com.vuforia.Mesh)
+com.vuforia.MultiTarget:
+    20:20:protected static long getCPtr(com.vuforia.MultiTarget)
+com.vuforia.MultiTargetResult:
+    20:20:protected static long getCPtr(com.vuforia.MultiTargetResult)
+com.vuforia.NonCopyable:
+    21:21:protected static long getCPtr(com.vuforia.NonCopyable)
+com.vuforia.ObjectTarget:
+    20:20:protected static long getCPtr(com.vuforia.ObjectTarget)
+com.vuforia.ObjectTargetResult:
+    20:20:protected static long getCPtr(com.vuforia.ObjectTargetResult)
+com.vuforia.ObjectTracker:
+    20:20:protected static long getCPtr(com.vuforia.ObjectTracker)
+com.vuforia.Prop:
+    20:20:protected static long getCPtr(com.vuforia.Prop)
+com.vuforia.PropResult:
+    20:20:protected static long getCPtr(com.vuforia.PropResult)
+com.vuforia.Reconstruction:
+    25:34:protected synchronized void delete()
+com.vuforia.ReconstructionFromTarget:
+    20:20:protected static long getCPtr(com.vuforia.ReconstructionFromTarget)
+    24:34:protected synchronized void delete()
+com.vuforia.Renderer:
+    21:21:protected static long getCPtr(com.vuforia.Renderer)
+com.vuforia.RotationalDeviceTracker:
+    20:20:protected static long getCPtr(com.vuforia.RotationalDeviceTracker)
+com.vuforia.SmartTerrainBuilder:
+    21:21:protected static long getCPtr(com.vuforia.SmartTerrainBuilder)
+com.vuforia.SmartTerrainTrackable:
+    20:20:protected static long getCPtr(com.vuforia.SmartTerrainTrackable)
+com.vuforia.SmartTerrainTracker:
+    20:20:protected static long getCPtr(com.vuforia.SmartTerrainTracker)
+com.vuforia.StateUpdater:
+    21:21:protected static long getCPtr(com.vuforia.StateUpdater)
+com.vuforia.Surface:
+    20:20:protected static long getCPtr(com.vuforia.Surface)
+com.vuforia.SurfaceResult:
+    20:20:protected static long getCPtr(com.vuforia.SurfaceResult)
+com.vuforia.TargetFinder:
+    21:21:protected static long getCPtr(com.vuforia.TargetFinder)
+com.vuforia.TextTracker:
+    20:20:protected static long getCPtr(com.vuforia.TextTracker)
+com.vuforia.Tool:
+    21:21:protected static long getCPtr(com.vuforia.Tool)
+com.vuforia.TrackableResult:
+    21:21:protected static long getCPtr(com.vuforia.TrackableResult)
+com.vuforia.Tracker:
+    21:21:protected static long getCPtr(com.vuforia.Tracker)
+com.vuforia.TrackerManager:
+    21:21:protected static long getCPtr(com.vuforia.TrackerManager)
+com.vuforia.UpdateCallback:
+    41:43:protected void swigDirectorDisconnect()
+com.vuforia.Vec3I:
+    21:21:protected static long getCPtr(com.vuforia.Vec3I)
+com.vuforia.Vec4I:
+    21:21:protected static long getCPtr(com.vuforia.Vec4I)
+com.vuforia.VideoBackgroundTextureInfo:
+    21:21:protected static long getCPtr(com.vuforia.VideoBackgroundTextureInfo)
+com.vuforia.ViewList:
+    21:21:protected static long getCPtr(com.vuforia.ViewList)
+com.vuforia.ViewerParametersList:
+    21:21:protected static long getCPtr(com.vuforia.ViewerParametersList)
+com.vuforia.VirtualButton:
+    25:34:protected synchronized void delete()
+com.vuforia.VirtualButtonResult:
+    21:21:protected static long getCPtr(com.vuforia.VirtualButtonResult)
+    25:34:protected synchronized void delete()
+com.vuforia.VuMarkTarget:
+    20:20:protected static long getCPtr(com.vuforia.VuMarkTarget)
+com.vuforia.VuMarkTargetResult:
+    20:20:protected static long getCPtr(com.vuforia.VuMarkTargetResult)
+com.vuforia.VuMarkTemplate:
+    20:20:protected static long getCPtr(com.vuforia.VuMarkTemplate)
+com.vuforia.VuforiaUnityPlayer.OrientationUtility:
+    static final int SCREEN_ORIENTATION_UNKNOWN
+    static final int SCREEN_ORIENTATION_PORTRAIT
+    static final int SCREEN_ORIENTATION_PORTRAITUPSIDEDOWN
+    static final int SCREEN_ORIENTATION_LANDSCAPELEFT
+    static final int SCREEN_ORIENTATION_LANDSCAPERIGHT
+com.vuforia.Word:
+    20:20:protected static long getCPtr(com.vuforia.Word)
+com.vuforia.WordList:
+    20:20:protected static long getCPtr(com.vuforia.WordList)
+com.vuforia.WordResult:
+    20:20:protected static long getCPtr(com.vuforia.WordResult)
+com.vuforia.ar.pl.Camera1_Preview:
+    1885:1924:boolean setUntypedCameraParameter(int,java.lang.String,java.lang.String)
+    1933:1961:java.lang.String getUntypedCameraParameter(int,java.lang.String)
+    1967:1988:java.lang.String getFlattenedParameters(int)
+    1996:2486:boolean setTypedCameraParameter(int,int,java.lang.Object)
+    2495:2750:java.lang.Object getTypedCameraParameter(int,int)
+    2760:2770:int getStatus(int)
+com.vuforia.ar.pl.Camera1_Preview$1:
+    2440:2440:Camera1_Preview$1(com.vuforia.ar.pl.Camera1_Preview)
+com.vuforia.ar.pl.Camera2_Preview:
+    1186:1192:int getBitsPerPixel(int)
+    2232:2297:boolean setUntypedCameraParameter(int,java.lang.String,java.lang.Object)
+    2304:2394:java.lang.Object getUntypedCameraParameter(int,java.lang.String)
+    2401:2484:int getUntypedCameraParameterType(int,java.lang.String)
+    2491:2503:int getNamedParameterCount(int)
+    2510:2541:java.lang.String getNamedParameter(int,int)
+    2552:3198:boolean setTypedCameraParameter(int,int,java.lang.Object)
+    3207:3682:java.lang.Object getTypedCameraParameter(int,int)
+    3692:3702:int getStatus(int)
+com.vuforia.ar.pl.SensorController:
+    425:487:boolean open(int,int)
+    496:525:boolean close(int)
+    534:548:int[] getSensorInfoValues(int)
+    557:566:java.lang.String getSensorName(int)
+    575:634:java.lang.Object getTypedSensorParameter(int,int)
+    643:699:boolean setTypedSensorParameter(int,int,java.lang.Object)
+    708:744:boolean start(int)
+    753:779:boolean stop(int)
+com.vuforia.ar.pl.SensorController$SensorCacheInfo:
+    float[] valuesForForcedSensorEvent

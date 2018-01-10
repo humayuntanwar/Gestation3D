@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Cutebabies.model1"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application>
+        <activity
+            android:name="com.Cutebabies.model1.UnityPlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:process=":unityplayer"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

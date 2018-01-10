@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Gestation 3D</string>
+
+    <string name="hint_dob">enter age</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_doctor">Are you a doctor?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="btn_sign_up">Sign Up !!</string>
+    <string name="err_msg_name">Please enter a Name</string>
+    <string name="err_msg_required">Valid Input Required</string>
+    <string name="err_msg_email">Please enter a Valid Email</string>
+    <string name="err_msg_password">Enter a Password</string>
+    <string name="err_msg_dob">Enter a valid D.O.B</string>
+    <string name="title_activity_usr">Usr</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_diets">diets</string>
+    <string name="title_activity_hospital__maps">Map</string>
+    <string name="title_activity_maps_tab">maps_tab</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_twodtry">twodtry</string>
+    <string name="title_activity_locate_doctor_map">Map</string>
+
+</resources>

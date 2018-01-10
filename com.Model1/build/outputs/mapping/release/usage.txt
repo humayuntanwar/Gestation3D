@@ -1,0 +1,3 @@
+com.Cutebabies.model1.BuildConfig
+com.Cutebabies.model1.UnityPlayerNativeActivity
+com.Cutebabies.model1.UnityPlayerProxyActivity

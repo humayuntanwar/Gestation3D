@@ -1,0 +1,112 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/b_hospital"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_signup"
+            android:clickable="true"
+
+
+            android:padding="5dp"
+
+            android:text="Locate Hospitals "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/direction"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="@drawable/background_login"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="direction"
+            android:textAllCaps="false"
+            android:textColor="#f16f7d"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+    <!--
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <AutoCompleteTextView
+        android:id="@+id/signup_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/new_login_gradients"
+
+        android:drawablePadding="12dp"
+        android:ems="10"
+
+        android:hint="address"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawableRight="@drawable/ic_person_white_24dp"
+
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="#fff"
+        android:textColor="#000"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+</LinearLayout>
+-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:map="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:context="com.example.humayunt.templateui.hospital_MapsActivity"
+
+        android:layout_weight="1.42" >
+
+
+
+    </fragment>
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+
