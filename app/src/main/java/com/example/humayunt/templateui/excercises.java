@@ -1,50 +1,52 @@
 package com.example.humayunt.templateui;
 
+import android.database.SQLException;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class excercises extends AppCompatActivity {
 
-    //a list to store all the products
-    List<Product> productList;
-
-    //the recyclerview
-    RecyclerView recyclerView;
-
+    DatabaseHandler db;
+    RecyclerView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_excercises);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        this.list = (RecyclerView) findViewById(R.id.Exercise);
+        this.list.setHasFixedSize(true);
+        this.list.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        RetriveDataFromDB();
 
-        //initializing the productlist
-        productList = new ArrayList<>();
-
-
-        //adding some items to our list
-        productList.add(
-                new Product(
-                        1,
-                        "month one exercise",
-                        "excercises that are good for first month",
-
-                        R.drawable.main_logo));
-
-
-        //creating recyclerview adapter
-        ProductAdapter adapter = new ProductAdapter(this, productList);
-
-        //setting adapter to recyclerview
-        recyclerView.setAdapter(adapter);
+    }
+    protected void RetriveDataFromDB() {
+        try {
+            this.db = new DatabaseHandler(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            this.db.createdatabase();
+            try {
+                this.db.opendatabase();
+                ArrayList<ExerciseDataModel> menuItems = new ArrayList();
+                menuItems.clear();
+                ArrayList<ExerciseDataModel> contacts = this.db.getExcercise();
+                Log.e("Array", ">>" + menuItems.size());
+                this.list.setAdapter(new ExerciseRetriever(this, contacts));
+            } catch (SQLException sqle) {
+                throw sqle;
+            }
+        } catch (IOException e2) {
+            throw new Error("Unable to create database");
+        }
     }
 
 }

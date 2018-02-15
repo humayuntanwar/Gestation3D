@@ -46,6 +46,8 @@ public class UserProfile extends AppCompatActivity
         setContentView(R.layout.activity_user_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        String UserIDOld = getIntent().getStringExtra("UserID");
+
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -114,7 +116,7 @@ public class UserProfile extends AppCompatActivity
         databaseUserRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-              showData(dataSnapshot);
+//              showData(dataSnapshot);
 
             }
 
@@ -133,16 +135,17 @@ public class UserProfile extends AppCompatActivity
     private void showData(DataSnapshot dataSnapshot) {
         for (DataSnapshot ds : dataSnapshot.getChildren()){
             Log.d(TAG, ds.toString());
+            DoctorDetail dd = new DoctorDetail();
         UserDetail UserDetail = new UserDetail();
-        UserDetail.setEmail(ds.child(UserId).getValue(UserDetail.class).getEmail());
-        UserDetail.setName(ds.child(UserId).getValue(UserDetail.class).getName());
+//       dd.setEmail(ds.child(UserId).getValue(DoctorDetail.class).getEmail());
+//      dd.setName(ds.child(UserId).getValue(DoctorDetail.class).getName());
 
         //display all information
             Toast.makeText(this,UserDetail.getName(), Toast.LENGTH_LONG).show();
         Log.d(TAG, "ShowData :email " + UserDetail.getEmail());
         Log.d(TAG, "ShowData :name " + UserDetail.getName());
-        email.setText(UserDetail.getEmail());
-        name.setText(UserDetail.getName());
+//        email.setText(UserDetail.getEmail());
+//        name.setText(UserDetail.getName());
     }
 
     }

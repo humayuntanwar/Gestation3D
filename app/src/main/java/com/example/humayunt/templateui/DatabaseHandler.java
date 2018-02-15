@@ -124,4 +124,44 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         }
         return ittoentity;
     }
+    public ArrayList<DietsDataModel> getDiets() {
+        String fact = "None";
+        ArrayList<DietsDataModel> ittoentity = new ArrayList();
+        String selectQuery = "SELECT  * FROM twodguide";
+        Log.d("rawquery", "inputs" + selectQuery);
+        Cursor cursor = this.db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                DietsDataModel itto = new DietsDataModel();
+                byte[] byteArray = cursor.getBlob(2);
+                Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+                itto.setMonth(cursor.getString(0));
+
+              //  itto.setFact(cursor.getString(4) != null ? cursor.getString(4) : "No Fact Available ");
+                itto.setImg(bm);
+                ittoentity.add(itto);
+            } while (cursor.moveToNext());
+        }
+        return ittoentity;
+    }
+    public ArrayList<ExerciseDataModel> getExcercise() {
+        String fact = "None";
+        ArrayList<ExerciseDataModel> ittoentity = new ArrayList();
+        String selectQuery = "SELECT  * FROM twodguide";
+        Log.d("rawquery", "inputs" + selectQuery);
+        Cursor cursor = this.db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                ExerciseDataModel itto = new ExerciseDataModel();
+                byte[] byteArray = cursor.getBlob(2);
+                Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+                itto.setMonth(cursor.getString(0));
+
+                //  itto.setFact(cursor.getString(4) != null ? cursor.getString(4) : "No Fact Available ");
+                itto.setImg(bm);
+                ittoentity.add(itto);
+            } while (cursor.moveToNext());
+        }
+        return ittoentity;
+    }
 }

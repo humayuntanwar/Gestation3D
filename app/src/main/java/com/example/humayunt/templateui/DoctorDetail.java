@@ -46,7 +46,10 @@ public class DoctorDetail {
         this.number = number;
     }
 
-    public String getName() {
+    public DoctorDetail() {
+    }
+
+    public  String getName() {
         return name;
     }
 

@@ -3,7 +3,7 @@ package com.example.humayunt.templateui;
 import android.graphics.Bitmap;
 
 public class TwodDataModel {
-    private String _city;
+
     private String _name;
     private String fact;
     private Bitmap img;
@@ -45,24 +45,5 @@ public class TwodDataModel {
     public TwodDataModel() {
     }
 
-    public TwodDataModel(String _name, String _city) {
-        this._name = _name;
-        this._city = _city;
-    }
 
-    public String get_name() {
-        return this._name;
-    }
-
-    public void set_name(String _name) {
-        this._name = _name;
-    }
-
-    public String get_city() {
-        return this._city;
-    }
-
-    public void set_city(String _city) {
-        this._city = _city;
-    }
 }

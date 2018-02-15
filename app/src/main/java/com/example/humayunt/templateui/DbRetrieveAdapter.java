@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 class DbRetrieveAdapter extends Adapter<DbRetrieveAdapter.DataObjectHolder> implements OnClickListener {
-    ArrayList<TwodDataModel> Show;
+    ArrayList<TwodDataModel> Show,Diets;
     private Activity activity;
     private String cat_id;
     private DataObjectHolder holder;

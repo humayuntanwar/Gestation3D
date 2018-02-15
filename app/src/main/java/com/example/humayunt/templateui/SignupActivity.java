@@ -418,6 +418,8 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                             // String tempEmail =databaseUser.getKey();
                             FirebaseUser user = firebaseauth.getCurrentUser();
                             UserId = user.getUid();
+                            String uid = UserId.toString();
+
                             databaseDoctor = FirebaseDatabase.getInstance().getReference("doctor");
                             DoctorDetail doctor = new DoctorDetail(name, email, password,latitude,longitude , number);
                             databaseDoctor.child(UserId).setValue(doctor).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -434,6 +436,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                             progressdialog.hide();
                             Toast.makeText(SignupActivity.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
+                            intent.putExtra("UserID", uid);
                             startActivity(intent);
                             // finish();
 
