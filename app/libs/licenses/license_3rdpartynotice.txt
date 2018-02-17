@@ -1041,10 +1041,10 @@ SUCH DAMAGE.
 
 PSF LICENSE AGREEMENT FOR PYTHON 2.7.5
 
-    This LICENSE AGREEMENT is between the Python Software Foundation (“PSF”), and the Individual or Organization (“Licensee”) accessing and otherwise using Python 2.7.5 software in source or binary form and its associated documentation.
-    Subject to the terms and conditions of this License Agreement, PSF hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python 2.7.5 alone or in any derivative version, provided, however, that PSF’s License Agreement and PSF’s notice of copyright, i.e., “Copyright © 2001-2013 Python Software Foundation; All Rights Reserved” are retained in Python 2.7.5 alone or in any derivative version prepared by Licensee.
-    In the event Licensee prepares a derivative work that is based on or incorporates Python 2.7.5 or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python 2.7.5.
-    PSF is making Python 2.7.5 available to Licensee on an “AS IS” basis. PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 2.7.5 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+    This LICENSE AGREEMENT is between the Python Software Foundation (ï¿½PSFï¿½), and the Individual or Organization (ï¿½Licenseeï¿½) accessing and otherwise using Python 2.7.5 software in source or binary form and its associated documentation.
+    Subject to the terms and conditions of this License Agreement, PSF hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python 2.7.5 alone or in any derivative version, provided, however, that PSFï¿½s License Agreement and PSFï¿½s notice of copyright, i.e., ï¿½Copyright ï¿½ 2001-2013 Python Software Foundation; All Rights Reservedï¿½ are retained in Python 2.7.5 alone or in any derivative version prepared by Licensee.
+    In the event Licensee prepares a derivative work that is based on or incorporates Python 2.7.5 or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief com.example.humayunt.templateui.summary of the changes made to Python 2.7.5.
+    PSF is making Python 2.7.5 available to Licensee on an ï¿½AS ISï¿½ basis. PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 2.7.5 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
     PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 2.7.5 FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 2.7.5, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
     This License Agreement will automatically terminate upon a material breach of its terms and conditions.
     Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee. This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.
@@ -1151,7 +1151,7 @@ THE SOFTWARE.
  * TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
  * OF SUCH DAMAGE.
- * Copyright© 2009, Liu Liu All rights reserved.
+ * Copyrightï¿½ 2009, Liu Liu All rights reserved.
  *
  * OpenCV functions for MSER extraction
 
@@ -1162,10 +1162,10 @@ ADDITIONAL ACKNOWLEDGEMENTS
 
 This software contains QuickSort code by Darel Rex Finley.
 
-This software contains Grapics Gems III – Chapter: General Filtered Image
+This software contains Grapics Gems III ï¿½ Chapter: General Filtered Image
 Rescaling code by Dale Schumacher.
 
-This software contains Grapics Gems III – Chapter: Optimization of Bitmap
+This software contains Grapics Gems III ï¿½ Chapter: Optimization of Bitmap
 Scaling Operations code by Dale Schumacher.
 
 This software contains altered TinyXML code by Tyge Lovset.
@@ -1284,21 +1284,21 @@ EXAMPLE, BUT NOT LIMITATION, PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS
  shall at all times remain with Princeton University and you agree to preserve same.
  
  PSF LICENSE AGREEMENT FOR PYTHON 2.7.5
-1.	This LICENSE AGREEMENT is between the Python Software Foundation (“PSF”), and the 
-Individual or Organization (“Licensee”) accessing and otherwise using Python 2.7.5 
+1.	This LICENSE AGREEMENT is between the Python Software Foundation (ï¿½PSFï¿½), and the 
+Individual or Organization (ï¿½Licenseeï¿½) accessing and otherwise using Python 2.7.5 
 software in source or binary form and its associated documentation.
 2.	Subject to the terms and conditions of this License Agreement, PSF hereby grants 
 Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, 
 perform and/or display publicly, prepare derivative works, distribute, and otherwise 
-use Python 2.7.5 alone or in any derivative version, provided, however, that PSF’s License 
-Agreement and PSF’s notice of copyright, i.e., “Copyright © 2001-2013 Python Software 
-Foundation; All Rights Reserved” are retained in Python 2.7.5 alone or in any derivative 
+use Python 2.7.5 alone or in any derivative version, provided, however, that PSFï¿½s License 
+Agreement and PSFï¿½s notice of copyright, i.e., ï¿½Copyright ï¿½ 2001-2013 Python Software 
+Foundation; All Rights Reservedï¿½ are retained in Python 2.7.5 alone or in any derivative 
 version prepared by Licensee.
 3.	In the event Licensee prepares a derivative work that is based on or incorporates 
 Python 2.7.5 or any part thereof, and wants to make the derivative work available to 
 others as provided herein, then Licensee hereby agrees to include in any such work a brief 
-summary of the changes made to Python 2.7.5.
-4.	PSF is making Python 2.7.5 available to Licensee on an “AS IS” basis. PSF MAKES NO 
+com.example.humayunt.templateui.summary of the changes made to Python 2.7.5.
+4.	PSF is making Python 2.7.5 available to Licensee on an ï¿½AS ISï¿½ basis. PSF MAKES NO 
 REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, 
 PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS 
 FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 2.7.5 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
@@ -1348,7 +1348,7 @@ Permission to use, copy, modify, distribute and sell this software and its docum
 ---------------------------------------------
 CPU-Features
 ---------------------------------------------
-Code downloaded from “http://developer.android.com/sdk/ndk/index.html”. Licensing information taken from header file “sources/android/cpufeatures/cpu-features.h”
+Code downloaded from ï¿½http://developer.android.com/sdk/ndk/index.htmlï¿½. Licensing information taken from header file ï¿½sources/android/cpufeatures/cpu-features.hï¿½
 /*
  * Copyright (C) 2010 The Android Open Source Project
  * All rights reserved.

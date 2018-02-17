@@ -61,12 +61,7 @@ public class guidetry extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_guidetry, menu);
-        return true;
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -131,9 +126,17 @@ public class guidetry extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
 
+            switch (position) {
+                case 0:
+                    summary sm = new summary();
+                    return sm;
+
+                case 1:
                     twodguideview twod = new twodguideview();
                     return twod;
 
+            }
+            return null;
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
 
@@ -142,18 +145,17 @@ public class guidetry extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 2;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "SUMMARY GUIDE";
                 case 1:
-                    return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
+                    return "DETAILED GUIDE";
+
             }
             return null;
         }
