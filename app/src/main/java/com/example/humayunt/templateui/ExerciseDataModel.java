@@ -7,34 +7,51 @@ import android.graphics.Bitmap;
  */
 
 public class ExerciseDataModel {
-    private String dietName;
-    private String Time;
+    private String name;
+    private String startingpos;
     private Bitmap img;
     private String month;
-    private String Fact;
+    private String steps,repition,precaution;
 
-    public String getDietName() {
-        return dietName;
+
+    public String getName() {
+        return name;
     }
 
-    public void setDietName(String dietName) {
-        this.dietName = dietName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getFact() {
-        return Fact;
+    public String getStartingpos() {
+        return startingpos;
     }
 
-    public void setFact(String fact) {
-        Fact = fact;
+    public void setStartingpos(String startingpos) {
+        this.startingpos = startingpos;
     }
 
-    public String getTime() {
-        return Time;
+    public String getSteps() {
+        return steps;
     }
 
-    public void setTime(String time) {
-        Time = time;
+    public void setSteps(String steps) {
+        this.steps = steps;
+    }
+
+    public String getRepition() {
+        return repition;
+    }
+
+    public void setRepition(String repition) {
+        this.repition = repition;
+    }
+
+    public String getPrecaution() {
+        return precaution;
+    }
+
+    public void setPrecaution(String precaution) {
+        this.precaution = precaution;
     }
 
     public Bitmap getImg() {

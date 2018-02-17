@@ -29,7 +29,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     String mydate;
 
     public DatabaseHandler(Activity activity) throws IOException {
-        super(activity, DB_NAME, null, 1);
+        super(activity, DB_NAME, null,DATABASE_VERSION );
+
         this.activity = activity;
         if (checkdatabase()) {
             Log.d("Trong", "Database exists");
@@ -98,7 +99,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         try {
-            copydatabase();
+            if(newVersion>oldVersion)
+                copydatabase();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -126,42 +128,42 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
     public ArrayList<DietsDataModel> getDiets() {
         String fact = "None";
-        ArrayList<DietsDataModel> ittoentity = new ArrayList();
-        String selectQuery = "SELECT  * FROM twodguide";
+        ArrayList<DietsDataModel> dietsDataArray = new ArrayList();
+        String selectQuery = "SELECT  * FROM pregnancydiets";
         Log.d("rawquery", "inputs" + selectQuery);
         Cursor cursor = this.db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
             do {
-                DietsDataModel itto = new DietsDataModel();
-                byte[] byteArray = cursor.getBlob(2);
+                DietsDataModel dietsData = new DietsDataModel();
+                byte[] byteArray = cursor.getBlob(3);
                 Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-                itto.setMonth(cursor.getString(0));
+                dietsData.setMonth(cursor.getString(0));
 
-              //  itto.setFact(cursor.getString(4) != null ? cursor.getString(4) : "No Fact Available ");
-                itto.setImg(bm);
-                ittoentity.add(itto);
+               dietsData.setFoodtype(cursor.getString(1) != null ? cursor.getString(1) : "No Fact Available ");
+                dietsData.setImg(bm);
+                dietsDataArray.add(dietsData);
             } while (cursor.moveToNext());
         }
-        return ittoentity;
+        return dietsDataArray;
     }
     public ArrayList<ExerciseDataModel> getExcercise() {
         String fact = "None";
-        ArrayList<ExerciseDataModel> ittoentity = new ArrayList();
-        String selectQuery = "SELECT  * FROM twodguide";
+        ArrayList<ExerciseDataModel> ExerciseArray = new ArrayList();
+        String selectQuery = "SELECT  * FROM exercise";
         Log.d("rawquery", "inputs" + selectQuery);
         Cursor cursor = this.db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
             do {
                 ExerciseDataModel itto = new ExerciseDataModel();
-                byte[] byteArray = cursor.getBlob(2);
-                Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+              //  byte[] byteArray = cursor.getBlob(2);
+              //  Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
                 itto.setMonth(cursor.getString(0));
 
-                //  itto.setFact(cursor.getString(4) != null ? cursor.getString(4) : "No Fact Available ");
-                itto.setImg(bm);
-                ittoentity.add(itto);
+                  itto.setName(cursor.getString(1) != null ? cursor.getString(1) : "No Fact Available ");
+               // itto.setImg(bm);
+                ExerciseArray.add(itto);
             } while (cursor.moveToNext());
         }
-        return ittoentity;
+        return ExerciseArray;
     }
 }

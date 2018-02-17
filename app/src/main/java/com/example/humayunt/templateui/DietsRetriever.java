@@ -60,13 +60,13 @@ class DietsRetriever extends Adapter<DietsRetriever.DataObjectHolder> implements
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
         holder.layout.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), singleItemTwoDGuide.class);
+                Intent intent = new Intent(v.getContext(), singleItemDiet.class);
                 intent.putExtra("month", ( DietsRetriever.this.Show.get(position)).getMonth());
                 v.getContext().startActivity(intent);
             }
         });
         holder.tvName.setText("Month : " + ( this.Show.get(position)).getMonth());
-        holder.tvCity.setText("Fact : " + ( this.Show.get(position)).getFact());
+        holder.tvCity.setText("Diets : " + ( this.Show.get(position)).getFoodtype());
         holder.img.setImageBitmap(( this.Show.get(position)).getImg());
     }
 

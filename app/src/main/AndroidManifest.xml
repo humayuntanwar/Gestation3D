@@ -67,7 +67,9 @@
         <activity android:name=".singleItemTwoDGuide" />
         <activity
             android:name=".LocateDoctorMap"
-            android:label="@string/title_activity_locate_doctor_map"></activity>
+            android:label="@string/title_activity_locate_doctor_map" />
+        <activity android:name=".singleItemDiet" />
+        <activity android:name=".singleItemExercise"></activity>
     </application>
 
 </manifest>

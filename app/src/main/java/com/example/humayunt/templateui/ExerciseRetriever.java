@@ -59,14 +59,14 @@ public class ExerciseRetriever extends Adapter<ExerciseRetriever.DataObjectHolde
     public void onBindViewHolder(DataObjectHolder holder, final int position) {
         holder.layout.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), singleItemTwoDGuide.class);
+                Intent intent = new Intent(v.getContext(), singleItemExercise.class);
                 intent.putExtra("month", ( ExerciseRetriever.this.Show.get(position)).getMonth());
                 v.getContext().startActivity(intent);
             }
         });
-        holder.tvName.setText("Month : " + ( this.Show.get(position)).getMonth());
-        holder.tvCity.setText("Fact : " + ( this.Show.get(position)).getFact());
-        holder.img.setImageBitmap(( this.Show.get(position)).getImg());
+        holder.tvName.setText( (this.Show.get(position)).getName());
+        holder.tvCity.setText("Name : " + ( this.Show.get(position)).getStartingpos());
+       // holder.img.setImageBitmap(( this.Show.get(position)).getImg());
     }
 
     public int getItemCount() {

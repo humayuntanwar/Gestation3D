@@ -7,34 +7,27 @@ import android.graphics.Bitmap;
  */
 
 public class DietsDataModel {
-    private String dietName;
-    private String Time;
+    private String foodtype;
+
     private Bitmap img;
     private String month;
-    private String Fact;
+    private String prohibitedfood;
 
-    public String getDietName() {
-        return dietName;
+
+    public String getFoodtype() {
+        return foodtype;
     }
 
-    public void setDietName(String dietName) {
-        this.dietName = dietName;
+    public void setFoodtype(String foodtype) {
+        this.foodtype = foodtype;
     }
 
-    public String getFact() {
-        return Fact;
+    public String getProhibitedfood() {
+        return prohibitedfood;
     }
 
-    public void setFact(String fact) {
-        Fact = fact;
-    }
-
-    public String getTime() {
-        return Time;
-    }
-
-    public void setTime(String time) {
-        Time = time;
+    public void setProhibitedfood(String prohibitedfood) {
+        this.prohibitedfood = prohibitedfood;
     }
 
     public Bitmap getImg() {
