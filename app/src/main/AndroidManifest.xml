@@ -67,7 +67,11 @@
             android:name=".MainPanel.LocateDoctorMap"
             android:label="@string/title_activity_locate_doctor_map" />
         <activity android:name=".SingleItem.singleItemDiet" />
-        <activity android:name=".SingleItem.singleItemExercise"></activity>
+        <activity android:name=".SingleItem.singleItemExercise" />
+        <activity
+            android:name=".guidetry"
+            android:label="@string/title_activity_guidetry"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

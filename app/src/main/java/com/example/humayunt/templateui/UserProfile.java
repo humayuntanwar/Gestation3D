@@ -166,7 +166,7 @@ public class UserProfile extends AppCompatActivity
             //startActivity(new Intent(this, SigninActivity.class));
         if(view == guidecard){
            // firebaseAuth.signOut();
-            startActivity(new Intent(UserProfile.this, twodguideview.class));
+            startActivity(new Intent(UserProfile.this, guidetry.class));
         }
         if(view == modelcard){
             // firebaseAuth.signOut();

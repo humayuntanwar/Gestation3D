@@ -1,12 +1,15 @@
 package com.example.humayunt.templateui.MainPanel;
 
 import android.database.SQLException;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.example.humayunt.templateui.DataModel.TwodDataModel;
 
@@ -17,27 +20,45 @@ import com.example.humayunt.templateui.DatabaseHandler;
 import com.example.humayunt.templateui.R;
 
 
-public class twodguideview extends AppCompatActivity  implements View.OnClickListener{
+
+public class twodguideview extends Fragment implements View.OnClickListener{
     DatabaseHandler db;
     RecyclerView list;
 
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+            View rootView = inflater.inflate(R.layout.activity_twodguideview, container, false);
+            this.list = (RecyclerView) rootView.findViewById(R.id.list_dblayout);
+            this.list.setHasFixedSize(true);
+            this.list.setLayoutManager(new LinearLayoutManager(getActivity().getApplicationContext()));
+
+            RetriveDataFromDB();
+            return rootView;
+        }
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_twodguideview);
+
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+
         //getting the recyclerview from xml
 
-        this.list = (RecyclerView) findViewById(R.id.list_dblayout);
-        this.list.setHasFixedSize(true);
-        this.list.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        RetriveDataFromDB();
+
 
     }
     protected void RetriveDataFromDB() {
         try {
-            this.db = new DatabaseHandler(this);
+            this.db = new DatabaseHandler(getActivity());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -51,7 +72,7 @@ public class twodguideview extends AppCompatActivity  implements View.OnClickLis
                 Log.e("Array", ">>" + menuItems.size());
 
 
-                this.list.setAdapter(new DbRetrieveAdapter(this, contacts));
+                this.list.setAdapter(new DbRetrieveAdapter(getActivity(), contacts));
             } catch (SQLException sqle) {
                 throw sqle;
             }

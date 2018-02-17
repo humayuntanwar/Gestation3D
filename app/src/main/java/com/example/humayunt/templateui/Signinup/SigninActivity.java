@@ -49,6 +49,8 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         password = (EditText)findViewById(R.id.password);
         btnSignIn = (Button) findViewById(R.id.sign_in);
         btnSignUp = (Button) findViewById(R.id.sign_up);
+        btnSignIn.getBackground().setAlpha(64);
+        btnSignUp.getBackground().setAlpha(64);
 
         progressdialog = new ProgressDialog(this);
         btnSignIn.setOnClickListener(this);
