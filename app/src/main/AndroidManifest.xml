@@ -29,25 +29,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SigninActivity">
+        <activity android:name=".Signinup.SigninActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Profile" />
-        <activity android:name=".SignupActivity" />
+        <activity android:name=".Signinup.SignupActivity" />
         <activity
             android:name=".UserProfile"
             android:label="@string/title_activity_user_profile"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".forget_Password" />
-        <activity android:name=".twodguideview" />
-        <activity android:name=".threedmodel" />
-        <activity android:name=".arguide" />
-        <activity android:name=".diets" />
-        <activity android:name=".excercises" />
+        <activity android:name=".Signinup.forget_Password" />
+        <activity android:name=".MainPanel.twodguideview" />
+        <activity android:name=".MainPanel.threedmodel" />
+        <activity android:name=".MainPanel.arguide" />
+        <activity android:name=".MainPanel.diets" />
+        <activity android:name=".MainPanel.excercises" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -61,15 +60,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".hospital_MapsActivity"
+            android:name=".LocateHospital.hospital_MapsActivity"
             android:label="@string/title_activity_hospital__maps" />
-        <activity android:name=".mian_layout_land" />
-        <activity android:name=".singleItemTwoDGuide" />
+        <activity android:name=".SingleItem.singleItemTwoDGuide" />
         <activity
-            android:name=".LocateDoctorMap"
+            android:name=".MainPanel.LocateDoctorMap"
             android:label="@string/title_activity_locate_doctor_map" />
-        <activity android:name=".singleItemDiet" />
-        <activity android:name=".singleItemExercise"></activity>
+        <activity android:name=".SingleItem.singleItemDiet" />
+        <activity android:name=".SingleItem.singleItemExercise"></activity>
     </application>
 
 </manifest>

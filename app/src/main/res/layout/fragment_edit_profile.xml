@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/new_login_gradients"
-    tools:context="com.example.humayunt.templateui.edit_profile"
+    tools:context="com.example.humayunt.templateui.SidePanel.edit_profile"
     >
 
 

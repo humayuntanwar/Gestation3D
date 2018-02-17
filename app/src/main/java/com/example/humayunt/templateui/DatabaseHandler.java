@@ -11,6 +11,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
+import com.example.humayunt.templateui.DataModel.DietsDataModel;
+import com.example.humayunt.templateui.DataModel.ExerciseDataModel;
+import com.example.humayunt.templateui.DataModel.TwodDataModel;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
