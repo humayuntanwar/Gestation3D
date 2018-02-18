@@ -131,7 +131,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return ittoentity;
     }
     public ArrayList<DietsDataModel> getDiets() {
-        String fact = "None";
         ArrayList<DietsDataModel> dietsDataArray = new ArrayList();
         String selectQuery = "SELECT  * FROM pregnancydiets";
         Log.d("rawquery", "inputs" + selectQuery);
@@ -151,21 +150,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return dietsDataArray;
     }
     public ArrayList<ExerciseDataModel> getExcercise() {
-        String fact = "None";
         ArrayList<ExerciseDataModel> ExerciseArray = new ArrayList();
         String selectQuery = "SELECT  * FROM exercise";
         Log.d("rawquery", "inputs" + selectQuery);
         Cursor cursor = this.db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
             do {
-                ExerciseDataModel itto = new ExerciseDataModel();
+                ExerciseDataModel EDD = new ExerciseDataModel();
               //  byte[] byteArray = cursor.getBlob(2);
               //  Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-                itto.setMonth(cursor.getString(0));
+                EDD.setMonth(cursor.getString(0));
 
-                  itto.setName(cursor.getString(1) != null ? cursor.getString(1) : "No Fact Available ");
+                  EDD.setName(cursor.getString(1) != null ? cursor.getString(1) : "No Fact Available ");
+                EDD.setRepition(cursor.getString(4));
                // itto.setImg(bm);
-                ExerciseArray.add(itto);
+                ExerciseArray.add(EDD);
             } while (cursor.moveToNext());
         }
         return ExerciseArray;

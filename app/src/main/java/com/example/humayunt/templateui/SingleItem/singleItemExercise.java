@@ -17,6 +17,11 @@ import com.example.humayunt.templateui.DatabaseHandler;
 import com.example.humayunt.templateui.R;
 
 import java.io.IOException;
+//
+//import pl.droidsonroids.gif.GifDrawable;
+//import pl.droidsonroids.gif.GifImageView;
+//import pl.droidsonroids.gif.GifTextView;
+
 public class singleItemExercise extends AppCompatActivity {
     private SQLiteDatabase db;
     DatabaseHandler dh = new DatabaseHandler(this);
@@ -24,6 +29,7 @@ public class singleItemExercise extends AppCompatActivity {
     public TextView name, position,steps,repeat,precaution;
     boolean isImageFitToScreen;
     public TextView month;
+   // public GifImageView gif;
 
     public singleItemExercise() throws IOException {
     }
@@ -38,6 +44,8 @@ public class singleItemExercise extends AppCompatActivity {
         this.steps = (TextView) findViewById(R.id.steps);
         this.repeat = (TextView) findViewById(R.id.repeat);
         this.precaution = (TextView) findViewById(R.id.precaution);
+        //gif = (GifImageView) findViewById(R.id.gif);
+
         String id = getIntent().getExtras().getString("month");
         int mon = Integer.parseInt(id);
         Toast.makeText(this, id, Toast.LENGTH_LONG).show();
@@ -45,6 +53,17 @@ public class singleItemExercise extends AppCompatActivity {
         Log.d("rawquery", "inputs" + selectQuery);
         Cursor cursor = this.db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
+//            if(cursor.getBlob(6)!=null) {
+//                byte[] bytes = cursor.getBlob(6);
+//                try {
+//
+//                    GifDrawable gifimage = new GifDrawable(bytes);
+//                    gif.setImageDrawable(gifimage);
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+
             this.month.setText( cursor.getString(1));
             this.position.setText(cursor.getString(2));
             this.steps.setText(cursor.getString(3));

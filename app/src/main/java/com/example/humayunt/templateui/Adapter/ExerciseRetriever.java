@@ -69,7 +69,7 @@ public class ExerciseRetriever extends Adapter<ExerciseRetriever.DataObjectHolde
             }
         });
         holder.tvName.setText( (this.Show.get(position)).getName());
-        holder.tvCity.setText("Repetition " +  (this.Show.get(position)).getPrecaution());
+        holder.tvCity.setText("Repetition : " +  (this.Show.get(position)).getRepition());
        // holder.img.setImageBitmap(( this.Show.get(position)).getImg());
     }
 
