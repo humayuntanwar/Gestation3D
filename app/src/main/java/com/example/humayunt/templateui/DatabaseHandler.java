@@ -14,6 +14,7 @@ import android.util.Log;
 import com.example.humayunt.templateui.DataModel.DietsDataModel;
 import com.example.humayunt.templateui.DataModel.ExerciseDataModel;
 import com.example.humayunt.templateui.DataModel.TwodDataModel;
+import com.example.humayunt.templateui.DataModel.featureDataModel;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -165,6 +166,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 EDD.setRepition(cursor.getString(4));
                // itto.setImg(bm);
                 ExerciseArray.add(EDD);
+            } while (cursor.moveToNext());
+        }
+        return ExerciseArray;
+    }
+
+    public ArrayList<featureDataModel> getFeature() {
+        ArrayList<featureDataModel> ExerciseArray = new ArrayList();
+        String selectQuery = "SELECT  * FROM features";
+        Log.d("rawquery", "inputs" + selectQuery);
+        Cursor cursor = this.db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                featureDataModel fDD = new featureDataModel();
+                //  byte[] byteArray = cursor.getBlob(2);
+                //  Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+                fDD.setMonth(cursor.getString(0));
+
+                fDD.setName(cursor.getString(1) != null ? cursor.getString(1) : "No Fact Available ");
+//                fDD.setRepition(cursor.getString(4));
+                // itto.setImg(bm);
+                ExerciseArray.add(fDD);
             } while (cursor.moveToNext());
         }
         return ExerciseArray;

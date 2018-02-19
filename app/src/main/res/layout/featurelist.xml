@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/dmodel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/im1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/cerclepink"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_3d_rotation_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/im1"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+
+                        android:paddingRight="5dp"
+                        android:text="3D Models of Baby Development"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

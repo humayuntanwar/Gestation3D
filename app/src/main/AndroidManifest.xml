@@ -67,12 +67,19 @@
             android:name=".MainPanel.LocateDoctorMap"
             android:label="@string/title_activity_locate_doctor_map" />
         <activity android:name=".SingleItem.singleItemDiet" />
-        <activity android:name=".SingleItem.singleItemExercise"
-            android:hardwareAccelerated="false"/>
+        <activity
+            android:name=".SingleItem.singleItemExercise"
+            android:hardwareAccelerated="false" />
         <activity
             android:name=".guidetry"
             android:label="@string/title_activity_guidetry"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".About" />
+        <activity android:name=".Features" />
+        <activity android:name=".singleItemFeature" />
+        <activity android:name=".Contactus" />
+        <activity android:name=".TermsCondition" />
+        <activity android:name=".Faq"></activity>
     </application>
 
 </manifest>

@@ -461,7 +461,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     public void onClick(View view) {
         if (btnSignUp.isPressed()) {
-            registerDoctor();
+            registerPatient();
         }
             if (btnSign.isPressed()) {
                 Toast.makeText(SignupActivity.this, "Registered successfully!", Toast.LENGTH_SHORT).show();

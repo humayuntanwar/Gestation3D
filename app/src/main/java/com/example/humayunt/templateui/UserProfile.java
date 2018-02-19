@@ -2,6 +2,8 @@ package com.example.humayunt.templateui;
 
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.CardView;
@@ -15,6 +17,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.cuteBaby.Model1.UnityPlayerActivity;
@@ -34,7 +37,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.ValueEventListener;import android.app.Dialog;
 
 
 public class UserProfile extends AppCompatActivity
@@ -47,6 +50,7 @@ public class UserProfile extends AppCompatActivity
     private DatabaseReference databaseUserRef ;
     private String TAG;
     private CardView guidecard, modelcard,vrviewcard,arguidecard,dietcard,excercisecard,locatehospitalcard,quizcard;
+    Dialog myDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,7 @@ public class UserProfile extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         String UserIDOld = getIntent().getStringExtra("UserID");
+        myDialog = new Dialog(this);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
 
@@ -125,7 +130,7 @@ public class UserProfile extends AppCompatActivity
         databaseUserRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-//              showData(dataSnapshot);
+              showData(dataSnapshot);
 
             }
 
@@ -138,16 +143,59 @@ public class UserProfile extends AppCompatActivity
 
 
     }
+    public void ShowPopup(View v) {
+        TextView txtclose ;
+        Button about,faq,features;
+        myDialog.setContentView(R.layout.custompopup);
+        txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
+        faq = (Button)myDialog.findViewById(R.id.faq);
+        features = (Button)myDialog.findViewById(R.id.features);
+        txtclose.setText("M");
+
+        about = (Button) myDialog.findViewById(R.id.About);
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myDialog.dismiss();
+            }
+        });
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this,About.class));
+
+
+            }
+        });
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this,Faq.class));
+
+
+            }
+        });
+        features.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this, Features.class));
+
+
+            }
+        });
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
 
 
 
     private void showData(DataSnapshot dataSnapshot) {
         for (DataSnapshot ds : dataSnapshot.getChildren()){
             Log.d(TAG, ds.toString());
-            DoctorDetail dd = new DoctorDetail();
+            //DoctorDetail dd = new DoctorDetail();
         UserDetail UserDetail = new UserDetail();
-//       dd.setEmail(ds.child(UserId).getValue(DoctorDetail.class).getEmail());
-//      dd.setName(ds.child(UserId).getValue(DoctorDetail.class).getName());
+      UserDetail.setEmail(ds.child(UserId).getValue(UserDetail.class).getEmail());
+            UserDetail.setName(ds.child(UserId).getValue(UserDetail.class).getName());
 
         //display all information
             Toast.makeText(this,UserDetail.getName(), Toast.LENGTH_LONG).show();
@@ -177,6 +225,7 @@ public class UserProfile extends AppCompatActivity
         }
         if(view == arguidecard){
             // firebaseAuth.signOut();
+            startActivity(new Intent(UserProfile.this, Features.class));
 
 
 
@@ -272,11 +321,8 @@ public class UserProfile extends AppCompatActivity
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
+
         else if (id == R.id.nav_signout){
             firebaseAuth.signOut();
             startActivity(new Intent(UserProfile.this, SigninActivity.class));

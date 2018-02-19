@@ -13,7 +13,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.example.humayunt.templateui.Contactus;
 import com.example.humayunt.templateui.R;
+import com.example.humayunt.templateui.TermsCondition;
 import com.example.humayunt.templateui.UserProfile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -31,7 +33,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
     private Button btnSignIn , btnSignUp;
     private EditText email;
     private  EditText password;
-    private  TextView forget_pass;
+    private  TextView forget_pass,contact,terms;
     private ProgressDialog progressdialog;
     private FirebaseAuth firebaseauth;
 
@@ -46,6 +48,8 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         }
         email = (EditText) findViewById(R.id.email);
         forget_pass = (TextView) findViewById(R.id.forget_pass);
+        contact = (TextView) findViewById(R.id.contact);
+        terms = (TextView) findViewById(R.id.TermsConditions);
         password = (EditText)findViewById(R.id.password);
         btnSignIn = (Button) findViewById(R.id.sign_in);
         btnSignUp = (Button) findViewById(R.id.sign_up);
@@ -56,6 +60,8 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         btnSignIn.setOnClickListener(this);
         btnSignUp.setOnClickListener(this);
         forget_pass.setOnClickListener(this);
+        contact.setOnClickListener(this);
+        terms.setOnClickListener(this);
 
     }
     private void userLogin(){
@@ -90,7 +96,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         if (view == btnSignIn){
 
-            userLogin();
+           userLogin();
 
         }
         if(view == btnSignUp){
@@ -101,6 +107,15 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
             finish();
             startActivity(new Intent( this, forget_Password.class));
         }
+        if(view == contact){
+
+            startActivity(new Intent( this, Contactus.class));
+        }
+        if(view == terms){
+            finish();
+            startActivity(new Intent( this, TermsCondition.class));
+        }
+
 
     }
 }

@@ -127,7 +127,7 @@
                 android:background="#f9d7db" />
 
 
-            <RelativeLayout
+           <!-- <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp">
@@ -160,7 +160,7 @@
 
 
                         android:textColor="#ffffff"/>
-                    <!--  android:onClick="rbclick" -->
+                    &lt;!&ndash;  android:onClick="rbclick" &ndash;&gt;
 
                     <RadioButton
                         android:id="@+id/no_radio"
@@ -174,8 +174,8 @@
 
 
 
-            </RelativeLayout>
-            <EditText
+            </RelativeLayout>-->
+           <!-- <EditText
                 android:id="@+id/signup_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -195,7 +195,7 @@
                 android:id="@+id/number"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#f9d7db" />
+                android:background="#f9d7db" />-->
 
 
 
