@@ -98,6 +98,7 @@ public class UserProfile extends AppCompatActivity
         //View myview=mNavigationView.getHeaderView(0);
          email = ((TextView) header.findViewById(R.id.textView_email));
          name = ((TextView) header.findViewById(R.id.User_name));
+        Toast.makeText(this,UserId, Toast.LENGTH_LONG).show();
        //;
         //email.setText(user.getEmail());
       //  useremail = (TextView) findViewById(R.id.textView_email);
@@ -201,8 +202,8 @@ public class UserProfile extends AppCompatActivity
             Toast.makeText(this,UserDetail.getName(), Toast.LENGTH_LONG).show();
         Log.d(TAG, "ShowData :email " + UserDetail.getEmail());
         Log.d(TAG, "ShowData :name " + UserDetail.getName());
-//        email.setText(UserDetail.getEmail());
-//        name.setText(UserDetail.getName());
+       email.setText(UserDetail.getEmail());
+       name.setText(UserDetail.getName());
     }
 
     }
@@ -317,9 +318,9 @@ public class UserProfile extends AppCompatActivity
             Log.d("tag2","inside");
             manager.beginTransaction().add(R.id.main_replace,new change_password()).addToBackStack("frag").commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } /*else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+        }*/ else if (id == R.id.nav_manage) {
 
         }
 

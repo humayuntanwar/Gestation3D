@@ -65,7 +65,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-import static com.example.humayunt.templateui.R.id.yes_radio;
+//import static com.example.humayunt.templateui.R.id.yes_radio;
 import static com.example.humayunt.templateui.LocateHospital.hospital_MapsActivity.REQUEST_LOCATION_CODE;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
@@ -139,14 +139,14 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         signupInputEmail = (EditText) findViewById(R.id.signup_email);
         signupInputPassword = (EditText) findViewById(R.id.signup_password);
         signupInputAddress = (AutoCompleteTextView) findViewById(R.id.signup_address);
-        signupInputNumber = (EditText) findViewById(R.id.signup_number);
+        //signupInputNumber = (EditText) findViewById(R.id.signup_number);
         btnSignUp = (Button) findViewById(R.id.btn_signup);
         btnSign = (Button) findViewById(R.id.btn_signin);
-        number =  findViewById(R.id.number);
+        //number =  findViewById(R.id.number);
 
-        signupInputNumber.setVisibility(View.INVISIBLE);
+      /* signupInputNumber.setVisibility(View.INVISIBLE);
         number.setVisibility(View.INVISIBLE);
-        radioGroup = (RadioGroup) findViewById(R.id.checkDocotor);
+        radioGroup = (RadioGroup) findViewById(R.id.checkDocotor);*/
         btnSign.getBackground().setAlpha(64);
         btnSignUp.getBackground().setAlpha(64);
 
@@ -273,7 +273,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    public void onRadioButtonClicked(View view) {
+    /*public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
@@ -293,7 +293,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                 number.setVisibility(View.INVISIBLE);
                 break;
         }
-    }
+    }*/
 
     private void registerPatient() {
 
@@ -375,7 +375,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                 });
     }
 
-    private void registerDoctor() {
+   /* private void registerDoctor() {
 
         final String name = signupInputName.getText().toString().trim();
         final String email = signupInputEmail.getText().toString().trim();
@@ -457,7 +457,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                     }
                 });
     }
-
+*/
 
     public void onClick(View view) {
         if (btnSignUp.isPressed()) {

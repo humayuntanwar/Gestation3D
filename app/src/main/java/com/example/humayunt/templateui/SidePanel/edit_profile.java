@@ -169,7 +169,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
             UserDetail.setEmail(ds.child(UserId).getValue(UserDetail.class).getEmail());
            UserDetail.setName(ds.child(UserId).getValue(UserDetail.class).getName());
             UserDetail.setPassword(ds.child(UserId).getValue(UserDetail.class).getPassword());
-            UserDetail.setDoctor(ds.child(UserId).getValue(UserDetail.class).getDoctor());
+            //UserDetail.setDoctor(ds.child(UserId).getValue(UserDetail.class).getDoctor());
             UserDetail.setAddress(ds.child(UserId).getValue(UserDetail.class).getAddress());
 
             //display all information
