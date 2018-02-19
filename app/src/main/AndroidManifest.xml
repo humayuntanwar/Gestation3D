@@ -67,7 +67,8 @@
             android:name=".MainPanel.LocateDoctorMap"
             android:label="@string/title_activity_locate_doctor_map" />
         <activity android:name=".SingleItem.singleItemDiet" />
-        <activity android:name=".SingleItem.singleItemExercise" />
+        <activity android:name=".SingleItem.singleItemExercise"
+            android:hardwareAccelerated="false"/>
         <activity
             android:name=".guidetry"
             android:label="@string/title_activity_guidetry"
