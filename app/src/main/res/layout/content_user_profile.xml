@@ -70,7 +70,7 @@
                                 android:layout_height="44dp"
                                 android:background="@drawable/cerclepink"
                                 android:padding="5dp"
-                                android:src="@drawable/ic_3d_rotation_black_24dp" />
+                                android:src="@drawable/guide" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -229,7 +229,7 @@
                                 android:layout_height="44dp"
                                 android:background="@drawable/cerclepink"
                                 android:padding="5dp"
-                                android:src="@drawable/ic_3d_rotation_black_24dp" />
+                                android:src="@drawable/arhand" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -288,7 +288,7 @@
                                 android:layout_height="44dp"
                                 android:background="@drawable/cerclepink"
                                 android:padding="5dp"
-                                android:src="@drawable/ic_3d_rotation_black_24dp" />
+                                android:src="@drawable/foood" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -336,7 +336,8 @@
                                 android:layout_height="44dp"
                                 android:background="@drawable/cerclepink"
                                 android:padding="5dp"
-                                android:src="@drawable/ic_3d_rotation_black_24dp" />
+                                android:src="@drawable/exercise"
+                                app:srcCompat="@drawable/exercise" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -395,7 +396,7 @@
                                 android:layout_height="44dp"
                                 android:background="@drawable/cerclepink"
                                 android:padding="5dp"
-                                android:src="@drawable/ic_3d_rotation_black_24dp" />
+                                android:src="@drawable/hospital" />
 
                             <TextView
                                 android:layout_width="wrap_content"

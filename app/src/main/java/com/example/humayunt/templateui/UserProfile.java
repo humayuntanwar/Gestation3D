@@ -221,7 +221,7 @@ public class UserProfile extends AppCompatActivity
         if(view == modelcard){
             // firebaseAuth.signOut();
           //  startActivity(new Intent(UserProfile.this, UnityPlayerActivity.class));
-            startActivity(new Intent(UserProfile.this,UnityPlayerActivity.class));
+            //startActivity(new Intent(UserProfile.this,UnityPlayerActivity.class));
 
 
         }

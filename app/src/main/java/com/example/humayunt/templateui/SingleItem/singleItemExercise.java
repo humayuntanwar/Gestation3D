@@ -18,9 +18,9 @@ import com.example.humayunt.templateui.R;
 
 import java.io.IOException;
 
-//import pl.droidsonroids.gif.GifDrawable;
-//import pl.droidsonroids.gif.GifImageView;
-//import pl.droidsonroids.gif.GifTextView;
+import pl.droidsonroids.gif.GifDrawable;
+import pl.droidsonroids.gif.GifImageView;
+import pl.droidsonroids.gif.GifTextView;
 
 public class singleItemExercise extends AppCompatActivity {
     private SQLiteDatabase db;
@@ -29,7 +29,7 @@ public class singleItemExercise extends AppCompatActivity {
     public TextView name, position,steps,repeat,precaution;
     boolean isImageFitToScreen;
     public TextView month;
-//    public GifImageView gif;
+   public GifImageView gif;
 
     public singleItemExercise() throws IOException {
     }
@@ -44,7 +44,7 @@ public class singleItemExercise extends AppCompatActivity {
         this.steps = (TextView) findViewById(R.id.steps);
         this.repeat = (TextView) findViewById(R.id.repeat);
         this.precaution = (TextView) findViewById(R.id.precaution);
-       // gif = (GifImageView) findViewById(R.id.gif);
+        gif = (GifImageView) findViewById(R.id.gif);
 
         String id = getIntent().getExtras().getString("month");
         int mon = Integer.parseInt(id);
@@ -53,16 +53,16 @@ public class singleItemExercise extends AppCompatActivity {
         Log.d("rawquery", "inputs" + selectQuery);
         Cursor cursor = this.db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
-//            if(cursor.getBlob(6)!=null) {
-//                byte[] bytes = cursor.getBlob(6);
-//                try {
-//
-//                    GifDrawable gifimage = new GifDrawable(bytes);
-//                    gif.setImageDrawable(gifimage);
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
+            if(cursor.getBlob(6)!=null) {
+                byte[] bytes = cursor.getBlob(6);
+                try {
+
+                    GifDrawable gifimage = new GifDrawable(bytes);
+                    gif.setImageDrawable(gifimage);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
 
             this.month.setText( cursor.getString(1));
             this.position.setText(cursor.getString(2));
