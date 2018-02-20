@@ -66,11 +66,11 @@ public class FeatureRetriever extends RecyclerView.Adapter<FeatureRetriever.Data
             public void onClick(View v) {
 
                 Intent intent = new Intent(v.getContext(),singleItemFeature.class);
-                intent.putExtra("month", ( FeatureRetriever.this.Show.get(position)).getMonth());
+                intent.putExtra("no", ( FeatureRetriever.this.Show.get(position)).getNo());
                 v.getContext().startActivity(intent);
             }
         });
-        holder.tvName.setText("Month : " + ( this.Show.get(position)).getName());
+        holder.tvName.setText(" " + ( this.Show.get(position)).getName());
         // holder.tvCity.setText("Feature : " + ( this.Show.get(position)).getHowuse());
         //holder.img.setImageBitmap(( this.Show.get(position)).getImg());
     }

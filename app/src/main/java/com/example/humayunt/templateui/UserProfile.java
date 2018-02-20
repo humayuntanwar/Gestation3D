@@ -79,12 +79,12 @@ public class UserProfile extends AppCompatActivity
         //mNavigationView=(NavigationView)findViewById(R.id.nav_view);
         guidecard = (CardView) findViewById(R.id.dguide);
         modelcard = (CardView) findViewById(R.id.dmodels);
-        vrviewcard = (CardView) findViewById(R.id.vrview);
+     //   vrviewcard = (CardView) findViewById(R.id.vrview);
         arguidecard =(CardView) findViewById(R.id.arguide);
         dietcard = (CardView) findViewById(R.id.diets);
         excercisecard = (CardView) findViewById(R.id.excercise);
         locatehospitalcard = (CardView) findViewById(R.id.locatehospital);
-        quizcard= (CardView) findViewById(R.id.quiz);
+       // quizcard= (CardView) findViewById(R.id.quiz);
 
         guidecard.setOnClickListener(this);
         modelcard.setOnClickListener(this);
@@ -93,7 +93,7 @@ public class UserProfile extends AppCompatActivity
          dietcard.setOnClickListener(this);
          excercisecard.setOnClickListener(this);
          locatehospitalcard.setOnClickListener(this);
-         quizcard.setOnClickListener(this);
+        // quizcard.setOnClickListener(this);
         View header = ((NavigationView)findViewById(R.id.nav_view)).getHeaderView(0);
         //mNavigationView.setNavigationItemSelectedListener(this);
         //View myview=mNavigationView.getHeaderView(0);
@@ -227,7 +227,7 @@ public class UserProfile extends AppCompatActivity
         }
         if(view == arguidecard){
             // firebaseAuth.signOut();
-            startActivity(new Intent(UserProfile.this, Features.class));
+           // startActivity(new Intent(UserProfile.this, Features.class));
 
 
 
@@ -252,13 +252,13 @@ public class UserProfile extends AppCompatActivity
 
 
         }
-        if(view == quizcard){
+       /* if(view == quizcard){
             startActivity(new Intent(UserProfile.this, LocateDoctorMap.class));
 
 
 
 
-        }
+        }*/
     }
     @Override
     public void onBackPressed() {
@@ -304,7 +304,7 @@ public class UserProfile extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager manager = getSupportFragmentManager();
 
-        if (id == R.id.nav_camera) {
+       /* if (id == R.id.nav_camera) {
 
 
             Toast.makeText(getApplicationContext(),"inside",Toast.LENGTH_LONG).show();
@@ -314,7 +314,8 @@ public class UserProfile extends AppCompatActivity
 
             manager.beginTransaction().add(R.id.main_replace,new edit_profile()).addToBackStack("frag").commit();
           //  startActivity(new Intent(UserProfile.this, SigninActivity.class));
-        } else if (id == R.id.nav_changePassword) {
+        }*/
+        if (id == R.id.nav_changePassword) {
            // FragmentManager manager = getSupportFragmentManager();
             Log.d("tag2","inside");
             manager.beginTransaction().add(R.id.main_replace,new change_password()).addToBackStack("frag").commit();

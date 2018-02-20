@@ -181,7 +181,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 featureDataModel fDD = new featureDataModel();
                 //  byte[] byteArray = cursor.getBlob(2);
                 //  Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-                fDD.setMonth(cursor.getString(0));
+                fDD.setNo(cursor.getString(0));
 
                 fDD.setName(cursor.getString(1) != null ? cursor.getString(1) : "No Fact Available ");
 //                fDD.setRepition(cursor.getString(4));

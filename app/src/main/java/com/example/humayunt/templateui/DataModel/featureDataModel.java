@@ -5,18 +5,18 @@ package com.example.humayunt.templateui.DataModel;
  */
 
 public class featureDataModel {
-    private String month;
+    private String no;
     private String name,howuse;
 
     public featureDataModel() {
     }
 
-    public String getMonth() {
-        return month;
+    public String getNo() {
+        return no;
     }
 
-    public void setMonth(String month) {
-        this.month = month;
+    public void setNo(String no) {
+        this.no = no;
     }
 
     public String getName() {

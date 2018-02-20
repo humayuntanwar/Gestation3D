@@ -68,7 +68,7 @@
         android:text="Features"
         android:textColor="@color/white" />
 
-    <Button
+ <!--   <Button
         android:id="@+id/watchVideo"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/buttonstyle"
         android:text="Watch Video"
-        android:textColor="@color/white" />
+        android:textColor="@color/white" />-->
 
     <Button
         android:id="@+id/faq"

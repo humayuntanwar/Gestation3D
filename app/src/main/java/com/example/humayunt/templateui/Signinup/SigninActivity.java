@@ -114,7 +114,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
             startActivity(new Intent( this, Contactus.class));
         }
         if(view == terms){
-            finish();
+
             startActivity(new Intent( this, TermsCondition.class));
         }
 

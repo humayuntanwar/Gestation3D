@@ -35,15 +35,15 @@ public class singleItemFeature extends AppCompatActivity {
         this.db = this.dh.getReadableDatabase();
         this.month = (TextView) findViewById(R.id.month);
 
-        String id = getIntent().getExtras().getString("month");
+        String id = getIntent().getExtras().getString("no");
         int mon = Integer.parseInt(id);
         Toast.makeText(this, id, Toast.LENGTH_LONG).show();
-        String selectQuery = "SELECT  * FROM feature where month =" + mon;
+        String selectQuery = "SELECT  * FROM features where no =" + mon;
         Log.d("rawquery", "inputs" + selectQuery);
         Cursor cursor = this.db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
-            featureDataModel Dietsdata = new featureDataModel();
-           this.month.setText("Feature Details : " + cursor.getString(1));
+          //  featureDataModel Dietsdata = new featureDataModel();
+           this.month.setText("Feature Details : " + cursor.getString(2));
 
         }
     }
