@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.humayunt.templateui.Contactus">
+    tools:context="com.example.humayunt.templateui.HelpGuide.Contactus">
 
     <TextView
         android:layout_width="match_parent"

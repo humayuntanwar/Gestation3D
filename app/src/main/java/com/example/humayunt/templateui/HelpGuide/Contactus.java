@@ -1,13 +1,15 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.HelpGuide;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class About extends AppCompatActivity {
+import com.example.humayunt.templateui.R;
+
+public class Contactus extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_contactus);
     }
 }

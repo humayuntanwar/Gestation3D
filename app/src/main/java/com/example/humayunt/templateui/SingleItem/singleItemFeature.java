@@ -1,4 +1,4 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.SingleItem;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.humayunt.templateui.DataModel.featureDataModel;
+import com.example.humayunt.templateui.DatabaseHandler;
+import com.example.humayunt.templateui.R;
 
 import java.io.IOException;
 

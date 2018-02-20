@@ -1,8 +1,10 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.HelpGuide;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.humayunt.templateui.R;
 
 public class Faq extends AppCompatActivity {
     TextView faq;

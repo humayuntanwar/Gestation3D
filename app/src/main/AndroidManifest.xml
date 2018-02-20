@@ -76,12 +76,12 @@
             android:name=".guidetry"
             android:label="Gestation Period Guide"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".About" />
-        <activity android:name=".Features" />
-        <activity android:name=".singleItemFeature" />
-        <activity android:name=".Contactus" />
-        <activity android:name=".TermsCondition" />
-        <activity android:name=".Faq"></activity>
+        <activity android:name=".HelpGuide.About" />
+        <activity android:name=".HelpGuide.Features" />
+        <activity android:name=".SingleItem.singleItemFeature" />
+        <activity android:name=".HelpGuide.Contactus" />
+        <activity android:name=".HelpGuide.TermsCondition" />
+        <activity android:name=".HelpGuide.Faq"></activity>
     </application>
 
 </manifest>

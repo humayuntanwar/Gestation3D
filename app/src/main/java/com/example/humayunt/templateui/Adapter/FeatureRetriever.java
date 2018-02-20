@@ -19,8 +19,7 @@ import android.widget.TextView;
 import com.example.humayunt.templateui.DataModel.featureDataModel;
 ;
 import com.example.humayunt.templateui.R;
-import com.example.humayunt.templateui.SingleItem.singleItemDiet;
-import com.example.humayunt.templateui.singleItemFeature;
+import com.example.humayunt.templateui.SingleItem.singleItemFeature;
 
 import java.util.ArrayList;
 public class FeatureRetriever extends RecyclerView.Adapter<FeatureRetriever.DataObjectHolder> implements OnClickListener{

@@ -1,4 +1,4 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.HelpGuide;
 
 import android.database.SQLException;
 import android.support.v7.app.AppCompatActivity;

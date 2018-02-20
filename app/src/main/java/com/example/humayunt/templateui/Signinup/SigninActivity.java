@@ -13,9 +13,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.humayunt.templateui.Contactus;
+import com.example.humayunt.templateui.HelpGuide.Contactus;
 import com.example.humayunt.templateui.R;
-import com.example.humayunt.templateui.TermsCondition;
+import com.example.humayunt.templateui.HelpGuide.TermsCondition;
 import com.example.humayunt.templateui.UserProfile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
