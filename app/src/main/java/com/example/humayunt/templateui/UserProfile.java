@@ -144,14 +144,14 @@ public class UserProfile extends AppCompatActivity
 
 
     }
-    public void ShowPopup(View v) {
+    public void ShowPopup() {
         TextView txtclose ;
         Button about,faq,features;
         myDialog.setContentView(R.layout.custompopup);
         txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
         faq = (Button)myDialog.findViewById(R.id.faq);
         features = (Button)myDialog.findViewById(R.id.features);
-        txtclose.setText("M");
+        txtclose.setText("X");
 
         about = (Button) myDialog.findViewById(R.id.About);
         txtclose.setOnClickListener(new View.OnClickListener() {
@@ -320,7 +320,8 @@ public class UserProfile extends AppCompatActivity
 
         } /*else if (id == R.id.nav_slideshow) {
 
-        }*/ else if (id == R.id.nav_manage) {
+        }*/ else if (id == R.id.setting) {
+            ShowPopup();
 
         }
 

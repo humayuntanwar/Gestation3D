@@ -62,6 +62,8 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         forget_pass.setOnClickListener(this);
         contact.setOnClickListener(this);
         terms.setOnClickListener(this);
+        btnSignIn.getBackground().setAlpha(160);
+        btnSignUp.getBackground().setAlpha(160);
 
     }
     private void userLogin(){

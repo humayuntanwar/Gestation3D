@@ -147,8 +147,8 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
       /* signupInputNumber.setVisibility(View.INVISIBLE);
         number.setVisibility(View.INVISIBLE);
         radioGroup = (RadioGroup) findViewById(R.id.checkDocotor);*/
-        btnSign.getBackground().setAlpha(64);
-        btnSignUp.getBackground().setAlpha(64);
+        btnSign.getBackground().setAlpha(160);
+        btnSignUp.getBackground().setAlpha(160);
 
         btnSignUp.setOnClickListener(this);
         btnSign.setOnClickListener(this);

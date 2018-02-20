@@ -29,14 +29,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Signinup.SigninActivity">
+        <activity android:name=".Signinup.SigninActivity"
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Signinup.SignupActivity" />
+        <activity android:name=".Signinup.SignupActivity"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity
             android:name=".UserProfile"
             android:label="@string/title_activity_user_profile"
@@ -72,7 +74,7 @@
             android:hardwareAccelerated="false" />
         <activity
             android:name=".guidetry"
-            android:label="@string/title_activity_guidetry"
+            android:label="Gestation Period Guide"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".About" />
         <activity android:name=".Features" />
