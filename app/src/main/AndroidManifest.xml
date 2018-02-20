@@ -41,7 +41,7 @@
             android:windowSoftInputMode="adjustNothing"/>
         <activity
             android:name=".UserProfile"
-            android:label="@string/title_activity_user_profile"
+            android:label="Gestation 3D"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Signinup.forget_Password" />
         <activity android:name=".MainPanel.twodguideview" />

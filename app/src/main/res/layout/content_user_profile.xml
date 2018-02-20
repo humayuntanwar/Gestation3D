@@ -55,13 +55,16 @@
                         android:layout_width="110dp"
                         android:layout_height="135dp"
                         android:layout_margin="10dp"
-                        android:clickable="true"
                         android:layout_weight="0.5"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:clickable="true"
+
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardElevation="5dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/customborder"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -77,8 +80,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="2D Guide"
-                                android:textStyle="bold"
-                               />
+                                android:textStyle="bold" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -87,12 +89,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
+                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="2D Pregnancy Guide"
-                                style="@style/TextColor" />
+                                android:text="2D Pregnancy Guide" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -103,14 +105,16 @@
                         android:layout_width="110dp"
                         android:layout_height="135dp"
                         android:layout_margin="10dp"
+                        android:layout_weight="0.5"
                         android:clickable="true"
                         android:elevation="25dp"
-                        android:layout_weight="0.5"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="5dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/customborder"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -126,8 +130,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="3D Models"
-                                android:textStyle="bold"
-                               />
+                                android:textStyle="bold" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -136,12 +139,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
+                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="3D models of baby"
-                                style="@style/TextColor"/>
+                                android:text="3D models of baby" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -214,13 +217,15 @@
                         android:layout_width="110dp"
                         android:layout_height="135dp"
                         android:layout_margin="10dp"
-                        android:clickable="true"
                         android:layout_weight="0.5"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="5dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/customborder"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -236,8 +241,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="AR Guide"
-                                android:textStyle="bold"
-                               />
+                                android:textStyle="bold" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -246,12 +250,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
+                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="AR handling guide"
-                                style="@style/TextColor" />
+                                android:text="AR handling guide" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -273,13 +277,16 @@
                         android:layout_width="110dp"
                         android:layout_height="135dp"
                         android:layout_margin="10dp"
-                        android:clickable="true"
                         android:layout_weight="0.5"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:background="@drawable/customborder"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="5dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/customborder"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -295,8 +302,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="Diets"
-                                android:textStyle="bold"
-                                />
+                                android:textStyle="bold" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -305,12 +311,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
+                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="ideal diets for mother"
-                                style="@style/TextColor" />
+                                android:text="ideal diets for mother" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -321,13 +327,15 @@
                         android:layout_width="110dp"
                         android:layout_height="135dp"
                         android:layout_margin="10dp"
-                        android:clickable="true"
                         android:layout_weight="0.5"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="5dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/customborder"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -344,8 +352,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="Exercises"
-                                android:textStyle="bold"
-                               />
+                                android:textStyle="bold" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -354,12 +361,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
+                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="Ideal excercises for mother"
-                                style="@style/TextColor" />
+                                android:text="Ideal excercises for mother" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -381,13 +388,15 @@
                         android:layout_width="110dp"
                         android:layout_height="135dp"
                         android:layout_margin="10dp"
-                        android:clickable="true"
                         android:layout_weight="0.5"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="5dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/customborder"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -403,8 +412,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="Locate Hospital"
-                                android:textStyle="bold"
-                                />
+                                android:textStyle="bold" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -413,12 +421,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
+                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="Nearby Hospitals"
-                                style="@style/TextColor" />
+                                android:text="Nearby Hospitals" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 
