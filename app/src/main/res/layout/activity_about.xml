@@ -41,7 +41,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
-                        android:text="We are Working to bring the"
+                        android:text="Gestation 3D aims to provide a complete and comprehensive guide about the pregnancy period for women \n the application contains 3D models of each month of baby development inside mothers womb \n A complete guide in textual and visual form about the gestation period \n Augmented Reality baby handling guide about \n how to lay down the baby, feed the baby \n complete guide about ideal diets and exercises \n and many other great features. "
                         android:textStyle="bold" />
 
 
@@ -69,7 +69,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
-                        android:text="we are working"
+                        android:text="•	Gestation 3D would be easy to use, compared to those already developed systems of the same kind. \n
+•	Being a smartphone application, Gestation 3D would be easily available for any general user who wants to learn about the process.\n
+•	Gestation 3D will practically demonstrate the handling of newly born baby in an efficient way.\n
+•	Gestation 3D will increase the knowledge of the person about development and handling of baby.\n
+•	Gestation 3D will be a reliable source of information as the information is based on practical knowledge of doctors and research papers.\n
+"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -96,7 +101,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
-                        android:text="Hugeeee"
+                        android:text="The aim of Gestation 3D is to provide information about the whole process of prenancy from a mobile phone \n and provide a amazing visualization to make it easier for women during this period."
                         android:textStyle="bold" />
                 </LinearLayout>
             </ScrollView>

@@ -108,43 +108,27 @@
                         android:fontFamily="sans-serif-smallcaps" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
+                android:id="@+id/dietstoexercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                >
+                android:layout_margin="5dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="8dp">
+
                     <TextView
-                        android:textSize="18sp"
-                        android:typeface="normal"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorAccent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="View Suggestted Diets >> "
-                        android:fontFamily="sans-serif-smallcaps" />
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                >
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="8dp">
-                    <TextView android:textSize="18sp"
-                        android:typeface="normal"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorAccent"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
                         android:text="View Suggested Exercises >>"
-                        android:fontFamily="sans-serif-smallcaps" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>

@@ -1,11 +1,13 @@
 package com.example.humayunt.templateui.SingleItem;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,7 +21,7 @@ import com.example.humayunt.templateui.R;
 
 import java.io.IOException;
 
-public class singleItemDiet extends AppCompatActivity {
+public class singleItemDiet extends AppCompatActivity implements View.OnClickListener {
     private SQLiteDatabase db;
     DatabaseHandler dh = new DatabaseHandler(this);
     public TextView avoidfood;
@@ -27,6 +29,8 @@ public class singleItemDiet extends AppCompatActivity {
     public TextView foodtype;
     boolean isImageFitToScreen;
     public TextView month;
+    private CardView dietstoexercise;
+    String id;
 
     public singleItemDiet() throws IOException {
     }
@@ -40,7 +44,9 @@ public class singleItemDiet extends AppCompatActivity {
         this.foodtype = (TextView) findViewById(R.id.foodtype);
         this.avoidfood = (TextView) findViewById(R.id.avoidfood);
         this.img = (ImageView) findViewById(R.id.dietimage);
-        String id = getIntent().getExtras().getString("month");
+        dietstoexercise = (CardView) findViewById(R.id.dietstoexercise);
+        dietstoexercise.setOnClickListener(this);
+        id = getIntent().getExtras().getString("month");
         int mon = Integer.parseInt(id);
         Toast.makeText(this, id, Toast.LENGTH_LONG).show();
         String selectQuery = "SELECT  * FROM pregnancydiets where month =" + mon;
@@ -68,5 +74,14 @@ public class singleItemDiet extends AppCompatActivity {
                 singleItemDiet.this.img.setScaleType(ImageView.ScaleType.FIT_XY);
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v == dietstoexercise){
+            Intent intent = new Intent(this, singleItemExercise.class);
+            intent.putExtra("month", id);
+            this.startActivity(intent);
+        }
     }
 }
