@@ -125,6 +125,15 @@
                             android:layout_height="200dp"
 
                             />
+
+                        <view
+                            android:id="@+id/youtubeplayer"
+                            class="com.google.android.youtube.player.YouTubePlayerView"
+
+                            layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"  />
+
                     </LinearLayout>
                 </ScrollView>
             </android.support.v7.widget.CardView>

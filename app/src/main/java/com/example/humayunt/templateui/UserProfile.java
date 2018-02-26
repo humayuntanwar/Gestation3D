@@ -147,11 +147,12 @@ public class UserProfile extends AppCompatActivity
     }
     public void ShowPopup() {
         TextView txtclose ;
-        Button about,faq,features;
+        Button about,faq,features,watchvideo;
         myDialog.setContentView(R.layout.custompopup);
         txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
         faq = (Button)myDialog.findViewById(R.id.faq);
         features = (Button)myDialog.findViewById(R.id.features);
+        watchvideo = (Button)myDialog.findViewById(R.id.watchVideo);
         txtclose.setText("X");
 
         about = (Button) myDialog.findViewById(R.id.About);
@@ -181,6 +182,14 @@ public class UserProfile extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UserProfile.this, Features.class));
+
+
+            }
+        });
+        watchvideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this,WatchVideo.class));
 
 
             }
