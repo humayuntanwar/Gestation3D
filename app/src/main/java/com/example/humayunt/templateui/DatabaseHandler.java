@@ -10,9 +10,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.example.humayunt.templateui.DataModel.DietsDataModel;
 import com.example.humayunt.templateui.DataModel.ExerciseDataModel;
+import com.example.humayunt.templateui.DataModel.QuizDataModel;
 import com.example.humayunt.templateui.DataModel.TwodDataModel;
 import com.example.humayunt.templateui.DataModel.featureDataModel;
 
@@ -190,5 +192,31 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
         return ExerciseArray;
+    }
+    public ArrayList<QuizDataModel> getQuiz() {
+        ArrayList<QuizDataModel> QuizArray = new ArrayList();
+        String selectQuery = "SELECT  * FROM quiz ORDER BY RANDOM()";
+        Log.d("rawquery", "inputs" + selectQuery);
+        Cursor cursor = this.db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                QuizDataModel quiz= new QuizDataModel();
+                //  byte[] byteArray = cursor.getBlob(2);
+                //  Bitmap bm = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+                quiz.setID(cursor.getInt(0));
+
+                quiz.setQUESTION(cursor.getString(1));
+                Log.d("hg",cursor.getString(2));
+                quiz.setOPTIONA(cursor.getString(2));
+                quiz.setOPTIONB(cursor.getString(3));
+                quiz.setOPTIONC(cursor.getString(4));
+                quiz.setANSWER(cursor.getString(5));
+
+//                fDD.setRepition(cursor.getString(4));
+                // itto.setImg(bm);
+                QuizArray.add(quiz);
+            } while (cursor.moveToNext());
+        }
+        return QuizArray;
     }
 }

@@ -84,7 +84,9 @@
         <activity android:name=".HelpGuide.Contactus" />
         <activity android:name=".HelpGuide.TermsCondition" />
         <activity android:name=".HelpGuide.Faq" />
-        <activity android:name=".WatchVideo"></activity>
+        <activity android:name=".WatchVideo" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".Result"></activity>
     </application>
 
 </manifest>

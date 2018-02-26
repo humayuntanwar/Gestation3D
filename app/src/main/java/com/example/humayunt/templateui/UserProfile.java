@@ -230,7 +230,7 @@ public class UserProfile extends AppCompatActivity
         if(view == modelcard){
             // firebaseAuth.signOut();
           //startActivity(new Intent(UserProfile.this, UnityPlayerActivity.class));
-            startActivity(new Intent(UserProfile.this,UnityPlayerActivity.class));
+            startActivity(new Intent(UserProfile.this,QuizActivity.class));
 
 
         }
@@ -329,9 +329,12 @@ public class UserProfile extends AppCompatActivity
             Log.d("tag2","inside");
             manager.beginTransaction().add(R.id.main_replace,new change_password()).addToBackStack("frag").commit();
 
-        } /*else if (id == R.id.nav_slideshow) {
+        }
+        else if (id == R.id.TakeQuiz) {
+          //  manager.beginTransaction().add(R.id.main_replace,new change_password()).addToBackStack("frag").commit();
 
-        }*/ else if (id == R.id.setting) {
+
+        } else if (id == R.id.setting) {
             ShowPopup();
 
         }
