@@ -119,12 +119,12 @@
                             android:text="TextView"
                             android:textStyle="bold" />
 
-                        <pl.droidsonroids.gif.GifImageView
+                       <!-- <pl.droidsonroids.gif.GifImageView
                             android:id="@+id/gif"
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
 
-                            />
+                            />-->
 
                         <view
                             android:id="@+id/youtubeplayer"

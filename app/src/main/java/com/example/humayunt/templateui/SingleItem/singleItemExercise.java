@@ -24,9 +24,11 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 import java.io.IOException;
 
+/*
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
 import pl.droidsonroids.gif.GifTextView;
+*/
 
 public class singleItemExercise extends YouTubeBaseActivity {
     private SQLiteDatabase db;
@@ -35,7 +37,7 @@ public class singleItemExercise extends YouTubeBaseActivity {
     public TextView name, position,steps,repeat,precaution;
     boolean isImageFitToScreen;
     public TextView month;
-   public GifImageView gif;
+  // public GifImageView gif;
     private YouTubePlayerView youTubePlayer;
     YouTubePlayer.OnInitializedListener mOnListner;
 
@@ -52,7 +54,7 @@ public class singleItemExercise extends YouTubeBaseActivity {
         this.steps = (TextView) findViewById(R.id.steps);
         this.repeat = (TextView) findViewById(R.id.repeat);
         this.precaution = (TextView) findViewById(R.id.precaution);
-        gif = (GifImageView) findViewById(R.id.gif);
+        //gif = (GifImageView) findViewById(R.id.gif);
         youTubePlayer = (YouTubePlayerView) findViewById(R.id.youtubeplayer);
 
         String id = getIntent().getExtras().getString("month");
@@ -62,7 +64,7 @@ public class singleItemExercise extends YouTubeBaseActivity {
         Log.d("rawquery", "inputs" + selectQuery);
         final Cursor cursor = this.db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
-            if(cursor.getBlob(6)!=null) {
+           /* if(cursor.getBlob(6)!=null) {
                 byte[] bytes = cursor.getBlob(6);
                 try {
 
@@ -71,7 +73,7 @@ public class singleItemExercise extends YouTubeBaseActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
+            }*/
 
             this.month.setText( cursor.getString(1));
             this.position.setText(cursor.getString(2));
