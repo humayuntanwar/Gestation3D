@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.humayunt.templateui.HelpGuide.Contactus;
 import com.example.humayunt.templateui.R;
 import com.example.humayunt.templateui.HelpGuide.TermsCondition;
+import com.example.humayunt.templateui.SelectSignUp;
 import com.example.humayunt.templateui.UserProfile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -43,9 +44,9 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         setTitle("Gestation 3D");
         setContentView(R.layout.signin);
         firebaseauth = FirebaseAuth.getInstance();
-        if(firebaseauth.getCurrentUser()!= null){
+        /*if(firebaseauth.getCurrentUser()!= null){
            startActivity(new Intent( getApplicationContext(),UserProfile.class));
-        }
+        }*/
         email = (EditText) findViewById(R.id.email);
         forget_pass = (TextView) findViewById(R.id.forget_pass);
         contact = (TextView) findViewById(R.id.contact);
@@ -103,7 +104,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         }
         if(view == btnSignUp){
             finish();
-            startActivity(new Intent( this, SignupActivity.class));
+            startActivity(new Intent( this, SelectSignUp.class));
         }
         if(view == forget_pass){
             finish();

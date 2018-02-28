@@ -132,7 +132,7 @@ public class UserProfile extends AppCompatActivity
         databaseUserRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-              showData(dataSnapshot);
+             // showData(dataSnapshot);
 
             }
 

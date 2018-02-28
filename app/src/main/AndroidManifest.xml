@@ -86,7 +86,9 @@
         <activity android:name=".HelpGuide.Faq" />
         <activity android:name=".WatchVideo" />
         <activity android:name=".QuizActivity" />
-        <activity android:name=".Result"></activity>
+        <activity android:name=".Result" />
+        <activity android:name=".SelectSignUp" />
+        <activity android:name=".SignUpDoctor"></activity>
     </application>
 
 </manifest>
