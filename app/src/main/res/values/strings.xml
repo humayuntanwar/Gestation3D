@@ -29,5 +29,6 @@
     <string name="title_activity_twodtry">twodtry</string>
     <string name="title_activity_locate_doctor_map">Map</string>
     <string name="title_activity_guidetry">guidetry</string>
+    <string name="title_activity_doctor_list">DoctorList</string>
 
 </resources>

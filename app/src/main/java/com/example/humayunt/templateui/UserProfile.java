@@ -20,17 +20,19 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.cuteBaby.Model1.UnityPlayerActivity;
+
+import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.HelpGuide.About;
 import com.example.humayunt.templateui.HelpGuide.Faq;
 import com.example.humayunt.templateui.HelpGuide.Features;
+import com.example.humayunt.templateui.HelpGuide.WatchVideo;
 import com.example.humayunt.templateui.LocateHospital.hospital_MapsActivity;
-import com.example.humayunt.templateui.MainPanel.LocateDoctorMap;
 import com.example.humayunt.templateui.MainPanel.diets;
 import com.example.humayunt.templateui.MainPanel.excercises;
+import com.example.humayunt.templateui.MainPanel.guidetry;
+import com.example.humayunt.templateui.SidePanel.QuizActivity;
 import com.example.humayunt.templateui.SidePanel.change_password;
-import com.example.humayunt.templateui.SidePanel.edit_profile;
 import com.example.humayunt.templateui.Signinup.SigninActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -48,7 +50,7 @@ public class UserProfile extends AppCompatActivity
 
     private FirebaseDatabase firebaseDatabase;
      private String UserId;
-    private DatabaseReference databaseUserRef ;
+    private DatabaseReference databaseUserRef,databaseDoctorRef;
     private String TAG;
     private CardView guidecard, modelcard,vrviewcard,arguidecard,dietcard,excercisecard,locatehospitalcard,quizcard;
     Dialog myDialog;
@@ -75,7 +77,8 @@ public class UserProfile extends AppCompatActivity
             startActivity(new Intent(this, SigninActivity.class));
 
         }
-         databaseUserRef = firebaseDatabase.getReference();
+         databaseUserRef = firebaseDatabase.getReference("user");
+        databaseDoctorRef = firebaseDatabase.getReference("doctor");
         //mNavigationView=(NavigationView)findViewById(R.id.nav_view);
         guidecard = (CardView) findViewById(R.id.dguide);
         modelcard = (CardView) findViewById(R.id.dmodels);
@@ -99,25 +102,6 @@ public class UserProfile extends AppCompatActivity
         //View myview=mNavigationView.getHeaderView(0);
          email = ((TextView) header.findViewById(R.id.textView_email));
          name = ((TextView) header.findViewById(R.id.User_name));
-        Toast.makeText(this,UserId, Toast.LENGTH_LONG).show();
-       //;
-        //email.setText(user.getEmail());
-      //  useremail = (TextView) findViewById(R.id.textView_email);
-     //   useremail.setText("kamran");
-       // Toast.makeText(this, user.getEmail(), Toast.LENGTH_SHORT).show();
-
-       // useremail.setText("Welcome" + user.getEmail());
-      //  logout = (Button) findViewById(R.id.button2);
-      //  logout.setOnClickListener(this);
-
-       // FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-       // fab.setOnClickListener(new View.OnClickListener() {
-           // @Override
-          //  public void onClick(View view) {
-              //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                       // .setAction("Action", null).show();
-           // }
-       // });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -129,20 +113,35 @@ public class UserProfile extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        databaseUserRef.addValueEventListener(new ValueEventListener() {
+        databaseDoctorRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-             // showData(dataSnapshot);
 
+                Toast.makeText(getApplicationContext(), "called...",Toast.LENGTH_LONG).show();
+
+                showData(dataSnapshot);
             }
-
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
         });
+       /* databaseUserRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
 
+                Toast.makeText(getApplicationContext(), "called...",Toast.LENGTH_LONG).show();
+
+                showData(dataSnapshot);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+*/
 
     }
     public void ShowPopup() {
@@ -201,20 +200,37 @@ public class UserProfile extends AppCompatActivity
 
 
     private void showData(DataSnapshot dataSnapshot) {
-        for (DataSnapshot ds : dataSnapshot.getChildren()){
-            Log.d(TAG, ds.toString());
-            //DoctorDetail dd = new DoctorDetail();
-        UserDetail UserDetail = new UserDetail();
-      UserDetail.setEmail(ds.child(UserId).getValue(UserDetail.class).getEmail());
-            UserDetail.setName(ds.child(UserId).getValue(UserDetail.class).getName());
 
-        //display all information
-            Toast.makeText(this,UserDetail.getName(), Toast.LENGTH_LONG).show();
-        Log.d(TAG, "ShowData :email " + UserDetail.getEmail());
-        Log.d(TAG, "ShowData :name " + UserDetail.getName());
-       email.setText(UserDetail.getEmail());
-       name.setText(UserDetail.getName());
-    }
+        Toast.makeText(getApplicationContext(), "Method ccalled..", Toast.LENGTH_LONG).show();
+
+        for (DataSnapshot ds : dataSnapshot.getChildren()) {
+
+            Log.d("user ids..",ds.getKey());
+
+            if (ds.getKey().equals("111"+UserId)) {
+
+                Log.d("user data..", ds.getValue().toString());
+                Log.d(TAG, ds.toString());
+
+                DoctorDetail doctorDetail = ds.getValue(DoctorDetail.class);
+
+                //display all information
+                Toast.makeText(this, doctorDetail.getName(), Toast.LENGTH_LONG).show();
+                Log.d(TAG, "ShowData :email " + doctorDetail.getEmail());
+                Log.d(TAG, "ShowData :name " + doctorDetail.getName());
+                email.setText(doctorDetail.getEmail());
+                name.setText(doctorDetail.getName());
+
+
+            } /*else {
+                Log.d(TAG, ds.toString());
+                UserDetail UserDetail =ds.getValue(UserDetail.class);
+                Log.d(TAG, "ShowData :email " + UserDetail.getEmail());
+                Log.d(TAG, "ShowData :name " + UserDetail.getName());
+                email.setText(UserDetail.getEmail());
+                name.setText(UserDetail.getName());
+            }*/
+        }
 
     }
 
@@ -237,6 +253,7 @@ public class UserProfile extends AppCompatActivity
         if(view == arguidecard){
             // firebaseAuth.signOut();
            // startActivity(new Intent(UserProfile.this, Features.class));
+            startActivity(new Intent(UserProfile.this, DoctorList.class));
 
 
 

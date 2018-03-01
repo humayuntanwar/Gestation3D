@@ -38,6 +38,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.3.1'
     compile 'com.google.firebase:firebase-auth:11.2.0'
+    compile 'com.google.firebase:firebase-storage:11.2.0'
     compile 'com.google.firebase:firebase-core:11.2.0'
     compile 'com.google.firebase:firebase-database:11.2.0'
     compile 'com.google.android:flexbox:0.2.5'
@@ -46,6 +47,7 @@ dependencies {
     compile 'com.google.maps.android:android-maps-utils:0.5'
     compile 'com.google.android.gms:play-services-location:11.2.0'
     compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.firebaseui:firebase-ui-database:0.4.0'
     compile 'com.google.android.gms:play-services-places:11.2.0'
     testCompile 'junit:junit:4.12'
 }

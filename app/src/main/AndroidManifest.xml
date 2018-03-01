@@ -75,7 +75,7 @@
             android:name=".SingleItem.singleItemExercise"
             android:hardwareAccelerated="false" />
         <activity
-            android:name=".guidetry"
+            android:name=".MainPanel.guidetry"
             android:label="Gestation Period Guide"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HelpGuide.About" />
@@ -84,11 +84,16 @@
         <activity android:name=".HelpGuide.Contactus" />
         <activity android:name=".HelpGuide.TermsCondition" />
         <activity android:name=".HelpGuide.Faq" />
-        <activity android:name=".WatchVideo" />
-        <activity android:name=".QuizActivity" />
-        <activity android:name=".Result" />
-        <activity android:name=".SelectSignUp" />
-        <activity android:name=".SignUpDoctor"></activity>
+        <activity android:name=".HelpGuide.WatchVideo" />
+        <activity android:name=".SidePanel.QuizActivity" />
+        <activity android:name=".SidePanel.Result" />
+        <activity android:name=".Signinup.SelectSignUp" />
+        <activity android:name=".Signinup.SignUpDoctor" />
+        <activity
+            android:name=".DoctorList"
+            android:label="@string/title_activity_doctor_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".doctorkoleaao"></activity>
     </application>
 
 </manifest>

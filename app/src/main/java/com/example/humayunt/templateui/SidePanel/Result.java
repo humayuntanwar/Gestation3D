@@ -1,4 +1,4 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.SidePanel;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;import android.content.Intent;
@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import com.example.humayunt.templateui.R;
 
 
 public class Result extends AppCompatActivity {

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -13,6 +14,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -22,7 +24,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMapLongClickListener {
 
     private GoogleMap mMap;
     Button ShowDoc;
@@ -32,6 +37,8 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
     private String UserId;
     private DatabaseReference databaseUserRef;
     private FirebaseAuth firebaseAuth;
+    Marker marker;
+    List<DoctorDetail> list;
 
 
     @Override
@@ -49,10 +56,11 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
 
 
 
-        firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseUser user = firebaseAuth.getCurrentUser();
-        UserId = user.getUid().toString();
-        databaseUserRef = firebaseDatabase.getReference();
+      //  firebaseAuth = FirebaseAuth.getInstance();
+      //  FirebaseUser user = firebaseAuth.getCurrentUser();
+       // UserId = user.getUid().toString();
+        databaseUserRef = firebaseDatabase.getReference("doctor");
+        databaseUserRef.push().setValue(marker);
 
     }
 
@@ -69,36 +77,28 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        googleMap.setOnMapLongClickListener(this);
 
-        // Add a marker in Sydney and move the camera
-       /* LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));*/
         try{
-            databaseUserRef.addValueEventListener(new ValueEventListener() {
+            databaseUserRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot)
                 {
+                    list = new ArrayList<DoctorDetail>();
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                        UserDetail UserDetail = new UserDetail();
-                          UserDetail.setLatitude(ds.child(UserId).getValue(UserDetail.class).getLatitude());
-                        UserDetail.setLogitude(ds.child(UserId).getValue(UserDetail.class).getLogitude());
 
-
-
-
+                        DoctorDetail docDetail = ds.getValue(DoctorDetail.class);
                         LatLng newLocation = new LatLng(
-                                UserDetail.getLatitude(),
-                               UserDetail.getLogitude()
+                                docDetail.getLatitude(),
+                              docDetail.getLongitude()
                         );
-                        Toast.makeText(getApplicationContext(),UserDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
+                       // Toast.makeText(getApplicationContext(),UserDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
                         mMap.addMarker(new MarkerOptions()
                                 .position(newLocation)
                                 );
-                        mMap.moveCamera(CameraUpdateFactory.newLatLng(newLocation));
-                        mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
 
                     }
+
 
                 }
 
@@ -115,6 +115,11 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
 
     @Override
     public void onClick(View v) {
+
+    }
+
+    @Override
+    public void onMapLongClick(LatLng latLng) {
 
     }
 }

@@ -18,8 +18,6 @@ import android.widget.Toast;
 import com.example.humayunt.templateui.DataModel.TwodDataModel;
 import com.example.humayunt.templateui.DatabaseHandler;
 import com.example.humayunt.templateui.R;
-import com.example.humayunt.templateui.UserProfile;
-import com.example.humayunt.templateui.guidetry;
 
 import java.io.IOException;
 

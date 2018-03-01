@@ -1,4 +1,4 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.MainPanel;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,7 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.humayunt.templateui.R;
-import com.example.humayunt.templateui.SingleItem.singleItemTwoDGuide;
 
 /**
  * Created by HumayunT on 2/17/2018.

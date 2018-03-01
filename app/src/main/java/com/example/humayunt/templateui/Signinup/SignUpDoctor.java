@@ -1,4 +1,4 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.Signinup;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,8 +14,6 @@ import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -32,12 +30,7 @@ import android.widget.Toast;
 import com.example.humayunt.templateui.AutoCompletePlace.PlaceAutocompleteAdapter;
 import com.example.humayunt.templateui.AutoCompletePlace.placedetails;
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
-import com.example.humayunt.templateui.DataModel.UserDetail;
-import com.example.humayunt.templateui.LocateHospital.hospital_MapsActivity;
 import com.example.humayunt.templateui.R;
-import com.example.humayunt.templateui.Signinup.SigninActivity;
-import com.example.humayunt.templateui.Signinup.SignupActivity;
-import com.example.humayunt.templateui.UserProfile;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;

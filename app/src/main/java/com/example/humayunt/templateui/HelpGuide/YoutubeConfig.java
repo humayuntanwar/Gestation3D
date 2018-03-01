@@ -1,4 +1,4 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.HelpGuide;
 
 /**
  * Created by HumayunT on 2/26/2018.

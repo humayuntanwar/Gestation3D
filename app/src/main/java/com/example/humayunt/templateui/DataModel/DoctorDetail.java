@@ -65,7 +65,7 @@ public class DoctorDetail {
         return address;
     }
 
-    public Double getLatitude() {
+    public  Double getLatitude() {
         return latitude;
     }
 
