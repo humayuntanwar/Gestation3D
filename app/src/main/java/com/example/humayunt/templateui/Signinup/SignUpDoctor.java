@@ -69,7 +69,7 @@ import static com.example.humayunt.templateui.LocateHospital.hospital_MapsActivi
 
 public class SignUpDoctor extends AppCompatActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
     private static final String TAG = "RegisterActivity";
-    private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputNumber;
+    private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputNumber,clinic;
     private AutoCompleteTextView signupInputAddress;
     private Button btnSignUp, btnSign;
     private ProgressDialog progressdialog;
@@ -116,6 +116,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         progressdialog = new ProgressDialog(this);
 
         signupInputName = (EditText) findViewById(R.id.signupdoc_input_name);
+        clinic = (EditText) findViewById(R.id.signupdoc_hospital);
         signupInputEmail = (EditText) findViewById(R.id.signupdoc_email);
         signupInputPassword = (EditText) findViewById(R.id.signupdoc_password);
         signupInputAddress = (AutoCompleteTextView) findViewById(R.id.signupdoc_address);
@@ -249,9 +250,13 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
     private void registerDoctor() {
 
         final String name = signupInputName.getText().toString().trim();
+
+        final String clinicc = clinic.getText().toString().trim();
         final String email = signupInputEmail.getText().toString().trim();
         final String password = signupInputPassword.getText().toString().trim();
         final int number = Integer.parseInt( signupInputNumber.getText().toString()) ;
+        final String address = signupInputAddress.getText().toString().trim();
+
         System.out.println(email + password);
 
         //mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this,mGeoDataClient, LAT_LNG_BOUNDS, null);
@@ -297,7 +302,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
                             String uid = UserId.toString();
 
                             databaseDoctor = FirebaseDatabase.getInstance().getReference("doctor");
-                            DoctorDetail doctor = new DoctorDetail(name, email, password,latitude,longitude , number);
+                            DoctorDetail doctor = new DoctorDetail(name, email, password, clinicc, latitude,longitude , number, address);
                             databaseDoctor.child(UserId).setValue(doctor).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
@@ -358,7 +363,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-            //  hideSoftKeyboard();
+            // hideSoftKeyboard();
 
             final AutocompletePrediction item = mPlaceAutocompleAdapter.getItem(position);
             final String placeId = item.getPlaceId();

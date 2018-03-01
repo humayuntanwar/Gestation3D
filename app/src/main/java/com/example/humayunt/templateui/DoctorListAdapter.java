@@ -9,7 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
 
@@ -35,9 +37,19 @@ public class DoctorListAdapter extends RecyclerView.Adapter<DoctorListAdapter.My
 
     @Override
     public void onBindViewHolder(MyHoder holder, int position) {
-        DoctorDetail mylist = list.get(position);
-        holder.name.setText(mylist.getName());
-        holder.email.setText(mylist.getEmail());
+        final DoctorDetail mylist = list.get(position);
+        holder.name.setText("Dr. " +mylist.getName());
+        holder.email.setText( "Email: " +mylist.getEmail());
+        holder.clinic.setText("Hospital: "+ mylist.getClinic());
+        holder.calldoctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //CAll the Doctor
+                int number = (mylist.getNumber());
+                String num = String.valueOf(number);
+                Toast.makeText(context,num,Toast.LENGTH_LONG);
+            }
+        });
 
     }
 
@@ -70,13 +82,16 @@ public class DoctorListAdapter extends RecyclerView.Adapter<DoctorListAdapter.My
     }
 
     class MyHoder extends RecyclerView.ViewHolder{
-        TextView name,email;
+        TextView name,email,clinic;
+        Button calldoctor;
 
 
         public MyHoder(View itemView) {
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.docname);
             email= (TextView) itemView.findViewById(R.id.docnumber);
+            clinic = (TextView) itemView.findViewById(R.id.docclinic);
+            calldoctor = (Button)itemView.findViewById(R.id.calldoctor);
 
 
         }

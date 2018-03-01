@@ -28,6 +28,7 @@ import com.example.humayunt.templateui.HelpGuide.Faq;
 import com.example.humayunt.templateui.HelpGuide.Features;
 import com.example.humayunt.templateui.HelpGuide.WatchVideo;
 import com.example.humayunt.templateui.LocateHospital.hospital_MapsActivity;
+import com.example.humayunt.templateui.MainPanel.LocateDoctorMap;
 import com.example.humayunt.templateui.MainPanel.diets;
 import com.example.humayunt.templateui.MainPanel.excercises;
 import com.example.humayunt.templateui.MainPanel.guidetry;
@@ -77,7 +78,7 @@ public class UserProfile extends AppCompatActivity
             startActivity(new Intent(this, SigninActivity.class));
 
         }
-         databaseUserRef = firebaseDatabase.getReference("user");
+       //  databaseUserRef = firebaseDatabase.getReference("user");
         databaseDoctorRef = firebaseDatabase.getReference("doctor");
         //mNavigationView=(NavigationView)findViewById(R.id.nav_view);
         guidecard = (CardView) findViewById(R.id.dguide);
@@ -246,7 +247,7 @@ public class UserProfile extends AppCompatActivity
         if(view == modelcard){
             // firebaseAuth.signOut();
           //startActivity(new Intent(UserProfile.this, UnityPlayerActivity.class));
-            startActivity(new Intent(UserProfile.this,QuizActivity.class));
+            startActivity(new Intent(UserProfile.this,LocateDoctorMap.class));
 
 
         }

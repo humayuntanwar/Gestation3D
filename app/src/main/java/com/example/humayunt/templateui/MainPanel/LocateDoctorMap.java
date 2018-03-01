@@ -92,12 +92,12 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
                                 docDetail.getLatitude(),
                               docDetail.getLongitude()
                         );
-                       // Toast.makeText(getApplicationContext(),UserDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),docDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
                         mMap.addMarker(new MarkerOptions()
                                 .position(newLocation)
                                 );
-
                     }
+                   // mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
 
 
                 }

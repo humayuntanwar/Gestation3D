@@ -192,6 +192,28 @@
                      android:layout_width="match_parent"
                      android:layout_height="1dp"
                      android:background="#f9d7db" />
+                <EditText
+                    android:id="@+id/signupdoc_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_person_white_24dp"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="Hospital/Clinic"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#fff"
+                    android:visibility="visible" />
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f9d7db" />
+
 
 
 
