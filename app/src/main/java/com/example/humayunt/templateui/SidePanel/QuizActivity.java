@@ -1,6 +1,6 @@
 package com.example.humayunt.templateui.SidePanel;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 
 import java.io.IOException;
@@ -8,7 +8,9 @@ import java.util.List;
 
 import android.content.Intent;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -18,7 +20,7 @@ import com.example.humayunt.templateui.DataModel.QuizDataModel;
 import com.example.humayunt.templateui.DatabaseHandler;
 import com.example.humayunt.templateui.R;
 
-public class QuizActivity extends AppCompatActivity {
+public class QuizActivity extends Fragment implements View.OnClickListener {
     List<QuizDataModel> quesList;
     int score=0;
     int qid=0;
@@ -30,29 +32,35 @@ public class QuizActivity extends AppCompatActivity {
     DatabaseHandler db;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
+        return inflater.inflate(R.layout.activity_quiz,container,false);
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+      //  setContentView(R.layout.activity_quiz);
 
         try {
-            db = new DatabaseHandler(this);
+            db = new DatabaseHandler(getActivity());
         } catch (IOException e) {
             e.printStackTrace();
         }
         quesList=db.getQuiz();
         currentQ=quesList.get(qid);
-        txtQuestion=(TextView)findViewById(R.id.textView1);
-        rda=(RadioButton)findViewById(R.id.radio0);
-        rdb=(RadioButton)findViewById(R.id.radio1);
-        rdc=(RadioButton)findViewById(R.id.radio2);
-        butNext=(Button)findViewById(R.id.button1);
+        txtQuestion=(TextView)getView().findViewById(R.id.textView1);
+        rda=(RadioButton)getView().findViewById(R.id.radio0);
+        rdb=(RadioButton)getView().findViewById(R.id.radio1);
+        rdc=(RadioButton)getView().findViewById(R.id.radio2);
+        butNext=(Button)getView().findViewById(R.id.button1);
         setQuestionView();
        // Toast.makeText(this, currentQ.getQUESTION(), Toast.LENGTH_LONG);
         butNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RadioGroup grp=(RadioGroup)findViewById(R.id.radioGroup1);
-                RadioButton answer=(RadioButton)findViewById(grp.getCheckedRadioButtonId());
+                RadioGroup grp=(RadioGroup)getView().findViewById(R.id.radioGroup1);
+                RadioButton answer=(RadioButton)getView().findViewById(grp.getCheckedRadioButtonId());
                 grp.clearCheck();
                 Log.d("yourans", currentQ.getANSWER()+" "+answer.getText());
                 if(currentQ.getANSWER().equals(answer.getText()))
@@ -64,12 +72,12 @@ public class QuizActivity extends AppCompatActivity {
                     currentQ=quesList.get(qid);
                     setQuestionView();
                 }else{
-                    Intent intent = new Intent(QuizActivity.this, Result.class);
+                    Intent intent = new Intent(getActivity(), Result.class);
                     Bundle b = new Bundle();
                     b.putInt("score", score); //Your score
                     intent.putExtras(b); //Put your score to your next Intent
                     startActivity(intent);
-                    finish();
+                    //dismiss();
                 }
             }
         });
@@ -84,5 +92,10 @@ public class QuizActivity extends AppCompatActivity {
         rdb.setText(currentQ.getOPTIONB());
         rdc.setText(currentQ.getOPTIONC());
         qid++;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

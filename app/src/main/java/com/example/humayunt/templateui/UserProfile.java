@@ -53,7 +53,7 @@ public class UserProfile extends AppCompatActivity
      private String UserId;
     private DatabaseReference databaseUserRef,databaseDoctorRef;
     private String TAG;
-    private CardView guidecard, modelcard,vrviewcard,arguidecard,dietcard,excercisecard,locatehospitalcard,quizcard;
+    private CardView guidecard, modelcard,vrviewcard,arguidecard,dietcard,excercisecard,locatehospitalcard,doctorcard;
     Dialog myDialog;
 
     @Override
@@ -88,7 +88,7 @@ public class UserProfile extends AppCompatActivity
         dietcard = (CardView) findViewById(R.id.diets);
         excercisecard = (CardView) findViewById(R.id.excercise);
         locatehospitalcard = (CardView) findViewById(R.id.locatehospital);
-       // quizcard= (CardView) findViewById(R.id.quiz);
+        doctorcard= (CardView) findViewById(R.id.ViewDoctors);
 
         guidecard.setOnClickListener(this);
         modelcard.setOnClickListener(this);
@@ -97,7 +97,7 @@ public class UserProfile extends AppCompatActivity
          dietcard.setOnClickListener(this);
          excercisecard.setOnClickListener(this);
          locatehospitalcard.setOnClickListener(this);
-        // quizcard.setOnClickListener(this);
+        doctorcard.setOnClickListener(this);
         View header = ((NavigationView)findViewById(R.id.nav_view)).getHeaderView(0);
         //mNavigationView.setNavigationItemSelectedListener(this);
         //View myview=mNavigationView.getHeaderView(0);
@@ -279,13 +279,13 @@ public class UserProfile extends AppCompatActivity
 
 
         }
-       /* if(view == quizcard){
-            startActivity(new Intent(UserProfile.this, LocateDoctorMap.class));
+        if(view == doctorcard){
+            startActivity(new Intent(UserProfile.this, DoctorList.class));
 
 
 
 
-        }*/
+        }
     }
     @Override
     public void onBackPressed() {
@@ -349,7 +349,7 @@ public class UserProfile extends AppCompatActivity
 
         }
         else if (id == R.id.TakeQuiz) {
-          //  manager.beginTransaction().add(R.id.main_replace,new change_password()).addToBackStack("frag").commit();
+           manager.beginTransaction().replace(R.id.main_replace,new QuizActivity()).addToBackStack("frag").commit();
 
 
         } else if (id == R.id.setting) {

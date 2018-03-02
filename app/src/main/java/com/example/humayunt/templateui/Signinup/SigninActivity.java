@@ -30,7 +30,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SigninActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private Button btnSignIn , btnSignUp;
+    private Button btnSignIn , btnSignUp, button2;
     private EditText email;
     private  EditText password;
     private  TextView forget_pass,contact,terms;
@@ -53,6 +53,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         password = (EditText)findViewById(R.id.password);
         btnSignIn = (Button) findViewById(R.id.sign_in);
         btnSignUp = (Button) findViewById(R.id.sign_up);
+        button2 = (Button) findViewById(R.id.button2);
         btnSignIn.getBackground().setAlpha(200);
         btnSignUp.getBackground().setAlpha(200);
 
@@ -62,6 +63,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         forget_pass.setOnClickListener(this);
         contact.setOnClickListener(this);
         terms.setOnClickListener(this);
+        button2.setOnClickListener(this);
         btnSignIn.getBackground().setAlpha(160);
         btnSignUp.getBackground().setAlpha(160);
 
@@ -108,6 +110,10 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
         if(view == forget_pass){
             finish();
             startActivity(new Intent( this, forget_Password.class));
+        }
+        if(view == button2){
+            finish();
+            startActivity(new Intent( this, UserProfile.class));
         }
         if(view == contact){
 
