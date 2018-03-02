@@ -157,6 +157,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:clipToPadding="false"
+
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:layout_weight="1">
@@ -391,7 +392,7 @@
                         android:layout_weight="0.5"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
-                        app:cardElevation="5dp">
+                        app:cardElevation="10dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
@@ -437,15 +438,16 @@
                         android:layout_width="110dp"
                         android:layout_height="135dp"
                         android:layout_margin="10dp"
-                        android:clickable="true"
                         android:layout_weight="0.5"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
 
                         <android.support.v7.widget.LinearLayoutCompat
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:gravity="center"
                             android:background="@drawable/customborder"
+                            android:gravity="center"
                             android:orientation="vertical">
 
                             <ImageView
@@ -453,15 +455,14 @@
                                 android:layout_height="44dp"
                                 android:background="@drawable/cerclepink"
                                 android:padding="5dp"
-                                android:src="@drawable/ic_3d_rotation_black_24dp" />
+                                android:src="@drawable/doctor" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text=" View Doctors"
-                                android:textStyle="bold"
-                               />
+                                android:textStyle="bold" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -470,13 +471,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
+                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="Nearby Doctors"
-                               style="@style/TextColor"
-                                />
+                                android:text="View Nearby Doctors" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 

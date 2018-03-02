@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -90,7 +91,7 @@
         <activity android:name=".Signinup.SelectSignUp" />
         <activity android:name=".Signinup.SignUpDoctor" />
         <activity
-            android:name=".DoctorList"
+            android:name=".MainPanel.DoctorList"
             android:label="Avaliable Doctors"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

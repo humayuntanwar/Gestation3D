@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_margin="5dp">
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1.75">
 
         <RelativeLayout
             android:id="@+id/layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:padding="8dp">
 
             <ImageView
@@ -47,6 +50,7 @@
                 android:layout_toRightOf="@id/imageView"
                 android:text="13.3 Inch, 256 GB"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
             <TextView
                 android:id="@+id/docclinic"
                 android:layout_width="match_parent"
@@ -57,15 +61,15 @@
                 android:layout_toRightOf="@id/imageView"
                 android:text="13.3 Inch, 256 GB"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
             <Button
+                android:id="@+id/calldoctor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Call"
-                android:id="@+id/calldoctor"
-
-                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentTop="true"
+                android:text="Call" />
 
 
         </RelativeLayout>

@@ -22,12 +22,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
-import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.HelpGuide.About;
 import com.example.humayunt.templateui.HelpGuide.Faq;
 import com.example.humayunt.templateui.HelpGuide.Features;
 import com.example.humayunt.templateui.HelpGuide.WatchVideo;
 import com.example.humayunt.templateui.LocateHospital.hospital_MapsActivity;
+import com.example.humayunt.templateui.MainPanel.DoctorList;
 import com.example.humayunt.templateui.MainPanel.LocateDoctorMap;
 import com.example.humayunt.templateui.MainPanel.diets;
 import com.example.humayunt.templateui.MainPanel.excercises;

@@ -53,7 +53,7 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
         SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        databaseUserRef = firebaseDatabase.getReference("doctor");
+        databaseUserRef = firebaseDatabase.getInstance().getReference("doctor");
         databaseUserRef.push().setValue(marker);
 
 
@@ -113,10 +113,15 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
                                 docDetail.getLatitude(),
                               docDetail.getLongitude()
                         );
-                        Toast.makeText(getActivity(),docDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
+                       // Toast.makeText(getActivity(),docDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
                         mMap.addMarker(new MarkerOptions()
+                                .title(docDetail.getName()+  "  Clinic: " + docDetail.getClinic())
                                 .position(newLocation)
+                                      //  .snippet(docDetail.getName())
                                 );
+                        // showing information about that place.
+
+
                     }
                    // mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
 
