@@ -1,31 +1,4 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    <Button
-        android:id="@+id/locate_doctor"
-        style="@style/Base.TextAppearance.AppCompat.Body1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@drawable/background_signup"
-        android:clickable="true"
-        android:padding="5dp"
-        android:text="Show Doctors "
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="16sp" />
-    </LinearLayout>
-
-
-
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map"
@@ -34,4 +7,3 @@
 
         android:layout_height="match_parent"
         tools:context="com.example.humayunt.templateui.MainPanel.LocateDoctorMap" />
-</LinearLayout>

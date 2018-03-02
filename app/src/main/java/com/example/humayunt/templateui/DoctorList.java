@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.example.humayunt.templateui.MainPanel.LocateDoctorMap;
 import com.example.humayunt.templateui.MainPanel.twodguideview;
 
 public class DoctorList extends AppCompatActivity {
@@ -141,11 +142,11 @@ public class DoctorList extends AppCompatActivity {
             // Return a PlaceholderFragment (defined as a static inner class below).
             switch (position) {
                 case 0:
-                    Doctorlisttry sm = new Doctorlisttry();
-                    return sm;
+                    Doctorlisttry DocList = new Doctorlisttry();
+                    return DocList;
 
                 case 1:
-                    twodguideview twod = new twodguideview();
+                    LocateDoctorMap twod = new LocateDoctorMap();
                     return twod;
 
             }
@@ -162,9 +163,9 @@ public class DoctorList extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "Top Rated ";
                 case 1:
-                    return "SECTION 2";
+                    return "NearBy";
                 case 2:
                     return "SECTION 3";
             }

@@ -93,7 +93,6 @@
             android:name=".DoctorList"
             android:label="Avaliable Doctors"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".doctorkoleaao"></activity>
     </application>
 
 </manifest>

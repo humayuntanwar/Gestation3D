@@ -1,8 +1,10 @@
 package com.example.humayunt.templateui.MainPanel;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -27,7 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMapLongClickListener {
+public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMapLongClickListener {
 
     private GoogleMap mMap;
     Button ShowDoc;
@@ -39,19 +41,38 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
     private FirebaseAuth firebaseAuth;
     Marker marker;
     List<DoctorDetail> list;
+    private SupportMapFragment fragment;
+
+
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_locate_doctor_map);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        View view =inflater.inflate(R.layout.activity_locate_doctor_map,container,false);
+
+        SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        ShowDoc = (Button) findViewById(R.id.locate_doctor);
-        ShowDoc.setOnClickListener(this);
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseUserRef = firebaseDatabase.getReference("doctor");
+        databaseUserRef.push().setValue(marker);
+
+
+
+        return view;
+
+    }
+
+    public LocateDoctorMap() {
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+       // setContentView(R.layout.activity_locate_doctor_map);
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
+      /*  ShowDoc = (Button) getView().findViewById(R.id.locate_doctor);
+        ShowDoc.setOnClickListener(this);*/
 
 
 
@@ -59,8 +80,7 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
       //  firebaseAuth = FirebaseAuth.getInstance();
       //  FirebaseUser user = firebaseAuth.getCurrentUser();
        // UserId = user.getUid().toString();
-        databaseUserRef = firebaseDatabase.getReference("doctor");
-        databaseUserRef.push().setValue(marker);
+
 
     }
 
@@ -77,6 +97,7 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+
         googleMap.setOnMapLongClickListener(this);
 
         try{
@@ -92,7 +113,7 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
                                 docDetail.getLatitude(),
                               docDetail.getLongitude()
                         );
-                        Toast.makeText(getApplicationContext(),docDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(),docDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
                         mMap.addMarker(new MarkerOptions()
                                 .position(newLocation)
                                 );
@@ -108,7 +129,7 @@ public class LocateDoctorMap extends FragmentActivity implements OnMapReadyCallb
                 }
             }); }
         catch (Exception e ){
-            Toast.makeText(this,e.toString(), Toast.LENGTH_LONG ).show();
+            Toast.makeText(getActivity(),e.toString(), Toast.LENGTH_LONG ).show();
             // Toast.makeText(getContext(), UserId, Toast.LENGTH_SHORT).show();
         }
     }
