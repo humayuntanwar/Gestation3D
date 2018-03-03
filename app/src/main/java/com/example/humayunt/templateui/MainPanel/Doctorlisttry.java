@@ -18,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RatingBar;
 import android.widget.Toast;
 
 import com.example.humayunt.templateui.Adapter.DoctorListAdapter;
@@ -38,6 +39,8 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
     DatabaseReference myRef ;
     List<DoctorDetail> list;
     RecyclerView recycle;
+    private RatingBar ratingBar;
+
     Button b1;
     @Nullable
     @Override

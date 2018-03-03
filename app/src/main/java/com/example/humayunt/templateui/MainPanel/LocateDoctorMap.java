@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.humayunt.templateui.CustomWindow;
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.R;
@@ -115,13 +116,14 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
                         );
                        // Toast.makeText(getActivity(),docDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
                         mMap.addMarker(new MarkerOptions()
-                                .title(docDetail.getName()+  "  Clinic: " + docDetail.getClinic())
+                                .title(docDetail.getName())
                                 .position(newLocation)
                                       //  .snippet(docDetail.getName())
                                 );
                         // showing information about that place.
 
 
+                    //    mMap.setInfoWindowAdapter(new CustomWindow(getActivity()));
                     }
                    // mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
 

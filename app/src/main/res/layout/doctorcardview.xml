@@ -6,14 +6,13 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_margin="5dp"
-        android:layout_weight="1.75">
+        android:layout_height="120dp"
+        android:layout_margin="5dp">
 
         <RelativeLayout
             android:id="@+id/layout"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="match_parent"
             android:padding="8dp">
 
             <ImageView
@@ -62,6 +61,24 @@
                 android:text="13.3 Inch, 256 GB"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@android:style/Widget.Material.RatingBar.Small"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/docclinic"
+                android:layout_toRightOf="@+id/imageView"
+                android:numStars="5"
+                android:rating="2"
+                android:scaleX="1.3"
+                android:scaleY="1.3"
+                android:stepSize="1"
+                android:isIndicator="true"
+                android:max="5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp" />
+
             <Button
                 android:id="@+id/calldoctor"
                 android:layout_width="wrap_content"
@@ -69,7 +86,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:text="Call" />
+                android:drawableTop="@drawable/phone"
+                android:background="@drawable/buttonstyle2"
+                android:layout_above="@+id/docclinic" />
 
 
         </RelativeLayout>

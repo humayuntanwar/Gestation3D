@@ -118,7 +118,7 @@ public class UserProfile extends AppCompatActivity
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                Toast.makeText(getApplicationContext(), "called...",Toast.LENGTH_LONG).show();
+              //  Toast.makeText(getApplicationContext(), "called...",Toast.LENGTH_LONG).show();
 
                 showData(dataSnapshot);
             }

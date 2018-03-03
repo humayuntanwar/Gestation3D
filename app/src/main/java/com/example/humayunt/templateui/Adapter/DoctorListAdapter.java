@@ -86,8 +86,8 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
                     String dial = "tel:" +number;
                     Intent callintent = new Intent(Intent.ACTION_CALL);
                     callintent.setData(Uri.parse(dial));
-                    activity.startActivity(callintent);
-                    //context.startActivity(callintent);
+                   // activity.startActivity(callintent);
+                    context.startActivity(callintent);
                     //context.getApplicationContext().startActivity(callintent);
                 }
             }
