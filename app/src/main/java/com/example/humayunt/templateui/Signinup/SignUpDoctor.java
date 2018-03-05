@@ -302,7 +302,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
                             String uid = UserId.toString();
 
                             databaseDoctor = FirebaseDatabase.getInstance().getReference("doctor");
-                            DoctorDetail doctor = new DoctorDetail(name, email, password, clinicc, latitude,longitude , number, address);
+                            DoctorDetail doctor = new DoctorDetail(name, email, password,address, clinicc,UserId, latitude,longitude , number);
                             databaseDoctor.child(UserId).setValue(doctor).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

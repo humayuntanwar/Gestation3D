@@ -4,8 +4,11 @@ package com.example.humayunt.templateui.MainPanel;
  * Created by HumayunT on 2/28/2018.
  */
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -19,11 +22,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.humayunt.templateui.Adapter.DoctorListAdapter;
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
+import com.example.humayunt.templateui.HelpGuide.About;
+import com.example.humayunt.templateui.HelpGuide.Faq;
+import com.example.humayunt.templateui.HelpGuide.Features;
+import com.example.humayunt.templateui.HelpGuide.WatchVideo;
 import com.example.humayunt.templateui.R;
+import com.example.humayunt.templateui.UserProfile;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,6 +40,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Doctorlisttry extends Fragment  implements View.OnClickListener{
@@ -40,6 +50,8 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
     List<DoctorDetail> list;
     RecyclerView recycle;
     private RatingBar ratingBar;
+    HashMap<String, Object> hashMap = new HashMap<String, Object>();
+
 
     Button b1;
     @Nullable
@@ -54,7 +66,9 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("doctor");
         Log.d("pakistan","pakistan");
-       // b1 = (Button) rootView.findViewById(R.id.calldoctor);
+
+        // b1 = (Button) rootView.findViewById(R.id.calldoctor);
+
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override
@@ -62,15 +76,24 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 list = new ArrayList<DoctorDetail>();
+                ArrayList<DoctorDetail> listt = new ArrayList<DoctorDetail>();
 
-                for(DataSnapshot dataSnapshot1 :dataSnapshot.getChildren()){
+                if(dataSnapshot.exists()){
+                    int i =0;
+		    String keys = "";
+                    for(DataSnapshot dataSnapshot1 :dataSnapshot.getChildren()) {
+                  
+			 keys += dataSnapshot1.getKey()+"\n";
 
-                    DoctorDetail value = dataSnapshot1.getValue(DoctorDetail.class);
+                        DoctorDetail value = dataSnapshot1.getValue(DoctorDetail.class);
+                        hashMap.put(dataSnapshot1.getKey(), value);
+
+                       // Toast.makeText(getActivity(), hashMap.size(), Toast.LENGTH_LONG).show();
+
 
                     list.add(value);
-                  //  Toast.makeText(getActivity(),list.size()+", "+value.getEmail(),Toast.LENGTH_LONG).show();
 
-
+                }
                 }
                 //Log.d("kk",list.get(0))
                 DoctorListAdapter recyclerAdapter = new DoctorListAdapter(list,getActivity().getApplicationContext());
@@ -94,35 +117,6 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
         Toast.makeText(getActivity(),number,Toast.LENGTH_LONG).show();
 
 
-
-       /* b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("btn","inside");
-                Toast.makeText(getActivity(),number,Toast.LENGTH_LONG).show();
-                //  int number = (mylist.getNumber());
-                //  String num = String.valueOf(number);
-
-                if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
-                    return;
-                }
-                else {
-                    String dial = "tel:" +number;
-                    Intent callintent = new Intent(Intent.ACTION_CALL);
-                    callintent.setData(Uri.parse(dial));
-                    startActivity(callintent);
-                    //context.startActivity(callintent);
-                    //context.getApplicationContext().startActivity(callintent);
-                }
-            }
-        });*/
 
         return rootView;
 

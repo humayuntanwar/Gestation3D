@@ -5,9 +5,17 @@ package com.example.humayunt.templateui.DataModel;
  */
 
 public class DoctorDetail {
-    private String name, email,password,address,clinic;
+    private String name, email,password,address,clinic,UserId;
     private Double latitude,Longitude;
     private int number;
+
+    public String getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(String userId) {
+        UserId = userId;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -46,6 +54,18 @@ public class DoctorDetail {
     }
 
     public DoctorDetail() {
+    }
+
+    public DoctorDetail(String name, String email, String password, String address, String clinic, String userId, Double latitude, Double longitude, int number) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.address = address;
+        this.clinic = clinic;
+        UserId = userId;
+        this.latitude = latitude;
+        Longitude = longitude;
+        this.number = number;
     }
 
     public DoctorDetail(String name, String email, String password, String clinic, Double latitude, Double longitude, int number) {
