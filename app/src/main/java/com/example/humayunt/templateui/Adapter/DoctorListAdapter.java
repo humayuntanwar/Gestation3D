@@ -92,11 +92,15 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
         holder.name.setText("Dr. " + mylist.getName());
         holder.email.setText("Email: " + mylist.getEmail());
         holder.clinic.setText(""+ mylist.getClinic());
-        holder.showrating.setRating(mylist.getRating());
+        final float previousrating = mylist.getRating();
+        final int previoustotal = mylist.getNumberOfRating();
+        float totalrating = previousrating / previoustotal;
+        holder.showrating.setRating(totalrating);
+        holder.docrates.setText("("+ mylist.getNumberOfRating() +")");
         final String  userId = String.valueOf(mylist.getUserId());
 
 
-        float totalrating = mylist.getRating() / mylist.getNoofrating();
+
        // userId =holder.clinic.getText().toString();
 
 
@@ -135,7 +139,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
             public void onClick(View v) {
             ////    Toast.makeText(context,userId,Toast.LENGTH_LONG).show();
               //  Log.d("hello",holder.clinic.getText().toString());
-                Toast.makeText(context, userId, Toast.LENGTH_LONG).show();
+                //Toast.makeText(context, userId, Toast.LENGTH_LONG).show();
                 TextView txtclose ;
                 Button submitRating;
                 myDialogRating.setContentView(R.layout.ratedoctorlayout);
@@ -157,15 +161,14 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
                     public void onClick(View v) {
                         //startActivity(new Intent(getActivity(),About.class));
                         rating = ratingBarSubmitt.getRating();
-                        noofrating++;
-                        final float newRating = rating + mylist.getRating();
-                        final  int newNumberRating = noofrating + mylist.getNoofrating();
-                        DoctorDetail docrate = new DoctorDetail(rating,noofrating);
+                        final float newRating = previousrating + rating;
+                        final  int newNumberRating = previoustotal + 1 ;
                         myRef.child(userId).child("rating").setValue(newRating);
                         myRef.child(userId).child("numberOfRating").setValue(newNumberRating)
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
+                                myDialogRating.dismiss();
                                 Toast.makeText(context, "rating Submitted!", Toast.LENGTH_LONG).show();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
@@ -229,7 +232,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
     }
 
     class MyHoder extends RecyclerView.ViewHolder{
-        TextView name,email,clinic;
+        TextView name,email,clinic, docrates;
         Button calldoctor, showratingpopup;
         RatingBar showrating;
 
@@ -237,6 +240,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
         public MyHoder(View itemView) {
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.docname);
+            docrates = (TextView)itemView.findViewById(R.id.docrates);
             email= (TextView) itemView.findViewById(R.id.docnumber);
             clinic = (TextView) itemView.findViewById(R.id.docclinic);
             calldoctor = (Button)itemView.findViewById(R.id.calldoctor);

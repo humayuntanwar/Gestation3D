@@ -75,11 +75,12 @@
                 android:rating="2"
                 android:scaleX="1.3"
                 android:scaleY="1.3"
-                android:stepSize="1"
+                android:stepSize="0.5"
                 android:transformPivotX="0dp"
                 android:transformPivotY="0dp" />
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
@@ -119,6 +120,16 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/docrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/docclinic"
+                android:layout_toLeftOf="@+id/linearLayout"
+                android:text="1"
+                android:layout_toRightOf="@+id/ratingBar"
+                android:layout_marginLeft="26dp"
+/>
 
         </RelativeLayout>
 

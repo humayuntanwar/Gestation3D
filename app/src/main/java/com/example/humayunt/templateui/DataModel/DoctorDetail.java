@@ -12,7 +12,7 @@ public class DoctorDetail {
     private String clinic;
     private String UserId;
     private float rating;
-    private int noofrating;
+    private int numberOfRating;
 
 
 
@@ -24,17 +24,17 @@ public class DoctorDetail {
         return rating;
     }
 
-    public DoctorDetail(float rating, int noofrating) {
+    public DoctorDetail(float rating, int numberOfRating) {
         this.rating = rating;
-        this.noofrating = noofrating;
+        this.numberOfRating = numberOfRating;
     }
 
-    public int getNoofrating() {
-        return noofrating;
+    public int getNumberOfRating() {
+        return numberOfRating;
     }
 
-    public void setNoofrating(int noofrating) {
-        this.noofrating = noofrating;
+    public void setNumberOfRating(int numberOfRating) {
+        this.numberOfRating = numberOfRating;
     }
 
     public void setRating(float rating) {
