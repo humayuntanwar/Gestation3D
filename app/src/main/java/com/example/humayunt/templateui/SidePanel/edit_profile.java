@@ -132,7 +132,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
             public void onDataChange(DataSnapshot dataSnapshot)
 
             {
-                showData(dataSnapshot);
+
             }
 
             @Override
@@ -155,36 +155,13 @@ public class edit_profile extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (btnSignUp.isPressed()) {
-           registerUser();
+          updateProfile();
         }
 
     }
 
-    private void showData(DataSnapshot dataSnapshot) {
-        for (DataSnapshot ds : dataSnapshot.getChildren()) {
 
-            Log.d(TAG, ds.toString());
-            UserDetail UserDetail = new UserDetail();
-         //  UserDetail.setEmail(ds.child(UserId).getValue(UserDetail.class).getEmail());
-            UserDetail.setEmail(ds.child(UserId).getValue(UserDetail.class).getEmail());
-           UserDetail.setName(ds.child(UserId).getValue(UserDetail.class).getName());
-            UserDetail.setPassword(ds.child(UserId).getValue(UserDetail.class).getPassword());
-            //UserDetail.setDoctor(ds.child(UserId).getValue(UserDetail.class).getDoctor());
-            UserDetail.setAddress(ds.child(UserId).getValue(UserDetail.class).getAddress());
-
-            //display all information
-
-          //  Log.d(TAG, "ShowData :name " + UserDetail.getName());
-            signupInputEmail.setText(UserDetail.getEmail());
-            signupInputName.setText(UserDetail.getName());
-            signupInputPassword.setText((UserDetail.getPassword()));
-            signupInputAddress.setText(UserDetail.getAddress());
-
-
-        }
-    }
-
-    private void registerUser() {
+    private void updateProfile() {
 
         final String name = signupInputName.getText().toString().trim();
         final String email = signupInputEmail.getText().toString().trim();
@@ -198,7 +175,6 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         if (TextUtils.isEmpty(email)) {
             //email is empty
             Toast.makeText(getContext(), "enter email ", Toast.LENGTH_SHORT).show();
-            Toast.makeText(getContext(), "enter m",Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(password)) {
@@ -213,50 +189,8 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         progressdialog.setMessage("Registering user...");
         progressdialog.show();
 
-        firebaseauth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener((Executor) this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            //user is registered successfully
-                            //Profile activity here
-                            firebaseauth.getCurrentUser();
 
-                            //String tempEmail = email.replaceAll("\\.","*");
-                            // String tempEmail =databaseUser.getKey();
-                            FirebaseUser user = firebaseauth.getCurrentUser();
-                            UserId = user.getUid();
-                            databaseUser = FirebaseDatabase.getInstance().getReference("users");
 
-                            UserDetail User = new UserDetail(name, email, password, addres);
-                            databaseUser.child(UserId).setValue(User).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    e.printStackTrace();
-                                    Toast.makeText(getContext(), e.toString(), Toast.LENGTH_LONG).show();
-                                }
-                            });
-                            progressdialog.hide();
-                            Toast.makeText(getContext(), "Changed successfully!", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getContext(),UserProfile.class);
-                            startActivity(intent);
-                            // finish();
-
-                        } else {
-                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            progressdialog.hide();
-                            Toast.makeText(getContext(), "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                            // updateUI(null);
-                            //Toast.makeText(SignupActivity.this, "could not register! try again!", Toast.LENGTH_SHORT).show();
-
-                        }
-                    }
-                });
     }
     private AdapterView.OnItemClickListener mAutocompleteListenerView = new AdapterView.OnItemClickListener() {
         @Override

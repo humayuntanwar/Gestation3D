@@ -5,9 +5,41 @@ package com.example.humayunt.templateui.DataModel;
  */
 
 public class DoctorDetail {
-    private String name, email,password,address,clinic,UserId;
+    private String name;
+    private String email;
+    private String password;
+    private String address;
+    private String clinic;
+    private String UserId;
+    private float rating;
+    private int noofrating;
+
+
+
+
+
     private Double latitude,Longitude;
     private int number;
+    public float getRating() {
+        return rating;
+    }
+
+    public DoctorDetail(float rating, int noofrating) {
+        this.rating = rating;
+        this.noofrating = noofrating;
+    }
+
+    public int getNoofrating() {
+        return noofrating;
+    }
+
+    public void setNoofrating(int noofrating) {
+        this.noofrating = noofrating;
+    }
+
+    public void setRating(float rating) {
+        this.rating = rating;
+    }
 
     public String getUserId() {
         return UserId;

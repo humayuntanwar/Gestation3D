@@ -13,6 +13,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -29,6 +30,13 @@ import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.MainPanel.DoctorList;
 import com.example.humayunt.templateui.MainPanel.Doctorlisttry;
 import com.example.humayunt.templateui.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 import java.util.List;
@@ -46,6 +54,12 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
     Dialog myDialogRating;
     RatingBar ratingBarSubmitt;
     DoctorDetail mylist;
+    FirebaseDatabase database;
+    DatabaseReference myRef ;
+
+
+    float rating;
+    int noofrating = 0;
 
 
 
@@ -62,6 +76,8 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
         MyHoder myHoder = new MyHoder(view);
         context = view.getContext();
         myDialogRating = new Dialog(context);
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("doctor");
 
 
 
@@ -69,15 +85,26 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
     }
 
     @Override
-    public void onBindViewHolder(MyHoder holder, int position) {
+    public void onBindViewHolder(final MyHoder holder, int position) {
           mylist = list.get(position);
 
 
         holder.name.setText("Dr. " + mylist.getName());
         holder.email.setText("Email: " + mylist.getEmail());
-        holder.clinic.setText("Hospital: " + mylist.getClinic());
+        holder.clinic.setText(""+ mylist.getClinic());
+        holder.showrating.setRating(mylist.getRating());
+        final String  userId = String.valueOf(mylist.getUserId());
+
+
+        float totalrating = mylist.getRating() / mylist.getNoofrating();
+       // userId =holder.clinic.getText().toString();
+
+
+
          final String number = String.valueOf(mylist.getNumber());
-        final String userId = mylist.getUserId();
+
+
+
         holder.calldoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,13 +129,60 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
         });
        // Toast.makeText(context,mylist.getName(),Toast.LENGTH_LONG).show();
 
+        //holder.showratingpopup.setText(userId);
         holder.showratingpopup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   Toast.makeText(context,userId,Toast.LENGTH_LONG).show();
+            ////    Toast.makeText(context,userId,Toast.LENGTH_LONG).show();
+              //  Log.d("hello",holder.clinic.getText().toString());
+                Toast.makeText(context, userId, Toast.LENGTH_LONG).show();
+                TextView txtclose ;
+                Button submitRating;
+                myDialogRating.setContentView(R.layout.ratedoctorlayout);
+
+                ratingBarSubmitt = (RatingBar) myDialogRating.findViewById(R.id.ratingBarsubmit);
+
+                txtclose =(TextView) myDialogRating.findViewById(R.id.txtclose);
+                txtclose.setText("X");
+                submitRating= (Button) myDialogRating.findViewById(R.id.submitRating);
+                txtclose.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        myDialogRating.dismiss();
+                    }
+                });
+
+                submitRating.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //startActivity(new Intent(getActivity(),About.class));
+                        rating = ratingBarSubmitt.getRating();
+                        noofrating++;
+                        final float newRating = rating + mylist.getRating();
+                        final  int newNumberRating = noofrating + mylist.getNoofrating();
+                        DoctorDetail docrate = new DoctorDetail(rating,noofrating);
+                        myRef.child(userId).child("rating").setValue(newRating);
+                        myRef.child(userId).child("numberOfRating").setValue(newNumberRating)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(context, "rating Submitted!", Toast.LENGTH_LONG).show();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                e.printStackTrace();
+                                Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
+                            }
+                        });
 
 
-                 ShowPopup();
+
+
+                    }
+                });
+                myDialogRating.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+                myDialogRating.show();
 
             }
         });
@@ -117,45 +191,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
     }
     public void ShowPopup() {
 
-        TextView txtclose ;
-        Button submitRating;
-        mylist.getUserId();
-        myDialogRating.setContentView(R.layout.ratedoctorlayout);
 
-        ratingBarSubmitt = (RatingBar) myDialogRating.findViewById(R.id.ratingBarsubmit);
-
-        txtclose =(TextView) myDialogRating.findViewById(R.id.txtclose);
-        txtclose.setText("X");
-        submitRating= (Button) myDialogRating.findViewById(R.id.submitRating);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myDialogRating.dismiss();
-            }
-        });
-        ratingBarSubmitt.setOnRatingBarChangeListener(
-                new RatingBar.OnRatingBarChangeListener() {
-                    @Override
-                    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                       // text_v.setText(String.valueOf(rating));
-                        Toast.makeText(context, "Rating Submitted!" + rating, Toast.LENGTH_LONG).show();
-
-                    }
-                }
-        );
-        submitRating.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //startActivity(new Intent(getActivity(),About.class));
-                String rating = String.valueOf(ratingBarSubmitt.getRating());
-               Toast.makeText(context, "Rating Submitted!" + rating, Toast.LENGTH_LONG).show();
-
-
-            }
-        });
-
-        myDialogRating.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
-        myDialogRating.show();
     }
 
 
@@ -195,6 +231,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
     class MyHoder extends RecyclerView.ViewHolder{
         TextView name,email,clinic;
         Button calldoctor, showratingpopup;
+        RatingBar showrating;
 
 
         public MyHoder(View itemView) {
@@ -204,6 +241,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
             clinic = (TextView) itemView.findViewById(R.id.docclinic);
             calldoctor = (Button)itemView.findViewById(R.id.calldoctor);
             showratingpopup = (Button)itemView.findViewById(R.id.showratingpopup);
+            showrating = (RatingBar)itemView.findViewById(R.id.ratingBar);
 
 
         }

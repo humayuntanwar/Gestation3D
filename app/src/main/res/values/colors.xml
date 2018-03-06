@@ -11,4 +11,6 @@
     <color name="white">#ffffff</color>
     <color name="bluelight">#49acd5</color>
     <color name="orange">#eaad43</color>
+    <color name="duskYellow">#f9f398</color>
+    <color name="lightGrey">#d3d3d3</color>
 </resources>
