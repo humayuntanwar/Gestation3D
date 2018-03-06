@@ -34,6 +34,7 @@ import com.example.humayunt.templateui.MainPanel.excercises;
 import com.example.humayunt.templateui.MainPanel.guidetry;
 import com.example.humayunt.templateui.SidePanel.QuizActivity;
 import com.example.humayunt.templateui.SidePanel.change_password;
+import com.example.humayunt.templateui.SidePanel.edit_profile;
 import com.example.humayunt.templateui.Signinup.SigninActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -346,6 +347,11 @@ public class UserProfile extends AppCompatActivity
            // FragmentManager manager = getSupportFragmentManager();
             Log.d("tag2","inside");
             manager.beginTransaction().add(R.id.main_replace,new change_password()).addToBackStack("frag").commit();
+
+        }
+        else if (id == R.id.nav_edit_proflie) {
+            manager.beginTransaction().replace(R.id.main_replace,new edit_profile()).addToBackStack("frag").commit();
+
 
         }
         else if (id == R.id.TakeQuiz) {

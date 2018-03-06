@@ -41,7 +41,7 @@
                     android:src="@drawable/main_logo" />
 
                 <EditText
-                    android:id="@+id/signup_input_name"
+                    android:id="@+id/edit_input_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -60,7 +60,7 @@
                     android:layout_height="1dp"
                     android:background="#f9d7db" />
                 <EditText
-                    android:id="@+id/signup_email"
+                    android:id="@+id/edit_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -80,7 +80,7 @@
                     android:layout_height="1dp"
                     android:background="#f9d7db" />
                 <EditText
-                    android:id="@+id/signup_password"
+                    android:id="@+id/edit_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -101,7 +101,7 @@
                     android:background="#f9d7db" />
 
                 <AutoCompleteTextView
-                    android:id="@+id/signup_address"
+                    android:id="@+id/edit_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp">
                     <TextView
-                        android:id="@+id/gender_textview"
+                        android:id="@+id/edit_gender"
                         android:paddingRight="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
                     <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/gender_textview"
+                        android:layout_toRightOf="@+id/edit_gender"
                         android:orientation="horizontal"
                         >
                         <RadioButton

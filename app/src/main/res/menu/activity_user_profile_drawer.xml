@@ -9,10 +9,10 @@
             android:id="@+id/nav_dash"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Dashboard" />
-       <!-- <item
-            android:id="@+id/nav_camera"
+        <item
+            android:id="@+id/nav_edit_proflie"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Edit Profile" />-->
+            android:title="Edit Profile" />
         <item
             android:id="@+id/nav_changePassword"
             android:icon="@drawable/ic_menu_gallery"

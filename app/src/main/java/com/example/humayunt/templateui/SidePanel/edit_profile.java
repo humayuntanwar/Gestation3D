@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.humayunt.templateui.AutoCompletePlace.PlaceAutocompleteAdapter;
 import com.example.humayunt.templateui.AutoCompletePlace.placedetails;
+import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.R;
 import com.example.humayunt.templateui.UserProfile;
@@ -63,8 +64,8 @@ public class edit_profile extends Fragment implements View.OnClickListener {
 
     private static final String TAG = "";
     // private OnFragmentInteractionListener mListener;
-    private EditText signupInputName, signupInputEmail, signupInputPassword;
-    private AutoCompleteTextView signupInputAddress;
+    private EditText EditInputName, EditInputEmail, EditInputPassword;
+    private AutoCompleteTextView EditInputAddress;
     private Button btnSignUp, btnSign;
     private ProgressDialog progressdialog;
     private FirebaseAuth firebaseauth;
@@ -82,6 +83,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
     private String UserId;
     private DatabaseReference databaseUserRef;
     private FirebaseAuth firebaseAuth;
+    String NewUserId;
     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     List<android.location.Address> addresses;
 
@@ -109,20 +111,21 @@ public class edit_profile extends Fragment implements View.OnClickListener {
 
         View v = inflater.inflate(R.layout.fragment_edit_profile, container, false);
 
-        signupInputName = (EditText) v.findViewById(R.id.signup_input_name);
-        signupInputEmail = (EditText) v.findViewById(R.id.signup_email);
-        signupInputPassword = (EditText) v.findViewById(R.id.signup_password);
-        signupInputAddress = (AutoCompleteTextView) v.findViewById(R.id.signup_address);
+        EditInputName = (EditText) v.findViewById(R.id.edit_input_name);
+        EditInputEmail = (EditText) v.findViewById(R.id.edit_email);
+        EditInputPassword = (EditText) v.findViewById(R.id.edit_password);
+        EditInputAddress = (AutoCompleteTextView) v.findViewById(R.id.edit_address);
         btnSignUp = (Button) v.findViewById(R.id.btn_signup);
         firebaseDatabase = FirebaseDatabase.getInstance();
 
 
 
-       firebaseauth = FirebaseAuth.getInstance();
+//       firebaseauth = FirebaseAuth.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
         UserId = user.getUid().toString();
-        databaseUserRef = firebaseDatabase.getReference();
+       NewUserId = "111"+UserId;
+        databaseUserRef = firebaseDatabase.getReference("doctor");
 
         Log.d(TAG,UserId );
        // Toast.makeText(getContext(), UserId, Toast.LENGTH_LONG).show();
@@ -132,6 +135,36 @@ public class edit_profile extends Fragment implements View.OnClickListener {
             public void onDataChange(DataSnapshot dataSnapshot)
 
             {
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+
+                    Log.d("user ids..",ds.getKey());
+
+                    if (ds.getKey().equals("111"+UserId)) {
+
+                        Log.d("user data..", ds.getValue().toString());
+                        Log.d(TAG, ds.toString());
+
+                        DoctorDetail doctorDetail = ds.getValue(DoctorDetail.class);
+
+                        //display all information
+                        Toast.makeText(getContext(), doctorDetail.getName(), Toast.LENGTH_LONG).show();
+                        Log.d(TAG, "ShowData :email " + doctorDetail.getEmail());
+                        Log.d(TAG, "ShowData :name " + doctorDetail.getName());
+                       EditInputEmail.setText(doctorDetail.getEmail());
+                        EditInputName.setText(doctorDetail.getName());
+                        EditInputPassword.setText(doctorDetail.getPassword());
+                        EditInputAddress.setText(doctorDetail.getAddress());
+
+
+                    } /*else {
+                Log.d(TAG, ds.toString());
+                UserDetail UserDetail =ds.getValue(UserDetail.class);
+                Log.d(TAG, "ShowData :email " + UserDetail.getEmail());
+                Log.d(TAG, "ShowData :name " + UserDetail.getName());
+                email.setText(UserDetail.getEmail());
+                name.setText(UserDetail.getName());
+            }*/
+                }
 
             }
 
@@ -163,9 +196,9 @@ public class edit_profile extends Fragment implements View.OnClickListener {
 
     private void updateProfile() {
 
-        final String name = signupInputName.getText().toString().trim();
-        final String email = signupInputEmail.getText().toString().trim();
-        final String password = signupInputPassword.getText().toString().trim();
+        final String name = EditInputName.getText().toString().trim();
+        final String email = EditInputEmail.getText().toString().trim();
+        final String password = EditInputPassword.getText().toString().trim();
         final String address ;
         System.out.println(email + password);
 
@@ -182,6 +215,22 @@ public class edit_profile extends Fragment implements View.OnClickListener {
             Toast.makeText(getContext(), "enter password ", Toast.LENGTH_SHORT).show();
             return;
         }
+        databaseUserRef.child(NewUserId).child("name").setValue(name);
+        databaseUserRef.child(NewUserId).child("email").setValue(email);
+        databaseUserRef.child(NewUserId).child("password").setValue(password)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                     //   myDialogRating.dismiss();
+                        Toast.makeText(getActivity(), "rating Submitted!", Toast.LENGTH_LONG).show();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                e.printStackTrace();
+                Toast.makeText(getActivity(), e.toString(), Toast.LENGTH_LONG).show();
+            }
+        });
 
         //address= addres;
         //if validation is ok
