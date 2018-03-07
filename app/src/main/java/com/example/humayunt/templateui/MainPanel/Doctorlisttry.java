@@ -37,9 +37,11 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -68,6 +70,8 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
         Log.d("pakistan","pakistan");
 
         // b1 = (Button) rootView.findViewById(R.id.calldoctor);
+        Query myTopPostsQuery = myRef
+                .orderByChild("rating");
 
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
 
@@ -82,7 +86,7 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
                     int i =0;
 		    String keys = "";
                     for(DataSnapshot dataSnapshot1 :dataSnapshot.getChildren()) {
-                  
+
 			 keys += dataSnapshot1.getKey()+"\n";
 
                         DoctorDetail value = dataSnapshot1.getValue(DoctorDetail.class);
@@ -95,8 +99,29 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
 
                 }
                 }
+
+                DoctorDetail[] doctorDetails = list.toArray(new DoctorDetail[]{});
+                DoctorDetail temp;
+
+                Log.i("sorting",doctorDetails[0].getRating()+", "+doctorDetails[1].getRating());
+
+                for(int i = 0; i < doctorDetails.length; i++){
+                    for(int j = 0; j < doctorDetails.length - i - 1; j++){
+
+                        if(doctorDetails[j].getRating() < doctorDetails[j+1].getRating()){
+                            temp = doctorDetails[j];
+                            doctorDetails[j] = doctorDetails[j+1];
+                            doctorDetails[j+1] = temp;
+                        }
+
+                    }
+                }
+
+
+                Log.i("sorted",doctorDetails[0].getRating()+", "+doctorDetails[1].getRating());
+
                 //Log.d("kk",list.get(0))
-                DoctorListAdapter recyclerAdapter = new DoctorListAdapter(list,getActivity().getApplicationContext());
+                DoctorListAdapter recyclerAdapter = new DoctorListAdapter(Arrays.asList(doctorDetails),getActivity().getApplicationContext());
                 // this.recycle.setLinearLayoutManager(getActivity().getApplicationContext());
                 recycle.setLayoutManager(new LinearLayoutManager(getActivity().getApplicationContext()));
                 // recycle.setLayoutManager(recyce);

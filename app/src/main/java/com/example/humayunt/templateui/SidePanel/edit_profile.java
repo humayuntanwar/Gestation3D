@@ -84,13 +84,6 @@ public class edit_profile extends Fragment implements View.OnClickListener {
     private DatabaseReference databaseUserRef;
     private FirebaseAuth firebaseAuth;
     String NewUserId;
-    final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-    List<android.location.Address> addresses;
-
-
-    private static final LatLngBounds LAT_LNG_BOUNDS = new LatLngBounds(new LatLng(-40, -16), new LatLng(71, 136));
-
-
     public edit_profile() {
         // Required empty public constructor
     }
@@ -125,7 +118,6 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         UserId = user.getUid().toString();
        NewUserId = "111"+UserId;
-        databaseUserRef = firebaseDatabase.getReference("doctor");
 
         Log.d(TAG,UserId );
        // Toast.makeText(getContext(), UserId, Toast.LENGTH_LONG).show();
@@ -140,6 +132,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
                     Log.d("user ids..",ds.getKey());
 
                     if (ds.getKey().equals("111"+UserId)) {
+                        databaseUserRef = firebaseDatabase.getReference("doctor");
 
                         Log.d("user data..", ds.getValue().toString());
                         Log.d(TAG, ds.toString());
@@ -222,7 +215,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
                     @Override
                     public void onSuccess(Void aVoid) {
                      //   myDialogRating.dismiss();
-                        Toast.makeText(getActivity(), "rating Submitted!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Profile Edited!", Toast.LENGTH_LONG).show();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
             @Override
@@ -235,8 +228,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         //address= addres;
         //if validation is ok
         //show progressdialog
-        progressdialog.setMessage("Registering user...");
-        progressdialog.show();
+
 
 
 

@@ -79,6 +79,18 @@
                 android:transformPivotX="0dp"
                 android:transformPivotY="0dp" />
 
+            <TextView
+                android:id="@+id/docrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/docclinic"
+                android:layout_toLeftOf="@+id/linearLayout"
+                android:text="1"
+                android:layout_toRightOf="@+id/ratingBar"
+                android:layout_marginLeft="26dp"
+                />
+
+
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="wrap_content"
@@ -119,17 +131,6 @@
                     android:gravity="center" />
 
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/docrates"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/docclinic"
-                android:layout_toLeftOf="@+id/linearLayout"
-                android:text="1"
-                android:layout_toRightOf="@+id/ratingBar"
-                android:layout_marginLeft="26dp"
-/>
 
         </RelativeLayout>
 
