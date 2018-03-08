@@ -16,7 +16,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:paddingTop="0dp"
-        app:srcCompat="@drawable/main_logo" />
+        app:srcCompat="@drawable/logod" />
 
     <TextView
         android:id="@+id/User_name"

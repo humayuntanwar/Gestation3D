@@ -23,10 +23,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class DoctorSignIn extends AppCompatActivity implements View.OnClickListener {
-    private Button doc_btnSignIn , doc_btnSignUp, button2;
+    private Button doc_btnSignIn ,  button2;
     private EditText doc_sign_email;
     private  EditText doc_signpassword;
-    private TextView doc_forget_pass,doc_contact,doc_terms;
+    private TextView doc_forget_pass,doc_contact,doc_terms, doc_btnSignUp;
     private ProgressDialog doc_progressdialog;
     private FirebaseAuth doc_firebaseauth;
     private  String docUserId;
@@ -54,10 +54,10 @@ public class DoctorSignIn extends AppCompatActivity implements View.OnClickListe
         doc_terms = (TextView) findViewById(R.id.doc_TermsConditions);
         doc_signpassword = (EditText)findViewById(R.id.doc_Singin_password);
         doc_btnSignIn = (Button) findViewById(R.id.doc_sign_in);
-        doc_btnSignUp = (Button) findViewById(R.id.doc_sign_up);
-        button2 = (Button) findViewById(R.id.button2);
+        doc_btnSignUp = (TextView) findViewById(R.id.doc_sign_up);
+        //button2 = (Button) findViewById(R.id.button2);
         doc_btnSignIn.getBackground().setAlpha(200);
-        doc_btnSignUp.getBackground().setAlpha(200);
+//        doc_btnSignUp.getBackground().setAlpha(200);
 
         doc_progressdialog = new ProgressDialog(this);
         doc_btnSignIn.setOnClickListener(this);
@@ -65,9 +65,9 @@ public class DoctorSignIn extends AppCompatActivity implements View.OnClickListe
         doc_forget_pass.setOnClickListener(this);
         doc_contact.setOnClickListener(this);
         doc_terms.setOnClickListener(this);
-        button2.setOnClickListener(this);
+       // button2.setOnClickListener(this);
         doc_btnSignIn.getBackground().setAlpha(160);
-        doc_btnSignUp.getBackground().setAlpha(160);
+       // doc_btnSignUp.getBackground().setAlpha(160);
     }
 
     private void DoctorLogin(){
@@ -119,10 +119,10 @@ public class DoctorSignIn extends AppCompatActivity implements View.OnClickListe
             finish();
             startActivity(new Intent( this, forget_Password.class));
         }
-        if(v == button2){
+       /* if(v == button2){
             finish();
             startActivity(new Intent( this, UserProfile.class));
-        }
+        }*/
         if(v == doc_contact){
 
             startActivity(new Intent( this, Contactus.class));

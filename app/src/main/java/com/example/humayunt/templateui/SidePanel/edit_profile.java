@@ -68,6 +68,8 @@ public class edit_profile extends Fragment implements View.OnClickListener {
     private AutoCompleteTextView EditInputAddress;
     private Button saveProfile;
     private ProgressDialog progressdialog;
+    private Double longitude,latitude;
+
 
     private String addres, buttonAddress;
     private Geocoder geocoder;
@@ -135,6 +137,8 @@ public class edit_profile extends Fragment implements View.OnClickListener {
                 if (PatientID != null || PatientID.equals(UserId))
                     NewUserId = PatientID;
                 databaseUserRef = firebaseDatabase.getReference("users");
+                EditInputClinic.setVisibility(View.INVISIBLE);
+                EditInputNumber.setVisibility(View.INVISIBLE);
             }
             catch (NullPointerException f ){
                 f.printStackTrace();
@@ -171,6 +175,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
                             EditInputName.setText(doctorDetail.getName().toString());
                             EditInputClinic.setText(doctorDetail.getClinic().toString());
                             EditInputNumber.setText(String.valueOf(doctorDetail.getNumber()));
+                            EditInputAddress.setText(doctorDetail.getAddress().toString());
 
 
                         }
@@ -191,8 +196,8 @@ public class edit_profile extends Fragment implements View.OnClickListener {
                             Toast.makeText(getActivity(), UserDetail.getName().toString(), Toast.LENGTH_LONG).show();
                             Log.i(TAG, "ShowData :email " + UserDetail.getEmail());
                             Log.i(TAG, "ShowData :name " + UserDetail.getName());
-                           // EditInputEmail.setText(UserDetail.getEmail());
-                            EditInputName.setText(UserDetail.getName());
+                            EditInputAddress.setText(UserDetail.getAddress().toString());
+                            EditInputName.setText(UserDetail.getName().toString());
                         }
 
                     }
@@ -236,7 +241,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
       //  final String email = EditInputEmail.getText().toString().trim();
        final String clinic = EditInputClinic.getText().toString().trim();
         final String number = EditInputNumber.getText().toString().trim();
-        final String address ;
+        final String address = EditInputAddress.getText().toString().trim() ;
        // System.out.println(email + password);
 
         //mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this,mGeoDataClient, LAT_LNG_BOUNDS, null);
@@ -255,7 +260,13 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         databaseUserRef.child(NewUserId).child("name").setValue(name);
        // databaseUserRef.child(NewUserId).child("email").setValue(email);
         databaseUserRef.child(NewUserId).child("clinic").setValue(clinic);
+        databaseUserRef.child(NewUserId).child("latitude").setValue(latitude);
+        databaseUserRef.child(NewUserId).child("longitude").setValue(longitude);
+        databaseUserRef.child(NewUserId).child("address").setValue(address);
+
         databaseUserRef.child(NewUserId).child("number").setValue(number)
+
+
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
@@ -300,6 +311,9 @@ public class edit_profile extends Fragment implements View.OnClickListener {
             final Place place  = places.get(0);
             try {
                 placedetails = new placedetails();
+                LatLng ll = place.getLatLng();
+                latitude = ll.latitude;
+                longitude = ll.longitude;
 
                 placedetails.setLatlng(place.getLatLng());
                 addres = place.getLatLng().toString();

@@ -40,6 +40,15 @@ public class UserDetail {
 
     }
 
+    public UserDetail(String name, String email, String password, String address, Double latitude, Double logitude) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.address = address;
+        this.latitude = latitude;
+        this.logitude = logitude;
+    }
+
     public UserDetail(String name, String email, String password, String address, String doctor) {
         this.name = name;
         this.email = email;

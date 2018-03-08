@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.NavUtils;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.view.MenuItem;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +20,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -79,12 +81,17 @@ public class UserProfile extends AppCompatActivity
       //  Log.i("doccc" , UserId);
 //        Log.i("Pat", Patient);
         Log.i("Patt" , UserId);
+        doctorcard= (CardView) findViewById(R.id.ViewDoctors);
+        locatehospitalcard = (CardView) findViewById(R.id.locatehospital);
+
 
         //maslaaa
     try{
         if( Doctor != null || Doctor.equals(UserId)){
         //  Log.i("doctor",Doctor);
             passDocEdit = Doctor;
+            doctorcard.setVisibility(View.INVISIBLE);
+            locatehospitalcard.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT));
         databaseRef = firebaseDatabase.getReference("doctor");
         }
     }
@@ -122,8 +129,7 @@ public class UserProfile extends AppCompatActivity
         arguidecard =(CardView) findViewById(R.id.arguide);
         dietcard = (CardView) findViewById(R.id.diets);
         excercisecard = (CardView) findViewById(R.id.excercise);
-        locatehospitalcard = (CardView) findViewById(R.id.locatehospital);
-        doctorcard= (CardView) findViewById(R.id.ViewDoctors);
+
 
         guidecard.setOnClickListener(this);
         modelcard.setOnClickListener(this);

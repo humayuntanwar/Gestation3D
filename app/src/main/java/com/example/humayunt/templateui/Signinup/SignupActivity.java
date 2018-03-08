@@ -273,34 +273,14 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    /*public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case yes_radio:
-                if (checked)
-                    Toast.makeText(SignupActivity.this," standard delivery",Toast.LENGTH_LONG).show();
-                signupInputNumber.setVisibility(View.VISIBLE);
-                number.setVisibility(View.VISIBLE);
-
-                break;
-            case R.id.no_radio:
-                if (checked)
-                   Toast.makeText(SignupActivity.this," midnight delivery",Toast.LENGTH_LONG).show();
-                signupInputNumber.setVisibility(View.INVISIBLE);
-                number.setVisibility(View.INVISIBLE);
-                break;
-        }
-    }*/
 
     private void registerPatient() {
 
         final String name = signupInputName.getText().toString().trim();
         final String email = signupInputEmail.getText().toString().trim();
         final String password = signupInputPassword.getText().toString().trim();
-        final String address ;
+        final String address  = signupInputAddress.getText().toString().trim();
         System.out.println(email + password);
 
         //mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this,mGeoDataClient, LAT_LNG_BOUNDS, null);
@@ -344,7 +324,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                             FirebaseUser user = firebaseauth.getCurrentUser();
                             UserId = user.getUid();
                             databaseUser = FirebaseDatabase.getInstance().getReference("users");
-                            UserDetail User = new UserDetail(name, email, password,latitude,longitude);
+                            UserDetail User = new UserDetail(name, email, password,address,latitude, longitude);
                             databaseUser.child(UserId).setValue(User).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
@@ -375,89 +355,6 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                 });
     }
 
-   /* private void registerDoctor() {
-
-        final String name = signupInputName.getText().toString().trim();
-        final String email = signupInputEmail.getText().toString().trim();
-        final String password = signupInputPassword.getText().toString().trim();
-        final int number = Integer.parseInt( signupInputNumber.getText().toString()) ;
-        System.out.println(email + password);
-
-        //mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this,mGeoDataClient, LAT_LNG_BOUNDS, null);
-        // signupInputAddress.setAdapter(mPlaceAutocompleAdapter);
-
-        if (TextUtils.isEmpty(email)) {
-            //email is empty
-            Toast.makeText(this, "enter email ", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(password)) {
-            //password is empty
-            Toast.makeText(this, "enter password ", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if(password.length() <8){
-            Toast.makeText(this, "password should be 8 characters ", Toast.LENGTH_SHORT).show();
-            return;
-
-        }
-
-        //address= addres;
-        //if validation is ok
-        //show progressdialog
-        progressdialog.setMessage("Registering doctor...");
-        progressdialog.show();
-
-
-
-        firebaseauth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            //user is registered successfully
-                            //Profile activity here
-                            firebaseauth.getCurrentUser();
-
-                            //String tempEmail = email.replaceAll("\\.","*");
-                            // String tempEmail =databaseUser.getKey();
-                            FirebaseUser user = firebaseauth.getCurrentUser();
-                            UserId = user.getUid();
-                            String uid = UserId.toString();
-
-                            databaseDoctor = FirebaseDatabase.getInstance().getReference("doctor");
-                            DoctorDetail doctor = new DoctorDetail(name, email, password,latitude,longitude , number);
-                            databaseDoctor.child(UserId).setValue(doctor).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    e.printStackTrace();
-                                    Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
-                                }
-                            });
-                            progressdialog.hide();
-                            Toast.makeText(SignupActivity.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
-                            intent.putExtra("UserID", uid);
-                            startActivity(intent);
-                            // finish();
-
-                        } else {
-                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            progressdialog.hide();
-                            Toast.makeText(SignupActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                            // updateUI(null);
-                            //Toast.makeText(SignupActivity.this, "could not register! try again!", Toast.LENGTH_SHORT).show();
-
-                        }
-                    }
-                });
-    }
-*/
 
     public void onClick(View view) {
         if (btnSignUp.isPressed()) {
