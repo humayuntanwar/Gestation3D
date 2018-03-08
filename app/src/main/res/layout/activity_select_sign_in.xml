@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+
+
+    android:background="@drawable/crop">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+
+            <!-- Here you can put your logo or brand name -->
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select Sign In Option"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:typeface="sans" />
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-30dp"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:src="@drawable/main_logo" />
+
+
+            <Button
+
+                android:id="@+id/sign_inDoctor"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/buttonstyle2"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Sign In as Doctor"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/sign_inPatient"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/buttonstyle2"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Sign In as Patient/User"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/sign_TermsConditions"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="Terms And Conditions "
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/sign_contact"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@id/sign_TermsConditions"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="Contact Us "
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

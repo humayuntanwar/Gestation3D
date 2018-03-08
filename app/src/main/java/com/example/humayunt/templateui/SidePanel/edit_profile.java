@@ -64,13 +64,11 @@ public class edit_profile extends Fragment implements View.OnClickListener {
 
     private static final String TAG = "";
     // private OnFragmentInteractionListener mListener;
-    private EditText EditInputName, EditInputEmail, EditInputPassword;
+    private EditText EditInputName, EditInputEmail, EditInputNumber, EditInputClinic;
     private AutoCompleteTextView EditInputAddress;
-    private Button btnSignUp, btnSign;
+    private Button saveProfile;
     private ProgressDialog progressdialog;
-    private FirebaseAuth firebaseauth;
-    DatabaseReference databaseUser;
-    // private String UserId;
+
     private String addres, buttonAddress;
     private Geocoder geocoder;
     private PlaceAutocompleteAdapter mPlaceAutocompleAdapter;
@@ -84,6 +82,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
     private DatabaseReference databaseUserRef;
     private FirebaseAuth firebaseAuth;
     String NewUserId;
+    String DocID, PatientID;
     public edit_profile() {
         // Required empty public constructor
     }
@@ -103,12 +102,16 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment\
 
         View v = inflater.inflate(R.layout.fragment_edit_profile, container, false);
+         PatientID = getArguments().getString("passPatientEdit");
+        DocID = getArguments().getString("passDocEdit");
+
 
         EditInputName = (EditText) v.findViewById(R.id.edit_input_name);
-        EditInputEmail = (EditText) v.findViewById(R.id.edit_email);
-        EditInputPassword = (EditText) v.findViewById(R.id.edit_password);
+       // EditInputEmail = (EditText) v.findViewById(R.id.edit_email);
+        EditInputClinic = (EditText) v.findViewById(R.id.edit_input_clinic);
+        EditInputNumber = (EditText) v.findViewById(R.id.edit_input_number);
         EditInputAddress = (AutoCompleteTextView) v.findViewById(R.id.edit_address);
-        btnSignUp = (Button) v.findViewById(R.id.btn_signup);
+        saveProfile = (Button) v.findViewById(R.id.save_Profile);
         firebaseDatabase = FirebaseDatabase.getInstance();
 
 
@@ -117,61 +120,101 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
         UserId = user.getUid().toString();
-       NewUserId = "111"+UserId;
+        try{
+            if( DocID != null || DocID.equals(UserId)){
+                  Log.i("doctor",DocID);
+                NewUserId = DocID;
 
+                databaseUserRef = firebaseDatabase.getReference("doctor");
+            }
+        }
+        catch (NullPointerException e ){
+            e.printStackTrace();
+
+            try {
+                if (PatientID != null || PatientID.equals(UserId))
+                    NewUserId = PatientID;
+                databaseUserRef = firebaseDatabase.getReference("users");
+            }
+            catch (NullPointerException f ){
+                f.printStackTrace();
+            }
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
         Log.d(TAG,UserId );
        // Toast.makeText(getContext(), UserId, Toast.LENGTH_LONG).show();
         try{
         databaseUserRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot)
+            public void onDataChange(DataSnapshot dataSnapshot){
+//                Toast.makeText(getActivity(), "Method ccalled..", Toast.LENGTH_LONG).show();
 
-            {
                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
 
-                    Log.d("user ids..",ds.getKey());
+                    Log.i("user ids..",ds.getKey());
+                    try {
+                        if (ds.getKey().equals("111"+DocID)) {
 
-                    if (ds.getKey().equals("111"+UserId)) {
-                        databaseUserRef = firebaseDatabase.getReference("doctor");
+                            Log.i("user data..", ds.getValue().toString());
+                            Log.d(TAG, ds.toString());
 
-                        Log.d("user data..", ds.getValue().toString());
-                        Log.d(TAG, ds.toString());
+                            DoctorDetail doctorDetail = ds.getValue(DoctorDetail.class);
 
-                        DoctorDetail doctorDetail = ds.getValue(DoctorDetail.class);
-
-                        //display all information
-                        Toast.makeText(getContext(), doctorDetail.getName(), Toast.LENGTH_LONG).show();
-                        Log.d(TAG, "ShowData :email " + doctorDetail.getEmail());
-                        Log.d(TAG, "ShowData :name " + doctorDetail.getName());
-                       EditInputEmail.setText(doctorDetail.getEmail());
-                        EditInputName.setText(doctorDetail.getName());
-                        EditInputPassword.setText(doctorDetail.getPassword());
-                        EditInputAddress.setText(doctorDetail.getAddress());
+                            //display all information
+                            Toast.makeText(getActivity(), doctorDetail.getName().toString(), Toast.LENGTH_LONG).show();
+                            Log.d(TAG, "ShowData :email " + doctorDetail.getEmail());
+                            Log.d(TAG, "ShowData :name " + doctorDetail.getName());
+                           // EditInputEmail.setText(doctorDetail.getEmail().toString());
+                            EditInputName.setText(doctorDetail.getName().toString());
+                            EditInputClinic.setText(doctorDetail.getClinic().toString());
+                            EditInputNumber.setText(String.valueOf(doctorDetail.getNumber()));
 
 
-                    } /*else {
-                Log.d(TAG, ds.toString());
-                UserDetail UserDetail =ds.getValue(UserDetail.class);
-                Log.d(TAG, "ShowData :email " + UserDetail.getEmail());
-                Log.d(TAG, "ShowData :name " + UserDetail.getName());
-                email.setText(UserDetail.getEmail());
-                name.setText(UserDetail.getName());
-            }*/
+                        }
+
+                    }
+                    catch (NullPointerException g){
+                        g.printStackTrace();
+
+                    }
+                    try {
+
+
+                        if(ds.getKey().equals(PatientID)) {
+                            Log.i("user", ds.toString());
+                            // Toast.makeText(this, User.getName().toString(), Toast.LENGTH_LONG).show();
+
+                            UserDetail UserDetail = ds.getValue(UserDetail.class);
+                            Toast.makeText(getActivity(), UserDetail.getName().toString(), Toast.LENGTH_LONG).show();
+                            Log.i(TAG, "ShowData :email " + UserDetail.getEmail());
+                            Log.i(TAG, "ShowData :name " + UserDetail.getName());
+                           // EditInputEmail.setText(UserDetail.getEmail());
+                            EditInputName.setText(UserDetail.getName());
+                        }
+
+                    }
+                    catch (NullPointerException h){
+                        h.printStackTrace();
+                    }
+
+
                 }
 
-            }
 
+            }
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
         }); }
-        catch (Exception e ){
-           Toast.makeText(getContext(),e.toString(), Toast.LENGTH_LONG ).show();
-           // Toast.makeText(getContext(), UserId, Toast.LENGTH_SHORT).show();
+        catch (NullPointerException e){
+            e.printStackTrace();
         }
 
-        btnSignUp.setOnClickListener(this);
+        saveProfile.setOnClickListener(this);
         return v;
 
 
@@ -180,7 +223,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (btnSignUp.isPressed()) {
+        if (saveProfile.isPressed()) {
           updateProfile();
         }
 
@@ -190,27 +233,29 @@ public class edit_profile extends Fragment implements View.OnClickListener {
     private void updateProfile() {
 
         final String name = EditInputName.getText().toString().trim();
-        final String email = EditInputEmail.getText().toString().trim();
-        final String password = EditInputPassword.getText().toString().trim();
+      //  final String email = EditInputEmail.getText().toString().trim();
+       final String clinic = EditInputClinic.getText().toString().trim();
+        final String number = EditInputNumber.getText().toString().trim();
         final String address ;
-        System.out.println(email + password);
+       // System.out.println(email + password);
 
         //mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this,mGeoDataClient, LAT_LNG_BOUNDS, null);
         // signupInputAddress.setAdapter(mPlaceAutocompleAdapter);
 
-        if (TextUtils.isEmpty(email)) {
+      /*  if (TextUtils.isEmpty(email)) {
             //email is empty
             Toast.makeText(getContext(), "enter email ", Toast.LENGTH_SHORT).show();
             return;
-        }
-        if (TextUtils.isEmpty(password)) {
+        }*/
+        if (TextUtils.isEmpty(name)) {
             //password is empty
             Toast.makeText(getContext(), "enter password ", Toast.LENGTH_SHORT).show();
             return;
         }
         databaseUserRef.child(NewUserId).child("name").setValue(name);
-        databaseUserRef.child(NewUserId).child("email").setValue(email);
-        databaseUserRef.child(NewUserId).child("password").setValue(password)
+       // databaseUserRef.child(NewUserId).child("email").setValue(email);
+        databaseUserRef.child(NewUserId).child("clinic").setValue(clinic);
+        databaseUserRef.child(NewUserId).child("number").setValue(number)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {

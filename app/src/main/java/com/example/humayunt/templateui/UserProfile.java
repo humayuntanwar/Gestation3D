@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.NavUtils;
 import android.support.v7.widget.CardView;
 import android.view.MenuItem;
 import android.util.Log;
@@ -22,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
+import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.HelpGuide.About;
 import com.example.humayunt.templateui.HelpGuide.Faq;
 import com.example.humayunt.templateui.HelpGuide.Features;
@@ -48,14 +50,15 @@ import com.google.firebase.database.ValueEventListener;import android.app.Dialog
 public class UserProfile extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private FirebaseAuth firebaseAuth;
-    public TextView email, name;
+    public TextView Useremail, Username;
 
     private FirebaseDatabase firebaseDatabase;
      private String UserId;
-    private DatabaseReference databaseUserRef,databaseDoctorRef;
+    private DatabaseReference databaseRef;
     private String TAG;
     private CardView guidecard, modelcard,vrviewcard,arguidecard,dietcard,excercisecard,locatehospitalcard,doctorcard;
     Dialog myDialog;
+    String Doctor, Patient, passDocEdit, passPatientEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,23 +67,54 @@ public class UserProfile extends AppCompatActivity
         setContentView(R.layout.activity_user_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        String UserIDOld = getIntent().getStringExtra("UserID");
-        myDialog = new Dialog(this);
-
+         Doctor = getIntent().getStringExtra("Doctor");
+        Patient = getIntent().getStringExtra("Patient");
+//     Log.i("patient",Patient);
+        //maslaaa
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
         UserId = user.getUid();
+      //  Log.i("doccc" , UserId);
+//        Log.i("Pat", Patient);
+        Log.i("Patt" , UserId);
+
+        //maslaaa
+    try{
+        if( Doctor != null || Doctor.equals(UserId)){
+        //  Log.i("doctor",Doctor);
+            passDocEdit = Doctor;
+        databaseRef = firebaseDatabase.getReference("doctor");
+        }
+    }
+        catch (NullPointerException e ){
+            e.printStackTrace();
+
+            try {
+                if (Patient != null || Patient.equals(UserId))
+                    passPatientEdit = Patient;
+                    databaseRef = firebaseDatabase.getReference("users");
+            }
+            catch (NullPointerException f ){
+                f.printStackTrace();
+            }
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        myDialog = new Dialog(this);
+
+
         //Log.d(TAG,UserId );
 
         if(firebaseAuth.getCurrentUser()==null) {
             finish();
-            startActivity(new Intent(this, SigninActivity.class));
+            startActivity(new Intent(this, SelectSignIn.class));
 
         }
        //  databaseUserRef = firebaseDatabase.getReference("user");
-        databaseDoctorRef = firebaseDatabase.getReference("doctor");
         //mNavigationView=(NavigationView)findViewById(R.id.nav_view);
         guidecard = (CardView) findViewById(R.id.dguide);
         modelcard = (CardView) findViewById(R.id.dmodels);
@@ -102,8 +136,8 @@ public class UserProfile extends AppCompatActivity
         View header = ((NavigationView)findViewById(R.id.nav_view)).getHeaderView(0);
         //mNavigationView.setNavigationItemSelectedListener(this);
         //View myview=mNavigationView.getHeaderView(0);
-         email = ((TextView) header.findViewById(R.id.textView_email));
-         name = ((TextView) header.findViewById(R.id.User_name));
+         Useremail = ((TextView) header.findViewById(R.id.textView_email));
+         Username = ((TextView) header.findViewById(R.id.User_name));
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -115,7 +149,7 @@ public class UserProfile extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        databaseDoctorRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -129,22 +163,6 @@ public class UserProfile extends AppCompatActivity
 
             }
         });
-       /* databaseUserRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-                Toast.makeText(getApplicationContext(), "called...",Toast.LENGTH_LONG).show();
-
-                showData(dataSnapshot);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-*/
-
     }
     public void ShowPopup() {
         TextView txtclose ;
@@ -208,30 +226,50 @@ public class UserProfile extends AppCompatActivity
         for (DataSnapshot ds : dataSnapshot.getChildren()) {
 
             Log.d("user ids..",ds.getKey());
+            try {
+                if (ds.getKey().equals("111"+Doctor)) {
 
-            if (ds.getKey().equals("111"+UserId)) {
+                    Log.d("user data..", ds.getValue().toString());
+                    Log.d(TAG, ds.toString());
 
-                Log.d("user data..", ds.getValue().toString());
-                Log.d(TAG, ds.toString());
+                    DoctorDetail doctorDetail = ds.getValue(DoctorDetail.class);
 
-                DoctorDetail doctorDetail = ds.getValue(DoctorDetail.class);
-
-                //display all information
-                Toast.makeText(this, doctorDetail.getName(), Toast.LENGTH_LONG).show();
-                Log.d(TAG, "ShowData :email " + doctorDetail.getEmail());
-                Log.d(TAG, "ShowData :name " + doctorDetail.getName());
-                email.setText(doctorDetail.getEmail());
-                name.setText(doctorDetail.getName());
+                    //display all information
+                    Toast.makeText(this, doctorDetail.getName().toString(), Toast.LENGTH_LONG).show();
+                    Log.d(TAG, "ShowData :email " + doctorDetail.getEmail());
+                    Log.d(TAG, "ShowData :name " + doctorDetail.getName());
+                    Useremail.setText(doctorDetail.getEmail().toString());
+                    Username.setText(doctorDetail.getName().toString());
 
 
-            } /*else {
-                Log.d(TAG, ds.toString());
-                UserDetail UserDetail =ds.getValue(UserDetail.class);
-                Log.d(TAG, "ShowData :email " + UserDetail.getEmail());
-                Log.d(TAG, "ShowData :name " + UserDetail.getName());
-                email.setText(UserDetail.getEmail());
-                name.setText(UserDetail.getName());
-            }*/
+                }
+
+            }
+            catch (NullPointerException g){
+                g.printStackTrace();
+
+            }
+            try {
+
+
+                if(ds.getKey().equals(Patient)) {
+                    Log.i("user", ds.toString());
+                    // Toast.makeText(this, User.getName().toString(), Toast.LENGTH_LONG).show();
+
+                    UserDetail UserDetail = ds.getValue(UserDetail.class);
+                    Toast.makeText(this, UserDetail.getName().toString(), Toast.LENGTH_LONG).show();
+                    Log.i(TAG, "ShowData :email " + UserDetail.getEmail());
+                    Log.i(TAG, "ShowData :name " + UserDetail.getName());
+                    Useremail.setText(UserDetail.getEmail());
+                    Username.setText(UserDetail.getName());
+                }
+
+            }
+            catch (NullPointerException h){
+                h.printStackTrace();
+            }
+
+
         }
 
     }
@@ -315,7 +353,7 @@ public class UserProfile extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             firebaseAuth.signOut();
-            startActivity(new Intent(UserProfile.this, SigninActivity.class));
+            startActivity(new Intent(UserProfile.this, SelectSignIn.class));
             finish();
 
            // return true;
@@ -345,13 +383,38 @@ public class UserProfile extends AppCompatActivity
         }*/
         if (id == R.id.nav_changePassword) {
            // FragmentManager manager = getSupportFragmentManager();
-            Log.d("tag2","inside");
+            Log.i("tag2","inside");
             manager.beginTransaction().add(R.id.main_replace,new change_password()).addToBackStack("frag").commit();
 
         }
         else if (id == R.id.nav_edit_proflie) {
-            manager.beginTransaction().replace(R.id.main_replace,new edit_profile()).addToBackStack("frag").commit();
+            try {
+                if (passPatientEdit != null);
+                Bundle bundle = new Bundle();
+                bundle.putString("passPatientEdit",passPatientEdit);
+                edit_profile fragInfo = new edit_profile();
+                fragInfo.setArguments(bundle);
+                manager.beginTransaction().replace(R.id.main_replace,fragInfo).addToBackStack("frag").commit();
 
+            }
+                catch (NullPointerException l) {
+             l.printStackTrace();
+            }
+            try {
+                if(passDocEdit != null){
+                    Bundle bundle = new Bundle();
+                    bundle.putString("passDocEdit",passDocEdit);
+                    edit_profile fragInfo = new edit_profile();
+                    fragInfo.setArguments(bundle);
+                    manager.beginTransaction().replace(R.id.main_replace,fragInfo).addToBackStack("frag").commit();
+
+
+                }
+
+            }
+            catch (NullPointerException m){
+                m.printStackTrace();
+            }
 
         }
         else if (id == R.id.TakeQuiz) {
