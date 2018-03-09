@@ -69,6 +69,19 @@
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="20sp" />
+            <TextView
+                android:id="@+id/goto_sign_in"
+                style="@style/TextAppearance.AppCompat.Body2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:text="Already a Member? Sign In!"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
 
 
         </LinearLayout>

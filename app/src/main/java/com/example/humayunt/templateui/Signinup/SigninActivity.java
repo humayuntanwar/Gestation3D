@@ -47,7 +47,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Gestation 3D");
+        setTitle("Sign In as User");
         setContentView(R.layout.signin);
         firebaseauth= FirebaseAuth.getInstance();
 

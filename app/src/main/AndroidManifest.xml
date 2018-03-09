@@ -86,12 +86,14 @@
         <activity android:name=".SidePanel.QuizActivity" />
         <activity android:name=".SidePanel.Result" />
         <activity android:name=".Signinup.SelectSignUp" />
-        <activity android:name=".Signinup.SignUpDoctor" />
+        <activity android:name=".Signinup.SignUpDoctor"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity
             android:name=".MainPanel.DoctorList"
             android:label="Avaliable Doctors"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DoctorSignIn" />
+        <activity android:name=".DoctorSignIn"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity android:name=".SelectSignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -20,6 +20,9 @@
     <style name="TextColor">
         <item name="android:textColor">@color/colorAccent</item>
     </style>
+    <style name="textcolopurple">
+        <item name="android:textColor">@color/deeppurple</item>
+    </style>
     <style name="RatingBar" parent="Theme.AppCompat">
         <item name="colorControlNormal">@color/duskYellow</item>
         <item name="colorControlActivated">@color/lightGrey</item>

@@ -38,6 +38,7 @@ public class DoctorSignIn extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_sign_in);
+        setTitle("Sign In as Doctor");
         doc_firebaseauth = FirebaseAuth.getInstance();
 
         //maslaaa
