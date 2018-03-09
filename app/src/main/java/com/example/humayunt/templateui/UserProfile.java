@@ -6,9 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.NavUtils;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.view.MenuItem;
 import android.util.Log;
 import android.view.View;
@@ -39,6 +37,7 @@ import com.example.humayunt.templateui.MainPanel.guidetry;
 import com.example.humayunt.templateui.SidePanel.QuizActivity;
 import com.example.humayunt.templateui.SidePanel.change_password;
 import com.example.humayunt.templateui.SidePanel.edit_profile;
+import com.example.humayunt.templateui.Signinup.SelectSignIn;
 import com.example.humayunt.templateui.Signinup.SigninActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -91,7 +90,7 @@ public class UserProfile extends AppCompatActivity
         //  Log.i("doctor",Doctor);
             passDocEdit = Doctor;
             doctorcard.setVisibility(View.INVISIBLE);
-            locatehospitalcard.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT));
+            locatehospitalcard.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.MATCH_PARENT));
         databaseRef = firebaseDatabase.getReference("doctor");
         }
     }

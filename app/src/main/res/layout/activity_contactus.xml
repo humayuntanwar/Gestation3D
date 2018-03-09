@@ -11,11 +11,75 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:text="Email us at :    Developer@Gestation3d.com"
+        android:text="GESTATION 3D : A 3D PREGNANCY GUIDE \nDEVELOPED AT COMSATS ISLAMABAD"
         android:textColor="@color/colorPrimary"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="SUPERVISOR : MR. TEHSEEN RIAZ ABBASI"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:text="HUMAYUN TANWAR \nEMAIL : humayuntanwar@gmail.com"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:text="ALI ZERGHAM \nEMAIL : alizergham@gmail.com"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:text="ALI ARSALAN \nEMAIL : aliarsalanse@gmail.com"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="0dp" />
 
     <View
         android:layout_width="match_parent"

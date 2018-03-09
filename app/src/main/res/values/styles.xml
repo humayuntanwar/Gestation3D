@@ -24,7 +24,7 @@
         <item name="android:textColor">@color/deeppurple</item>
     </style>
     <style name="RatingBar" parent="Theme.AppCompat">
-        <item name="colorControlNormal">@color/duskYellow</item>
+        <item name="colorControlNormal">@color/gold</item>
         <item name="colorControlActivated">@color/lightGrey</item>
     </style>
 

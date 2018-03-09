@@ -35,7 +35,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-smallcaps"
                             android:text="TextView"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="@color/mintgreen"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -54,7 +54,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Type of Food To Eat:"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="@color/mintgreen"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:text="Avoid Food: "
-                            android:textColor="@color/colorAccent"
+                            android:textColor="@color/mintgreen"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -101,7 +101,7 @@
                         android:textSize="18sp"
                         android:typeface="normal"
                         android:textStyle="bold"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="@color/mintgreen"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="View 3D Model of this Month"
@@ -125,7 +125,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-smallcaps"
                         android:text="View Suggested Exercises >>"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="@color/mintgreen"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:typeface="normal" />

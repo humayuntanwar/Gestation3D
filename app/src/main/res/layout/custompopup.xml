@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="350dp"
-    android:layout_height="450dp"
+    android:layout_width="330dp"
+    android:layout_height="430dp"
     android:layout_gravity="center"
+    android:alpha="0.8"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     android:padding="5dp"
-    android:alpha="0.8"
 
     >
 
@@ -25,15 +25,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="115dp"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:src="@drawable/main_logo" />
+            android:src="@drawable/logod" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,45 +49,55 @@
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/About"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/buttonstyle"
-        android:text="About"
-        android:textColor="@color/white" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/features"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/buttonstyle"
-        android:text="Features"
-        android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-   <Button
-        android:id="@+id/watchVideo"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/buttonstyle"
-        android:text="Watch Video"
-        android:textColor="@color/white" />
+            <Button
+                android:id="@+id/About"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonstyle"
+                android:text="About"
+                android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/faq"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/buttonstyle"
-        android:text="FAQS"
-        android:textColor="@color/white" />
+            <Button
+                android:id="@+id/features"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Features"
+                android:textColor="@color/white" />
 
+            <Button
+                android:id="@+id/watchVideo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Watch Video"
+                android:textColor="@color/white" />
 
+            <Button
+                android:id="@+id/faq"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstyle"
+                android:text="FAQS"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

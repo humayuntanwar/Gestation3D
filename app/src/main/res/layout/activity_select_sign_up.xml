@@ -20,16 +20,17 @@
 
 
             <!-- Here you can put your logo or brand name -->
-
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Gestation 3D"
-                android:textColor="@color/white"
+                android:text="A Complete 3D pregnancy guide"
+                android:textColor="#fff"
                 android:textSize="24sp"
                 android:typeface="sans" />
+
+
 
             <ImageView
                 android:layout_width="240dp"
@@ -40,6 +41,18 @@
                 android:padding="16dp"
                 android:src="@drawable/logod" />
 
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select Sign Up Type!"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:typeface="sans"
+                android:layout_marginTop="50dp"
+                />
+
 
             <Button
 
@@ -47,7 +60,7 @@
                 style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/background_login"
                 android:clickable="true"
                 android:padding="16dp"
@@ -95,7 +108,7 @@
         android:layout_alignParentRight="true">
 
         <TextView
-            android:id="@+id/TermsConditions"
+            android:id="@+id/signup_select_TermsConditions"
             style="@style/TextAppearance.AppCompat.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,7 +120,7 @@
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/contact"
+            android:id="@+id/signup_select_contact"
             style="@style/TextAppearance.AppCompat.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

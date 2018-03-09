@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.humayunt.templateui.HelpGuide.Contactus;
+import com.example.humayunt.templateui.HelpGuide.TermsCondition;
 import com.example.humayunt.templateui.R;
-import com.example.humayunt.templateui.SelectSignIn;
 
 public class SelectSignUp extends AppCompatActivity {
     Button SignUpDoc,SignUpPatient;
-    TextView tv2;
+    TextView tv2, signupcon,signupterms;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,8 @@ public class SelectSignUp extends AppCompatActivity {
         SignUpDoc = (Button)findViewById(R.id.sign_upDoctor);
         SignUpPatient = (Button)findViewById(R.id.sign_upPatient);
         tv2 = (TextView)findViewById(R.id.goto_sign_in);
+        signupcon = (TextView)findViewById(R.id.signup_select_contact);
+        signupterms = (TextView)findViewById(R.id.signup_select_TermsConditions);
         SignUpDoc.getBackground().setAlpha(160);
         SignUpPatient.getBackground().setAlpha(160);
         SignUpDoc.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +46,19 @@ public class SelectSignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SelectSignUp.this, SelectSignIn.class));
+
+            }
+        });
+        signupterms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SelectSignUp.this, TermsCondition.class));
+
+            }
+        }); signupcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SelectSignUp.this, Contactus.class));
 
             }
         });

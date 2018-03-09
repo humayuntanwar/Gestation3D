@@ -92,9 +92,9 @@
             android:name=".MainPanel.DoctorList"
             android:label="Avaliable Doctors"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DoctorSignIn"
+        <activity android:name=".Signinup.DoctorSignIn"
             android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".SelectSignIn">
+        <activity android:name=".Signinup.SelectSignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.example.humayunt.templateui;
+package com.example.humayunt.templateui.Signinup;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -14,8 +14,10 @@ import android.widget.Toast;
 
 import com.example.humayunt.templateui.HelpGuide.Contactus;
 import com.example.humayunt.templateui.HelpGuide.TermsCondition;
+import com.example.humayunt.templateui.R;
 import com.example.humayunt.templateui.Signinup.SelectSignUp;
 import com.example.humayunt.templateui.Signinup.forget_Password;
+import com.example.humayunt.templateui.UserProfile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

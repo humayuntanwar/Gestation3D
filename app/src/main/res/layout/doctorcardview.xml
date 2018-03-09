@@ -19,7 +19,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:background="@drawable/cerclepink"
+                android:background="@drawable/cerclenavyblue"
                 android:padding="4dp"
 
                 android:src="@drawable/doctor" />
@@ -69,6 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/docclinic"
                 android:layout_toRightOf="@+id/imageView"
+                android:theme="@style/RatingBar"
                 android:isIndicator="true"
                 android:max="5"
                 android:numStars="5"

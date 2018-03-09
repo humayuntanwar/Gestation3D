@@ -121,7 +121,7 @@
                             <ImageView
                                 android:layout_width="44dp"
                                 android:layout_height="44dp"
-                                android:background="@drawable/cerclepink"
+                                android:background="@drawable/cercleyellow"
                                 android:padding="5dp"
                                 android:src="@drawable/ic_3d_rotation_black_24dp" />
 
@@ -139,7 +139,7 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
-                                style="@style/TextColor"
+                                android:textColor="@color/yello"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
@@ -233,7 +233,7 @@
                             <ImageView
                                 android:layout_width="44dp"
                                 android:layout_height="44dp"
-                                android:background="@drawable/cerclepink"
+                                android:background="@drawable/cercleorange"
                                 android:padding="5dp"
                                 android:src="@drawable/arhand" />
 
@@ -251,7 +251,7 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
-                                style="@style/TextColor"
+                                android:textColor="@color/orange"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
@@ -294,7 +294,7 @@
                             <ImageView
                                 android:layout_width="44dp"
                                 android:layout_height="44dp"
-                                android:background="@drawable/cerclepink"
+                                android:background="@drawable/cerclemint"
                                 android:padding="5dp"
                                 android:src="@drawable/foood" />
 
@@ -312,12 +312,12 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
-                                style="@style/TextColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:padding="3dp"
-                                android:text="ideal diets for mother" />
+                                android:text="ideal diets for mother"
+                                android:textColor="@color/mintgreen" />
 
                         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -343,7 +343,7 @@
                             <ImageView
                                 android:layout_width="44dp"
                                 android:layout_height="44dp"
-                                android:background="@drawable/cerclepink"
+                                android:background="@drawable/cerclepurple"
                                 android:padding="5dp"
                                 android:src="@drawable/exercise"
                                 />
@@ -362,7 +362,7 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
-                                style="@style/TextColor"
+                                style="@style/textcolopurple"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
@@ -404,7 +404,7 @@
                             <ImageView
                                 android:layout_width="44dp"
                                 android:layout_height="44dp"
-                                android:background="@drawable/cerclepink"
+                                android:background="@drawable/cerclered"
                                 android:padding="5dp"
                                 android:src="@drawable/hospital" />
 
@@ -422,7 +422,7 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
-                                style="@style/TextColor"
+                                android:textColor="@color/firered"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
@@ -453,7 +453,7 @@
                             <ImageView
                                 android:layout_width="44dp"
                                 android:layout_height="44dp"
-                                android:background="@drawable/cerclepink"
+                                android:background="@drawable/cerclenavyblue"
                                 android:padding="5dp"
                                 android:src="@drawable/doctor" />
 
@@ -471,7 +471,7 @@
                                 android:background="@color/lightgray" />
 
                             <TextView
-                                style="@style/TextColor"
+                                android:textColor="@color/navyblue"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
