@@ -16,6 +16,8 @@
     <color name="mintgreen">#008846</color>
     <color name="mint2">#4cff4c</color>
     <color name="firered">#ce2029</color>
-    <color name="navyblue">#001f3f</color>
+    <color name="navyblue">#000080</color>
     <color name="gold">#FFD700</color>
+    <color name="skin">#eac6bb</color>
+    <color name="babypink">#eb87bf</color>
 </resources>

@@ -328,6 +328,10 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                             databaseUser.child(UserId).setValue(User).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
+                                    progressdialog.dismiss();
+                                    Toast.makeText(SignupActivity.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
+                                    startActivity(intent);
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
@@ -336,10 +340,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                                     Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
                                 }
                             });
-                            progressdialog.dismiss();
-                            Toast.makeText(SignupActivity.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
-                            startActivity(intent);
+
                             // finish();
 
                         } else {

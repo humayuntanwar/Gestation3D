@@ -7,6 +7,7 @@ package com.example.humayunt.templateui.Adapter;
 import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -47,6 +48,7 @@ import static android.app.PendingIntent.getActivity;
 public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.MyHoder>  implements View.OnClickListener {
 
     List<DoctorDetail> list;
+    ProgressDialog pddd;
     HashMap<String, Object> hashMap = new HashMap<String, Object>();
 
     Context context;
@@ -78,6 +80,12 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
         myDialogRating = new Dialog(context);
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("doctor");
+//        pddd.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+      //  pddd = new ProgressDialog(context);
+        //pddd.setMessage("Loading..");
+
+
+
 
 
 
@@ -88,7 +96,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
     public void onBindViewHolder(final MyHoder holder, int position) {
           mylist = list.get(position);
 
-
+      //  pddd.show();
         holder.name.setText("Dr. " + mylist.getName());
         holder.email.setText("Email: " + mylist.getEmail());
         holder.clinic.setText(""+ mylist.getClinic());
@@ -106,6 +114,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
 
 
          final String number = String.valueOf(mylist.getNumber());
+//        pddd.dismiss();
 
 
 

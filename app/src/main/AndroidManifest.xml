@@ -68,7 +68,8 @@
         <activity
             android:name=".MainPanel.LocateDoctorMap"
             android:label="@string/title_activity_locate_doctor_map" />
-        <activity android:name=".SingleItem.singleItemDiet" />
+        <activity android:name=".SingleItem.singleItemDiet"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".SingleItem.singleItemExercise"
             android:hardwareAccelerated="false" />

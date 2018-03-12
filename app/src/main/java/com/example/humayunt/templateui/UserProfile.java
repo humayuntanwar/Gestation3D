@@ -70,6 +70,7 @@ public class UserProfile extends AppCompatActivity
         setSupportActionBar(toolbar);
          Doctor = getIntent().getStringExtra("Doctor");
         Patient = getIntent().getStringExtra("Patient");
+        LinearLayout layout = (LinearLayout)findViewById(R.id.locdoc);
 //     Log.i("patient",Patient);
         //maslaaa
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -90,8 +91,11 @@ public class UserProfile extends AppCompatActivity
         //  Log.i("doctor",Doctor);
             passDocEdit = Doctor;
             doctorcard.setVisibility(View.INVISIBLE);
-            locatehospitalcard.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.MATCH_PARENT));
-        databaseRef = firebaseDatabase.getReference("doctor");
+            layout.setPadding(60,0,0,0);
+
+            locatehospitalcard.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,430));
+
+            databaseRef = firebaseDatabase.getReference("doctor");
         }
     }
         catch (NullPointerException e ){

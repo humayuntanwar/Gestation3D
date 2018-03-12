@@ -13,7 +13,8 @@
             android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp">
+            android:padding="8dp"
+            android:background="@drawable/bordernavyblue">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -26,13 +27,14 @@
 
             <TextView
                 android:id="@+id/docname"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toLeftOf="@+id/linearLayout"
+
+                android:layout_toRightOf="@+id/imageView"
                 android:background="@color/colorPrimary"
                 android:paddingLeft="5dp"
-
                 android:paddingRight="5dp"
                 android:text="Month 1 "
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
@@ -69,7 +71,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/docclinic"
                 android:layout_toRightOf="@+id/imageView"
-                android:theme="@style/RatingBar"
                 android:isIndicator="true"
                 android:max="5"
                 android:numStars="5"

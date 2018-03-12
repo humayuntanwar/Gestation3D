@@ -57,7 +57,7 @@ import java.util.ArrayList;
     }
 
     public DataObjectHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        this.holder = new DataObjectHolder(this.mLayoutInflater.inflate(R.layout.layout_grid_item, null));
+        this.holder = new DataObjectHolder(this.mLayoutInflater.inflate(R.layout.layout_grid_diet, null));
         return this.holder;
     }
 

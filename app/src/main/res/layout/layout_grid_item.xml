@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@id/imageView"
-                android:background="@color/deeppurple"
+                android:background="@color/colorPrimary"
                 android:paddingLeft="5dp"
 
                 android:paddingRight="5dp"

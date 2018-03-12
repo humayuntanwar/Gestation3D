@@ -19,7 +19,7 @@ public class DoctorDetail {
 
 
     private Double latitude,Longitude;
-    private int number;
+    private String number;
     public float getRating() {
         return rating;
     }
@@ -73,7 +73,7 @@ public class DoctorDetail {
         Longitude = longitude;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
@@ -88,7 +88,7 @@ public class DoctorDetail {
     public DoctorDetail() {
     }
 
-    public DoctorDetail(String name, String email, String password, String address, String clinic, String userId, Double latitude, Double longitude, int number) {
+    public DoctorDetail(String name, String email, String password, String address, String clinic, String userId, Double latitude, Double longitude, String number) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -100,7 +100,7 @@ public class DoctorDetail {
         this.number = number;
     }
 
-    public DoctorDetail(String name, String email, String password, String clinic, Double latitude, Double longitude, int number) {
+    public DoctorDetail(String name, String email, String password, String clinic, Double latitude, Double longitude, String number) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -110,7 +110,7 @@ public class DoctorDetail {
         this.number = number;
     }
 
-    public DoctorDetail(String name, String email, String password, String clinicc, Double latitude, Double longitude, int number, String address) {
+    public DoctorDetail(String name, String email, String password, String clinicc, Double latitude, Double longitude, String number, String address) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -146,7 +146,7 @@ public class DoctorDetail {
         return Longitude;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 }

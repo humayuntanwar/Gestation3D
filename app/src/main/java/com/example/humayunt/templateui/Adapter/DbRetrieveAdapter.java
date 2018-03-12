@@ -1,6 +1,7 @@
 package com.example.humayunt.templateui.Adapter;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView.Adapter;
 import android.support.v7.widget.RecyclerView.ViewHolder;
@@ -27,6 +28,7 @@ import java.util.ArrayList;
     private LayoutInflater mLayoutInflater = null;
     private String name;
     private String str_flag = "";
+     ProgressDialog dpd;
 
     public static class DataObjectHolder extends ViewHolder {
         public ImageView img;

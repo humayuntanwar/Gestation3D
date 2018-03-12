@@ -62,7 +62,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif"
                             android:text="TextView"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:gravity="left"/>
 
                         <ImageView
                             android:id="@+id/imageView2"
@@ -88,7 +89,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif"
                             android:text="TextView"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:gravity="left"/>
                     </LinearLayout>
                 </ScrollView>
             </android.support.v7.widget.CardView>

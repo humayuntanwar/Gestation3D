@@ -1,6 +1,14 @@
 package com.example.humayunt.templateui.MainPanel;
 
+import android.Manifest;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,10 +20,12 @@ import com.example.humayunt.templateui.CustomWindow;
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.R;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -43,19 +53,19 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
     Marker marker;
     List<DoctorDetail> list;
     private SupportMapFragment fragment;
-
-
+    ProgressDialog pd;
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view =inflater.inflate(R.layout.activity_locate_doctor_map,container,false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_locate_doctor_map, container, false);
 
         SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         databaseUserRef = firebaseDatabase.getInstance().getReference("doctor");
         databaseUserRef.push().setValue(marker);
+        pd = new ProgressDialog(getActivity());
 
 
 
@@ -69,18 +79,16 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
     @Override
     public void onStart() {
         super.onStart();
-       // setContentView(R.layout.activity_locate_doctor_map);
+        // setContentView(R.layout.activity_locate_doctor_map);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
 
       /*  ShowDoc = (Button) getView().findViewById(R.id.locate_doctor);
         ShowDoc.setOnClickListener(this);*/
 
 
-
-
-      //  firebaseAuth = FirebaseAuth.getInstance();
-      //  FirebaseUser user = firebaseAuth.getCurrentUser();
-       // UserId = user.getUid().toString();
+        //  firebaseAuth = FirebaseAuth.getInstance();
+        //  FirebaseUser user = firebaseAuth.getCurrentUser();
+        // UserId = user.getUid().toString();
 
 
     }
@@ -100,8 +108,36 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
         mMap = googleMap;
 
         googleMap.setOnMapLongClickListener(this);
+        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mMap.setMyLocationEnabled(true);
+        LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        Location location = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, false));
+        if (location != null)
+        {
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
+                    new LatLng(location.getLatitude(), location.getLongitude()), 13));
 
+            CameraPosition cameraPosition = new CameraPosition.Builder()
+                    .target(new LatLng(location.getLatitude(), location.getLongitude()))      // Sets the center of the map to location user
+                    .zoom(17)                   // Sets the zoom
+                    .bearing(90)                // Sets the orientation of the camera to east
+                    .tilt(40)                   // Sets the tilt of the camera to 30 degrees
+                    .build();                   // Creates a CameraPosition from the builder
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+        }
         try{
+            pd.setMessage("Loading..");
+            pd.show();
             databaseUserRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot)
@@ -120,6 +156,8 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
                                 .position(newLocation)
                                       //  .snippet(docDetail.getName())
                                 );
+                        pd.dismiss();
+
                         // showing information about that place.
 
 

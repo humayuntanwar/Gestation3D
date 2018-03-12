@@ -56,7 +56,7 @@ public class ExerciseRetriever extends Adapter<ExerciseRetriever.DataObjectHolde
     }
 
     public DataObjectHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        this.holder = new DataObjectHolder(this.mLayoutInflater.inflate(R.layout.layout_grid_item, null));
+        this.holder = new DataObjectHolder(this.mLayoutInflater.inflate(R.layout.layout_grid_exercise, null));
         return this.holder;
     }
 

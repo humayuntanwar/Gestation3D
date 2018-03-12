@@ -126,8 +126,8 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         //number =  findViewById(R.id.number);
 
 
-      //  btndSign.getBackground().setAlpha(160);
-       // btnSignUp.getBackground().setAlpha(160);
+       btnSign.getBackground().setAlpha(160);
+        btnSignUp.getBackground().setAlpha(160);
 
         btnSignUp.setOnClickListener(this);
         btnSign.setOnClickListener(this);
@@ -254,7 +254,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         final String clinicc = clinic.getText().toString().trim();
         final String email = signupInputEmail.getText().toString().trim();
         final String password = signupInputPassword.getText().toString().trim();
-        final int number = Integer.parseInt( signupInputNumber.getText().toString()) ;
+        final String number = signupInputNumber.getText().toString() ;
         final String address = signupInputAddress.getText().toString().trim();
 
         System.out.println(email + password);
@@ -276,6 +276,10 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "password should be 8 characters ", Toast.LENGTH_SHORT).show();
             return;
 
+        } if (TextUtils.isEmpty(signupInputNumber.getText().toString())) {
+            //email is empty
+            Toast.makeText(this, "enter number  ", Toast.LENGTH_SHORT).show();
+            return;
         }
 
         //address= addres;
@@ -299,13 +303,18 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
                             // String tempEmail =databaseUser.getKey();
                             FirebaseUser user = firebaseauth.getCurrentUser();
                             UserId = "111" + user.getUid();
-                            String uid = UserId.toString();
+                             final String uid = UserId.toString();
 
                             databaseDoctor = FirebaseDatabase.getInstance().getReference("doctor");
                             DoctorDetail doctor = new DoctorDetail(name, email, password,address, clinicc,UserId, latitude,longitude , number);
                             databaseDoctor.child(UserId).setValue(doctor).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
+                                    progressdialog.hide();
+                                    Toast.makeText(SignUpDoctor.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(getApplicationContext(), DoctorSignIn.class);
+                                    intent.putExtra("UserID", uid);
+                                    startActivity(intent);
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
@@ -314,17 +323,14 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
                                 }
                             });
-                            progressdialog.hide();
-                            Toast.makeText(SignUpDoctor.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
-                            intent.putExtra("UserID", uid);
-                            startActivity(intent);
+
+
                             // finish();
 
                         } else {
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             progressdialog.hide();
-                            Toast.makeText(SignUpDoctor.this, "Authentication failed.",
+                            Toast.makeText(SignUpDoctor.this,task.getException().toString(),
                                     Toast.LENGTH_SHORT).show();
                             // updateUI(null);
                             //Toast.makeText(SignupActivity.this, "could not register! try again!", Toast.LENGTH_SHORT).show();

@@ -45,13 +45,14 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"
                 android:text="Select Sign Up Type!"
                 android:textColor="@color/white"
                 android:textSize="24sp"
-                android:typeface="sans"
-                android:layout_marginTop="50dp"
-                />
+                android:textStyle="bold"
+                android:typeface="sans" />
 
 
             <Button
@@ -125,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
-            android:layout_toRightOf="@id/TermsConditions"
+            android:layout_toRightOf="@id/signup_select_TermsConditions"
             android:clickable="true"
             android:padding="5dp"
             android:text="Contact Us "
