@@ -22,6 +22,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.Gestation.Gestation_3D.UnityPlayerActivity;
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.HelpGuide.About;
@@ -294,8 +295,9 @@ public class UserProfile extends AppCompatActivity
         }
         if(view == modelcard){
             // firebaseAuth.signOut();
-          //startActivity(new Intent(UserProfile.this, UnityPlayerActivity.class));
-            startActivity(new Intent(UserProfile.this,LocateDoctorMap.class));
+          startActivity(new Intent(UserProfile.this, UnityPlayerActivity.class));
+//            startActivity(new Intent(UserProfile.this,LocateDoctorMap.class));
+
 
 
         }

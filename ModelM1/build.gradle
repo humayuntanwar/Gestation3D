@@ -46,7 +46,6 @@ android {
 		keyAlias 'ali'
 		keyPassword 'zergham'
 	} }
-
 	buildTypes {
   		debug {
  			minifyEnabled false
