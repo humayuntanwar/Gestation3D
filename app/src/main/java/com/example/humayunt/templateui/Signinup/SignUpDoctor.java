@@ -127,8 +127,8 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         btnSign = (Button) findViewById(R.id.btndoc_signin);
         //number =  findViewById(R.id.number);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-       btnSign.getBackground().setAlpha(160);
-        btnSignUp.getBackground().setAlpha(160);
+       btnSign.getBackground().setAlpha(159);
+        btnSignUp.getBackground().setAlpha(159);
 
         btnSignUp.setOnClickListener(this);
         btnSign.setOnClickListener(this);
