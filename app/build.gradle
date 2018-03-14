@@ -30,8 +30,8 @@ dependencies {
     //compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
     compile files('libs/YouTubeAndroidPlayerApi.jar')
     /*
-            compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
-        */
+                    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
+                */
     //compile 'com.google.android:flexbox:0.2.5'
     // compile 'com.firebaseui:firebase-ui-database:0.4.0'
     compile 'com.android.support:appcompat-v7:25.3.1'
@@ -50,7 +50,7 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.google.android.gms:play-services-places:11.2.0'
     testCompile 'junit:junit:4.12'
-    compile project(':Gestation3DKSA')
+    compile project(':Gestation-3DHA')
 }
 apply plugin: 'com.google.gms.google-services'
 

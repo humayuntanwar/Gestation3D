@@ -139,7 +139,11 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
                 .addApi(Places.PLACE_DETECTION_API)
                 .enableAutoManage(this, this)
                 .build();
-
+/*
+        <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+  <application >
+    <activity android:name=".UnityPlayerActivity"/>
+      </application>*/
 
         signupInputAddress.setOnItemClickListener(mAutocompleteListenerView);
         mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this, mGeoDataClient, LAT_LNG_BOUNDS, null);

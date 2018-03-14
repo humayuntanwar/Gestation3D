@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Gestation3DKSA/Gestation3DKSA.iml" filepath="$PROJECT_DIR$/Gestation3DKSA/Gestation3DKSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gestation-3DHA/Gestation-3DHA.iml" filepath="$PROJECT_DIR$/Gestation-3DHA/Gestation-3DHA.iml" />
       <module fileurl="file://$PROJECT_DIR$/TemplateUI.iml" filepath="$PROJECT_DIR$/TemplateUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

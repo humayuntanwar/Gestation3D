@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Gestation3DKSA" />
+            <option value="$PROJECT_DIR$/Gestation-3DHA" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

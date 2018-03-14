@@ -45,7 +45,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Signinup.forget_Password" />
         <activity android:name=".MainPanel.twodguideview" />
-        <activity android:name=".MainPanel.threedmodel" />
+        <activity android:name=".MainPanel.threedmodel"
+            />
         <activity android:name=".MainPanel.arguide" />
         <activity android:name=".MainPanel.diets" />
         <activity android:name=".MainPanel.excercises" />
