@@ -54,7 +54,7 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
     RecyclerView recycle;
     private RatingBar ratingBar;
 
-    ProgressDialog pd;
+
     HashMap<String, Object> hashMap = new HashMap<String, Object>();
 
 
@@ -71,13 +71,6 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("doctor");
         Log.d("pakistan","pakistan");
-          pd = new ProgressDialog(getActivity());
-        pd.setMessage("Loading..");
-
-
-        // b1 = (Button) rootView.findViewById(R.id.calldoctor);
-        Query myTopPostsQuery = myRef
-                .orderByChild("rating");
 
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
 
@@ -109,7 +102,6 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
                 DoctorDetail[] doctorDetails = list.toArray(new DoctorDetail[]{});
                 DoctorDetail temp;
 
-             //   Log.i("sorting",doctorDetails[0].getRating()+", "+doctorDetails[1].getRating());
 
                 for(int i = 0; i < doctorDetails.length; i++){
                     for(int j = 0; j < doctorDetails.length - i - 1; j++){
@@ -123,18 +115,10 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
                     }
                 }
 
-
-               // Log.i("sorted",doctorDetails[0].getRating()+", "+doctorDetails[1].getRating());
-
-                //Log.d("kk",list.get(0))
                 DoctorListAdapter recyclerAdapter = new DoctorListAdapter(Arrays.asList(doctorDetails),getActivity().getApplicationContext());
-                // this.recycle.setLinearLayoutManager(getActivity().getApplicationContext());
                 recycle.setLayoutManager(new LinearLayoutManager(getActivity().getApplicationContext()));
-                // recycle.setLayoutManager(recyce);
-                // recycle.setItemAnimator( new DefaultItemAnimator());
-                // recycle.setHasFixedSize(true);
+
                 recycle.setAdapter(recyclerAdapter);
-                pd.dismiss();
 
             }
 

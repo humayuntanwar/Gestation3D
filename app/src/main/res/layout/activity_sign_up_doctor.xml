@@ -100,18 +100,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
-
                 android:drawableLeft="@drawable/ic_person_white_24dp"
                 android:drawablePadding="12dp"
                 android:drawableRight="@drawable/ic_person_white_24dp"
                 android:ems="10"
                 android:hint="address"
-
                 android:inputType="text"
+
                 android:maxLines="1"
                 android:padding="8dp"
                 android:textColor="#ffffff"
                 android:textColorHint="#fff" />
+
 
             <View
                 android:layout_width="match_parent"
@@ -182,7 +182,8 @@
                 android:padding="8dp"
                 android:textColor="#ffffff"
                 android:textColorHint="#fff"
-                android:visibility="visible" />
+                android:visibility="visible"
+                />
 
             <View
                 android:id="@+id/number"

@@ -18,6 +18,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
@@ -282,6 +283,8 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         final String password = signupInputPassword.getText().toString().trim();
         final String address  = signupInputAddress.getText().toString().trim();
         System.out.println(email + password);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+
 
         //mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this,mGeoDataClient, LAT_LNG_BOUNDS, null);
         // signupInputAddress.setAdapter(mPlaceAutocompleAdapter);

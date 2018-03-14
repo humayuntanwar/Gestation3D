@@ -18,6 +18,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
@@ -124,8 +126,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         btnSignUp = (Button) findViewById(R.id.btndoc_signup);
         btnSign = (Button) findViewById(R.id.btndoc_signin);
         //number =  findViewById(R.id.number);
-
-
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
        btnSign.getBackground().setAlpha(160);
         btnSignUp.getBackground().setAlpha(160);
 

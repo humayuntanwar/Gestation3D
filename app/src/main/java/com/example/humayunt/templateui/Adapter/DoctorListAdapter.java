@@ -48,7 +48,6 @@ import static android.app.PendingIntent.getActivity;
 public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.MyHoder>  implements View.OnClickListener {
 
     List<DoctorDetail> list;
-    ProgressDialog pddd;
     HashMap<String, Object> hashMap = new HashMap<String, Object>();
 
     Context context;
@@ -80,15 +79,6 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
         myDialogRating = new Dialog(context);
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("doctor");
-//        pddd.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
-      //  pddd = new ProgressDialog(context);
-        //pddd.setMessage("Loading..");
-
-
-
-
-
-
         return myHoder;
     }
 
@@ -96,7 +86,6 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
     public void onBindViewHolder(final MyHoder holder, int position) {
           mylist = list.get(position);
 
-      //  pddd.show();
         holder.name.setText("Dr. " + mylist.getName());
         holder.email.setText("Email: " + mylist.getEmail());
         holder.clinic.setText(""+ mylist.getClinic());
@@ -106,16 +95,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
         holder.showrating.setRating(totalrating);
         holder.docrates.setText("("+ mylist.getNumberOfRating() +")");
         final String  userId = String.valueOf(mylist.getUserId());
-
-
-
-       // userId =holder.clinic.getText().toString();
-
-
-
-         final String number = String.valueOf(mylist.getNumber());
-//        pddd.dismiss();
-
+        final String number = String.valueOf(mylist.getNumber());
 
 
         holder.calldoctor.setOnClickListener(new View.OnClickListener() {
@@ -140,9 +120,7 @@ public class DoctorListAdapter extends  RecyclerView.Adapter<DoctorListAdapter.M
                 }
             }
         });
-       // Toast.makeText(context,mylist.getName(),Toast.LENGTH_LONG).show();
 
-        //holder.showratingpopup.setText(userId);
         holder.showratingpopup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
