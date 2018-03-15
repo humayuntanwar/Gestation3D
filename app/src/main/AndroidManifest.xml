@@ -46,7 +46,7 @@
         <activity android:name=".Signinup.forget_Password" />
         <activity android:name=".MainPanel.twodguideview" />
         <activity android:name=".MainPanel.threedmodel"
-            />
+            android:screenOrientation="landscape"/>
         <activity android:name=".MainPanel.arguide" />
         <activity android:name=".MainPanel.diets" />
         <activity android:name=".MainPanel.excercises" />

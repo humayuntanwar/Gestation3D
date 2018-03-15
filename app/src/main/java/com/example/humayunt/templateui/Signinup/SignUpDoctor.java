@@ -267,9 +267,23 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         //mPlaceAutocompleAdapter = new PlaceAutocompleteAdapter(this,mGeoDataClient, LAT_LNG_BOUNDS, null);
         // signupInputAddress.setAdapter(mPlaceAutocompleAdapter);
 
+        if (TextUtils.isEmpty(name)) {
+            //email is empty
+            Toast.makeText(this, "enter name ", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(clinicc)) {
+            //email is empty
+            Toast.makeText(this, "enter clinic/hospital name ", Toast.LENGTH_SHORT).show();
+            return;
+        }
         if (TextUtils.isEmpty(email)) {
             //email is empty
             Toast.makeText(this, "enter email ", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(address)){
+            Toast.makeText(this, "enter address ", Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(password)) {
@@ -281,7 +295,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "password should be 8 characters ", Toast.LENGTH_SHORT).show();
             return;
 
-        } if (TextUtils.isEmpty(signupInputNumber.getText().toString())) {
+        } if (TextUtils.isEmpty(number)) {
             //email is empty
             Toast.makeText(this, "enter number  ", Toast.LENGTH_SHORT).show();
             return;

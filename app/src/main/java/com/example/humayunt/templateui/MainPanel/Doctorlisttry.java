@@ -4,8 +4,6 @@ package com.example.humayunt.templateui.MainPanel;
  * Created by HumayunT on 2/28/2018.
  */
 import android.Manifest;
-import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;

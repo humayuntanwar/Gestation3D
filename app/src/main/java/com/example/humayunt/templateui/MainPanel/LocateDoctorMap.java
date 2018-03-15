@@ -4,16 +4,21 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.humayunt.templateui.CustomWindow;
@@ -25,6 +30,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -40,7 +46,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMapLongClickListener {
+public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMapLongClickListener ,GoogleMap.OnInfoWindowClickListener {
 
     private GoogleMap mMap;
     Button ShowDoc;
@@ -65,7 +71,6 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
         mapFragment.getMapAsync(this);
         databaseUserRef = firebaseDatabase.getInstance().getReference("doctor");
         databaseUserRef.push().setValue(marker);
-        pd = new ProgressDialog(getActivity());
 
 
 
@@ -79,17 +84,6 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
     @Override
     public void onStart() {
         super.onStart();
-        // setContentView(R.layout.activity_locate_doctor_map);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-
-      /*  ShowDoc = (Button) getView().findViewById(R.id.locate_doctor);
-        ShowDoc.setOnClickListener(this);*/
-
-
-        //  firebaseAuth = FirebaseAuth.getInstance();
-        //  FirebaseUser user = firebaseAuth.getCurrentUser();
-        // UserId = user.getUid().toString();
-
 
     }
 
@@ -119,7 +113,40 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
             return;
         }
         mMap.setMyLocationEnabled(true);
-        LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
+
+            @Override
+            public View getInfoWindow(Marker arg0) {
+                return null;
+            }
+
+            @Override
+            public View getInfoContents(Marker marker) {
+
+               LinearLayout info = new LinearLayout(getContext());
+                info.setOrientation(LinearLayout.VERTICAL);
+
+                TextView title = new TextView(getContext());
+                title.setTextColor(Color.BLACK);
+                title.setGravity(Gravity.CENTER);
+                title.setTypeface(null, Typeface.BOLD);
+                title.setText(marker.getTitle());
+
+                TextView snippet = new TextView(getContext());
+                snippet.setTextColor(Color.GRAY);
+                snippet.setText(marker.getSnippet());
+
+                info.addView(title);
+                info.addView(snippet);
+
+                return info;
+            }
+
+
+        });
+
+
+        /*LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
         Criteria criteria = new Criteria();
         Location location = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, false));
         if (location != null)
@@ -134,10 +161,8 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
                     .tilt(40)                   // Sets the tilt of the camera to 30 degrees
                     .build();                   // Creates a CameraPosition from the builder
             mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-        }
+        }*/
         try{
-            pd.setMessage("Loading..");
-            pd.show();
             databaseUserRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot)
@@ -146,17 +171,21 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
 
                         DoctorDetail docDetail = ds.getValue(DoctorDetail.class);
-                        LatLng newLocation = new LatLng(
-                                docDetail.getLatitude(),
-                              docDetail.getLongitude()
-                        );
-                       // Toast.makeText(getActivity(),docDetail.getLatitude().toString(),Toast.LENGTH_LONG).show();
-                        mMap.addMarker(new MarkerOptions()
-                                .title(docDetail.getName())
-                                .position(newLocation)
-                                      //  .snippet(docDetail.getName())
-                                );
-                        pd.dismiss();
+                        try {
+                            LatLng newLocation = new LatLng(
+                                    docDetail.getLatitude(),
+                                    docDetail.getLongitude()
+                            );
+                            mMap.addMarker(new MarkerOptions()
+                                            .title( "DR. "+docDetail.getName() )
+                                            .position(newLocation).snippet("Address: " + docDetail.getAddress() +
+                                            "\nClinic: " + docDetail.getClinic() +"\nRating: " + (docDetail.getRating()/docDetail.getNumberOfRating()) )
+                                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
+                            );
+                        }
+                        catch(NullPointerException e ){
+                            Toast.makeText(getActivity(),e.getMessage(),Toast.LENGTH_SHORT).show();
+                        }
 
                         // showing information about that place.
 
@@ -174,7 +203,7 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
                 }
             }); }
         catch (Exception e ){
-            Toast.makeText(getActivity(),e.toString(), Toast.LENGTH_LONG ).show();
+//            Toast.makeText(getActivity(),e.toString(), Toast.LENGTH_LONG ).show();
             // Toast.makeText(getContext(), UserId, Toast.LENGTH_SHORT).show();
         }
     }
@@ -187,5 +216,11 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
     @Override
     public void onMapLongClick(LatLng latLng) {
 
+    }
+
+    @Override
+    public void onInfoWindowClick(Marker marker) {
+        Toast.makeText(getContext(), "Info window clicked",
+                Toast.LENGTH_SHORT).show();
     }
 }
