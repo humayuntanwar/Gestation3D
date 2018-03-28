@@ -85,6 +85,7 @@ public class edit_profile extends Fragment implements View.OnClickListener {
     private FirebaseAuth firebaseAuth;
     String NewUserId;
     String DocID, PatientID;
+    View v1, v2;
     public edit_profile() {
         // Required empty public constructor
     }
@@ -111,6 +112,8 @@ public class edit_profile extends Fragment implements View.OnClickListener {
         EditInputName = (EditText) v.findViewById(R.id.edit_input_name);
        // EditInputEmail = (EditText) v.findViewById(R.id.edit_email);
         EditInputClinic = (EditText) v.findViewById(R.id.edit_input_clinic);
+        v1 = v.findViewById(R.id.hideedit1);
+        v2 = v.findViewById(R.id.hideedit2);
         EditInputNumber = (EditText) v.findViewById(R.id.edit_input_number);
         EditInputAddress = (AutoCompleteTextView) v.findViewById(R.id.edit_address);
         saveProfile = (Button) v.findViewById(R.id.save_Profile);
@@ -139,6 +142,8 @@ public class edit_profile extends Fragment implements View.OnClickListener {
                 databaseUserRef = firebaseDatabase.getReference("users");
                 EditInputClinic.setVisibility(View.INVISIBLE);
                 EditInputNumber.setVisibility(View.INVISIBLE);
+                v1.setVisibility(View.INVISIBLE);
+                v2.setVisibility(View.INVISIBLE);
             }
             catch (NullPointerException f ){
                 f.printStackTrace();

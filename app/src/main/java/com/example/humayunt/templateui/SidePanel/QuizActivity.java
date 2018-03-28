@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.humayunt.templateui.DataModel.QuizDataModel;
 import com.example.humayunt.templateui.DatabaseHandler;
@@ -61,24 +62,33 @@ public class QuizActivity extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 RadioGroup grp=(RadioGroup)getView().findViewById(R.id.radioGroup1);
                 RadioButton answer=(RadioButton)getView().findViewById(grp.getCheckedRadioButtonId());
+                try {
+                    if (answer.isChecked()) {
+
+                        if(currentQ.getANSWER().equals(answer.getText()))
+                        {
+                            score++;
+                            Log.d("score", "Your score"+score);
+                        }
+                        if(qid<10){
+                            currentQ=quesList.get(qid);
+                            setQuestionView();
+                        }else{
+                            Intent intent = new Intent(getActivity(), Result.class);
+                            Bundle b = new Bundle();
+                            b.putInt("score", score); //Your score
+                            intent.putExtras(b); //Put your score to your next Intent
+                            startActivity(intent);
+                            //dismiss();
+                        }
+
+                    }
+                }
+                catch (NullPointerException ex) {
+                    Toast.makeText(getActivity(), "Select an Answer First!", Toast.LENGTH_SHORT).show();                }
                 grp.clearCheck();
-                Log.d("yourans", currentQ.getANSWER()+" "+answer.getText());
-                if(currentQ.getANSWER().equals(answer.getText()))
-                {
-                    score++;
-                    Log.d("score", "Your score"+score);
-                }
-                if(qid<10){
-                    currentQ=quesList.get(qid);
-                    setQuestionView();
-                }else{
-                    Intent intent = new Intent(getActivity(), Result.class);
-                    Bundle b = new Bundle();
-                    b.putInt("score", score); //Your score
-                    intent.putExtras(b); //Put your score to your next Intent
-                    startActivity(intent);
-                    //dismiss();
-                }
+//                Log.d("yourans", currentQ.getANSWER()+" "+answer.getText());
+
             }
         });
     }
@@ -87,7 +97,7 @@ public class QuizActivity extends Fragment implements View.OnClickListener {
     private void setQuestionView()
     {
         txtQuestion.setText(currentQ.getQUESTION());
-        Log.d("hun",currentQ.getOPTIONA()+"jvh");
+       // Log.d("hun",currentQ.getOPTIONA()+"jvh");
         rda.setText(currentQ.getOPTIONA());
         rdb.setText(currentQ.getOPTIONB());
         rdc.setText(currentQ.getOPTIONC());

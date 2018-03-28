@@ -9,6 +9,8 @@ import android.graphics.Typeface;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -25,6 +27,7 @@ import com.example.humayunt.templateui.CustomWindow;
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.R;
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -46,11 +49,14 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMapLongClickListener ,GoogleMap.OnInfoWindowClickListener {
+import static com.example.humayunt.templateui.LocateHospital.hospital_MapsActivity.REQUEST_LOCATION_CODE;
+
+public class LocateDoctorMap extends Fragment implements LocationListener, OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMapLongClickListener ,GoogleMap.OnInfoWindowClickListener {
 
     private GoogleMap mMap;
     Button ShowDoc;
 
+    private LocationManager locationManager;
 
     private FirebaseDatabase firebaseDatabase;
     private String UserId;
@@ -60,6 +66,8 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
     List<DoctorDetail> list;
     private SupportMapFragment fragment;
     ProgressDialog pd;
+    private static final long MIN_TIME = 400;
+    private static final float MIN_DISTANCE = 1000;
 
 
     @Override
@@ -71,9 +79,11 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
         mapFragment.getMapAsync(this);
         databaseUserRef = firebaseDatabase.getInstance().getReference("doctor");
         databaseUserRef.push().setValue(marker);
+       /* locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME, MIN_DISTANCE,getActivity());
 
 
-
+*/
         return view;
 
     }
@@ -83,6 +93,22 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
 
     @Override
     public void onStart() {
+        ConnectivityManager mgr = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = mgr.getActiveNetworkInfo();
+
+        if (netInfo != null) {
+            if (netInfo.isConnected()) {
+                // Internet Available
+            }else {
+                Toast.makeText(getActivity(), "Please Connect to Internet ", Toast.LENGTH_LONG).show();
+                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_NETWORK_STATE}, REQUEST_LOCATION_CODE);
+            }
+        } else {
+            //No internet
+            Toast.makeText(getActivity(), "Please Connect to Internet ", Toast.LENGTH_LONG).show();
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_NETWORK_STATE}, REQUEST_LOCATION_CODE);
+
+        }
         super.onStart();
 
     }
@@ -100,19 +126,16 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        LatLng sydney = new LatLng(33.651826, 73.156593);
+        // mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(sydney, 13);
+        mMap.animateCamera(cameraUpdate);
 
-        googleMap.setOnMapLongClickListener(this);
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         mMap.setMyLocationEnabled(true);
+
         mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
 
             @Override
@@ -222,5 +245,15 @@ public class LocateDoctorMap extends Fragment implements OnMapReadyCallback, Vie
     public void onInfoWindowClick(Marker marker) {
         Toast.makeText(getContext(), "Info window clicked",
                 Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 15);
+        mMap.animateCamera(cameraUpdate);
+       // locationManager.removeUpdates(getActivity());
+
+
     }
 }

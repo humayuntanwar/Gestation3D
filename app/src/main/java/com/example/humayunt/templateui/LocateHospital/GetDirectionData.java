@@ -1,11 +1,14 @@
 package com.example.humayunt.templateui.LocateHospital;
 import android.graphics.Color;
 import android.os.AsyncTask;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.example.humayunt.templateui.LocateHospital.dataParser;
 import com.example.humayunt.templateui.LocateHospital.downloadURL;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.maps.android.PolyUtil;
 
@@ -22,14 +25,15 @@ public class GetDirectionData extends AsyncTask<Object,String,String> {
     String googleDirectionsData;
     String duration, distance;
     LatLng latLng;
+    PolylineOptions options = new PolylineOptions();
+    Polyline pl= null;
+
+
     @Override
     protected String doInBackground(Object... objects) {
         mMap = (GoogleMap)objects[0];
         url = (String)objects[1];
         latLng = (LatLng)objects[2];
-
-
-
         downloadURL downloadUrl = new downloadURL();
         try {
             googleDirectionsData = downloadUrl.readUrl(url);
@@ -52,21 +56,42 @@ public class GetDirectionData extends AsyncTask<Object,String,String> {
 
     public void displayDirection(String[] directionsList)
     {
+        try {
+            if (pl != null) {
+                pl.remove();
+                pl = null;
+                Log.i("gym", "displayDirection:");
 
-        int count = directionsList.length;
-        for(int i = 0;i<count;i++)
-        {
-            PolylineOptions options = new PolylineOptions();
-            options.color(Color.RED);
-            options.width(10);
-            options.addAll(PolyUtil.decode(directionsList[i]));
-            mMap.addPolyline(options);
+            }
+        }catch (NullPointerException ex){
+            ex.printStackTrace();
+            Log.i("gym", "displ");
+            int count = directionsList.length;
+            for (int i = 0; i < count; i++) {
+                options.color(Color.RED);
+                options.width(10);
+                options.addAll(PolyUtil.decode(directionsList[i]));
+                pl = mMap.addPolyline(options);
+            }
         }
+
     }
 
 
 
+/*
 
+ <application >
+    <activity android:name=".UnityPlayerActivity"/>
+  </application>
+  -ignorewarnings
+   Intent intent = getIntent();
+        mUnityPlayer = new UnityPlayer(this);
+        mUnityPlayer.UnitySendMessage("Main Camera", "LoadScene",intent.getStringExtra("message"));
+        setContentView(mUnityPlayer);
+        mUnityPlayer.requestFocus();
+
+*/
 
 
 }

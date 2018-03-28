@@ -26,6 +26,7 @@ import com.CuteBabies.Gestation3D.UnityPlayerActivity;
 import com.example.humayunt.templateui.DataModel.DoctorDetail;
 import com.example.humayunt.templateui.DataModel.UserDetail;
 import com.example.humayunt.templateui.HelpGuide.About;
+import com.example.humayunt.templateui.HelpGuide.Contactus;
 import com.example.humayunt.templateui.HelpGuide.Faq;
 import com.example.humayunt.templateui.HelpGuide.Features;
 import com.example.humayunt.templateui.HelpGuide.WatchVideo;
@@ -176,12 +177,13 @@ public class UserProfile extends AppCompatActivity
     }
     public void ShowPopup() {
         TextView txtclose ;
-        Button about,faq,features,watchvideo;
+        Button about,faq,features,watchvideo , cont;
         myDialog.setContentView(R.layout.custompopup);
         txtclose =(TextView) myDialog.findViewById(R.id.txtclose);
         faq = (Button)myDialog.findViewById(R.id.faq);
         features = (Button)myDialog.findViewById(R.id.features);
         watchvideo = (Button)myDialog.findViewById(R.id.watchVideo);
+        cont = (Button)myDialog.findViewById(R.id.cont);
         txtclose.setText("X");
 
         about = (Button) myDialog.findViewById(R.id.About);
@@ -211,6 +213,14 @@ public class UserProfile extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UserProfile.this, Features.class));
+
+
+            }
+        });
+        cont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserProfile.this,Contactus.class));
 
 
             }
@@ -295,8 +305,12 @@ public class UserProfile extends AppCompatActivity
         }
         if(view == modelcard){
             // firebaseAuth.signOut();
-          startActivity(new Intent(UserProfile.this, UnityPlayerActivity.class));
+       //   startActivity(new Intent(UserProfile.this, UnityPlayerActivity.class));
 //            startActivity(new Intent(UserProfile.this,LocateDoctorMap.class));
+            Intent intent = new Intent(this,UnityPlayerActivity.class);
+            intent.putExtra("message","Month1");
+            startActivity(intent);
+
 
 
 
@@ -304,7 +318,9 @@ public class UserProfile extends AppCompatActivity
         if(view == arguidecard){
             // firebaseAuth.signOut();
            // startActivity(new Intent(UserProfile.this, Features.class));
-            startActivity(new Intent(UserProfile.this, DoctorList.class));
+            Intent intent = new Intent(this,UnityPlayerActivity.class);
+            intent.putExtra("message","BabyHandling");
+            startActivity(intent);
 
 
 

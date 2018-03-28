@@ -193,45 +193,59 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         }
     }
     public boolean checkLocationPermission() {
+        Log.i("locs", "checkingpermission");
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.ACCESS_FINE_LOCATION)) {
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION_CODE);
+                Log.i("locs", "permissiongiv");
+
             } else {
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION_CODE);
+                Log.i("locs", "checkingion");
+
             }
+
             return false;
 
         } else
-            return false;
+            Log.i("locs", "ission");
+
+        return true;
     }
 
     private void getDeviceLocation() {
-
-
-
+        Log.i("locs", " Locationone ");
 
 
         try{
             if(checkLocationPermission()==true){
+                Log.i("locs", " Location");
+
                 Task location = mFusedLocationProviderClient.getLastLocation();
                 location.addOnCompleteListener(new OnCompleteListener() {
                     @Override
                     public void onComplete(@NonNull Task task) {
                         if(task.isSuccessful()){
-                            Log.d(TAG, "Found Location");
+                            Log.i("locs", "Found Location");
                             Location currentLocation = (Location) task.getResult();
+                            latitude = currentLocation.getLatitude();
+                            longitude = currentLocation.getLongitude();
+
                             try {
                                 addresses = geocoder.getFromLocation(currentLocation.getLatitude(), currentLocation.getLongitude(), 1);
                                 String city = addresses.get(0).getLocality();
-                                signupInputAddress.setText(city);
+                                String area = addresses.get(0).getAddressLine(0);
+                                signupInputAddress.setText(area);
 
-                                String state = addresses.get(0).getAdminArea();
-                                Toast.makeText(SignUpDoctor.this, city, Toast.LENGTH_SHORT).show();
+                               // String state = addresses.get(0).getAdminArea();
+                               // Toast.makeText(SignUpDoctor.this, city, Toast.LENGTH_SHORT).show();
+                            } catch (NullPointerException e) {
+                                e.printStackTrace();
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
 
-                            buttonAddress = currentLocation.getProvider();
+                            //  buttonAddress = currentLocation.getProvider();
 
                             // String butAdd = currentLocation
                             // buttonAddress = new LatLng(currentLocation.getLatitude(),
@@ -367,7 +381,7 @@ public class SignUpDoctor extends AppCompatActivity implements View.OnClickListe
         }
         if (btnSign.isPressed()) {
            // Toast.makeText(SignUpDoctor.this, "Registered successfully!", Toast.LENGTH_SHORT).show();
-            //getDeviceLocation();
+           // getDeviceLocation();
             Intent intent = new Intent(this.getApplicationContext(), SigninActivity.class);
             startActivity(intent);
             finish();

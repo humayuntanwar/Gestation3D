@@ -49,6 +49,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
 
 import java.util.List;
 import java.util.Locale;
@@ -211,7 +212,7 @@ public class hospital_MapsActivity extends FragmentActivity implements OnMapRead
     public void onLocationChanged(Location location) {
         latitude = location.getLatitude();
         longitude = location.getLongitude();
-        lastLocation = location;
+       // lastLocation = location;
         if (currentLocationMarker != null) {
             currentLocationMarker.remove();
         }
@@ -250,7 +251,7 @@ public class hospital_MapsActivity extends FragmentActivity implements OnMapRead
         Object dataTransfer[] = new Object[2];
         getNearbyPlacesData getNearbyPlacesData = new getNearbyPlacesData();
         if (hospital.isPressed()) {
-            mMap.clear();
+           // mMap.clear();
             String hospital = "hospital";
             url = getUrl(latitude, longitude, hospital);
             dataTransfer[0] = mMap;
@@ -263,8 +264,6 @@ public class hospital_MapsActivity extends FragmentActivity implements OnMapRead
         }
 
         if (direction.isPressed()) {
-
-
             dataTransfer = new Object[3];
             url = getDirectionsUrl();
             GetDirectionData getDirectionsData = new GetDirectionData();
@@ -272,13 +271,7 @@ public class hospital_MapsActivity extends FragmentActivity implements OnMapRead
             dataTransfer[1] = url;
             dataTransfer[2] = new LatLng(end_latitude, end_longitude);
             getDirectionsData.execute(dataTransfer);
-
-
-
-
         }
-
-
     }
 
     private String getDirectionsUrl() {
@@ -307,8 +300,14 @@ public class hospital_MapsActivity extends FragmentActivity implements OnMapRead
 
     @Override
     public boolean onMarkerClick(Marker marker) {
+        if(Math.signum(end_latitude)!=0 ||(Math.signum(end_longitude)!=0)){
+            end_latitude =0;
+            end_latitude=0;
+        }
+
         end_latitude = marker.getPosition().latitude;
          end_longitude =  marker.getPosition().longitude;
+
         return false;
     }
 

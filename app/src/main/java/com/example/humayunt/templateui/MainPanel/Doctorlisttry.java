@@ -104,11 +104,24 @@ public class Doctorlisttry extends Fragment  implements View.OnClickListener{
                 for(int i = 0; i < doctorDetails.length; i++){
                     for(int j = 0; j < doctorDetails.length - i - 1; j++){
 
-                        if((doctorDetails[j].getRating()/doctorDetails[j].getNumberOfRating()) < (doctorDetails[j+1].getRating()/ doctorDetails[j+1].getNumberOfRating())){
-                            temp = doctorDetails[j];
-                            doctorDetails[j] = doctorDetails[j+1];
-                            doctorDetails[j+1] = temp;
-                        }
+
+                            if ((Math.signum(doctorDetails[j].getRating())==0 && Math.signum(doctorDetails[j].getNumberOfRating()) ==0)||
+                                    (Math.signum(doctorDetails[j + 1].getRating())==0 &&(Math.signum(doctorDetails[j + 1].getRating())==0))) {
+                                temp = doctorDetails[j];
+                                doctorDetails[j] = doctorDetails[j + 1];
+                                doctorDetails[j + 1] = temp;
+                            }
+
+                             else if((doctorDetails[j].getRating()/doctorDetails[j].getNumberOfRating()) < (doctorDetails[j+1].getRating()/ doctorDetails[j+1].getNumberOfRating()))
+                                    {  temp = doctorDetails[j];
+                                    doctorDetails[j] = doctorDetails[j + 1];
+                                    doctorDetails[j + 1] = temp;
+                                }
+
+
+
+
+
 
                     }
                 }

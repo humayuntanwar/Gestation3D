@@ -224,7 +224,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             return false;
 
         } else
-            return false;
+            return true;
     }
 
     private void getDeviceLocation() {
@@ -242,9 +242,11 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                         if(task.isSuccessful()){
                             Log.d(TAG, "Found Location");
                             Location currentLocation = (Location) task.getResult();
+                            latitude = currentLocation.getLatitude();
+                            longitude = currentLocation.getLongitude();
                             try {
                                 addresses = geocoder.getFromLocation(currentLocation.getLatitude(), currentLocation.getLongitude(), 1);
-                                String city = addresses.get(0).getLocality();
+                                String city = addresses.get(0).getAddressLine(0);
                                 signupInputAddress.setText(city);
 
                                 String state = addresses.get(0).getAdminArea();

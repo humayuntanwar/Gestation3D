@@ -6,15 +6,14 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp">
 
         <RelativeLayout
             android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
-            android:background="@drawable/bordernavyblue">
+            android:padding="8dp">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -86,34 +85,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/docclinic"
-                android:layout_toLeftOf="@+id/linearLayout"
-                android:text="1"
-                android:layout_toRightOf="@+id/ratingBar"
                 android:layout_marginLeft="26dp"
-                />
+                android:layout_toLeftOf="@+id/linearLayout"
+                android:layout_toRightOf="@+id/ratingBar"
+                android:text="1" />
 
 
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:orientation="vertical"
                 android:paddingBottom="10dp"
-                android:paddingTop="10dp">
+                android:paddingTop="10dp"
+                android:weightSum="1">
 
                 <Button
                     android:id="@+id/calldoctor"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
                     android:layout_above="@+id/docclinic"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginBottom="10dp"
-                    android:layout_weight="1"
                     android:background="@drawable/buttonstyle2"
                     android:drawableTop="@drawable/phone"
                     android:gravity="center"
@@ -122,12 +120,11 @@
                 <Button
                     android:id="@+id/showratingpopup"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:layout_alignBottom="@+id/imageView"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignTop="@+id/docclinic"
-                    android:layout_weight="1"
                     android:background="@drawable/buttonstyle2"
                     android:drawableTop="@drawable/starhalf"
                     android:gravity="center" />

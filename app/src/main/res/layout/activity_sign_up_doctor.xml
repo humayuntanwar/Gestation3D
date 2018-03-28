@@ -102,7 +102,7 @@
                 android:background="@android:color/transparent"
                 android:drawableLeft="@drawable/ic_person_white_24dp"
                 android:drawablePadding="12dp"
-                android:drawableRight="@drawable/ic_person_white_24dp"
+                android:drawableRight="@drawable/crosshairs_gps"
                 android:ems="10"
                 android:hint="address"
                 android:inputType="text"
