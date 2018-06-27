@@ -30,6 +30,32 @@ pregnant woman and in an unknown place or city, she can get locations of the nea
 case an emergency situation arises. 
 ```
 
+### Modules 
+###### M1: User Management
+The purpose of this module is to make a profile for the user who downloads and installs
+Gestation 3D on his smartphone. The user will give his/her personal details.
+###### M2: 2D Guide
+The information regarding the gestation period would be displayed in simple textual format
+along with related images
+###### M3: 3D Models
+This module includes the 3D view of all gestation period stages that will be rotatable and
+the user can look at different parts along with the information on that part.
+###### M4: Virtual Reality Tour
+The purpose of this module is to display all of the stages of gestation period summed up in
+a video that user can view in virtual reality and see the process of the baby’s development
+from fetus to a fully-grown baby inside the womb.
+###### M5: Baby Handling (AR)
+This module would show the handling of the baby in different situations like sleeping,
+carrying and feeding in augmented reality.
+###### M6: Health Guide
+This module would describe ideal diet plans along with the exercises at each development
+phase during the gestation period.
+###### M7: Nearby Hospitals
+This module of Gestation 3D will help women who are in need of a doctor to easily locate
+a hospital within their 10 Km radius.
+###### M8: Help Guide
+This module would guide the user whenever a user needs some guidance related to any part
+of Gestation 3D. The user would be navigated using text and images.
  ### System Limitations/Constraints
  ```
 It will only act as a guidance and will not completely replace the doctor. The diets and exercises
